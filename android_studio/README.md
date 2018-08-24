@@ -18,6 +18,7 @@ Using Android Studio, I created a small 2 pages app which is displayed on a Nexu
 ![Screenshot](MyBusinessCard_app_project/img/my_app.png)
 ![Screenshot](MyBusinessCard_app_project/img/my_app2.png)
 
+<!-- Code explanation -->
 The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific thing that I'm trying to accomplish, like the setOnClickListener for my button. You can see some of the code here:
 
 ```java
@@ -44,6 +45,23 @@ This was the first phone app that I made with Android Studio. I learned how to c
 
 ![Screenshot](Recipe_app_project/img/user1.png)
 ![Screenshot](Recipe_app_project/img/user2.png)
+
+<!-- Code explanation -->
+Similarly as to how I completed my Business Card App, for this Recipe app I extended AppCompatActivity which allowed me to bring in many native features of Android Studio. Making apps have never been so easy!
+
+```java
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Button button = (Button) findViewById(R.id.btnRecipe);
+    button.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            startActivity(new Intent(MainActivity.this, Recipe.class));
+        }
+    });
+}
+```
 
 # Practice:
 
