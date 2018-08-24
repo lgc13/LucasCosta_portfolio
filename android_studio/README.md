@@ -1,4 +1,4 @@
-![logo](img/android_studio_logo.jpg)
+<img src="img/android_studio_logo.jpg"/>
 # Android Studio projects
 This directory holds some projects and practice examples that I worked on using native Android Studio.
 
