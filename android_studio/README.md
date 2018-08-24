@@ -1,4 +1,5 @@
-# android_studio
+![logo](img/android_studio_logo.jpg)
+# Android Studio projects
 This directory holds some projects and practice examples that I worked on using native Android Studio.
 
 I created some android phone applications that utilized features such as radio buttons, images, and avatar emoticons.
