@@ -13,6 +13,9 @@ Click on the title link to see more information about each specific project.
 Using Android Studio, I created a small 2 pages app which uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
 
 ![Screenshot](MyBusinessCard_app_project/img/my_app.png)
+![Screenshot](MyBusinessCard_app_project/img/my_app2.png)
+
+Explanation about code...
 
 ```java
 protected void onCreate(Bundle savedInstanceState) {
