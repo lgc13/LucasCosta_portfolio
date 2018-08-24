@@ -18,8 +18,8 @@ Box::Box(int size, char BorderCharacter, char FillCharacter)  //constructor impr
     size = 39;
   }
   _size = size;
-  _BorderCharacter = '#';
-  _FillCharacter = '*';
+  _BorderCharacter = BorderCharacter;
+  _FillCharacter = FillCharacter;
 }
 
 /***********************************************************/
@@ -79,6 +79,7 @@ int Box::Area()
 /***********************************************************/
 void Box::Grow()
 {
+  cout << "Growing the size of the box" << endl;
   if (_size >= 1 || _size < 39)
   {
     _size++;
@@ -92,6 +93,7 @@ void Box::Grow()
 /***********************************************************/
 void Box::Shrink()
 {
+  cout << "Shrinking the size of the box" << endl;
   if (_size > 1 || _size <= 39)
   {
     _size--;
@@ -105,6 +107,7 @@ void Box::Shrink()
 /***********************************************************/
 void Box::SetBorder(char NewBorderChar)
 {
+  cout << "Setting a new border..." << endl;
   if ((NewBorderChar - '!') >= 0 && (NewBorderChar - '~') <= 126)
   {
   _BorderCharacter = NewBorderChar;
@@ -122,6 +125,7 @@ void Box::SetBorder(char NewBorderChar)
 /***********************************************************/
 void Box::SetFill(char NewFillChar)
 {
+  cout << "Setting a new fill..." << endl;
   if ((NewFillChar - '!') >= 0 && (NewFillChar - '~') <= 126)
   {
     _FillCharacter = NewFillChar;
@@ -172,7 +176,7 @@ void Box::Summary()
 {
   cout << "The box size is: " << _size << endl;
   cout << "The box perimeter is: " << Perimeter() << endl;
-  cout << "The area is: " << Area() << endl << endl;
-  Draw();
+  cout << "The area is: " << Area() << endl;
+  //Draw();
   cout << endl;
 }

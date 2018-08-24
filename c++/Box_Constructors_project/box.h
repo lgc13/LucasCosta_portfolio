@@ -24,8 +24,6 @@ class Box
     void Draw();
     void Summary();
 
-
-
   private:                //characteristics below:
     int _size;
     char _BorderCharacter;

@@ -23,3 +23,20 @@ Click on the title link to see each project
 This link will display a directory with all smaller projects, practice problems, and trivia questions that I have completed for with this specific technology.
 
 [Practice Stuff](https://github.com/lgc13/c_plusplus/tree/master/practice)
+
+- Reminder to self:
+
+To compile and build c++ files, use the following cmd:
+
+```c++
+g++ file_name.cpp -o file_name
+```
+
+If there are more files (classes) that are linked to this, do the following:
+
+```c++
+g++ file_name.cpp file_class.cpp file_class2.cpp -o file_name
+```
+
+Instructions can be found here:
+[Link](https://www.dvc.edu/academics/departments/computer-science/pdfs/UsingAppleXCode.pdf)
