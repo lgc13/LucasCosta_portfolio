@@ -18,4 +18,4 @@ Using Android Studio, I created this small app with 2 pages. The first one uses 
 Using Android Studio, I created this small app with 2 pages. The first one uses avatar emoticons, a picture import and a radio button. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
 Using Android Studio, I created this small app with 2 pages. The first one uses avatar emoticons, a picture import and a radio button. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
 
-### Sponsor
+## Sponsors
