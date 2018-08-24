@@ -1,11 +1,11 @@
 # android_studio
 This directory holds some projects and practice examples that I worked on using native Android Studio.
 
-I created some android phone applications that utilized features such as radio buttons, images, avatar emoticons,  
+I created some android phone applications that utilized features such as radio buttons, images, and avatar emoticons.
 
 # Projects:
 
-Click on the title link to see each project
+Click on the title link to see more information about each specific project.
 
 [1- My Business Card App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project)
 
@@ -18,6 +18,6 @@ Click on the title link to see each project
 
 # Practice:
 
-This link will display a directory with all smaller projects, practice problems, and trivia questions that I have completed using Android Studio.
+Although these were my biggest projects with Android Studio, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
 [Practice Stuff](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/practice)
