@@ -1,0 +1,10 @@
+\N,1,1,debit,atm,50,2016-10-10,testing
+\N,2,2,debit,atm,50,2016-10-11,
+\N,3,3,credit,atm,50,2016-10-12,
+\N,4,4,credit,transfer,50,2016-10-13,
+\N,5,5,credit,transfer,100,2016-10-14,
+\N,1,1,credit,transfer,100,2016-10-15,
+\N,2,2,debit,bank,100,2016-10-16,
+\N,3,3,debit,bank,55,2016-10-17,
+\N,4,4,debit,bank,55,2016-10-18,
+\N,5,5,card,card,100,2016-10-19,

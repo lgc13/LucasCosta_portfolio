@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weight Converter2</string>
+
+    <string name="hint">Weight of Patient</string>
+    <string name="radLbToKilo">lb to kg</string>
+    <string name="radKiloToLb">kg to lb</string>
+    <string name="btnConvert">Convert</string>
+    <string name="txtTitle">Convert Weight</string>
+</resources>

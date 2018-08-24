@@ -1,0 +1,11 @@
+pet_id,sto_id,cus_id,pet_type,pet_sex,pet_price,pet_age,pet_color,pet_sale_date,pet_vaccine,pet_neuter,pet_notes
+1,1,1,,F,$532.02,1,Maroon,2015-08-03 16:40:50,true,false,
+2,2,2,,F,$266.07,2,Crimson,2015-12-16 22:11:23,false,true,
+3,3,3,,F,$329.23,3,Orange,2016-01-20 03:47:47,true,true,
+4,4,4,,F,$571.99,4,Puce,2015-10-08 03:32:30,false,false,
+5,5,5,,M,$442.61,5,Purple,2015-07-08 17:47:27,false,false,
+6,6,6,,M,$417.44,6,Khaki,2015-10-06 13:50:12,true,true,
+7,7,7,,F,$928.61,7,Pink,2016-03-14 17:36:28,false,true,
+8,8,8,,F,$980.44,8,Indigo,2016-04-30 04:38:01,true,false,
+9,9,9,,M,$989.52,9,Crimson,2015-09-13 09:02:29,false,true,
+10,10,10,,F,$617.62,10,Violet,2016-05-07 17:41:53,true,true,

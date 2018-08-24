@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="CSS/default.css">
+		<meta charset="ISO-8859-1">
+			<title>My main servlet hub</title>
+		</head>
+	<body>
+		<h1>Hellow world... la la la la</h1>
+		<p> navigate below to test out servlet examples
+		
+		<hr>
+		<h2>Hello world</h2>
+		<p>Servlets are interacted with via form submissions.
+		<br>Inside for the form start tag, you can optionally set a method property.
+		<br> But it is the action tag, that will direct us to a servlet to handle
+		<br><b> Note: Action should equal to the servlet URL pattern 
+		as indicated in the web.xml</b>
+		
+		<form method = "get" action = "HelloWorld">  <!-- this must be the same as the servlet name -->
+			<input type = "submit" value = "HeLlO!">
+		</form>
+		
+		<hr>
+		<h2>Post and get</h2>
+		<p>Utilize the 'method' attribute for a gorm to indicate which HTTP method
+		to use
+		<br> If not method is specficied, GET is used by default
+		
+		<h3>GET</h3>
+		<ul>
+			<li>FIRST NAME </li>
+			<li><input type="text" name="first"></li>
+			<li>LAST NAME </li>
+			<li><input type="text" name="last"></li>
+			<li><input type="submit" value="GET"></li>
+		</ul>
+		
+		<form method = "post" action = "SomethingDifferent">  <!-- this must be the same as the servlet name -->
+			<ul style="list-style-type: none;">
+			<li>FIRST NAME </li>
+			<li><input type="text" name="first"></li>
+			<li>LAST NAME </li>
+			<li><input type="text" name="last"></li>
+			<li><input type="submit" value="PooST"></li>
+		</ul>
+		</form>
+	</body>
+</html>

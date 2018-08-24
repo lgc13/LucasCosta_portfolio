@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Lucas Costa, January 30, 2014 -->  
+    <meta charset="UTF-8" />
+    <title>HTML - Page 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="media-queries.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+<!------------- SPLASH SECTION -------------------->
+
+<section id="splash">  
+
+<!--Navigation Bar holds Navigation Buttons -->
+<div id="navbar">
+	<div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
+		<ul  id="menu">
+			<!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
+			<li><a href="#overview" class="button">Overview</a></li>
+			<li><a href="#video" class="button">Video</a></li>
+   			<li><a href="#discography" class="button">Discography</a></li>
+		</ul>
+	</div> <!-- end container -->
+</div> <!-- end navbar -->
+
+<!-- Title page -->
+<div id="title-page">
+    <div class="container"> 
+        <h1>Rockin'It</h1>
+        <h3>by Lucas Costa</h3>
+        <div class="nav-arrows-right">
+			<!-- image sprites are used for arrow buttons to provide hover effect -->
+            <!-- button class is used to provide scrolling javascript (see bottom of html code) -->
+            <!-- since button class is used outside menu div, the button-like appearance is not applied -->
+            <!-- only down arrow needed since this is at top of page -->        
+  			<a href="#overview" class="down-arrow button"></a>
+		</div> <!-- end nav-arrows-right -->
+    </div> <!-- end container -->
+</div> <!-- end title-page -->
+ 
+</section> <!-- end SPLASH section -->
+
+<!------------- OVERVIEW SECTION -------------------->
+
+<section id="overview">
+    <div class="container">
+    	<h1>A Tour through Rock and Roll.</h1>
+    	<img src="images/drums.jpg" width="350" class="fltright">
+    	<p>Rock has been such a grand part of music for most of our lives. It has through many ways, changed history. And although it is very popular, many are not aware of the fact that Rock actually originated from the soothing sounds of the blues and gospel music. YES REALLY!</p>
+		<p>Talking about Rock in general is one thing. But are you aware of how many branches Rock deals out just on the "Alternate Rock" subgenre?</p>
+		<p>Why now? It is logical that Apple Corps was concerned about rampant pirating of the Beatles' digital property. It is likely that it took this long for the entire record industry to get comfortable with the idea of digital distribution. Apple iTunes is responsible for launching a new model of digital music distribution. Apple iTunes also worked out a special and secretive deal with Apple Corp. for splitting the revenue in a manner that makes it worth Apple Corp.'s while.</p>
+		
+	</div> <!-- end container -->
+<!-- up and down arrows using image sprites -->
+	<div class="nav-arrows">
+  		<a href="#splash" class="up-arrow button"></a>
+  		<a href="#video" class="down-arrow button"></a>
+	</div> <!-- end nav-arrows -->
+</section><!--end OVERVIEW section -->
+
+<!------------ TRANSITION SECTION to provide shadow effect -------------->
+<section id="transition">
+</section>
+
+<!------------- VIDEO SECTION -------------------->
+
+<section id="video">
+    <div class="container">        
+		<h2>Red Hot Chilli Pepper's Song: Even You, Brutus?</h2><br>
+        <!-- the below code is provided by YouTube to embedded movies (share > embed) -->
+		<iframe width="820" height="615" src="//www.youtube.com/embed/rXpfwO9s5iM" frameborder="0" allowfullscreen></iframe>
+	</div> <!-- end container -->
+	<!-- up and down arrows using image sprites -->
+	<div class="nav-arrows">
+ 		 <a href="#overview" class="up-arrow button"></a>
+  		<a href="#discography" class="down-arrow button"></a>
+	</div>
+</section>
+
+<!------------ TRANSITION SECTION to provide shadow effect -------------->
+<section id="transition2">
+</section>
+
+<!------------- DISCOGRAPHY SECTION -------------------->
+
+<section id="discography">
+    <div class="container">
+    	<div class="half_container"> <!-- format in two columns / begin first column -->
+		<h1>Most Popular Genres:</h1>
+		<table>
+                    <tr>
+                        <td><p>Rock</p></td>
+                        <td><p>43%</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Pop</p></td>
+                            <td><p>32%</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Country</p></td>
+                            <td><p>18%</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Oldies</p></td>
+                            <td><p>10%</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Others</p></td>
+                            <td><p>10%</p></td>
+                        </tr>    
+                     </table>
+
+		<p>&nbsp;</p>
+	</div> <!--end half_container / 1st column-->
+	<div class="half_container"> <!-- begin 2nd column -->
+   		<h1>References</h1>
+		<ul>
+                    <li><a href="http://en.wikipedia.org/wiki/Rock_music">Wikepedia </a></li>
+                    <li><a href="http://www.rock.about.com/od/rockmusic101/a/subgenres.htm">About Rock </a></li>
+                    <li><a href="http://www.apple.com/itunes/">iTunes </a></li>
+                 </ul>
+
+		<img src="images/notes.jpg" width="100%" />
+	</div> <!--end half_container / 2nd column-->
+</div> <!-- end container -->
+<!-- up and down arrows using image sprites -->
+<div class="nav-arrows">
+  <a href="#video" class="up-arrow button"></a>
+  <a href="#footer" class="down-arrow button"></a>
+</div>
+</section> <!-- end DISCOGRAPHY section
+
+<!------------ TRANSITION SECTION to provide shadow effect -------------->
+<section id="transition3">
+</section>
+
+<!------------- FOOTER SECTION -------------------->
+
+<section id="footer">
+<div id="credits">  
+	<h1>About the Author</h1>
+    <p><img src="images/pic.jpg" width="100" height="120" alt="Portrait of Ken Baldauf"></p>
+    <p>Lucas Costa is a freshman at the Florida State University studying engineering.</p>
+    <p>Images courtesy of Wikipedia and Google</p>
+    <p>Javascript courtesy of Geo Miller</p>
+    <p>Color Palette </p>
+    <table width="80">
+    	<tr>
+        	<td bgcolor="#0375A6">&nbsp;</td>
+        	<td bgcolor="#969FA6">&nbsp;</td>
+    	</tr>
+    	<tr>
+      	   	<td bgcolor="#FFFFFF">&nbsp;</td>
+                <td bgcolor="#06B1D9">&nbsp;</td>
+    	</tr>
+	</table>
+    <p>This page was created by Lucas Costa, 01/30, as an exercise for CGS2821 Web Design.</p>
+</section> <!-- end credits -->
+</div> <!-- end FOOTER section -->
+
+<!-- END OF PAGE CONTENT -->
+
+<!-- JAVASCRIPT CODE -->
+
+<!--jquery required for scrolling effect -->
+<script src="js/jquery.js"></script>
+
+<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+<script type='text/javascript'>
+jQuery(document).ready(function () {
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
+
+</body>
+</html>

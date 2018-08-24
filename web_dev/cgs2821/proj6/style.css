@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------- STYLED TAGS ----------------------------- */
+
+body {
+  margin: 0px; /* always zero out defaul browser margins and padding */
+  padding: 0px;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 20px 0;
+}
+h4 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+table {
+	border: solid #6297F9 1px;
+	border-collapse:collapse;
+}
+td {
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #6297F9;
+	text-align: center;
+	padding: 6px;
+	border: solid #6297F9 1px;
+}
+a:link {
+	color: #6297F9;
+}
+a:visited {
+	color: #6297F9;
+}
+a:hover {
+	color: #4578DF;
+	text-decoration: none;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */  
+/* Transitions provide shadow effect between sections */
+
+#splash {
+    background: url(images/band.jpg) no-repeat center top fixed;
+    background-size: cover;  
+	height: 1000px;
+}
+#overview {
+	padding:0 0 60px 0;	
+    background-color: #0375A6;
+	color: #fff;
+}
+/* transitions use slice graphics only a few pixels wide repeated over x */
+#transition {
+	height: 30px;
+	background: url(images/333-shadow-down.png) repeat-x;
+}
+#video {
+	padding:0 0 60px 0;	
+    background-color: #969FA6;
+	color: #fff;
+}
+#transition2 {
+	height: 30px;
+	background: url(images/fff-shadow-down.png) repeat-x;
+}
+#discography {
+	padding:0 0 60px 0;	
+    background-color: #fff;
+	color: #06B1D9;
+}
+
+#transition3 {
+	height: 30px;
+	background: url(images/footer-shadow-down.png) repeat-x;
+}
+#footer{
+  	background-color: #333;
+  	color: #fff;
+  	padding: 20px 0;
+
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 54px;
+}
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 100px 20px 100px; 
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(42, 188, 238, 0.1);
+}  
+
+/* ----------------- NAVIGATION ARROW (^ v) STYLES -------------------*/ 
+
+.nav-arrows {   /* space for navigation arrows to reside */
+	width: 100px;
+	margin-left: auto;  /* centered on page */
+    margin-right: auto;
+	padding-top: 20px;
+}
+.nav-arrows-right {  /* space for nav arrows on title page are right aligned */
+	width: 100px;
+	margin-left: auto;
+    margin-right: 0;
+	padding-top: 20px;
+}
+/* utilize image sprites for fast loading hover effects */
+/* learn about it at http://www.w3schools.com/css/css_image_sprites.asp */
+a.up-arrow{ 
+    display:block;
+    background:url(images/arrow-up.png) no-repeat 0px 0px scroll;
+    width:48px;
+    height:28px;
+	float: left;
+}
+a.up-arrow:hover{
+    background-position:-49px 0px;
+}
+a.down-arrow{
+    display:block;
+    background:url(images/arrow-down.png) no-repeat 0px 0px scroll;
+    width:48px;
+    height:28px;
+	float: left;
+}
+a.down-arrow:hover{
+    background-position:-49px 0px;
+}
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  margin-top: 480px; /* provides a lot of space to view the background image */
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-size: 30px; 	
+  text-shadow: 3px 3px #000;
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px; /* to push nav arrow down */
+  text-shadow: 2px 2px #000;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      /* centers the color palette table */
+  margin-right: auto;
+  margin-left: auto; 			
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
+
+ 

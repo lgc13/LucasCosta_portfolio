@@ -1,0 +1,24 @@
+1. None of the above
+2. Server
+3. web app
+4. client/server application
+5. XML Schema
+6. All of the above
+7. web browser to web server
+8. All of the above
+9. inline
+10. deployement descriptor
+11. All of the above
+12. servlets
+13. HTML pages and JSPs
+14. Java entreprise edition
+15. Netbeans or Eclipse
+16. FTP
+17. All of the above 
+18. it requires less code
+19. more specific styles override less specific
+20. rows and columns
+21. use servlets to return HTML file
+22. The view and the model
+23. WEB-INF\classes
+24. JPA

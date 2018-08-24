@@ -1,0 +1,26 @@
+Create a BankAccount pojo with these variables
+ -bankAccountNumber
+ -customerName
+ -balance
+
+Create a txt file to read and write to/from with a style like this
+1:John:120.5
+2:Amy:3000.0
+3:Austin:460.7
+
+Main Class - BankAccountIO
+Create String FilePath
+Create 2 methods - One for Reading from the file
+		 - One for Writing to the file
+		 - Methods take an argument of String FilePath
+
+Write Method
+-Create 3 BankAccounts with properties initialized
+-Store them in a Collection
+-Write the Objects to the file with any type of loop
+-BufferedWriter
+
+Read Method
+-Reads the objects from the file
+-Hint: String[] accountValues = line.split(":"); 
+-Hint: BufferedReader
