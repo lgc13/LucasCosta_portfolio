@@ -1,4 +1,5 @@
-<img src="img/android_studio_logo.jpg"/>
+<img src="img/android_studio_logo.jpg" width = 50% length = 50%>
+
 # Android Studio projects
 This directory holds some projects and practice examples that I worked on using native Android Studio.
 
