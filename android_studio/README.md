@@ -1,6 +1,5 @@
-<img src="img/android_studio_logo.jpg" width = 50% length = 50%>
+<img src="img/android_studio_logo.jpg" width = 30% length = 30%><h1>Android Studio projects</h1>
 
-# Android Studio projects
 This directory holds some projects and practice examples that I worked on using native Android Studio.
 
 I created some android phone applications that utilized features such as radio buttons, images, and avatar emoticons.
