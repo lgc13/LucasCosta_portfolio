@@ -14,6 +14,23 @@ Using Android Studio, I created a small 2 pages app which uses avatar emoticons,
 
 ![Screenshot](MyBusinessCard_app_project/img/my_app.png)
 
+```java
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_my_business_card);
+    getSupportActionBar().setDisplayShowHomeEnabled(true);
+    getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+    getSupportActionBar().setDisplayUseLogoEnabled(true);
+    Button button = (Button) findViewById(R.id.button);
+    button.setOnClickListener(new View.OnClickListener(){
+        @Override
+        public void onClick(View v){
+            startActivity(new Intent(MyBusinessCard.this, Details.class));
+        }
+    });
+}
+```
+
 [2- Bruschetta Recipe App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/Recipe_app_project)
 
 This was the first phone app that I made with Android Studio. I learned how to create a basic user interface using pictures, buttons, and different font texts.
@@ -25,4 +42,4 @@ This was the first phone app that I made with Android Studio. I learned how to c
 
 Although these were my biggest projects with Android Studio, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
-[Practice Stuff](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/practice)
+[Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/practice)
