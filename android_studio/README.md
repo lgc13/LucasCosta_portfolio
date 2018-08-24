@@ -1,5 +1,7 @@
+<!-- Technology logo picture and title -->
 <img src="img/android_studio_logo.jpg" width = 30% length = 30% align = left><h1>Android Studio projects</h1>
 
+<!-- Technology welcome message -->
 This directory holds some projects and practice examples that I worked on through native Android Studio.
 
 I created some android phone applications that utilized features such as radio buttons, images, and avatar emoticons.
@@ -10,12 +12,13 @@ Click on the title link to see more information about each specific project.
 
 [1- My Business Card App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project)
 
-Using Android Studio, I created a small 2 pages app which uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
+<!-- My Business Card app BIO -->
+Using Android Studio, I created a small 2 pages app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
 
 ![Screenshot](MyBusinessCard_app_project/img/my_app.png)
 ![Screenshot](MyBusinessCard_app_project/img/my_app2.png)
 
-Explanation about code...
+The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific thing that I'm trying to accomplish, like the setOnClickListener for my button. You can see some of the code here:
 
 ```java
 protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 [2- Bruschetta Recipe App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/Recipe_app_project)
 
+<!-- Bruschetta Recipe app BIO -->
 This was the first phone app that I made with Android Studio. I learned how to create a basic user interface using pictures, buttons, and different font texts.
 
 ![Screenshot](Recipe_app_project/img/user1.png)
