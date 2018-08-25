@@ -150,7 +150,7 @@ case '0': return 0;
 <!-- Practice section -->
 # Practice:
 
-Although these were my biggest projects with C++, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
+Although these were my biggest projects with C++, I have worked on a lot of other smaller projects practice problems and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
