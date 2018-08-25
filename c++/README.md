@@ -8,7 +8,6 @@ C++ was the first official programming language that I ever learned. I was taugh
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
-# Projects:
 
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
