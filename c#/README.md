@@ -21,4 +21,4 @@ This application displays some of my skills with:
 - mathematical algorithms
 
 <!-- Screenshots -->
-<img src="CreateRoom_objectCalculator_project/img/room_calculator2.png" width= 60% length= 60%>
+<img src="CreateRoom_objectCalculator_project/img/room_calculator2.png" width= 80% length= 80%>
