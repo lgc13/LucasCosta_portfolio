@@ -9,7 +9,7 @@ I created some android phone applications that utilized features such as radio b
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
-<h2><a href-"https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project">
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project">
 1- My Business Card App </a></h2>
 
 <!-- My Business Card app BIO -->
