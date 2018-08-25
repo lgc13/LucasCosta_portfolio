@@ -96,8 +96,13 @@ Further instructions can be found here:
 
 Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
 
+<!-- Contact info -->
+# Let's Connect!
+
+Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
+
 <ul>
-  <li/>Email: lucas.gomes.costa@gmail.com
-  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/)
-  <li/>Wordpress: (https://lgc13.wordpress.com/)
+  <li/><img src="~/img/gmail_favicon.png">Email: lucas.gomes.costa@gmail.com
+  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/){:target="_blank"}
+  <li/>Wordpress: (https://lgc13.wordpress.com/) {:target="_blank"}
 </ul>
