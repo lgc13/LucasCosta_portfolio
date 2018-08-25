@@ -9,14 +9,15 @@ C++ was the first official programming language that I ever learned. I was taugh
 
 # Projects:
 
-Click on the title link to see each project
+<h6>Click on the title link to see each project</h6>
 
 [1- Tic Tac Toe Game App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project)
 
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-![Screenshot](TicTacToe_project/img/pic1.png)
+<img src="TicTacToe_project/img/pic1.png" width= 50% length= 50%>
+<!-- ![Screenshot](TicTacToe_project/img/pic1.png) -->
 
 <!-- Code explanation -->
 "BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
@@ -33,7 +34,7 @@ cout << "test" << endl;
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-<img src="Box_Constructors_project/img/box_example.png" width= 30% length= 30%>
+<img src="Box_Constructors_project/img/box_example.png" width= 50% length= 50%>
 <!-- ![Screenshot](Box_Constructors_project/img/box_example.png) -->
 
 <!-- Code explanation -->
