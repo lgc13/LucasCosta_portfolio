@@ -1,38 +1,50 @@
-> **NOTE:** This README.md file should be placed at the **root of each of your repos directories.**
->
->Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
->
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/CreateRoom_objectCalculator_project">1- Create Room Calculator</a></h2>
 
-# LIS 4369 - Extensible Enterprise Solutions
+<!-- Project BIO -->
+This application creates different "Room" objects, by asking user input for information such as a Room name, length, width, and height. Afterwards, methods are called in order to return attribute values about this Room, such as its name, area, volume in cubed feet and in cubed yards. It also provides information about a default Room (from default constructor properties.)
 
-## Lucas Costa
+This application displays some of my skills with:
 
-### Project 1 Requirements:
+- polymorphism: method overloading
+- encapsulation: keeping private data hidden
+- abstraction: calling methods from a class in a separate file
+- use of default constructor, getter and setter methods
+- mathematical algorithms
 
-1. Backward-engineer (using .NET Core) the console application screenshot:
-2. Display short assignment requirements
-Display *your* name as “author”
-3. Display current date/time (must include date/time, your format preference)
-4. Must perform and display room size calculations, must include data validation
-and rounding to two decimal places.
-5. Each data member must have get/set methods, also GetArea and GetVolume
+<!-- Screenshots -->
+<img src="img/room_calculator.png" width= 80% length= 80%>
+<img src="img/room_calculator2.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+I use Setter method calls from my main .cs file in order to change a given Room's attributes, such as their length, width, and height. The Setter methods have default values which if not changed, will be used by the default constructor of this program.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```c#
+
+public void SetLength(double l = 0.0)
+{ //setter method
+  this.roomLength = l;
+}
+
+public void SetWidth(double w = 0.0)
+{ //setter method
+  this.roomWidth = w;
+}
+
+public void SetHeight(double h = 0.0)
+{ //setter method
+  this.roomHeight = h;
+}
 
 
-#### README.md file should include the following items:
+roomObject2.SetLength(rLength);
+roomObject2.SetWidth(rWidth);
+roomObject2.SetHeight(rHeight);
 
-* Screenshot of the program
+```
 
-> This is a blockquote.
->
-> This is the second paragraph in the blockquote.
-
-
-##### Assignment Screenshot:
-
-* Screenshot of room_calculator program:
-
-![room_calculator Screenshot](img/room_calculator.png)
-
-* Screenshot of room_calculator program (second half):
-
-![room_calculator Screenshot 2](img/room_calculator2.png)
+<!-- Back to Projects folder -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c#/" class="previous">&laquo; Back to C# projects</a>
