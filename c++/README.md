@@ -29,7 +29,7 @@ Tic Tac Toe is a really fun and easy game to play. I created this console app wh
 I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using setw to adjust the width location of every input value, even if that were a blank character.
 
 <!-- Code snippet -->
-You can see this in this code snippet:
+You can see that in this code snippet:
 
 ```c++
 
@@ -61,7 +61,7 @@ void PrintBoard(char Board[9])
 }
 
 ```
-
+<hr border="2px">
 [2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
 
 <!-- Project BIO -->
