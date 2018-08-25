@@ -12,7 +12,7 @@ This application displays some of my skills with:
 - math algorithms
 
 <!-- Screenshot -->
-<img src="Box_Constructors_project/img/box_example.png" width= 60% length= 60%>
+<img src="img/box_example.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
 I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information of a given box, called Summary(). I instantiated the object from the main driver file.

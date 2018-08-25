@@ -12,7 +12,7 @@ This application displays some of my skills with:
 - mathematical algorithms
 
 <!-- Screenshot -->
-<img src="MultiFunctionCalculator_project/img/calc_pic.png" width= 60% length= 60%>
+<img src="img/calc_pic.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
 I used a switch statement to call the specific function needed to be performed on the value given by the user input. By creating a few different "case numbers", that makes this code very easy to read, and edit.

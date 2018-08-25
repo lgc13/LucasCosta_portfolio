@@ -12,7 +12,7 @@ This application displays some of my skills with:
 - function calls
 
 <!-- Screenshot -->
-<img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
+<img src="img/pic1.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
 I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using setw to adjust the width location of every input value, even if that were a blank character.
