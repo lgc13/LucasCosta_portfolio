@@ -1,13 +1,13 @@
 <!-- <div class="row"> -->
   <!-- <div class="col-sm-4"> -->
     <!-- Technology logo picture and title -->
-    <img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
+<img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
   <!-- </div> -->
   <!-- <div class="col-sm-8"> -->
     <!-- Technology welcome message -->
-    <p>The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.</p>
+The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
     <!-- <br/> -->
-    <p>C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms </p>
+C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms.
 
   <!-- </div> -->
 <!-- </div> -->
