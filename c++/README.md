@@ -102,7 +102,7 @@ Do you like what you see? Here are some other pages where you can get some more 
 Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
 
 <ul>
-  <li/><img src="~/img/gmail_favicon.png">Email: lucas.gomes.costa@gmail.com
-  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/){:target="_blank"}
-  <li/>Wordpress: (https://lgc13.wordpress.com/) {:target="_blank"}
+  <li/><img src="/img/gmail_favicon.png">Email: lucas.gomes.costa@gmail.com
+  <li/>LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/" target="_blank">address here </a>
+  <li/>Wordpress: (https://lgc13.wordpress.com/)
 </ul>
