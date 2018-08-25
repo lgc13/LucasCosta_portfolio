@@ -10,7 +10,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
-[1- Tic Tac Toe Game App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project)
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
 Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet. This application displays some of my skills with:
