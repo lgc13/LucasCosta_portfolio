@@ -8,7 +8,7 @@ I created some android phone applications that utilized features such as radio b
 
 # Projects:
 
-<h6>Click on the title link to see more information about each specific project.</h6>
+<h6>Click the title links if you want to see more details about a particular project.</h6>
 
 [1- My Business Card App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project)
 

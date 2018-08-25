@@ -8,7 +8,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 
 # Projects:
 
-<h6>Click on the title link to see each project</h6>
+<h6>Click the title links if you want to see more details about a particular project.</h6>
 
 [1- Tic Tac Toe Game App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project)
 
@@ -26,9 +26,11 @@ Tic Tac Toe is a really fun and easy game to play. I created this console app wh
 <!-- ![Screenshot](TicTacToe_project/img/pic1.png) -->
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using setw to adjust the width location of every input value, even if that were a blank character.
 
 <!-- Code snippet -->
+You can see this in this code snippet:
+
 ```c++
 
 void PrintBoard(char Board[9])
@@ -105,7 +107,7 @@ Although these were my biggest projects with C++, I have worked on quite a lot m
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
-<hr>
+<hr border="1pt">
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
