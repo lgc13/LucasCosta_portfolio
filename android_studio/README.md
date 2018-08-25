@@ -75,7 +75,7 @@ Although these were my biggest projects with Android Studio, I have worked on qu
 
 Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
 
-<img src="/img/gmail_favicon.png" height="30px" width="30px"> Email: lucas.gomes.costa@gmail.com
+<a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
 
 <a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
 
