@@ -90,3 +90,13 @@ g++ file_name.cpp file_class.cpp file_class2.cpp -o file_name
 
 Further instructions can be found here:
 [Link](https://www.dvc.edu/academics/departments/computer-science/pdfs/UsingAppleXCode.pdf)
+
+<!-- Contact info -->
+# Let's Connect!
+
+Do you like what you see? You can connect with me on my LinkedIn! Here's some contact info:
+
+<ul>
+  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/)
+  <li/>Email: lucas.gomes.costa@gmail.com
+<ul>

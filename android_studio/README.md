@@ -1,5 +1,5 @@
 <!-- Technology logo picture and title -->
-<img src="img/android_studio_logo.jpg" width = 30% length = 30% align = left><h1>Android Studio projects</h1>
+<img src="img/android_studio_logo.jpg" width= 30% length= 30% align="right"<h1>Android Studio projects</h1>
 
 <!-- Technology welcome message -->
 This directory holds some projects and practice examples that I worked on through native Android Studio.
