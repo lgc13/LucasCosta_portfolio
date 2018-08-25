@@ -94,9 +94,10 @@ Further instructions can be found here:
 <!-- Contact info -->
 # Let's Connect!
 
-Do you like what you see? You can connect with me on my LinkedIn! Here's some contact info:
+Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
 
 <ul>
-  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/)
   <li/>Email: lucas.gomes.costa@gmail.com
-<ul>
+  <li/>LinkedIn: (https://www.linkedin.com/in/lucas-gomes-costa/)
+  <li/>Wordpress: (https://lgc13.wordpress.com/)
+</ul>
