@@ -155,6 +155,7 @@ Although these were my biggest projects with C++, I have worked on quite a lot m
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
 <hr>
+
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
