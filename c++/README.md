@@ -61,7 +61,7 @@ void PrintBoard(char Board[9])
 }
 
 ```
-<hr size="1">
+<hr size="10">
 [2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
 
 <!-- Project BIO -->
