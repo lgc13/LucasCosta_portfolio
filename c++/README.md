@@ -1,5 +1,5 @@
 <!-- Technology logo picture and title -->
-<img src="img/c_plusplus_logo.png" width = 30% length = 30% align = left><h1>C++ projects</h1>
+<img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1 align= right>C++ projects</h1>
 
 <!-- Technology welcome message -->
 The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
