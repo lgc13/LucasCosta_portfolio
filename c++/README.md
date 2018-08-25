@@ -1,10 +1,15 @@
-<!-- Technology logo picture and title -->
-<img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
+<div class="row">
+  <div class="col-sm-4">>
+    <!-- Technology logo picture and title -->
+    <img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
+  </div>
+  <div class="col-sm-8">
+    <!-- Technology welcome message -->
+    The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
 
-<!-- Technology welcome message -->
-The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
-
-C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms
+    C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms
+  </div>
+</div>
 
 
 # Projects:
@@ -72,11 +77,10 @@ cout << "test" << endl;
 
 Although these were my biggest projects with C++, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
-
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
-
- Reminder to self:
+<br>
+- Reminder to self:
 
 To compile and build c++ files, use the following cmd:
 
