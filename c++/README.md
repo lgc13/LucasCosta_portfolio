@@ -61,7 +61,7 @@ void PrintBoard(char Board[9])
 }
 
 ```
-<hr>
+
 [2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
 
 <!-- Project BIO -->
@@ -80,7 +80,7 @@ cout << "test" << endl;
 
 ```
 
-<hr>[3- Multi Function Calculator App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/MultiFunctionCalculator_project)
+[3- Multi Function Calculator App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/MultiFunctionCalculator_project)
 
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
