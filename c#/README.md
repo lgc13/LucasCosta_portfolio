@@ -18,4 +18,7 @@ This application displays some of my skills with:
 - encapsulation: keeping private data hidden
 - abstraction: calling methods from a class in a separate file
 - use of default constructor, getter and setter methods
-- mathematical algorithms 
+- mathematical algorithms
+
+<!-- Screenshots -->
+<img src="CreateRoom_objectCalculator_project/img/room_calculator2.png" width= 60% length= 60%>
