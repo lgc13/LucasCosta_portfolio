@@ -98,6 +98,6 @@ Do you like what you see? Here are some other pages where you can get some more 
 
 <img src="/img/gmail_favicon.png" height="30px" width="30px"> Email: lucas.gomes.costa@gmail.com
 
-<img src="/img/linkedin_favicon.png" height="30px" width="30px"> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+<a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
 
-<img src="/img/wordpress_favicon.png" height="30px" width="30px"> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
