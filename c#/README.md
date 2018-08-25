@@ -24,7 +24,7 @@ This application displays some of my skills with:
 <img src="CreateRoom_objectCalculator_project/img/room_calculator2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+I use Setter method calls from my main .cs file in order to change a given Room's attributes, such as their length, width, and height. The Setter methods have default values which if not changed, will be used by the default constructor of this program.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
