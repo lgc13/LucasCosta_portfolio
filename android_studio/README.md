@@ -6,7 +6,6 @@ This directory holds some projects and practice examples that I worked on throug
 
 I created some android phone applications that utilized features such as radio buttons, images, and avatar emoticons.
 
-# Projects:
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
