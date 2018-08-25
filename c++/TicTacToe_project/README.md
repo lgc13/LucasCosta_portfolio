@@ -1,7 +1,7 @@
 # TicTacToe_project
 
 <!-- Project BIO -->
-Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet.
+I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying to them the current status of the game. If any of them win at any time, the program will stop the game and let them know there's a winner!
 
 This application displays some of my skills with:
 

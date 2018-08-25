@@ -12,7 +12,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
-Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet.
+I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying to them the current status of the game. If any of them win at any time, the program will stop the game and let them know there's a winner!
 
 This application displays some of my skills with:
 
@@ -67,7 +67,7 @@ void PrintBoard(char Board[9])
 2- Box Constructors App</a></h2>
 
 <!-- Project BIO -->
-For this application, I first created a Box object. Then I used different classes to access and modify this object, using methods such as grow, shrink, draw, getArea, and getPerimeter (among other functions.) The class was kept in a separate file with all the prototypes and the constructors.
+This application creates a Box object, which has many methods in different classes that modify the attributes of this box. For example, I can grow, shrink, draw, getArea, and getPerimeter of this box. The classes with all methods and attributes are kept in a separate file with all the prototypes and the constructors.
 
 This application displays some of my skills with:
 
