@@ -13,7 +13,14 @@ C++ was the first official programming language that I ever learned. I was taugh
 [1- Tic Tac Toe Game App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project)
 
 <!-- Project BIO -->
-"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
+Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet. This application displays some of my skills with:
+
+- code reusability (a single board layout was used)
+- user input validation  
+- game win condition validation
+- loops through arrays
+- function calls
+
 
 <img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
 <!-- ![Screenshot](TicTacToe_project/img/pic1.png) -->
@@ -24,7 +31,32 @@ C++ was the first official programming language that I ever learned. I was taugh
 <!-- Code snippet -->
 ```c++
 
-cout << "test" << endl;
+void PrintBoard(char Board[9])
+{
+  for (int i = 0; i < 9; i++){
+      //center numbers and display them from Board array.
+      int len = 0;
+      string word;
+      len = word.length();
+      len = ((4 - len) / 2) + len;
+      cout << setw(len) << Board[i]; // print value from given Board Array
+
+      // Go to next line and add --+---+---
+      if ((i+1)%3 == 0){
+        cout << endl;
+        if ((i+1) != 9){
+          cout << "---+---+---" << endl;
+        }
+        else {
+          cout << endl;
+        }
+      }
+      //Add a |
+      else if ((i+1)%3 != 0){
+        cout << " |";
+      }
+  }
+}
 
 ```
 

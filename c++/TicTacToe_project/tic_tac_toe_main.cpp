@@ -1,5 +1,4 @@
-//Assignment #4 for COP 3014 class
-//Created by Lucas Costa
+//Created by Lucas Costa for COP 3014 class
 
 #include <iostream>
 #include <iomanip>
@@ -60,36 +59,28 @@ void WelcomeMessage()
 
 void PrintBoard(char Board[9])
 {
-  //give Board array slows 0 - 8
-  for (int i = 0; i < 9; i++)
-  {
-
+  for (int i = 0; i < 9; i++){
       //center numbers and display them from Board array.
       int len = 0;
       string word;
       len = word.length();
-      len = ((4 - len) / 2) + len;
-      cout << setw(len) << Board[i];
+      len = ((4 - len) / 2) + len; 
+      cout << setw(len) << Board[i]; // print value from given Board Array
 
       // Go to next line and add --+---+---
-      if ((i+1)%3 == 0)
-      {
+      if ((i+1)%3 == 0){
         cout << endl;
-        if ((i+1) != 9)
-        {
+        if ((i+1) != 9){
           cout << "---+---+---" << endl;
         }
-        else
-        {
+        else {
           cout << endl;
         }
       }
       //Add a |
-      else if ((i+1)%3 != 0)
-      {
+      else if ((i+1)%3 != 0){
         cout << " |";
       }
-
   }
 }
 
