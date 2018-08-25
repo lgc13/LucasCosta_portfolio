@@ -33,7 +33,8 @@ cout << "test" << endl;
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-![Screenshot](Box_Constructors_project/img/box_example.png)
+<img src="Box_Constructors_project/img/box_example.png" width= 30% length= 30%>
+<!-- ![Screenshot](Box_Constructors_project/img/box_example.png) -->
 
 <!-- Code explanation -->
 "BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
@@ -71,7 +72,7 @@ cout << "test" << endl;
 Although these were my biggest projects with C++, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
 
-[Practice Directory]("https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice")
+[Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
 
  Reminder to self:
