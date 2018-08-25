@@ -12,7 +12,9 @@ C++ was the first official programming language that I ever learned. I was taugh
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
-Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet. This application displays some of my skills with:
+Tic Tac Toe is a really fun and easy game to play. I created this console app which can be played by 2 people on the same console. I created a few functions that could easily be reused when needed, as I had not learned of object oriented programming yet.
+
+This application displays some of my skills with:
 
 - code reusability (a single board layout was used)
 - user input validation  
@@ -20,7 +22,7 @@ Tic Tac Toe is a really fun and easy game to play. I created this console app wh
 - loops through arrays
 - function calls
 
-<!-- Screenshots -->
+<!-- Screenshot -->
 <img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
@@ -67,6 +69,15 @@ void PrintBoard(char Board[9])
 <!-- Project BIO -->
 For this application, I first created a Box object. Then I used different classes to access and modify this object, using methods such as grow, shrink, draw, getArea, and getPerimeter (among other functions.) The class was kept in a separate file with all the prototypes and the constructors.
 
+This application displays some of my skills with:
+
+- object oriented programming
+- use of constructors
+- method overloading
+- classes across different files
+- math algorithms
+
+<!-- Screenshot -->
 <img src="Box_Constructors_project/img/box_example.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
@@ -98,22 +109,43 @@ void Box::Summary()
 3- Multi Function Calculator App</a></h2>
 
 <!-- Project BIO -->
-"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
+For this console app, I created a small calculator which would take in a number from user input and perform a mathematical calculation to it depending on another choice given by the user. I also had to check the user input was not negative.
 
+This application displays some of my skills with:
+
+- switch statements
+- user input validation
+- function calls
+- use of external libraries
+- mathematical algorithms
+
+<!-- Screenshot -->
 <img src="MultiFunctionCalculator_project/img/calc_pic.png" width= 60% length= 60%>
-<!-- ![Calculator Example](MultiFunctionCalculator_project/img/calc_pic.png) -->
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+I used a switch statement to call the specific function needed to be performed on the value given by the user input. By creating a few different "case numbers", that makes this code very easy to read, and edit.
 
 <!-- Code snippet -->
+You can see that in this code snippet:
+
 ```c++
 
-cout << "test" << endl;
+switch (menu)
+{
+case '1': SquareRoot();
+        break;
+case '2': Cube();
+        break;
+case '3': Log();
+        break;
+case '4': Inverse();
+        break;
+case '5': AbsoluteValue();
+        break;
+case '0': return 0;
+}
 
 ```
-
-
 
 <!-- Practice section -->
 # Practice:

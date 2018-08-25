@@ -1,5 +1,3 @@
-//Assignment 2 for COP class made by Lucas Costa
-
 #include <iostream>
 #include <cmath>
 
