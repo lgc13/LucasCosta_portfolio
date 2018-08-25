@@ -61,7 +61,7 @@ void PrintBoard(char Board[9])
 }
 
 ```
-<hr border="2px">
+<hr border="5px">
 [2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
 
 <!-- Project BIO -->
@@ -107,7 +107,7 @@ Although these were my biggest projects with C++, I have worked on quite a lot m
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
-<hr border="1pt">
+<hr border="10pt">
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
