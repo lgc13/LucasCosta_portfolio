@@ -9,7 +9,8 @@ I created some android phone applications that utilized features such as radio b
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
-[1- My Business Card App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project)
+<h2><a href-"https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project">
+1- My Business Card App </a></h2>
 
 <!-- My Business Card app BIO -->
 Using Android Studio, I created a small 2 pages app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
@@ -38,7 +39,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-[2- Bruschetta Recipe App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/Recipe_app_project)
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/Recipe_app_project">2- Bruschetta Recipe App</a></h2>
 
 <!-- Bruschetta Recipe app BIO -->
 This was the first phone app that I made with Android Studio. I learned how to create a basic user interface using pictures, buttons, and different font texts.
