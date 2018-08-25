@@ -1,29 +1,78 @@
-# c_plusplus
-Here you will find all Lucas's c++ projects and practice examples.
+<!-- Technology logo picture and title -->
+<img src="img/c_plusplus_logo.png" width = 30% length = 30% align = left><h1>C++ projects</h1>
+
+<!-- Technology welcome message -->
+The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
+
+C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms
+
 
 # Projects:
 
 Click on the title link to see each project
 
-[1- Tic Tac Toe Game App](https://github.com/lgc13/c_plusplus/tree/master/TicTacToe_project)
+[1- Tic Tac Toe Game App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project)
+
+<!-- Project BIO -->
+"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
 ![Screenshot](TicTacToe_project/img/pic1.png)
 
-[2- Calculator](https://github.com/lgc13/c_plusplus/tree/master/Calculator_project)
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+
+<!-- Code snippet -->
+```c++
+
+cout << "test" << endl;
+
+```
+
+[2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
+
+<!-- Project BIO -->
+"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
+
+![Screenshot](Calendar_DayOfTheWeek_project/img/pic1.png)
+
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+
+<!-- Code snippet -->
+```c++
+
+cout << "test" << endl;
+
+```
+
+[3- Multi Function Calculator App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Calculator_project)
+
+<!-- Project BIO -->
+"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
 ![Screenshot](Calculator/img/pic1.png)
 ![Screenshot](Calculator/img/pic2.png)
 
-[3- Calendar Day of the Week](https://github.com/lgc13/c_plusplus/tree/master/Calendar_DayOfTheWeek_project)
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
 
-![Screenshot](Calendar_DayOfTheWeek_project/img/pic1.png)
+<!-- Code snippet -->
+```c++
 
+cout << "test" << endl;
+
+```
+
+
+
+<!-- Practice section -->
 # Practice:
 
-This link will display a directory with all smaller projects, practice problems, and trivia questions that I have completed for with this specific technology.
+Although these were my biggest projects with C++, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
-[Practice Stuff](https://github.com/lgc13/c_plusplus/tree/master/practice)
+[Practice Directory]("https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice")
 
+<br>
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
