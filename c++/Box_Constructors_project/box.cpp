@@ -177,6 +177,5 @@ void Box::Summary()
   cout << "The box size is: " << _size << endl;
   cout << "The box perimeter is: " << Perimeter() << endl;
   cout << "The area is: " << Area() << endl;
-  //Draw();
   cout << endl;
 }

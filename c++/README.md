@@ -8,7 +8,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
-
+<!-- Project -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
@@ -20,9 +20,8 @@ Tic Tac Toe is a really fun and easy game to play. I created this console app wh
 - loops through arrays
 - function calls
 
-
+<!-- Screenshots -->
 <img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
-<!-- ![Screenshot](TicTacToe_project/img/pic1.png) -->
 
 <!-- Code explanation -->
 I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using setw to adjust the width location of every input value, even if that were a blank character.
@@ -61,22 +60,37 @@ void PrintBoard(char Board[9])
 
 ```
 
+<!-- Project 2 -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project">
 2- Box Constructors App</a></h2>
 
 <!-- Project BIO -->
-"Small paragraph talking about what this project does with any particular key terms used to accomplish it"
+For this application, I first created a Box object. Then I used different classes to access and modify this object, using methods such as grow, shrink, draw, getArea, and getPerimeter (among other functions.) The class was kept in a separate file with all the prototypes and the constructors.
 
 <img src="Box_Constructors_project/img/box_example.png" width= 60% length= 60%>
-<!-- ![Screenshot](Box_Constructors_project/img/box_example.png) -->
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information of a given box, called Summary(). I instantiated the object from the main driver file.
 
 <!-- Code snippet -->
+You can see that in this code snippet:
+
 ```c++
 
-cout << "test" << endl;
+Box mybox(5,'^','@');
+
+private:                
+  int size;
+  char BorderCharacter;
+  char FillCharacter;
+
+void Box::Summary()
+{
+  cout << "The box size is: " << size << endl;
+  cout << "The box perimeter is: " << Perimeter() << endl;
+  cout << "The area is: " << Area() << endl;
+  cout << endl;
+}
 
 ```
 

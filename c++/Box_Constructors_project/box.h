@@ -24,7 +24,7 @@ class Box
     void Draw();
     void Summary();
 
-  private:                //characteristics below:
+  private:
     int _size;
     char _BorderCharacter;
     char _FillCharacter;
