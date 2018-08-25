@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-4">>
+  <div class="col-sm-4">
     <!-- Technology logo picture and title -->
     <img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
   </div>
