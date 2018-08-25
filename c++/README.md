@@ -92,14 +92,9 @@ Further instructions can be found here:
 [Link](https://www.dvc.edu/academics/departments/computer-science/pdfs/UsingAppleXCode.pdf)
 
 <!-- Contact info -->
-# Let's Connect!
+# Let's Connect! Don't be shy...
 
-Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
-
-<!-- Contact info -->
-# Let's Connect!
-
-Do you like what you see? Here are some other pages where you can get some more info, and connect with me!
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
 
 <img src="/img/gmail_favicon.png" height="30px" width="30px"> Email: lucas.gomes.costa@gmail.com
 

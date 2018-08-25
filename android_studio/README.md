@@ -69,3 +69,14 @@ protected void onCreate(Bundle savedInstanceState) {
 Although these were my biggest projects with Android Studio, I have worked on quite a lot more smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/practice)
+
+<!-- Contact info -->
+# Let's Connect! Don't be shy...
+
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
+
+<img src="/img/gmail_favicon.png" height="30px" width="30px"> Email: lucas.gomes.costa@gmail.com
+
+<img src="/img/linkedin_favicon.png" height="30px" width="30px"> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+<img src="/img/wordpress_favicon.png" height="30px" width="30px"> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
