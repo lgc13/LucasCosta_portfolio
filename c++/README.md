@@ -38,5 +38,5 @@ If there are more files (classes) that are linked to this, do the following:
 g++ file_name.cpp file_class.cpp file_class2.cpp -o file_name
 ```
 
-Instructions can be found here:
+Further instructions can be found here:
 [Link](https://www.dvc.edu/academics/departments/computer-science/pdfs/UsingAppleXCode.pdf)

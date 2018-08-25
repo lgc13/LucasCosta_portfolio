@@ -15,12 +15,13 @@ Click on the title link to see more information about each specific project.
 <!-- My Business Card app BIO -->
 Using Android Studio, I created a small 2 pages app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which displays some plain text with some of my contact info.
 
-![Screenshot](MyBusinessCard_app_project/img/my_app.png)
-![Screenshot](MyBusinessCard_app_project/img/my_app2.png)
+![First page](MyBusinessCard_app_project/img/my_app.png)
+![Second page](MyBusinessCard_app_project/img/my_app2.png)
 
 <!-- Code explanation -->
 The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific thing that I'm trying to accomplish, like the setOnClickListener for my button. You can see some of the code here:
 
+<!-- Code snippet --> 
 ```java
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
