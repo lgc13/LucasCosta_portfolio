@@ -1,5 +1,5 @@
 <!-- Technology logo picture and title -->
-<img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1 align= right>C++ projects</h1>
+<img src="img/c_plusplus_logo.png" width = 30% length = 30% align= left><h1>C++ projects</h1>
 
 <!-- Technology welcome message -->
 The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
@@ -33,7 +33,7 @@ cout << "test" << endl;
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-![Screenshot](Calendar_DayOfTheWeek_project/img/pic1.png)
+![Screenshot](Box_Constructors_project/img/box_example.png)
 
 <!-- Code explanation -->
 "BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
@@ -72,7 +72,7 @@ Although these were my biggest projects with C++, I have worked on quite a lot m
 
 [Practice Directory]("https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice")
 
-<br>
+
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
