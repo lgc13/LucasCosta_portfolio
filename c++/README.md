@@ -61,7 +61,7 @@ void PrintBoard(char Board[9])
 }
 
 ```
-<hr size="10">
+<hr>
 [2- Box Constructors App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/Box_Constructors_project)
 
 <!-- Project BIO -->
@@ -80,7 +80,7 @@ cout << "test" << endl;
 
 ```
 
-[3- Multi Function Calculator App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/MultiFunctionCalculator_project)
+<hr>[3- Multi Function Calculator App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/MultiFunctionCalculator_project)
 
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
@@ -107,7 +107,7 @@ Although these were my biggest projects with C++, I have worked on quite a lot m
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
-<hr size="1">
+<hr>
 - Reminder to self:
 
 To compile and build c++ files, use the following cmd:
