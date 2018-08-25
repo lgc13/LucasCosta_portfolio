@@ -6,8 +6,8 @@ The majority of the projects and practice problems in this repo directory have g
 
 C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms.
 
-<h1> Projects:
-<h6>Click the title links if you want to see more details about a particular project.</h6></h1>
+<h3> Projects:
+<h6>Click the title links if you want to see more details about a particular project.</h6></h3>
 
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
