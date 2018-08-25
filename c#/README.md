@@ -22,3 +22,64 @@ This application displays some of my skills with:
 
 <!-- Screenshots -->
 <img src="CreateRoom_objectCalculator_project/img/room_calculator2.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```c#
+
+public void SetLength(double l = 0.0)
+{ //setter method
+  this.roomLength = l;
+}
+
+public void SetWidth(double w = 0.0)
+{ //setter method
+  this.roomWidth = w;
+}
+
+public void SetHeight(double h = 0.0)
+{ //setter method
+  this.roomHeight = h;
+}
+
+
+roomObject2.SetLength(rLength);
+roomObject2.SetWidth(rWidth);
+roomObject2.SetHeight(rHeight);
+
+```
+
+
+
+
+
+
+
+
+# Practice:
+
+      <!-- Change technology name -->
+Although these were my biggest projects with "TECHNOLOGY NAME", I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
+
+[Practice Directory](GITHUB PRACTICE_URL_LINK)
+
+<!-- Contact info -->
+# Let's Connect! Don't be shy...
+
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
+
+<a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
+
+<a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+
+<!-- Adding a blank line -->
+<br>
+
+<!-- Back to LucasCosta_portfolio folder  -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/" class="previous">&laquo; Back to LucasCosta_portfolio</a>

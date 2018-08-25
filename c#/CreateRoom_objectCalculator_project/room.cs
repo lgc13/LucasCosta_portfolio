@@ -48,7 +48,7 @@ namespace roomClass  //declare the scope 'roomClass'
     }
 
     public void SetWidth(double w = 0.0)
-    {                         //setter method
+    { //setter method
       this.roomWidth = w;
     }
 
