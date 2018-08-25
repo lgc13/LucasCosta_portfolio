@@ -16,7 +16,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-<img src="TicTacToe_project/img/pic1.png" width= 50% length= 50%>
+<img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
 <!-- ![Screenshot](TicTacToe_project/img/pic1.png) -->
 
 <!-- Code explanation -->
@@ -34,7 +34,7 @@ cout << "test" << endl;
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-<img src="Box_Constructors_project/img/box_example.png" width= 50% length= 50%>
+<img src="Box_Constructors_project/img/box_example.png" width= 60% length= 60%>
 <!-- ![Screenshot](Box_Constructors_project/img/box_example.png) -->
 
 <!-- Code explanation -->
@@ -52,8 +52,8 @@ cout << "test" << endl;
 <!-- Project BIO -->
 "Small paragraph talking about what this project does with any particular key terms used to accomplish it"
 
-![Screenshot](Calculator/img/pic1.png)
-![Screenshot](Calculator/img/pic2.png)
+<img src="MultiFunctionCalculator_project/img/calc_pic.png" width= 60% length= 60%>
+<!-- ![Calculator Example](MultiFunctionCalculator_project/img/calc_pic.png) -->
 
 <!-- Code explanation -->
 "BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"

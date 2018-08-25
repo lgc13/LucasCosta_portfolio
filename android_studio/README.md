@@ -8,7 +8,7 @@ I created some android phone applications that utilized features such as radio b
 
 # Projects:
 
-Click on the title link to see more information about each specific project.
+<h6>Click on the title link to see more information about each specific project.</h6>
 
 [1- My Business Card App](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/MyBusinessCard_app_project)
 
@@ -21,7 +21,7 @@ Using Android Studio, I created a small 2 pages app which is displayed on a Nexu
 <!-- Code explanation -->
 The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific thing that I'm trying to accomplish, like the setOnClickListener for my button. You can see some of the code here:
 
-<!-- Code snippet --> 
+<!-- Code snippet -->
 ```java
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
