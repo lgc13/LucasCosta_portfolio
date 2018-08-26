@@ -11,11 +11,12 @@ This application displays some of my skills with:
 - Client and Server side data validations
 
 <!-- Screenshots -->
-<img src="img/client_side_val.png" width= 60% length= 60%>
-<img src="img/add_cus_info.png" width= 60% length= 60%>
-<img src="img/sucess_cus_added.png" width= 60% length= 60%>
-<img src="img/cus_list.png" width= 60% length= 60%>
-<img src="img/edit_cus.png" width= 60% length= 60%>
+<img src="img/home1.png" width= 80% length= 80%>
+<img src="img/client_side_val.png" width= 80% length= 80%>
+<img src="img/add_cus_info.png" width= 80% length= 80%>
+<img src="img/sucess_cus_added.png" width= 80% length= 80%>
+<img src="img/cus_list.png" width= 80% length= 80%>
+<img src="img/edit_cus.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 "BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
@@ -29,15 +30,15 @@ PASTE CODE HERE
 
 ```
 
-<!-- Adding a blank line -->
-<br>
-
-<!-- Back to Projects folder -->
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
-
-- Remider to self:
+- Reminder to self:
 
 In order to run on local Apache tomcat, project must be within these directories:
 
 /Applications/AMPPS/mysql/bin
 /Applications/tomcat/webapps
+
+<!-- Adding a blank line -->
+<br>
+
+<!-- Back to Projects folder -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
