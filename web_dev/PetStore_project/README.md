@@ -55,4 +55,4 @@ In order for a PHP project to work locally on my computer, I need to put the pro
 Then, start Apache Server using AMPPS
 
 <!-- Back to Projects folder -->
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/TECHNOLOGY/" class="previous">&laquo; Back to "TECHNOLOGY" projects</a>
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
