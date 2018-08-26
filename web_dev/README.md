@@ -1,10 +1,10 @@
 <!-- Technology logo picture and title -->
-<img src="img/web_dev_logo.jpg" length="50%" align="right"><h1>Web Dev projects</h1>
+<img src="img/web_dev_logo.jpg" length="40%" height="50%" align="right"><h1>Web Dev projects</h1>
 
 <!-- Technology welcome message -->
 I learned how the basic concepts of Web Development during high school and college, where I created some simple static web pages with HTML, CSS, Bootstrap, and JavaScript. Soon after that, I picked up concepts on make dynamic web pages which utilized PHP or JSP files, running through HTTP servers such as Apache and Tomcat. I created some dynamic projects which display my use of these skills along with Databases such as MySQL and Oracle.
 
-<h6>Click the title links if you want to see more details about a particular project.</h6>
+<h6>Click the title links if you want tog see more details about a particular project.</h6>
 
 <!-- Project section -->
 <h2><a href="">1- "Project name"</a></h2>
