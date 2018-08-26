@@ -33,4 +33,5 @@ if (Name != null)
 ```
 
 <!-- Back to Projects folder -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/ class="previous">&laquo; Back to "TECHNOLOGY" projects</a>
 <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23 class="previous">&laquo; Back to C# projects</a>
