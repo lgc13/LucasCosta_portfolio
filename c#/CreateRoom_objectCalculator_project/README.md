@@ -1,5 +1,5 @@
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/CreateRoom_objectCalculator_project">1- Create Room Calculator</a></h2>
+# Create Room Calculator
 
 <!-- Project BIO -->
 This application creates different "Room" objects, by asking user input for information such as a Room name, length, width, and height. Afterwards, methods are called in order to return attribute values about this Room, such as its name, area, volume in cubed feet and in cubed yards. It also provides information about a default Room (from default constructor properties.)
@@ -47,4 +47,4 @@ roomObject2.SetHeight(rHeight);
 ```
 
 <!-- Back to Projects folder -->
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c#/" class="previous">&laquo; Back to C# projects</a>
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/" class="previous">&laquo; Back to C# projects</a>
