@@ -99,7 +99,7 @@ Although these were my biggest projects with C#, I have worked on a lot of other
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/practice)
 
-Reminder to self:
+- Reminder to self:
 
 To compile and build c#files, use the following cmd:
 
