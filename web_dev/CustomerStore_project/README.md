@@ -19,7 +19,7 @@ This application displays some of my skills with:
 <img src="img/edit_cus.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-One really cool benefit of using JSP pages, is that you have access to JSTL. Using its prefix="c", I am able to create a forEach loop within my JSP page, in order to iterate through all the "users" that are in my database. Therefore, I can use my servlet request to print all of those users attributes such as fname, lname, city, etc.
+One really cool benefit of using JSP pages, is that you have access to JSTL. Using its prefix="c", I am able to create a forEach loop within my JSP page, in order to iterate through all the "users" that are in my database and display them to the page. Therefore, I can use my servlet request to print all of those users attributes such as fname, lname, city, etc.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
