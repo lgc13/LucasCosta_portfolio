@@ -1,57 +1,63 @@
-# web_dev
-All my Web Dev projects and practice examples.
+<!-- Technology logo picture and title -->
+<img src="img/web_dev_logo.jpg" width= 30% length= 30% align="right"><h1>Web Dev projects</h1>
 
+<!-- Technology welcome message -->
+I learned how the basic concepts of Web Development during high school and college, where I created some simple static web pages with HTML, CSS, Bootstrap, and JavaScript. Soon after that, I picked up concepts on make dynamic web pages which utilized PHP or JSP files, running through HTTP servers such as Apache and Tomcat. I created some dynamic projects which display my use of these skills along with Databases such as MySQL and Oracle.
 
-LIS 4381 - Mobile Web Application Development
+<h6>Click the title links if you want to see more details about a particular project.</h6>
 
-##### Assignments:
+<!-- Project section -->
+<h2><a href="">1- "Project name"</a></h2>
 
-1)[A1 README.md](a1/README.md)
+<!-- Project BIO -->
+"This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
 
-  * Install AMPPS
-  * Install JDK
-  * Install Android Studio and create My First App
-  * Provide screenshots of installations
-  * Create a Bitbucket tutorials
-  * Provide git command description
+This application displays some of my skills with:
 
-2)[A2 README.md](a2/README.md)
+- key terms
+- key terms
+- key terms
+- key terms
+- key terms
 
-  * Create Healthy Recipes Android App
-  * Use native programming to create the two-page App
-  * Use radio buttons, images, and text
-  * Provide screenshots of completed app
+<!-- Screenshots -->
+<img src="img/location" width= 60% length= 60%>
 
-3)[A3 README.md](a3/README.md)
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
 
-  * Create ERD based upon business rules
-  * Provide screenshot of completed ERD
-  * Provide DB resource links
+<!-- Code snippet -->
+You can see that in this code snippet:
 
-4)[A4 README.md](a4/README.md)
+```LANGUAGE_NAME
 
-  * Create index page, with carousel
-  * Create working links for other folders
-  * Create P1 index page
-  * Validate user input to each specific type
-  * Give error messages when a user inputs wrong values
-  * Show user when input has been properly inputed
+PASTE CODE HERE
 
-5)[A5 README.md](a5/README.md)
+```
 
-  * Use validation to fully submit user input
-  * Create fully functional delete and edit buttons for the database
-  * Give error message upon wrong server side validation
+<!-- ......................E N D  O F  P R O J E C T........................ -->
 
-6)[Project 1: README.md](project1/README.md)
+<!-- Practice section -->
+# Practice:
 
-  * Create a personal business card App
-  * Use native programming for Android for the two-page App
-  * Add background color for the App title, and main two pages
-  * Change avatar picture
-  * Use radio buttons, images and text
+      <!-- Change technology name -->
+Although these were my biggest projects with "TECHNOLOGY NAME", I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
-7)[Project 2: README.md](project2/README.md)
+[Practice Directory](GITHUB PRACTICE_URL_LINK)
 
-  * Create a server side validation for 'petstore' database
-  * Upload database with
+<!-- Contact info -->
+# Let's Connect! Don't be shy...
+
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
+
+<a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
+
+<a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+
+<!-- Adding a blank line -->
+<br>
+
+<!-- Back to LucasCosta_portfolio folder  -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/" class="previous">&laquo; Back to LucasCosta_portfolio</a>
