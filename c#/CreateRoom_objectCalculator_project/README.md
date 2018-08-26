@@ -1,5 +1,5 @@
 <!-- Project section -->
-# Create Room Calculator
+# Create Room Calculator project
 
 <!-- Project BIO -->
 This application creates different "Room" objects, by asking user input for information such as a Room name, length, width, and height. Afterwards, methods are called in order to return attribute values about this Room, such as its name, area, volume in cubed feet and in cubed yards. It also provides information about a default Room (from default constructor properties.)
