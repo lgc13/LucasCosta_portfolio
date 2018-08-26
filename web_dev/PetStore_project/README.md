@@ -16,7 +16,7 @@ This application displays some of my skills with:
 <img src="images/pic2_all_pets.png" width= 70% length= 70%>
 
 <!-- Code explanation -->
-I use some Regular Expressions in order to create Client Side validation for the user input. This helps prevent possible bad data, and SQL injections going into the Database. I can also send messages to the browser letting them know exactly what the issue is when they are trying to input invalid data.
+I use some Regular Expressions in order to create Client Side validation for the user input. This helps prevent possible bad data, and SQL injections going into the Database. I also send messages to the browser letting the user know exactly what the issue is when they are trying to input invalid data.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
