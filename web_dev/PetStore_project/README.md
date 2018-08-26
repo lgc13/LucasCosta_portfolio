@@ -13,9 +13,9 @@ This application displays some of my skills with:
 
 <!-- Screenshots -->
 <img src="images/pic1.png" width= 70% length= 70%>
+<img src="images/pic3_client_validation.png" width= 70% length= 70%>
 <img src="images/pic1_add_pet.png" width= 70% length= 70%>
 <img src="images/pic2_all_pets.png" width= 70% length= 70%>
-<img src="images/pic3_client_validation.png" width= 70% length= 70%>
 
 <!-- Code explanation -->
 I use some Regular Expressions in order to create Client Side validation for the user input. This helps prevent possible bad data, and SQL injections going into the Database. I also send messages to the browser letting the user know exactly what the issue is when they are trying to input invalid data.
