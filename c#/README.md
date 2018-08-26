@@ -53,7 +53,7 @@ roomObject2.SetHeight(rHeight);
 
 ```
 
-<!-- ....................................................................... -->
+<!-- ......................E N D  O F  P R O J E C T........................ -->
 
 <!-- Project section -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/LanguageIntegratedQuery_project">2- LINQ - Language Integrated Query project</a></h2>
@@ -70,7 +70,7 @@ This application displays some of my skills with:
 - user input validation
 
 <!-- Screenshots -->
-<img src="LanguageIntegratedQuery_project/img/program.png" width= 60% length= 60%>
+<img src="LanguageIntegratedQuery_project/img/program.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 By importing the LINQ library, I have access to the SingleOrDefault method. This returns the only element of a sequence, or a default value if the sequence is empty. I use this in order to search in 'people' for a specific person who has last name given by the user. I can then return that entire object's information attributes from this simple search.
@@ -90,7 +90,7 @@ if (Name != null)
 
 ```
 
-<!-- ....................................................................... -->
+<!-- ......................E N D  O F  P R O J E C T........................ -->
 
 
 # Practice:

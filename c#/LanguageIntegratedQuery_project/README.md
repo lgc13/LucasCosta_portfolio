@@ -1,34 +1,36 @@
-> **NOTE:** This README.md file should be placed at the **root of each of your repos directories.**
->
->Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
->
+# LINQ - Language Integrated Query project
 
-# LIS 4369 - Extensible Enterprise Solutions
+<!-- Project BIO -->
+This project demonstrates how someone can use LINQ - Language Integrated Query to interact with data. It can be used to query many different types of data including relational, XML, and even objects. LINQ uses uses SQL-like syntax to produce usable objects.
 
-## Lucas Costa
+This application displays some of my skills with:
 
-### Project 2 Requirements:
+- LINQ methods
+- Using SQL-like syntax expressions
+- querying through objects and lists
+- manipulation of arrays through for and foreach loops
+- user input validation
 
-1. Backward-engineer (using .NET Core) the console application
-2. Display short assignment requirements
-Display *your* name as “author”
-3. Display current date/time (must include date/time, your format preference)
-4. Must perform and display room size calculations, must include data validation
-and rounding to two decimal places.
+<!-- Screenshots -->
+<img src="img/program.png" width= 80% length= 80%>
 
+<!-- Code explanation -->
+By importing the LINQ library, I have access to the SingleOrDefault method. This returns the only element of a sequence, or a default value if the sequence is empty. I use this in order to search in 'people' for a specific person who has last name given by the user. I can then return that entire object's information attributes from this simple search.
 
+<!-- Code snippet -->
+You can see that in this code snippet:
 
-#### README.md file should include the following items:
+```c#
 
-* Screenshot of the program
+Console.Write("\nPlease enter the last name: ");
+string searchName = Console.ReadLine();
+Person Name = people.SingleOrDefault(x => x.LastName == searchName);
+if (Name != null)
+{
+  Console.WriteLine("Matching criteria: " + Name.FirstName + " " + Name.LastName + " is a " + Name.Occupation + ", and is " + Name.Age + " years old.");
+}
 
-> This is a blockquote.
->
-> This is the second paragraph in the blockquote.
+```
 
-
-##### Assignment Screenshot:
-
-* Screenshot of program:
-
-![program Screenshot](img/program.png)
+<!-- Back to Projects folder -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/"TECHNOLOGY"/ class="previous">&laquo; Back to "TECHNOLOGY" projects</a>
