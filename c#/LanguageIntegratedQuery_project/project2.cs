@@ -34,25 +34,25 @@ public class project2 //declared class
 
       Console.WriteLine("  Now: {0:d}, {0:T}    ", dat);       //display current date and time
       //program starts
-      var people = GenerateListOfPeople();
+      var people = GenerateListOfPeople(); // create people list object
 
       Console.WriteLine("*** Finding items in collection ***");
 
       var peopleOverTheAgeOf30 = people.Where(x => x.Age > 30);
-      Console.WriteLine("\nWhere:");
+      Console.WriteLine("\nPeople over 30:");
       foreach(var person in peopleOverTheAgeOf30)
       {
         Console.WriteLine(person.FirstName);
       }
 
-      Console.WriteLine("\nSkip:");
+      Console.WriteLine("\nSkip first two people. People list:");
       IEnumerable<Person> afterTwo = people.Skip(2);
       foreach(var person in afterTwo)
       {
         Console.WriteLine(person.FirstName);
       }
 
-      Console.WriteLine("\nTake:");
+      Console.WriteLine("\nTake first two people. People list:");
       IEnumerable<Person> takeTwo = people.Take(2);
       foreach(var person in takeTwo)
       {

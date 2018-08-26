@@ -53,11 +53,44 @@ roomObject2.SetHeight(rHeight);
 
 ```
 
+<!-- ....................................................................... -->
 
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/LanguageIntegratedQuery_project">2- LINQ - Language Integrated Query project</a></h2>
 
+<!-- Project BIO -->
+This project demonstrates how someone can use LINQ - Language Integrated Query to interact with data. It can be used to query many different types of data including relational, XML, and even objects. LINQ uses uses SQL-like syntax to produce usable objects.
 
+This application displays some of my skills with:
 
+- LINQ methods
+- Using SQL-like syntax expressions
+- querying through objects and lists
+- manipulation of arrays through for and foreach loops
+- user input validation
 
+<!-- Screenshots -->
+<img src="LanguageIntegratedQuery_project/img/program.png" width= 60% length= 60%>
+
+<!-- Code explanation -->
+By importing the LINQ library, I have access to the SingleOrDefault method. This returns the only element of a sequence, or a default value if the sequence is empty. I use this in order to search in 'people' for a specific person who has last name given by the user. I can then return that entire object's information attributes from this simple search.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```c#
+
+Console.Write("\nPlease enter the last name: ");
+string searchName = Console.ReadLine();
+Person Name = people.SingleOrDefault(x => x.LastName == searchName);
+if (Name != null)
+{
+  Console.WriteLine("Matching criteria: " + Name.FirstName + " " + Name.LastName + " is a " + Name.Occupation + ", and is " + Name.Age + " years old.");
+}
+
+```
+
+<!-- ....................................................................... -->
 
 
 # Practice:
@@ -65,6 +98,19 @@ roomObject2.SetHeight(rHeight);
 Although these were my biggest projects with C#, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/practice)
+
+Reminder to self:
+
+To compile and build c#files, use the following cmd:
+
+```c#
+mcs file_name.cs
+```
+then run with:
+
+```c#
+mono file_name.exe
+```
 
 <!-- Contact info -->
 # Let's Connect! Don't be shy...
