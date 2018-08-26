@@ -12,8 +12,8 @@ This application displays some of my skills with:
 - HTML development
 
 <!-- Screenshots -->
-<img src="images/page1.png" width= 60% length= 60%>
-<img src="images/page2.png" width= 60% length= 60%>
+<img src="images/page1.png" width= 80% length= 80%>
+<img src="images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their css and js, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
