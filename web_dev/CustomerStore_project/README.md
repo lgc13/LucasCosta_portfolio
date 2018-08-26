@@ -19,14 +19,27 @@ This application displays some of my skills with:
 <img src="img/edit_cus.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+One really cool benefit of using JSP pages, is that you have access to JSTL. Using its prefix="c", I am able to create a forEach loop within my JSP page, in order to iterate through all the "users" that are in my database. Therefore, I can use my servlet request to print all of those users attributes such as fname, lname, city, etc.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```LANGUAGE_NAME
+```jsp
 
-PASTE CODE HERE
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:forEach var="user" items="${users}">
+  <tr>
+    <td><c:out value="${user.fname}" /></td>
+    <td><c:out value="${user.lname}" /></td>
+    <td><c:out value="${user.street}" /></td>
+    <td><c:out value="${user.city}" /></td>
+    <td><c:out value="${user.state}" /></td>
+    <td><c:out value="${user.zip}" /></td>
+    <td><c:out value="${user.phone}" /></td>
+    <td><c:out value="${user.email}" /></td>
+    <td><c:out value="${user.balance}" /></td>
+    <td><c:out value="${user.totalSales}" /></td>
+    <td><c:out value="${user.notes}" /></td>
 
 ```
 
