@@ -1,3 +1,6 @@
+# ticTacToeGame v2, made by Lucas Costa and Sasha Larson
+# started on Feb 26, 2017
+
 # what we need in order to make a tic tac toe game in python
 # v2: we will also make it so that we can play against the computer
 # finally, we will make this 2D
@@ -26,3 +29,15 @@ How the computer will think/display things
   b- check if there's a winner
 5- Display winner/tie message
 """
+
+# making board list
+row = ['1','2','3']
+col = ['',' ',' ']
+board2 = [row, col]
+board = [["1", "2", "3"],["4", "5", "6"]]
+
+for i in row:
+    for j in col:
+        print board2
+
+print board
