@@ -2,12 +2,14 @@
 <img src="img/python_logo.png" width= 30% length= 30% align="right"><h1>Python projects</h1>
 
 <!-- Technology welcome message -->
-1 - 2 Paragraphs talking about my experience with this technology
+Python is one of the main technologies that I use. One of my best friends, Chris, introduced me to this easy syntax, object oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.
+
+Currently, I am working on expanding my skills by creating a full stack application with Flask, and Django. Also, I teach Python at LaunchCode, a non-profit organization that focuses on teaching programming skills to people who have never done it before.
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="">1- "Project name"</a></h2>
+<h2><a href="#">1- Yahtzee Game</a></h2>
 
 <!-- Project BIO -->
 "This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
