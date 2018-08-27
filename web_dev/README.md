@@ -7,31 +7,195 @@ I learned the main Web Development concepts during high school and college, wher
 <h6>Click the title links if you want tog see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="">1- "Project name"</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/CustomerStore_project">1- Customer Store project</a></h2>
 
 <!-- Project BIO -->
-"This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
+This is a basic full stack application which allows a user (a manager) to add a customer to their company's database. The manager can add a customer with information such as name, address, email, among others, which all are checked by both client and server side validations prior to being put onto the database. The manager can also see all the current customers that are in the list, as well as edit or delete any of them.
 
 This application displays some of my skills with:
 
-- key terms
-- key terms
-- key terms
-- key terms
-- key terms
+- MVC framework with JSP/JSTL/Java Servlets
+- Local host SQL connection
+- Prepared Statements for SQL injections
+- Full CRUD (Create, Read, Update, Delete) functionality
+- Client and Server side data validations
 
 <!-- Screenshots -->
-<img src="img/location" width= 60% length= 60%>
+<img src="CustomerStore_project/img/home1.png" width= 80% length= 80%>
+<img src="CustomerStore_project/img/client_side_val.png" width= 80% length= 80%>
+<img src="CustomerStore_project/img/add_cus_info.png" width= 80% length= 80%>
+<img src="CustomerStore_project/img/sucess_cus_added.png" width= 80% length= 80%>
+<img src="CustomerStore_project/img/cus_list.png" width= 80% length= 80%>
+<img src="CustomerStore_project/img/edit_cus.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+One really cool benefit of using JSP pages, is that you have access to JSTL. Using its prefix="c", I am able to create a forEach loop within my JSP page, in order to iterate through all the "users" that are in my database and display them to the page. Therefore, I can use my servlet request to print all of those users attributes such as fname, lname, city, etc.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```LANGUAGE_NAME
+```jsp
 
-PASTE CODE HERE
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:forEach var="user" items="${users}">
+  <tr>
+    <td><c:out value="${user.fname}" /></td>
+    <td><c:out value="${user.lname}" /></td>
+    <td><c:out value="${user.street}" /></td>
+    <td><c:out value="${user.city}" /></td>
+    <td><c:out value="${user.state}" /></td>
+    <td><c:out value="${user.zip}" /></td>
+    <td><c:out value="${user.phone}" /></td>
+    <td><c:out value="${user.email}" /></td>
+    <td><c:out value="${user.balance}" /></td>
+    <td><c:out value="${user.totalSales}" /></td>
+    <td><c:out value="${user.notes}" /></td>
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/Corazon_project">2- Corazon Dancers project</a></h2>
+
+<!-- Project BIO -->
+This is a static web site that I created for a Salsa group that I used to be a part of - Corazon Salsa Dancers. This web site displays aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and a way to join.
+
+This application displays some of my skills with:
+
+- Bootstrap features
+- JavaScript
+- Carousel Slideshow
+- CSS classes and IDs
+- HTML development
+
+<!-- Screenshots -->
+<img src="Corazon_project/images/page1.png" width= 80% length= 80%>
+<img src="Corazon_project/images/page2.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```html
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/pic2.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Corazon Dancers</h1>
+          <p>Latin L.A. Salsa</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/PetStore_project">3- Pet Store project</a></h2>
+
+<!-- Project BIO -->
+This application allows a user to handle a Pet Store web site. For example, the user can add "Pets" to the database. The user can also view, edit, and delete any of the current Pets in this same database on a different page. Some of these pages implement data validation on the user end(client side), while others have it on the back end(server side).
+
+This application displays some of my skills with:
+
+- Apache server application
+- PHP development
+- MySQL Database
+- Client and Server Side validation (one uses Regular Expressions)
+- Web Dev concepts (HTML, CSS, JS and Bootstrap)
+
+<!-- Screenshots -->
+<img src="PetStore_project/images/pic1.png" width= 70% length= 70%>
+<img src="PetStore_project/images/pic3_client_validation.png" width= 70% length= 70%>
+<img src="PetStore_project/images/pic1_add_pet.png" width= 70% length= 70%>
+<img src="PetStore_project/images/pic2_all_pets.png" width= 70% length= 70%>
+
+<!-- Code explanation -->
+I use some Regular Expressions in order to create Client Side validation for the user input. This helps prevent possible bad data, and SQL injections going into the Database. I also send messages to the browser letting the user know exactly what the issue is when they are trying to input invalid data.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```php
+
+fields: {
+    name: {
+        validators: {
+            notEmpty: {
+                message: 'Name is required'
+            },
+            stringLength: {
+                min: 1,
+                max: 30,
+                message: 'Name must be less than 30 characters long'
+            },
+            regexp: {
+              //alphanumeric, hyphens, underscores, and spaces
+              //regexp: /^[a-zA-Z0-9\-_\s]+$/,
+              //similar to: (though, \w supports other Unicode characters)
+                regexp: /^[\w\-\s]+$/,
+              message: 'Name can only contain letters, numbers, hyphens, and underscore'
+            },
+        },
+    },
+  }
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/RockinIt_project">4- Rockin' It project</a></h2>
+
+<!-- Project BIO -->
+This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
+
+This application displays some of my skills with:
+
+- Bootstrap
+- Imbedding videos onto HTML
+- Div classes and Grid system
+- Basic JavaScript concepts
+- HTML and CSS
+
+<!-- Screenshots -->
+<img src="RockinIt_project/images/page1.png" width= 80% length= 80%>
+<img src="RockinIt_project/images/page2.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+For this web site, I use a simple nav bar id from Bootstrap. This makes it very easy to have a well aligned, colorful, and adjustable nav bar. I also use href links for each nav bar list option, so that when clicked, the page will scroll down to find that specific area.
+
+
+<!-- Code snippet -->
+
+```html
+
+<!--Navigation Bar holds Navigation Buttons -->
+<div id="navbar">
+	<div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
+		<ul id="menu">
+			<!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
+			<li><a href="#overview" class="button">Overview</a></li>
+			<li><a href="#video" class="button">Video</a></li>
+   		<li><a href="#discography" class="button">Discography</a></li>
+		</ul>
+	</div> <!-- end container -->
+</div> <!-- end navbar -->
 
 ```
 
