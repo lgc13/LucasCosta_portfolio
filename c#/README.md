@@ -1,5 +1,6 @@
 <!-- Technology logo picture and title -->
-<img src="img/c_sharp_logo.png" width= 30% length= 30% align="right"><h1>C# projects</h1>
+<img src="img/c_sharp_logo.png" width= 30% length= 30% align="right">
+<h1>C# projects</h1>
 
 <!-- Technology welcome message -->
 C# was the first language that taught me object oriented programming more in-depth. During some of my classes at Florida State University, I created a lot of console apps from scratch, or would backwards engineer some other example given to me. Most of these apps utilize object oriented programming key concepts such as data encapsulation, abstraction of functionality, attribute and methods inheritance, and basic polymorphism.

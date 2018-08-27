@@ -1,5 +1,6 @@
 <!-- Technology logo picture and title -->
-<img src="img/web_dev_logo.jpg" width="400" height="300" align="right"><h1>Web Dev projects</h1>
+<img src="img/web_dev_logo.jpg" width="400" height="300" align="right">
+<h1>Web Dev projects</h1>
 
 <!-- Technology welcome message -->
 I learned the main Web Development concepts during high school and college, where I created some simple static web pages with HTML, CSS, Bootstrap, and JavaScript. Soon after that, I picked up skills to create dynamic web pages which utilized PHP or JSP files, running through HTTP servers such as Apache and Tomcat. I made some dynamic projects which display my use of these skills along with Databases such as MySQL and Oracle.

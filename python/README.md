@@ -1,5 +1,6 @@
 <!-- Technology logo picture and title -->
-<img src="img/python_logo.png" width= 30% length= 30% align="right"><h1>Python projects</h1>
+<img src="img/python_logo.png" width= 30% length= 30% align="right">
+<h1>Python projects</h1>
 
 <!-- Technology welcome message -->
 Python is one of the main technologies that I use. One of my best friends, Chris, introduced me to this easy syntax, object oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.

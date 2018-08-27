@@ -1,5 +1,6 @@
 <!-- Technology logo picture and title -->
-<img src="img/java_logo.png" width= 30% length= 30% align="right"><h1>Java projects</h1>
+<img src="img/java_logo.png" width= 30% length= 30% align="right">
+<h1>Java projects</h1>
 
 <!-- Technology welcome message -->
 Java is one of the main technologies I have worked with. I was first introduced to it at Florida State University where I created some console applications. Through its use of object oriented programming, I have made some other applications that run on Apache Tomcat with JSP/JSTL pages running on servlets. I also use Spring MVC with Hibernate, tying that together to some other JavaScript libraries such as AngularJS in order to make single page applications.
