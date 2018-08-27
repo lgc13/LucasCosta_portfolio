@@ -1,7 +1,7 @@
 # Ring of Fire
 
 <!-- Project BIO -->
-This is an game console application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rules or action that must be taken - this game does all the heavy lifting, and tells each player what they should do next. Players take turn taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
+This is a console game application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
 
 This application displays some of my skills with:
 
