@@ -16,7 +16,7 @@ This application displays some of my skills with:
 <img src="images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their css and js, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
+Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
 
 <!-- Code snippet -->
 You can see that in this code snippet:
