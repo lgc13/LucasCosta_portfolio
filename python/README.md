@@ -25,7 +25,7 @@ This application displays some of my skills with:
 - Mathematical Algorithms
 
 <!-- Screenshots -->
-<img src="img/yahtzee_screen_shot.png" width= 80% length= 80%>
+<img src="YahtzeeGame_project/img/yahtzee_screen_shot.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 To randomize the dice rolls, we import the random module which has a randint method. Here, we iterate through each player, randomizing the values of the dice, then appending them onto a list which we can display to the console.
@@ -60,7 +60,7 @@ This application displays some of my skills with:
 - Mathematical Algorithms
 
 <!-- Screenshots -->
-<img src="img/pic1.png" width= 80% length= 80%>
+<img src="RingOfFire_project/img/pic1.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 I use itertools in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and Clubs)
