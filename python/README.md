@@ -1,17 +1,62 @@
-# python
-All my python projects and practice examples.
+<!-- Technology logo picture and title -->
+<img src="img/python_logo.png" width= 30% length= 30% align="right"><h1>Python projects</h1>
 
-# Projects:
+<!-- Technology welcome message -->
+1 - 2 Paragraphs talking about my experience with this technology
 
-Click on the title link to see each project
+<h6>Click the title links if you want to see more details about a particular project.</h6>
 
-[1- project](https://github.com/lgc13/pythontree/master/_project)
+<!-- Project section -->
+<h2><a href="">1- "Project name"</a></h2>
 
-![Screenshot](_project/img/pic1.png)
+<!-- Project BIO -->
+"This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
 
+This application displays some of my skills with:
 
+- key terms
+- key terms
+- key terms
+- key terms
+- key terms
+
+<!-- Screenshots -->
+<img src="img/location" width= 60% length= 60%>
+
+<!-- Code explanation -->
+"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```LANGUAGE_NAME
+
+PASTE CODE HERE
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Practice section -->
 # Practice:
 
-This link will display a directory with all smaller projects, practice problems, and trivia questions that I have completed for with this specific technology.
+Although these were my biggest projects with Python, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
-[Practice Stuff](https://github.com/lgc13/python/tree/master/practice)
+[Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/practice)
+
+<!-- Contact info -->
+# Let's Connect! Don't be shy...
+
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
+
+<a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
+
+<a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+
+<!-- Adding a blank line -->
+<br>
+
+<!-- Back to LucasCosta_portfolio folder  -->
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/" class="previous">&laquo; Back to LucasCosta_portfolio</a>
