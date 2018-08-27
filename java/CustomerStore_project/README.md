@@ -1,4 +1,5 @@
 # Customer Store project
+
 <!-- Project BIO -->
 This is a basic full stack application which allows a user (a manager) to add a customer to their company's database. The manager can add a customer with information such as name, address, email, among others, which all are checked by both client and server side validations prior to being put onto the database. The manager can also see all the current customers that are in the list, as well as edit or delete any of them.
 

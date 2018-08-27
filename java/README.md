@@ -84,13 +84,9 @@ myApp.config(['$locationProvider', function($locationProvider) {
       controller  : 'AboutController'
     })
   }
-  `
+
 
 ```
-
-
-
-
 
 <!-- comment -->
 
@@ -117,6 +113,133 @@ public List<Users> getUsers() {
   session.close();
   return users;
 }
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/Reimbursements_project">2- Reimbursement app project</a></h2>
+
+<!-- Project BIO -->
+This application is made to be used in a professional environment, where employees and managers can request reimbursements for job related things. Employees and managers can login, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as vieweing all employees, changing any employee's information, accepting and denying employee's reimbursement requests.
+
+This application displays some of my skills with:
+
+- Full MVC (Model-View-Controller)
+- User authentication (Employee vs Manager views)
+- Use of GET/POST Request methods
+- Oracle Database query
+- JSP/JSTL use for dynamic web pages
+
+<!-- Screenshots -->
+<img src="Reimbursements_project/img/invalid_login.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/info_edit_employee.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/employee_create_manager.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/reimbursements_manager.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/reimbursements_request_employee.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/reimbursements_updated_manager.PNG" width= 60% length= 60%>
+<img src="Reimbursements_project/img/reimbursements_viewUpdated_employee.PNG" width= 60% length= 60%>
+
+
+<!-- Code explanation -->
+This is a very straight forward application which needs some basic types of methods, such as one to create an employee, one to select the employee by username (can be used when logging in), selecting all employees from the database onto an Array List, and also others to edit the employee. By having an interface with these methods, it is very easy to keep track of how I can query through my Oracle database.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```java
+
+public interface UserDAO {
+
+	public void createEmployee(EmployeeObject employee);
+	public EmployeeObject selectEmployeeByUsername(String username);
+	public EmployeeObject selectEmployeeById(int id);
+	public ArrayList<EmployeeObject> selectEmployee();
+	public ArrayList<EmployeeObject> selectAllEmployees();
+	public EmployeeObject updateEmployee(EmployeeObject employee);
+	public void deleteEmployeeById(int id);
+
+}
+
+
+```
+
+<!-- Code explanation -->
+When a person is trying to login, I can use the input username to double check on my database along with its password. I can also do some simple server side validation where if the person object is blank to begin with, I can just deny them access. In addition, by getting the entire person's object, I'll have access to their "role", whether that's an "employee" or "manager", allowing me to create a different page view depending on that attribute.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+
+```java
+
+person = userDao.selectEmployeeByUsername(username);
+
+if (person!=null)
+{
+  if (username.equals(person.getUser_username()) && pass.equals(person.getUser_password()))
+  {
+    return person;
+  }
+  else {
+    System.out.println("Validate Login - Received null emp");
+    return null;
+  }
+}
+else
+{
+  return null;
+}
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/CustomerStore_project">3- Customer Store project</a></h2>
+
+<!-- Project BIO -->
+This is a basic full stack application which allows a user (a manager) to add a customer to their company's database. The manager can add a customer with information such as name, address, email, among others, which all are checked by both client and server side validations prior to being put onto the database. The manager can also see all the current customers that are in the list, as well as edit or delete any of them.
+
+This application displays some of my skills with:
+
+- MVC framework with JSP/JSTL/Java Servlets
+- Local host SQL connection
+- Prepared Statements for SQL injections
+- Full CRUD (Create, Read, Update, Delete) functionality
+- Client and Server side data validations
+
+<!-- Screenshots -->
+<img src="CustomerStore_project/img/home1.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/client_side_val.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/add_cus_info.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/sucess_cus_added.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/cus_list.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/edit_cus.png" width= 60% length= 60%>
+<img src="CustomerStore_project/img/sql_results.png" width= 60% length= 60%>
+
+<!-- Code explanation -->
+One really cool benefit of using JSP pages, is that you have access to JSTL. Using its prefix="c", I am able to create a forEach loop within my JSP page, in order to iterate through all the "users" that are in my database and display them to the page. Therefore, I can use my servlet request to print all of those users attributes such as fname, lname, city, etc.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```jsp
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:forEach var="user" items="${users}">
+  <tr>
+    <td><c:out value="${user.fname}" /></td>
+    <td><c:out value="${user.lname}" /></td>
+    <td><c:out value="${user.street}" /></td>
+    <td><c:out value="${user.city}" /></td>
+    <td><c:out value="${user.state}" /></td>
+    <td><c:out value="${user.zip}" /></td>
+    <td><c:out value="${user.phone}" /></td>
+    <td><c:out value="${user.email}" /></td>
+    <td><c:out value="${user.balance}" /></td>
+    <td><c:out value="${user.totalSales}" /></td>
+    <td><c:out value="${user.notes}" /></td>
 
 ```
 
