@@ -9,7 +9,7 @@ Currently, I am working on expanding my skills by creating a full stack applicat
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="#">1- Yahtzee Game</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/yahtzeegame">1- Yahtzee Game</a></h2>
 
 <!-- Project BIO -->
 "This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
