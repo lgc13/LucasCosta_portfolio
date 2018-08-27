@@ -55,4 +55,4 @@ In order to run on local Apache tomcat, project must be within these directories
 <br>
 
 <!-- Back to Projects folder -->
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/" class="previous">&laquo; Back to Java projects</a>
