@@ -9,31 +9,68 @@ Currently, I am working on expanding my skills by creating a full stack applicat
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/yahtzeegame">1- Yahtzee Game</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/YahtzeeGame_project">1- Yahtzee Game</a></h2>
 
 <!-- Project BIO -->
-"This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
+This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the amount of players, and allows each to input their own name. Afterwards, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
+
+This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other team mates, Sasha Larson and Devesh.
 
 This application displays some of my skills with:
 
-- key terms
-- key terms
-- key terms
-- key terms
-- key terms
+- Object Oriented Programming
+- User input validation
+- Lists and Dictionaries
+- Using external modules
+- Mathematical Algorithms
 
 <!-- Screenshots -->
-<img src="img/location" width= 60% length= 60%>
+<img src="img/yahtzee_screen_shot.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+To randomize the dice rolls, we import the random module which has a randint method. Here, we iterate through each player, randomizing the values of the dice, then appending them onto a list which we can display to the console.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```LANGUAGE_NAME
+```python
 
-PASTE CODE HERE
+for i in names:
+      raw_input("\n%s: it's your turn. Press ENTER to roll the dice" % i)
+      for i in range(diceMaxLength):
+          dice.append(random.randint(1,6))
+      print dice
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/RingOfFire_project">2- Ring of Fire</a></h2>
+
+<!-- Project BIO -->
+This is a console game application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
+
+This application displays some of my skills with:
+
+- Object Oriented Programming
+- Importing modules
+- Use of Lists and Dictionaries
+- Method calls
+- Mathematical Algorithms
+
+<!-- Screenshots -->
+<img src="img/pic1.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+I use itertools in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and Clubs)
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```python
+
+self.deck = list(itertools.product(['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'],['Diamond','Spades','Hearts','Club']))
 
 ```
 
