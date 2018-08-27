@@ -1,28 +1,28 @@
 # Ring of Fire
 
 <!-- Project BIO -->
-"This project accomplishes x, y, and z but doing things like a, b, and c. I used things like e, f and g from this place and this other"
+This is an game console application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rules or action that must be taken - this game does all the heavy lifting, and tells each player what they should do next. Players take turn taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
 
 This application displays some of my skills with:
 
-- key terms
-- key terms
-- key terms
-- key terms
-- key terms
+- Object Oriented Programming
+- Importing modules
+- Use of Lists and Dictionaries
+- Method calls
+- Mathematical Algorithms
 
 <!-- Screenshots -->
-<img src="img/location" width= 60% length= 60%>
+<img src="img/pic1.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+I use itertools in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and Clubs)
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```LANGUAGE_NAME
+```python
 
-PASTE CODE HERE
+self.deck = list(itertools.product(['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'],['Diamond','Spades','Hearts','Club']))
 
 ```
 
