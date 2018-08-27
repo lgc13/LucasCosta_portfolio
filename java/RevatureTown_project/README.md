@@ -14,13 +14,13 @@ This application displays some of my skills with:
 - Live chat API import
 
 <!-- Screenshots -->
-<img src="RevatureTown_project/img/index.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/about.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/rules.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/play2.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/lobby_ready.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/play_view2.png" width= 80% length= 80%>
-<img src="RevatureTown_project/img/play_view5.png" width= 80% length= 80%>
+<img src="img/index.PNG" width= 80% length= 80%>
+<img src="img/about.PNG" width= 80% length= 80%>
+<img src="img/rules.PNG" width= 80% length= 80%>
+<img src="img/play2.PNG" width= 80% length= 80%>
+<img src="img/lobby_ready.PNG" width= 80% length= 80%>
+<img src="img/play_view2.PNG" width= 80% length= 80%>
+<img src="img/play_view5.PNG" width= 80% length= 80%>
 
 
 <!-- Code explanation -->
