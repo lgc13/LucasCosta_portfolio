@@ -15,10 +15,10 @@ This application displays some of my skills with:
 <img src="images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+For this web site, I use a simple nav bar id from Bootstrap. This makes it very easy to have a well aligned, colorful, and adjustable nav bar. I also use href links for each nav bar list option, so that when clicked, the page will scroll down to find that specific area.
+
 
 <!-- Code snippet -->
-For this web site, I use a simple nav bar id from Bootstrap. This makes it very easy to have a well aligned, colorful, and adjustable nav bar. I also use href links for each nav bar list option, so that when clicked, the page will scroll down to find that specific area.
 
 ```html
 
