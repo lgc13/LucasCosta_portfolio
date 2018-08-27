@@ -75,6 +75,7 @@ myApp.config(['$locationProvider', function($locationProvider) {
       controller  : 'AboutController'
     })
   }
+`
 ```
 
 <!-- Code explanation -->

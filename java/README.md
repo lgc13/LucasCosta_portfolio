@@ -84,11 +84,15 @@ myApp.config(['$locationProvider', function($locationProvider) {
       controller  : 'AboutController'
     })
   }
-
+  `
 
 ```
 
 
+
+
+
+<!-- comment -->
 
 
 <!-- Code explanation -->
@@ -121,7 +125,6 @@ public List<Users> getUsers() {
 <!-- Practice section -->
 # Practice:
 
-      <!-- Change technology name -->
 Although these were my biggest projects with Java, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/practice)
