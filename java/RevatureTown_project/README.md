@@ -14,13 +14,35 @@ This application displays some of my skills with:
 - Live chat API import
 
 <!-- Screenshots -->
-<img src="img/index.png" width= 80% length= 80%>
-<img src="img/about.png" width= 80% length= 80%>
-<img src="img/rules.png" width= 80% length= 80%>
-<img src="img/play2.png" width= 80% length= 80%>
-<img src="img/lobby_ready.png" width= 80% length= 80%>
-<img src="img/play_view2.png" width= 80% length= 80%>
-<img src="img/play_view5.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/index.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/about.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/rules.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/play2.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/lobby_ready.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/play_view2.png" width= 80% length= 80%>
+<img src="RevatureTown_project/img/play_view5.png" width= 80% length= 80%>
+
+
+<!-- Code explanation -->
+My team and I use Hibernate configurations in order to set up all the database configurations, controllers, and classes. We also put all of this on a live EC2 through AWS (no longer live) where we were able to deploy a full pipeline using Jenkins.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```xml
+
+<!-- DB Configuration -->
+<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+<property name="hibernate.connection.url">jdbc:oracle:thin:@project2.cvn2sbvqpuhu.us-east-2.rds.amazonaws.com:1521:orcl</property>
+
+
+<!-- Mapping CLASSES with hibernate -->
+<mapping class="com.revature.bean.Roles" />
+<mapping class="com.revature.bean.Status" />
+<mapping class="com.revature.bean.Users" />
+
+```
 
 
 <!-- Code explanation -->
@@ -55,24 +77,49 @@ myApp.config(['$locationProvider', function($locationProvider) {
   }
 ```
 
+
+```java
+
+@Override
+public List<Users> getUsers() {
+  Session session = HibernateUtil.getSession();
+  Query query;
+  String hql;
+  //Transaction tx;
+
+  hql = "FROM com.revature.bean.Users";
+  query = session.createQuery(hql);
+  @SuppressWarnings("unchecked")
+  List<Users> users = query.list(); //list executes the query and returns results
+  session.close();
+  return users;
+}
+
+```
+
+
 <!-- Code explanation -->
-My team and I use Hibernate configurations in order to set up all the database configurations, controllers, and classes. We also put all of this on a live EC2 through AWS (no longer live) where we were able to deploy a full pipeline using Jenkins. 
+With Hibernate, we are able to easily query through our database and get any needed information. Using a session object, we can execute a hql query to return a list of users from the database which we can then pass on to other calls within our program.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```xml
+```java
 
-<!-- DB Configuration -->
-<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
-<property name="hibernate.connection.url">jdbc:oracle:thin:@project2.cvn2sbvqpuhu.us-east-2.rds.amazonaws.com:1521:orcl</property>
+@Override
+public List<Users> getUsers() {
+  Session session = HibernateUtil.getSession();
+  Query query;
+  String hql;
+  //Transaction tx;
 
-
-<!-- Mapping CLASSES with hibernate -->
-<mapping class="com.revature.bean.Roles" />
-<mapping class="com.revature.bean.Status" />
-<mapping class="com.revature.bean.Users" />
+  hql = "FROM com.revature.bean.Users";
+  query = session.createQuery(hql);
+  @SuppressWarnings("unchecked")
+  List<Users> users = query.list(); //list executes the query and returns results
+  session.close();
+  return users;
+}
 
 ```
 
