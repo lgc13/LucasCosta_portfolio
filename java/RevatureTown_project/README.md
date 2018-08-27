@@ -1,7 +1,7 @@
 # Revature Town project
 
 <!-- Project BIO -->
-Revature Town is an entertainment based 'Single Page Application' which allows many people to play together online, at the same time. This app is very similar to other well known games: Werewolf or Mafia. In our version of the game, Hackers have infiltrated Town Revature and they are trying to fire all employees! By talking to people through a live chat, voting on users to 'fire', and working together with other roles such as a Trainer or HD, players can enjoy a live game - up until they get fired!
+Revature Town is an entertainment based 'Single Page Application' which allows many people to play together online, at the same time. This app is very similar to other well known games: Werewolf or Mafia. In our version of the game, Hackers have infiltrated Town Revature and they are trying to fire all employees! By talking to people through a live chat, voting on users to 'fire', and working together with other roles such as a Trainer or HR, players can enjoy a live game - up until they get fired!
 
 This app was made in roughly 2 weeks, by me and two other team members: David Foens and Jonathan Joseph.
 
@@ -76,27 +76,6 @@ myApp.config(['$locationProvider', function($locationProvider) {
     })
   }
 ```
-
-
-```java
-
-@Override
-public List<Users> getUsers() {
-  Session session = HibernateUtil.getSession();
-  Query query;
-  String hql;
-  //Transaction tx;
-
-  hql = "FROM com.revature.bean.Users";
-  query = session.createQuery(hql);
-  @SuppressWarnings("unchecked")
-  List<Users> users = query.list(); //list executes the query and returns results
-  session.close();
-  return users;
-}
-
-```
-
 
 <!-- Code explanation -->
 With Hibernate, we are able to easily query through our database and get any needed information. Using a session object, we can execute a hql query to return a list of users from the database which we can then pass on to other calls within our program.
