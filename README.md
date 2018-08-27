@@ -1,4 +1,3 @@
-# LucasCosta_portfolio
-Welcome to Lucas Costa's monorepo repository!
+<img href="img/lucas_banner.jpg">
 
-(work in progress)
+Welcome to Lucas Costa's monorepo repository!
