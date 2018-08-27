@@ -24,16 +24,57 @@ This application displays some of my skills with:
 
 
 <!-- Code explanation -->
-"BRIEF TALK ABOUT THE FOLLOWING CODE SNIPPET:"
+This is a very straight forward application which needs some basic types of methods, such as one to create an employee, one to select the employee by username (can be used when logging in), selecting all employees from the database onto an Array List, and also others to edit the employee. By having an interface with these methods, it is very easy to keep track of how I can query through my Oracle database.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```LANGUAGE_NAME
+```java
 
-PASTE CODE HERE
+public interface UserDAO {
+
+	public void createEmployee(EmployeeObject employee);
+	public EmployeeObject selectEmployeeByUsername(String username);
+	public EmployeeObject selectEmployeeById(int id);
+	public ArrayList<EmployeeObject> selectEmployee();
+	public ArrayList<EmployeeObject> selectAllEmployees();
+	public EmployeeObject updateEmployee(EmployeeObject employee);
+	public void deleteEmployeeById(int id);
+
+}
+
 
 ```
+
+<!-- Code explanation -->
+When a person is trying to login, I can use the input username to double check on my database along with its password. I can also do some simple server side validation where if the person object is blank to begin with, I can just deny them access. In addition, by getting the entire person's object, I'll have access to their "role", whether that's an "employee" or "manager", allowing me to create a different page view depending on that attribute.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+
+```java
+
+person = userDao.selectEmployeeByUsername(username);
+
+if (person!=null)
+{
+  if (username.equals(person.getUser_username()) && pass.equals(person.getUser_password()))
+  {
+    return person;
+  }
+  else {
+    System.out.println("Validate Login - Received null emp");
+    return null;
+  }
+}
+else
+{
+  return null;
+}
+
+```
+
 
 <!-- Adding a blank line -->
 <br>
