@@ -92,7 +92,7 @@ This section of my monorepo portfolio displays some of my biggest and favorite p
 
 Currently, my most impressive projects are done with Java. I am also currently working on some bigger applications with Python.
 
-You can use these anchors below to see my technology folders, which I have ranked in order of most to least experienced (left to right):
+Scroll down to see some of these bigger projects, or click on one of these anchors to see a specific technology folder. I ranked these in order of MOST to LEAST experience (from left to right):
 
 <div align="center">
   <p>
