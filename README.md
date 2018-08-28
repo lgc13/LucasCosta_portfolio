@@ -11,15 +11,18 @@
   </p>
 
   <p>
-    <a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"><strong>· Email · </strong></a>
+    <a href="mailto:lucas.gomes.costa@gmail.com"><strong> · Email · </strong></a>
 
-    <a href="https://www.linkedin.com/in/lucas-gomes-costa/">
-    <img src="/img/linkedin_favicon.png" height="30px" width="30px"><strong>LinkedIn · </strong></a>
+    <a href="https://www.linkedin.com/in/lucas-gomes-costa/"><strong> LinkedIn · </strong></a>
 
-    <a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"><strong>WordPress · </strong></a>
+    <a href="https://lgc13.wordpress.com/"><strong>WordPress · </strong></a>
 
   </p>
 </div>
+
+<!-- <img src="/img/gmail_favicon.png" height="30px" width="30px"> -->
+<!-- <img src="/img/linkedin_favicon.png" height="30px" width="30px"> -->
+<!-- <img src="/img/wordpress_favicon.png" height="30px" width="30px"> -->
 
 <hr>
 
