@@ -155,9 +155,6 @@ Although these were my biggest projects with C++, I have worked on a lot of othe
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/practice)
 
-<hr>
-
-- Reminder to self:
 
 To compile and build c++ files, use the following cmd:
 
@@ -174,6 +171,7 @@ g++ file_name.cpp file_class.cpp file_class2.cpp -o file_name
 Further instructions can be found here:
 [Link](https://www.dvc.edu/academics/departments/computer-science/pdfs/UsingAppleXCode.pdf)
 
+<hr>
 <!-- Contact info -->
 # Let's Connect! Don't be shy...
 
