@@ -2,18 +2,22 @@
   <img src="img/lucas_banner.jpg" height='225'>
 
   <p>
-    <a href="#monorepository-portfolio"><strong>Monorepository</strong></a> ·
+    <a href="#monorepository-portfolio"><strong> · Monorepository</strong></a> ·
     <a href="#about-lucas"><strong>About Lucas</strong></a> ·
     <a href="#contact-info"><strong>Contact Info</strong></a> ·
     <a href="#install"><strong>Install</strong></a> ·
     <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
-    <a href="#documentation"><strong>Documentation</strong></a>
+    <a href="#documentation"><strong>Documentation ·</strong></a>
   </p>
 
   <p>
-    Email :
-    LinkedIn
-    WordPress
+    <a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"><strong>· Email · </strong></a>
+
+    <a href="https://www.linkedin.com/in/lucas-gomes-costa/">
+    <img src="/img/linkedin_favicon.png" height="30px" width="30px"><strong>LinkedIn · </strong></a>
+
+    <a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"><strong>WordPress · </strong></a>
+
   </p>
 </div>
 
