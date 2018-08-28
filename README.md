@@ -9,6 +9,14 @@
     <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
     <a href="#documentation"><strong>Documentation</strong></a>
   </p>
+
+  <p>
+  <a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
+
+  <a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+  <a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+  </p>
 </div>
 
 <hr>
@@ -20,7 +28,7 @@ Thanks for checking out my Github account! As of August 2018, I decided to revam
 1. Easily showcase (and remove from showcase) any of my projects, including their summaries, concepts, code snippets, code explanation, and screenshots.
 2. Organize projects by subdividing their directories by the main technology/language used so that I can easily find it at a later time.
 
-That should make browsing through my project/directories fairly intuitive. Here's the layout that I created for this repo:
+The goal is to make browsing through my project/directories fairly intuitive. Here's the layout that I created for this repo:
 
 ```sh
 
@@ -67,8 +75,8 @@ I am enthusiastic, adaptive, responsible and hardworking. I strive at using my l
 
 As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
 
-- Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), Weblogic, Websphere, JBoss
-- Web Frameworks: Spring MVC, Hibernate, Apache Tomcat
+- Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), Weblogic, Websphere, JBoss, Apache Tomcat
+- Web Frameworks: Spring MVC, Hibernate
 - Development: Python, Java, C#, and C++, JSP, PHP
 - Database: MySQL, Oracle
 - Front end: AngularJS, jQuery, Javascript, HTML, Bootstrap, and CSS
