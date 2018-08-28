@@ -3,7 +3,7 @@
 <h1>Python projects</h1>
 
 <!-- Technology welcome message -->
-Python is one of the main technologies that I use. One of my best friends, Chris, introduced me to this easy syntax, object oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.
+Python is one of the main technologies that I use. One of my best friends, [Chris Portela](https://chrisportela.com/), introduced me to this easy syntax, object oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.
 
 Currently, I am working on expanding my skills by creating a full stack application with Flask, and Django. I am also teaching Python at [LaunchCode](https://www.launchcode.org/), a non-profit organization that focuses on teaching programming skills to people who have never done it before.
 
@@ -15,7 +15,7 @@ Currently, I am working on expanding my skills by creating a full stack applicat
 <!-- Project BIO -->
 This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the amount of players, and allows each to input their own name. Afterwards, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
 
-This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other team mates, Sasha Larson and Devesh.
+This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other team mates, [Sasha Larson](https://github.com/sjlarson92) and [Devesh Waingakar](https://github.com/devesh15951).
 
 This application displays some of my skills with:
 
