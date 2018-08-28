@@ -173,6 +173,7 @@ Further instructions can be found here:
 
 <hr>
 <!-- Contact info -->
+
 # Let's Connect! Don't be shy...
 
 Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
