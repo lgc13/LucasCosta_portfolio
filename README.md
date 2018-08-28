@@ -53,12 +53,14 @@ Each technology folder has some
 ### About Lucas
 
 <div align="center">
-  <img src="/img/brazil_favicon.png" height="30px" width="30px">
-  <h3> Brazilian Born </h3>
-  <img src="/img/us_favicon.png" height="30px" width="30px">
-  <h3> American Raised </h3>
-  <img src="/img/denmark_favicon.png" height="30px" width="30px">
-  <h3> Danish at Heart </h3>
+  <h3>
+    <img src="/img/brazil_favicon.png" height="30px" width="30px">
+    Brazilian Born 
+    <img src="/img/us_favicon.png" height="30px" width="30px">
+    American Raised
+    <img src="/img/denmark_favicon.ico" height="30px" width="30px">
+    Danish at Heart
+  </h3>
 </div>
 
   I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
