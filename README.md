@@ -45,7 +45,7 @@ LucasCosta_portfolio
     └── practice
 
 ```
-
+---
 
 ### About Lucas
 
@@ -64,6 +64,8 @@ I have also worked as a computer technician, and I have a lot of experience with
 
 Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
 
+---
+
 ### Contact Info
 
 Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
@@ -72,4 +74,6 @@ Do you like what you see? Here are some other pages where you can get some more 
 
 <a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
 
-<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>g
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+
+---
