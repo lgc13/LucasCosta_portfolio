@@ -12,7 +12,7 @@ Thanks for checking out my Github account! As of August 2018, I decided to revam
 
 That should make browsing through my project/directories fairly intuitive. Here's the layout that I created for this repo:
 
-``sh
+```sh
 
 LucasCosta_portfolio
 ├── android_studio
