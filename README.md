@@ -1,9 +1,7 @@
 <div align="center">
   <img src="img/lucas_banner.jpg" height='225'>
-</div>
-<hr>
 
-<p>
+  <p>
     <a href="#Monorepository"><strong>Monorepository</strong></a> ·
     <a href="#About Lucas"><strong>About Lucas</strong></a> ·
     <a href="#Contact Info"><strong>Contact Info</strong></a> ·
@@ -11,6 +9,9 @@
     <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
     <a href="#documentation"><strong>Documentation</strong></a>
   </p>
+</div>
+
+<hr>
 
 # Monorepository Portfolio
 
@@ -71,4 +72,4 @@ Do you like what you see? Here are some other pages where you can get some more 
 
 <a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
 
-<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>g
