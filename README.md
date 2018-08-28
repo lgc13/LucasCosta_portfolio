@@ -96,11 +96,11 @@ You can use these anchors below to see my technology folders, which I have ranke
 
 <div align="center">
   <p>
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/"><strong> Java</strong></a> ·
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/"><strong>Python</strong></a> ·
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/"><strong>Web Dev</strong></a> ·
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23"><strong>C#</strong></a> ·
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B"><strong>C++</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/"><strong> Java</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/"><strong>Python</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/"><strong>Web Dev</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23"><strong>C#</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B"><strong>C++</strong></a> >
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/"><strong>Android Studio</strong></a>
   </p>
 
