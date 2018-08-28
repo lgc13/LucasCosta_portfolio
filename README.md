@@ -2,9 +2,9 @@
   <img src="img/lucas_banner.jpg" height='225'>
 
   <p>
-    <a href="#Monorepository"><strong>Monorepository</strong></a> ·
-    <a href="#About Lucas"><strong>About Lucas</strong></a> ·
-    <a href="#Contact Info"><strong>Contact Info</strong></a> ·
+    <a href="#monorepository"><strong>Monorepository</strong></a> ·
+    <a href="#about_lucas"><strong>About Lucas</strong></a> ·
+    <a href="#contact_info"><strong>Contact Info</strong></a> ·
     <a href="#install"><strong>Install</strong></a> ·
     <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
     <a href="#documentation"><strong>Documentation</strong></a>
