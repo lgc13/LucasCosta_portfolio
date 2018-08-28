@@ -3,8 +3,8 @@
 
   <p>
     <a href="#monorepository"><strong>Monorepository</strong></a> ·
-    <a href="#about"><strong>About Lucas</strong></a> ·
-    <a href="#contact"><strong>Contact Info</strong></a> ·
+    <a href="#about-lucas"><strong>About Lucas</strong></a> ·
+    <a href="#contact-info"><strong>Contact Info</strong></a> ·
     <a href="#install"><strong>Install</strong></a> ·
     <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
     <a href="#documentation"><strong>Documentation</strong></a>
