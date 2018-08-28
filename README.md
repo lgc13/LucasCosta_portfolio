@@ -4,7 +4,7 @@
   <p>
     <a href="#monorepository-portfolio"><strong> Monorepository</strong></a> ·
     <a href="#about-lucas"><strong>About Lucas</strong></a> ·
-    <a href="#projects-showcase"><strong>Projects</strong></a> ·
+    <a href="#projects-showcase"><strong>Projects Showcase</strong></a> ·
     <a href="#contact-info"><strong>Contact Info</strong></a>
   </p>
 
@@ -88,6 +88,24 @@ Lastly, I am a very motivated individual who has held many leadership roles (suc
 
 ### Projects Showcase
 
+This section of my monorepo portfolio displays some of my biggest and favorite projects that I have worked on. You will also find other details about these projects such as their summary, skills and concepts utilized, screenshots of the working applications, code snippets and their explanation.
+
+Currently, my most impressive projects are done with Java. I am also currently working on some bigger applications with Python.
+
+You can use these anchors below to see my technology folders, which I have ranked in order of most to least experienced (left to right):
+
+<div align="center">
+  <p>
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/"><strong> Java</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/"><strong>Python</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/"><strong>Web Dev</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23"><strong>C#</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B"><strong>C++</strong></a> ·
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/"><strong>Android Studio</strong></a>
+  </p>
+
+</div>
+
 <!-- Project section -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/RevatureTown_project">1- Revature Town</a></h2>
 
@@ -105,13 +123,13 @@ This application displays some of my skills with:
 - Live chat API import
 
 <!-- Screenshots -->
-<img src="RevatureTown_project/img/index.PNG" width= 60% length= 60%>
-<img src="RevatureTown_project/img/about.PNG" width= 60% length= 80%>
-<img src="RevatureTown_project/img/rules.PNG" width= 60% length= 80%>
-<img src="RevatureTown_project/img/play2.PNG" width= 60% length= 80%>
-<img src="RevatureTown_project/img/lobby_ready.PNG" width= 60% length= 60%>
-<img src="RevatureTown_project/img/play_view2.PNG" width= 60% length= 60%>
-<img src="RevatureTown_project/img/play_view5.PNG" width= 60% length= 60%>
+<img src="/java/RevatureTown_project/img/index.PNG" width= 60% length= 60%>
+<img src="/java/RevatureTown_project/img/about.PNG" width= 60% length= 80%>
+<img src="/java/RevatureTown_project/img/rules.PNG" width= 60% length= 80%>
+<img src="/java/RevatureTown_project/img/play2.PNG" width= 60% length= 80%>
+<img src="/java/RevatureTown_project/img/lobby_ready.PNG" width= 60% length= 60%>
+<img src="/java/RevatureTown_project/img/play_view2.PNG" width= 60% length= 60%>
+<img src="/java/RevatureTown_project/img/play_view5.PNG" width= 60% length= 60%>
 
 
 <!-- Code explanation -->
