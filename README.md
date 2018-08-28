@@ -3,12 +3,6 @@
 </div>
 <hr>
 
-As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This accomplishes 2 huge goals that I've had:
-
-1. Showcasing
-  - displaying all my projects all around (summary, concepts, code snippets, code explanation, and screenshots)
-  (I can easily put new projects for display, and remove older ones from the spotlight)
-
-2. Organization
-  - subdividing directories by the main technology/language used
-  (I can easily look back and find any previous projects and practice examples)
+As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
+1. Easily showcase (and remove from showcase) any of my projects, including their summaries, concepts, code snippets, code explanation, and screenshots.
+2. Organize projects by subdividing directories by the main technology/language used so that I can easily find it at a later time.
