@@ -46,7 +46,7 @@ LucasCosta_portfolio
 
 ```
 
-Each technology folder has some
+Each folder holds the biggest projects that I've done with that specific technology right inside its directory. There is also a 'practice' folder which has all other project/example exercises that I've done with said language.
 
 ---
 
@@ -67,12 +67,12 @@ Each technology folder has some
 
   As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
 
-  •	Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), Weblogic, Websphere, JBoss
-  •	Web Frameworks: Spring MVC, Hibernate, Apache Tomcat
-  •	Development: Python, Java, C#, and C++, JSP, PHP
-  •	Database: MySQL, Oracle
-  •	Front end: AngularJS, jQuery, Javascript, HTML, Bootstrap, and CSS
-  •	Others: Git, SVN, Bash, Unix, Jira
+- Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), Weblogic, Websphere, JBoss
+- Web Frameworks: Spring MVC, Hibernate, Apache Tomcat
+- Development: Python, Java, C#, and C++, JSP, PHP
+- Database: MySQL, Oracle
+- Front end: AngularJS, jQuery, Javascript, HTML, Bootstrap, and CSS
+- Others: Git, SVN, Bash, Unix, Jira
 
   I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
 
