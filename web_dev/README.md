@@ -11,7 +11,7 @@ I learned the main Web Development concepts during high school and college, wher
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/Corazon_project">1- Corazon Dancers project</a></h2>
 
 <!-- Project BIO -->
-This is a static web site that I created for a Salsa group that I used to be a part of - Corazon Salsa Dancers. This web site displays aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and a way to join.
+This is a static web site that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This web site aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and information on how to join.
 
 This application displays some of my skills with:
 
@@ -115,7 +115,7 @@ fields: {
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/RockinIt_project">3- Rockin' It project</a></h2>
 
 <!-- Project BIO -->
-This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
+This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statistics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
 
 This application displays some of my skills with:
 

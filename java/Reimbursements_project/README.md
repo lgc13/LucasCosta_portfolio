@@ -1,7 +1,7 @@
 # Reimbursements App project
 
 <!-- Project BIO -->
-This application is made to be used in a professional environment, where employees and managers can request reimbursements for job related things. Employees and managers can login, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as vieweing all employees, changing any employee's information, accepting and denying employee's reimbursement requests.
+This application is made to be used in a professional environment, where employees and managers can request reimbursements for job related expenses. Employees and managers can login, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as vieweing all employees, changing any employee's information, accepting or denying employee's reimbursement requests.
 
 This application displays some of my skills with:
 
@@ -24,7 +24,7 @@ This application displays some of my skills with:
 
 
 <!-- Code explanation -->
-This is a very straight forward application which needs some basic types of methods, such as one to create an employee, one to select the employee by username (can be used when logging in), selecting all employees from the database onto an Array List, and also others to edit the employee. By having an interface with these methods, it is very easy to keep track of how I can query through my Oracle database.
+This is a very straight forward application which needs some basic types of methods, such as one to create an employee, one to select the employee by username (can be used when logging in), selecting all employees from the database onto an Array List, and also a few others to edit the employee. By having an interface with these methods, it is very easy to keep track of how I can query through my Oracle database.
 
 <!-- Code snippet -->
 You can see that in this code snippet:

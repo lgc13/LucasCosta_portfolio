@@ -1,7 +1,7 @@
 # Rockin' It project
 
 <!-- Project BIO -->
-This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
+This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statistics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
 
 This application displays some of my skills with:
 
