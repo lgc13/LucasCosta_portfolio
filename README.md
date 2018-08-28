@@ -18,6 +18,8 @@
 
 {% include_relative test.html %}
 
+{% include test.html %}
+
 <hr>
 
 ### Monorepository Portfolio
