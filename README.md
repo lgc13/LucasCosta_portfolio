@@ -63,9 +63,9 @@ Each folder holds the biggest projects that I've done with that specific technol
   </h3>
 </div>
 
-  I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
+I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
 
-  As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
+As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
 
 - Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), Weblogic, Websphere, JBoss
 - Web Frameworks: Spring MVC, Hibernate, Apache Tomcat
@@ -74,9 +74,9 @@ Each folder holds the biggest projects that I've done with that specific technol
 - Front end: AngularJS, jQuery, Javascript, HTML, Bootstrap, and CSS
 - Others: Git, SVN, Bash, Unix, Jira
 
-  I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
+I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
 
-  Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
+Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
 
 ---
 
