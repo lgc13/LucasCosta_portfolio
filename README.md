@@ -55,8 +55,8 @@ Each technology folder has some
 <div align="center">
   <h3>
     <img src="/img/brazil_favicon.png" height="30px" width="30px">
-    Brazilian Born 
-    <img src="/img/us_favicon.png" height="30px" width="30px">
+    Brazilian Born
+    <img src="/img/us_favicon.png" height="35px" width="35px">
     American Raised
     <img src="/img/denmark_favicon.ico" height="30px" width="30px">
     Danish at Heart
