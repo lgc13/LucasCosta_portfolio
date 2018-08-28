@@ -11,14 +11,9 @@
   </p>
 
   <p>
-    Email:
-    <a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a>
-
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a>
-
-    WordPress:
-    <a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a>
+    Email :
+    LinkedIn
+    WordPress
   </p>
 </div>
 
