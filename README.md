@@ -1,4 +1,6 @@
 <div align="center">
+  <h3>**Brazilian Born -> American Raised -> Danish at heart** </h3>
+
   <img src="img/lucas_banner.jpg" height='225'>
 
   <p>
@@ -45,6 +47,8 @@ LucasCosta_portfolio
     └── practice
 
 ```
+
+Each technology folder has some
 ---
 
 ### About Lucas
