@@ -2,7 +2,7 @@
   <img src="img/lucas_banner.jpg" height='225'>
 
   <p>
-    <a href="#monorepository"><strong>Monorepository</strong></a> ·
+    <a href="#monorepository-portfolio"><strong>Monorepository</strong></a> ·
     <a href="#about-lucas"><strong>About Lucas</strong></a> ·
     <a href="#contact-info"><strong>Contact Info</strong></a> ·
     <a href="#install"><strong>Install</strong></a> ·
@@ -13,7 +13,7 @@
 
 <hr>
 
-### Monorepository
+### Monorepository Portfolio
 
 Thanks for checking out my Github account! As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
 
@@ -47,7 +47,7 @@ LucasCosta_portfolio
 ```
 ---
 
-### About
+### About Lucas
 
 I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
 
@@ -66,7 +66,7 @@ Lastly, I am a very motivated individual who has held many leadership roles (suc
 
 ---
 
-### Contact
+### Contact Info
 
 Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
 
