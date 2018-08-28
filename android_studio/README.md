@@ -3,7 +3,7 @@
 <h1>Android Studio projects</h1>
 
 <!-- Technology welcome message -->
-This directory holds some projects and practice examples that I worked on through native Android Studio.
+This directory holds some projects and practice examples that I worked on with native Android Studio.
 
 I created some android phone applications that utilizes features such as radio buttons, images, and avatar emoticons.
 
@@ -14,13 +14,13 @@ I created some android phone applications that utilizes features such as radio b
 1- My Business Card App </a></h2>
 
 <!-- My Business Card app BIO -->
-Using Android Studio, I created a small 2 pages app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
+Using Android Studio, I created a small 2 page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
 
 ![First page](MyBusinessCard_app_project/img/my_app.png)
 ![Second page](MyBusinessCard_app_project/img/my_app2.png)
 
 <!-- Code explanation -->
-The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific thing that I'm trying to accomplish, like the setOnClickListener for my button. You can see some of the code here:
+The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific task that I'm trying to accomplish, for example, the setOnClickListener for my button. You can see some of the code here:
 
 <!-- Code snippet -->
 ```java
@@ -49,7 +49,7 @@ This was the first phone app that I made with Android Studio. I learned how to c
 ![Screenshot](Recipe_app_project/img/user2.png)
 
 <!-- Code explanation -->
-Similarly as to how I completed my Business Card App, for this Recipe app I extended AppCompatActivity which allowed me to bring in many native features of Android Studio. Making apps have never been so easy!
+Similar as to how I completed my Business Card App, I extended AppCompatActivity in this Recipe app which allowed me to bring in many native features of Android Studio. Making apps has never been so easy!
 
 ```java
 protected void onCreate(Bundle savedInstanceState) {

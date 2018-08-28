@@ -4,7 +4,7 @@
 This was the first phone app that I made with Android Studio. I learned how to create a basic user interface using pictures, buttons, and different font texts.
 
 <!-- Code explanation -->
-Similarly as to how I completed my Business Card App, for this Recipe app I extended AppCompatActivity which allowed me to bring in many native features of Android Studio. Making apps have never been so easy!
+Similar as to how I completed my Business Card App, I extended AppCompatActivity in this Recipe app which allowed me to bring in many native features of Android Studio. Making apps has never been so easy!
 
 ```java
 protected void onCreate(Bundle savedInstanceState) {
