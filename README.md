@@ -3,6 +3,15 @@
 </div>
 <hr>
 
+<p>
+    <a href="#Monorepository"><strong>Monorepository</strong></a> ·
+    <a href="#About Lucas"><strong>About Lucas</strong></a> ·
+    <a href="#Contact Info"><strong>Contact Info</strong></a> ·
+    <a href="#install"><strong>Install</strong></a> ·
+    <a href="#quick-guide"><strong>Quick Guide</strong></a> ·
+    <a href="#documentation"><strong>Documentation</strong></a>
+  </p>
+
 # Monorepository Portfolio
 
 Thanks for checking out my Github account! As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
@@ -16,22 +25,22 @@ That should make browsing through my project/directories fairly intuitive. Here'
 
 LucasCosta_portfolio
 ├── android_studio
-│   └── projectNth
+│   └── project#
 │   └── practice
 ├── c#
-│   └── projectNth
+│   └── project#
 │   └── practice
 ├── c++
-│   └── projectNth
+│   └── project#
 │   └── practice
 ├── java
-│   └── projectNth
+│   └── project#
 │   └── practice
 ├── python
-│   └── projectNth
+│   └── project#
 │   └── practice
 └── web_dev
-    └── projectNth
+    └── project#
     └── practice
 
 ```
@@ -53,3 +62,13 @@ As a Software engineer, I have used quite a lot of tools/technologies for an app
 I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
 
 Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
+
+# Contact Info
+
+Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
+
+<a href="mailto:lucas.gomes.costa@gmail.com"><img src="/img/gmail_favicon.png" height="30px" width="30px"></a> Email: lucas.gomes.costa@gmail.com
+
+<a href="https://www.linkedin.com/in/lucas-gomes-costa/"> <img src="/img/linkedin_favicon.png" height="30px" width="30px"></a> LinkedIn: <a href="https://www.linkedin.com/in/lucas-gomes-costa/">  https://www.linkedin.com/in/lucas-gomes-costa/ </a>
+
+<a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"></a> Wordpress: <a href="https://lgc13.wordpress.com/">  https://lgc13.wordpress.com/ </a>
