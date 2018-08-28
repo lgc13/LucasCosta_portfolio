@@ -196,6 +196,7 @@ else
 ```
 
 <!-- ......................E N D  O F  P R O J E C T........................ -->
+
 <!-- Project section -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/CustomerStore_project">3- Customer Store project</a></h2>
 

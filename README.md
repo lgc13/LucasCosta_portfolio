@@ -218,6 +218,133 @@ public List<Users> getUsers() {
 
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/Reimbursements_project">2- Reimbursement app project</a></h2>
+
+<!-- Project BIO -->
+This application is made to be used in a professional environment, where employees and managers can request reimbursements for job related expenses. Employees and managers can login, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as vieweing all employees, changing any employee's information, accepting or denying employee's reimbursement requests.
+
+This application displays some of my skills with:
+
+- Full MVC (Model-View-Controller)
+- User authentication (Employee vs Manager views)
+- Use of GET/POST Request methods
+- Oracle Database query
+- JSP/JSTL use for dynamic web pages
+
+<!-- Screenshots -->
+<img src="/java/Reimbursements_project/img/invalid_login.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/info_edit_employee.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/employee_create_manager.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/reimbursements_manager.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/reimbursements_request_employee.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/reimbursements_updated_manager.PNG" width= 60% length= 60%>
+<img src="/java/Reimbursements_project/img/reimbursements_viewUpdated_employee.PNG" width= 60% length= 60%>
+
+
+<!-- Code explanation -->
+This is a very straight forward application which needs some basic types of methods, such as one to create an employee, one to select the employee by username (can be used when logging in), selecting all employees from the database onto an Array List, and also a few others to edit the employee. By having an interface with these methods, it is very easy to keep track of how I can query through my Oracle database.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```java
+
+public interface UserDAO {
+
+	public void createEmployee(EmployeeObject employee);
+	public EmployeeObject selectEmployeeByUsername(String username);
+	public EmployeeObject selectEmployeeById(int id);
+	public ArrayList<EmployeeObject> selectEmployee();
+	public ArrayList<EmployeeObject> selectAllEmployees();
+	public EmployeeObject updateEmployee(EmployeeObject employee);
+	public void deleteEmployeeById(int id);
+
+}
+
+
+```
+
+<!-- Code explanation -->
+When a person is trying to login, I can use the input username to double check on my database along with its password. I can also do some simple server side validation where if the person object is blank to begin with, I can just deny them access. In addition, by getting the entire person's object, I'll have access to their "role", whether that's an "employee" or "manager", allowing me to create a different page view depending on that attribute.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+
+```java
+
+person = userDao.selectEmployeeByUsername(username);
+
+if (person!=null)
+{
+  if (username.equals(person.getUser_username()) && pass.equals(person.getUser_password()))
+  {
+    return person;
+  }
+  else {
+    System.out.println("Validate Login - Received null emp");
+    return null;
+  }
+}
+else
+{
+  return null;
+}
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/Corazon_project">3- Corazon Dancers project</a></h2>
+
+<!-- Project BIO -->
+This is a static web site that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This web site aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and information on how to join.
+
+This application displays some of my skills with:
+
+- Bootstrap features
+- JavaScript
+- Carousel Slideshow
+- CSS classes and IDs
+- HTML development
+
+<!-- Screenshots -->
+<img src="web_dev/Corazon_project/images/page1.png" width= 80% length= 80%>
+<img src="web_dev/Corazon_project/images/page2.png" width= 80% length= 80%>
+
+<!-- Code explanation -->
+Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```html
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/pic2.jpg" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Corazon Dancers</h1>
+          <p>Latin L.A. Salsa</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        </div>
+      </div>
+    </div>
+
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
 
 ---
 
