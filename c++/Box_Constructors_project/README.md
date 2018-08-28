@@ -1,7 +1,7 @@
 # Box_Constructors_project
 
 <!-- Project BIO -->
-This application creates a Box object, which has many methods in different classes that modify the attributes of this box. For example, I can grow, shrink, draw, getArea, and getPerimeter of this box. The classes with all methods and attributes are kept in a separate file with all the prototypes and the constructors.
+This application creates a Box object, which has many methods in different classes that modify the attributes of this box. For example, I can grow, shrink, draw, getArea, and getPerimeter of this box. The classes with all their methods and attributes are kept in a separate file with all the prototypes and the constructors.
 
 This application displays some of my skills with:
 

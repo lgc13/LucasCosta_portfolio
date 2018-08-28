@@ -3,7 +3,7 @@
 <h1>C++ projects</h1>
 
 <!-- Technology welcome message -->
-The majority of the projects and practice problems in this repo directory have great foundation concepts, that teach all the basic to intermediate skills that any programmer must have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
+The majority of the projects and practice problems in this repo directory have core foundation concepts, that include all the basic to intermediate skills that any programmer should have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
 
 C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms.
 
@@ -13,7 +13,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
-I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying to them the current status of the game. If any of them win at any time, the program will stop the game and let them know there's a winner!
+I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying the current status of the game to them. If at any point either player wins, the program will stop the game and let them know there's a winner!
 
 This application displays some of my skills with:
 
@@ -27,7 +27,7 @@ This application displays some of my skills with:
 <img src="TicTacToe_project/img/pic1.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
-I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using setw to adjust the width location of every input value, even if that were a blank character.
+I used a single function to create the playing board whenever it was necessary. By passing in an array with the current values of each index, I could print out a centered board with "walls" such as ---+---+--- and |. I iterated through the board length with a for loop, using 'setw' to adjust the width location of every input value, even if that were a blank character.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
@@ -68,7 +68,7 @@ void PrintBoard(char Board[9])
 2- Box Constructors App</a></h2>
 
 <!-- Project BIO -->
-This application creates a Box object, which has many methods in different classes that modify the attributes of this box. For example, I can grow, shrink, draw, getArea, and getPerimeter of this box. The classes with all methods and attributes are kept in a separate file with all the prototypes and the constructors.
+This application creates a Box object, which has many methods in different classes that modify the attributes of this box. For example, I can grow, shrink, draw, getArea, and getPerimeter of this box. The classes with all their methods and attributes are kept in a separate file with all the prototypes and the constructors.
 
 This application displays some of my skills with:
 
@@ -110,7 +110,7 @@ void Box::Summary()
 3- Multi Function Calculator App</a></h2>
 
 <!-- Project BIO -->
-For this console app, I created a small calculator which would take in a number from user input and perform a mathematical calculation to it depending on another choice given by the user. I also had to check the user input was not negative.
+For this console app, I created a small calculator which would take in a number from user input and perform a mathematical calculation to it depending on another choice given by the user. I also made sure that the user’s input was not negative.
 
 This application displays some of my skills with:
 
@@ -124,7 +124,7 @@ This application displays some of my skills with:
 <img src="MultiFunctionCalculator_project/img/calc_pic.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
-I used a switch statement to call the specific function needed to be performed on the value given by the user input. By creating a few different "case numbers", that makes this code very easy to read, and edit.
+I used a switch statement to call the specific function needed to be performed on the value given by the user input. By creating a few different ‘case numbers’, I was able to make this code very easy to read and edit.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
