@@ -16,6 +16,7 @@
 
 </div>
 
+{% include_relative /test.html %}
 
 <hr>
 
