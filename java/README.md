@@ -3,7 +3,7 @@
 <h1>Java projects</h1>
 
 <!-- Technology welcome message -->
-Java is one of the main technologies I have worked with. I was first introduced to it at Florida State University where I created some console applications. Through its use of object oriented programming, I have made some other applications that run on Apache Tomcat with JSP/JSTL pages running on servlets. I also use Spring MVC with Hibernate, tying that together to some other JavaScript libraries such as AngularJS in order to make single page applications.
+Java is one of the main technologies I have worked with. I was first introduced to it at Florida State University where I created some console applications. I have made some other applications by using object oriented programming that run on Apache Tomcat with JSP/JSTL pages running on servlets. I have also used Spring MVC with Hibernate to tie together some other JavaScript libraries such as AngularJS in order to make single page applications.
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
@@ -11,7 +11,7 @@ Java is one of the main technologies I have worked with. I was first introduced 
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/RevatureTown_project">1- Revature Town</a></h2>
 
 <!-- Project BIO -->
-Revature Town is an entertainment based 'Single Page Application' which allows many people to play together online, at the same time. This app is very similar to other well known games: Werewolf or Mafia. In our version of the game, Hackers have infiltrated Town Revature and they are trying to fire all employees! By talking to people through a live chat, voting on users to 'fire', and working together with other roles such as a Trainer or HR, players can enjoy a live game - up until they get fired!
+Revature Town is an entertainment based 'Single Page Application' which allows many people to play together online, at the same time. This app is very similar to other well known games: Werewolf or Mafia. In our version of the game, Hackers have infiltrated Town Revature and they are trying to fire all of the employees! By talking to people through a live chat, voting on users to 'fire', and working together with other roles such as a Trainer or HR, players can enjoy a live game - up until they get fired!
 
 This app was made in roughly 2 weeks, by me and two other team members: David Foens and Jonathan Joseph.
 
