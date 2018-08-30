@@ -1,11 +1,11 @@
 # Ring of Fire
 
 <!-- Project BIO -->
-This is a console game application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
+This is a console game application that can be played by a group of friends at a single computer. The purpose of this application is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type of action that must be taken. This is a drinking game, so expect to have fun :)
 
 This application displays some of my skills with:
 
-- Object Oriented Programming
+- Object-Oriented Programming
 - Importing modules
 - Use of Lists and Dictionaries
 - Method calls
@@ -15,7 +15,7 @@ This application displays some of my skills with:
 <img src="img/pic1.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-I use itertools in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and Clubs)
+I use 'itertools' in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and, Clubs)
 
 <!-- Code snippet -->
 You can see that in this code snippet:

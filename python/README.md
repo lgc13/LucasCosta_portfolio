@@ -3,7 +3,7 @@
 <h1>Python projects</h1>
 
 <!-- Technology welcome message -->
-Python is one of the main technologies that I use. One of my best friends, [Chris Portela](https://chrisportela.com/), introduced me to this easy syntax, object oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.
+Python is one of the main technologies that I use. One of my best friends, [Chris Portela](https://chrisportela.com/), introduced me to this easy syntax, object-oriented programming language during my studies at Florida State University. I really enjoy Python, given how easy, clean, and intuitive it is. I also prefer to use Python whenever I work on any of my personal projects.
 
 Currently, I am working on expanding my skills by creating a full stack application with Flask, and Django. I am also teaching Python at [LaunchCode](https://www.launchcode.org/), a non-profit organization that focuses on teaching programming skills to people who have never done it before.
 
@@ -13,13 +13,13 @@ Currently, I am working on expanding my skills by creating a full stack applicat
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/YahtzeeGame_project">1- Yahtzee Game</a></h2>
 
 <!-- Project BIO -->
-This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the amount of players, and allows each to input their own name. Afterwards, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
+This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the number of players and allows each to input their own name. Afterward, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
 
-This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other team mates, [Sasha Larson](https://github.com/sjlarson92) and [Devesh Waingakar](https://github.com/devesh15951).
+This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other teammates, [Sasha Larson](https://github.com/sjlarson92) and [Devesh Waingakar](https://github.com/devesh15951).
 
 This application displays some of my skills with:
 
-- Object Oriented Programming
+- Object-Oriented Programming
 - User input validation
 - Lists and Dictionaries
 - Using external modules
@@ -50,11 +50,11 @@ for i in names:
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/RingOfFire_project">2- Ring of Fire</a></h2>
 
 <!-- Project BIO -->
-This is a console game application that can be played by a group of friends at a single computer. The purpose of this application, is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type action that must be taken. This is a drinking game, so expect to have fun :)
+This is a console game application that can be played by a group of friends at a single computer. The purpose of this application is to allow people to play the 'Ring of Fire' game, without having to carry on a deck of cards, or remembering each specific rule. This game application does all the heavy lifting, telling each player what they should do next. Players take turns taking a virtual card, which is followed by some type of action that must be taken. This is a drinking game, so expect to have fun :)
 
 This application displays some of my skills with:
 
-- Object Oriented Programming
+- Object-Oriented Programming
 - Importing modules
 - Use of Lists and Dictionaries
 - Method calls
@@ -64,7 +64,7 @@ This application displays some of my skills with:
 <img src="RingOfFire_project/img/pic1.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-I use itertools in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and Clubs)
+I use 'itertools' in order to more easily distribute my deck of cards without having to repeat myself. This allows me to give each card number (Ace through King) 4 different suits (Diamond, Spades, Hearts and, Clubs)
 
 <!-- Code snippet -->
 You can see that in this code snippet:
@@ -80,7 +80,7 @@ self.deck = list(itertools.product(['Ace', '2', '3', '4', '5', '6', '7', '8', '9
 <!-- Practice section -->
 # Practice:
 
-Although these were my biggest projects with Python, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
+Although these were my biggest projects with Python, I have worked on a lot of other smaller projects, practice problems, and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/practice)
 

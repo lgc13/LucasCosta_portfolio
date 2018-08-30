@@ -1,13 +1,13 @@
 # Yahtzee Game project
 
 <!-- Project BIO -->
-This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the amount of players, and allows each to input their own name. Afterwards, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
+This is a console application that allows users to play Yahtzee, a fun game where they can roll dice and add up points. The game starts off asking for the number of players and allows each to input their own name. Afterward, each player can take turns rolling the dice up to 3 times, being able to edit them at any point. At the end of the turn, that player's points are added up to their total. The person with the highest points, wins!
 
-This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other team mates, Sasha Larson and Devesh.
+This project was done during a 2-day Hackathon at FSU, in collaboration with 2 other teammates, [Sasha Larson](https://github.com/sjlarson92) and [Devesh Waingakar](https://github.com/devesh15951).
 
 This application displays some of my skills with:
 
-- Object Oriented Programming
+- Object-Oriented Programming
 - User input validation
 - Lists and Dictionaries
 - Using external modules
