@@ -1,7 +1,7 @@
 # TicTacToe_project
 
 <!-- Project BIO -->
-I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying the current status of the game to them. If at any point either player wins, the program will stop the game and let them know there's a winner!
+I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board while displaying the current status of the game to them. If at any point either player wins, the program will stop the game and let them know there's a winner!
 
 This application displays some of my skills with:
 

@@ -5,7 +5,7 @@
 <!-- Technology welcome message -->
 The majority of the projects and practice problems in this repo directory have core foundation concepts, that include all the basic to intermediate skills that any programmer should have. For example: data types, creating and calling functions, mathematical equations, loops, classes, constructors, among others.
 
-C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems, and create algorithms.
+C++ was the first official programming language that I ever learned. I was taught it during my sophomore year at Florida State University. Aside from all programming basic skills, I also learned how to critically think in order to solve problems and create algorithms.
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
@@ -13,7 +13,7 @@ C++ was the first official programming language that I ever learned. I was taugh
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/TicTacToe_project">1- Tic Tac Toe Game App </a></h2>
 
 <!-- Project BIO -->
-I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board, while displaying the current status of the game to them. If at any point either player wins, the program will stop the game and let them know there's a winner!
+I created a Tic Tac Toe game which can be played on the console by 2 people. This console app allows the users to take turns while adding their 'X's and 'O's to the game board while displaying the current status of the game to them. If at any point either player wins, the program will stop the game and let them know there's a winner!
 
 This application displays some of my skills with:
 
@@ -72,7 +72,7 @@ This application creates a Box object, which has many methods in different class
 
 This application displays some of my skills with:
 
-- object oriented programming
+- object-oriented programming
 - use of constructors
 - method overloading
 - classes across different files
@@ -82,7 +82,7 @@ This application displays some of my skills with:
 <img src="Box_Constructors_project/img/box_example.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
-I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information of a given box, called Summary(). I instantiated the object from the main driver file.
+I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information for a given box, called Summary(). I instantiated the object from the main driver file.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
@@ -107,7 +107,7 @@ void Box::Summary()
 ```
 
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B/MultiFunctionCalculator_project">
-3- Multi Function Calculator App</a></h2>
+3- Multi-Function Calculator App</a></h2>
 
 <!-- Project BIO -->
 For this console app, I created a small calculator which would take in a number from user input and perform a mathematical calculation to it depending on another choice given by the user. I also made sure that the user’s input was not negative.

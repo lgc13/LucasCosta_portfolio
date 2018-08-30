@@ -5,7 +5,7 @@ This application creates a Box object, which has many methods in different class
 
 This application displays some of my skills with:
 
-- object oriented programming
+- object-oriented programming
 - use of constructors
 - method overloading
 - classes across different files
@@ -15,7 +15,7 @@ This application displays some of my skills with:
 <img src="img/box_example.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
-I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information of a given box, called Summary(). I instantiated the object from the main driver file.
+I kept the boxes attributes as private on a separate class. In addition, there was another class which held a basic method to print out the summary information for a given box, called Summary(). I instantiated the object from the main driver file.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
