@@ -3,7 +3,7 @@
 <h1>Java projects</h1>
 
 <!-- Technology welcome message -->
-Java is one of the main technologies I have worked with. I was first introduced to it at Florida State University where I created some console applications. I have made some other applications by using object oriented programming that run on Apache Tomcat with JSP/JSTL pages running on servlets. I have also used Spring MVC with Hibernate to tie together some other JavaScript libraries such as AngularJS in order to make single page applications.
+Java is one of the main technologies I have worked with. I was first introduced to it at Florida State University where I created some console applications. I have made some other applications by using object oriented-programming that run on Apache Tomcat with JSP/JSTL pages running on servlets. I have also used Spring MVC with Hibernate to tie together some other JavaScript libraries such as AngularJS in order to make single page applications.
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
