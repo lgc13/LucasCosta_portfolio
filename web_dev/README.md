@@ -26,7 +26,7 @@ This application displays some of my skills with:
 <img src="Corazon_project/images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing, is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slide show which displays any pictures and text that I input
+Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slideshow which displays any pictures and text that I input.
 
 <!-- Code snippet -->
 You can see that in this code snippet:
@@ -115,12 +115,12 @@ fields: {
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/RockinIt_project">3- Rockin' It project</a></h2>
 
 <!-- Project BIO -->
-This is a static web site which displays some information about Rock n' Roll! By opening this web site, a user can see information about Rock's history, some statistics of its genres, an imbedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS and Bootstrap.
+This is a static website which displays some information about Rock n' Roll! By opening this website, a user can see information about Rock's history, some statistics of its genres, an embedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS, and Bootstrap.
 
 This application displays some of my skills with:
 
 - Bootstrap
-- Imbedding videos onto HTML
+- Embedding videos onto HTML
 - Div classes and Grid system
 - Basic JavaScript concepts
 - HTML and CSS
@@ -130,7 +130,7 @@ This application displays some of my skills with:
 <img src="RockinIt_project/images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
-For this web site, I use a simple nav bar id from Bootstrap. This makes it very easy to have a well aligned, colorful, and adjustable nav bar. I also use href links for each nav bar list option, so that when clicked, the page will scroll down to find that specific area.
+For this website, I use a simple nav bar id from Bootstrap. This makes it very easy to have a well-aligned, colorful, and adjustable nav bar. I also use href links for each navbar list option, so that when clicked, the page will scroll down to find that specific area.
 
 
 <!-- Code snippet -->
