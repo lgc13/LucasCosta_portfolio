@@ -5,13 +5,13 @@
 <!-- Technology welcome message -->
 I learned the main Web Development concepts during high school and college, where I created some simple static web pages with HTML, CSS, Bootstrap, and JavaScript. Soon after that, I picked up skills to create dynamic web pages which utilized PHP or JSP files, running through HTTP servers such as Apache and Tomcat. I made some dynamic projects which display my use of these skills along with Databases such as MySQL and Oracle.
 
-<h6>Click the title links if you want tog see more details about a particular project.</h6>
+<h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/Corazon_project">1- Corazon Dancers project</a></h2>
 
 <!-- Project BIO -->
-This is a static web site that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This web site aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and information on how to join.
+This is a static website that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This website aims to show information about the group, such as their purpose, history, and contact information. Someone going on this website should also be able to see pictures, upcoming events, and information on how to join.
 
 This application displays some of my skills with:
 

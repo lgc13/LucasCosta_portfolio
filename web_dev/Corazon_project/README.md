@@ -1,7 +1,7 @@
 # Corazon project
 
 <!-- Project BIO -->
-This is a static web site that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This web site aims to show information about the group, such as their purpose, history, and contact information. Someone going on this web site should also be able to see pictures, upcoming events, and information on how to join.
+This is a static website that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This website aims to show information about the group, such as their purpose, history, and contact information. Someone going on this website should also be able to see pictures, upcoming events, and information on how to join.
 
 This application displays some of my skills with:
 
