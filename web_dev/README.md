@@ -156,7 +156,7 @@ For this website, I use a simple nav bar id from Bootstrap. This makes it very e
 <!-- Practice section -->
 # Practice:
 
-Although these were my biggest projects with Web Dev, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
+Although these were my biggest projects with Web Dev, I have worked on a lot of other smaller projects, practice problems, and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/practice)
 
