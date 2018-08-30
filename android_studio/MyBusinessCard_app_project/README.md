@@ -1,7 +1,7 @@
 # My Business Card App
 
 <!-- My Business Card app BIO -->
-Using Android Studio, I created a small 2 page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
+Using Android Studio, I created a small 2-page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports, and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
 
 <!-- Code explanation -->
 The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific task that I'm trying to accomplish, for example, the setOnClickListener for my button. You can see some of the code here:

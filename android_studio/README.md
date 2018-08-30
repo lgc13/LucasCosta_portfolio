@@ -5,7 +5,7 @@
 <!-- Technology welcome message -->
 This directory holds some projects and practice examples that I worked on with native Android Studio.
 
-I created some android phone applications that utilizes features such as radio buttons, images, and avatar emoticons.
+I created some android phone applications that utilize features such as radio buttons, images, and avatar emoticons.
 
 
 <h6>Click the title links if you want to see more details about a particular project.</h6>
@@ -14,7 +14,7 @@ I created some android phone applications that utilizes features such as radio b
 1- My Business Card App </a></h2>
 
 <!-- My Business Card app BIO -->
-Using Android Studio, I created a small 2 page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
+Using Android Studio, I created a small 2-page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports, and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
 
 ![First page](MyBusinessCard_app_project/img/my_app.png)
 ![Second page](MyBusinessCard_app_project/img/my_app2.png)
@@ -67,7 +67,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 # Practice:
 
-Although these were my biggest projects with Android Studio, I have worked on a lot of other smaller projects, practice problems and trivia questions. You can see these by clicking this link:
+Although these were my biggest projects with Android Studio, I have worked on a lot of other smaller projects, practice problems, and trivia questions. You can see these by clicking this link:
 
 [Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/practice)
 
