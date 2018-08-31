@@ -1,4 +1,4 @@
-# Expense Reimbursement System project
+# Expense Reimbursements System project
 
 <!-- Project BIO -->
 This application is made to be used in a professional environment, where employees and managers can request reimbursements for job-related expenses. Employees and managers can log in, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as viewing all employees, changing any employee's information, accepting or denying employee's reimbursement requests.
