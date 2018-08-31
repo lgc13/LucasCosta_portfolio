@@ -18,9 +18,11 @@
 
 <hr>
 
+Thanks for checking out my GitHub monorepository! This is part of my online portfolio. Here you will find information about me, my skills, and projects that I’ve worked on.
+
 ### Monorepository Portfolio
 
-Thanks for checking out my Github account! As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
+As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
 
 1. Easily showcase (and remove from showcase) any of my projects, including their summaries, concepts, code snippets, code explanation, and screenshots.
 2. Organize projects by subdividing their directories by the main technology/language used so that I can easily find it at a later time.
