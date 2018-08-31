@@ -14,11 +14,12 @@
     <a href="https://lgc13.wordpress.com/"><img src="/img/wordpress_favicon.png" height="30px" width="30px"><strong>WordPress </strong></a>
   </p>
 
+  <p> Thanks for checking out my GitHub monorepository! This is part of my online portfolio. Here you will find information about me, my skills, and projects that I’ve worked on. </p>
 </div>
 
 <hr>
 
-Thanks for checking out my GitHub monorepository! This is part of my online portfolio. Here you will find information about me, my skills, and projects that I’ve worked on.
+
 
 ### Monorepository Portfolio
 
