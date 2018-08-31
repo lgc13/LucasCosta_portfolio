@@ -120,7 +120,7 @@ public List<Users> getUsers() {
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/ExpenseReimbursementsSystem">2- Expense Reimbursements System project</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/ExpenseReimbursementsSystem_project">2- Expense Reimbursements System project</a></h2>
 
 <!-- Project BIO -->
 This application is made to be used in a professional environment, where employees and managers can request reimbursements for job-related expenses. Employees and managers can log in, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as viewing all employees, changing any employee's information, accepting or denying employee's reimbursement requests.
@@ -134,13 +134,13 @@ This application displays some of my skills with:
 - JSP/JSTL use for dynamic web pages
 
 <!-- Screenshots -->
-<img src="ExpenseReimbursementsSystem/img/invalid_login.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/info_edit_employee.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/employee_create_manager.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/reimbursements_manager.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/reimbursements_request_employee.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/reimbursements_updated_manager.PNG" width= 60% length= 60%>
-<img src="ExpenseReimbursementsSystem/img/reimbursements_viewUpdated_employee.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/invalid_login.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/info_edit_employee.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/employee_create_manager.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/reimbursements_manager.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/reimbursements_request_employee.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/reimbursements_updated_manager.PNG" width= 60% length= 60%>
+<img src="ExpenseReimbursementsSystem_project/img/reimbursements_viewUpdated_employee.PNG" width= 60% length= 60%>
 
 
 <!-- Code explanation -->
