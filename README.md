@@ -228,6 +228,19 @@ public List<Users> getUsers() {
 <!-- Project BIO -->
 This application is made to be used in a professional environment, where employees and managers can request reimbursements for job-related expenses. Employees and managers can log in, see and change their personal info(such as name, username, and password), and also submit reimbursement requests. Managers have additional features that are only available for them, such as viewing all employees, changing any employee's information, accepting or denying employee's reimbursement requests.
 
+Some of my responsibilities on this app:
+
+- Created tables using Oracle database
+- Implemented Servlets to perform all user stories with Java
+- Utilized regular expression (regex) in order to manipulate Servlet actions depending on given URL
+- Wrote pages using JSP and JSTL to create dynamic web pages
+- Created validation for pages using JSTL so that users would only access pages depending on their credentials
+- Used Bootstrap to create modern buttons and containers for the entirety of the project
+- Created POST requests which used JDBC to create, edit, and delete users from within the database
+- Displayed a (success/error) feedback page to a user for any requests made using GET requests and input validation
+- Created GET requests which displayed updated tables, results, and user information from database
+- Implemented a login/logout system
+
 This application displays some of my skills with:
 
 - Full MVC (Model-View-Controller)
