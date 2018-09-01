@@ -13,7 +13,7 @@ Some of my responsibilities on this app:
 - Used Bootstrap to create modern buttons and containers for the entirety of the project
 - Created POST requests which used JDBC to create, edit, and delete users from within the database
 - Displayed a (success/error) feedback page to a user for any requests made using GET requests and input validation
-- Created GET requests which displayed updated tables, results, and user information from database
+- Created GET requests which displayed updated tables, results, and user information from the database
 - Implemented a login/logout system
 
 This application displays some of my skills with:
