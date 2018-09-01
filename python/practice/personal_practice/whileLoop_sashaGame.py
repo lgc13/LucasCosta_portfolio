@@ -1,4 +1,4 @@
-ll = ['lucas', 'sasha', 'chris', 'lucas']
+ll = ['lucas', 'sasha', 'chris', 'lucas', 'lucas']
 count = 0
 
 def checkAlivePlayers():
@@ -6,7 +6,10 @@ def checkAlivePlayers():
     for player in ll:
         if player == 'lucas':
              new_list.append(player)
-    print('new_list is: %s' % new_list)
+    print('new_list (before) is: %s' % new_list)
+
+    new_list.pop(-1)
+    print('new_list (after) is: %s' % new_list)
 
     return new_list
 
@@ -16,6 +19,6 @@ while(ll):
 
     ll = checkAlivePlayers()
     count = count + 1
-    print count
+    print 'counter:', count
 
 print 'dead'
