@@ -1,6 +1,5 @@
 # Lucas Costa's Ring of Fire game third edition, created Sep 01, 2018
 import itertools, random
-from random import shuffle
 
 def main():
     all_players_list = getPlayers()
@@ -11,8 +10,17 @@ def main():
     print('Game Over')
 
 def getPlayers(): # ask how many players there are, and get all their names
-    num_players = input("How many players are playing today? ")
-    print("Cool! Let's get everyone's name!")
+
+    while(True):
+        try:
+            num_players = int(raw_input("How many players are playing today? "))
+        except ValueError:
+            print("\nYou gotta give me numbers! Try again")
+            continue
+        else:
+            break
+
+    print("Cool! Let's get everyone's name!\n")
     players_list = []
 
     for player_num in range(num_players):
