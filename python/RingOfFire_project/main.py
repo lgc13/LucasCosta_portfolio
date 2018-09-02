@@ -11,12 +11,12 @@ def main():
 
 def getPlayers(): # ask how many players there are, and get all their names
 
-    while(True):
-        try:
+    while(True):  # while this is True,
+        try:    # ask for user input, and try converting it to an int
             num_players = int(raw_input("How many players are playing today? "))
-        except ValueError:
+        except ValueError:  # if it can't convert, print this then ask for it again
             print("\nYou gotta give me numbers! Try again")
-            continue
+            # continue  
         else:
             break
 
