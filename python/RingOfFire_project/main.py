@@ -38,14 +38,14 @@ def getPlayers(): # ask how many players there are, and get all their names
         except ValueError:  # if it can't convert, print this then ask for it again
             print("\nYou gotta give me numbers! Try again")
             # continue
-        
+
     print("Cool! Let's get everyone's name!\n")
     players_list = []
 
     for player_num in range(num_players):
         playerName = raw_input("What's player %d's name? " % (player_num + 1))
         players_list.append(playerName)
-    # print players_list
+    
     print("\nAlright, now that we're all acquainted, we can start!")
     print("_________________________________________________________________")
 
@@ -70,8 +70,7 @@ def gameEngine(p_list, cardDeck):
 
             # cardDeck = removeCard(cardDeck, random_num) # remove this card from deck
             if cardDeck == []:
-                break
-
+                break # break while loop when cardDeck is empty
 
 # def pickACard(deck, some_number):
 #     # print("random_num is %d" % random_num)
@@ -87,12 +86,10 @@ def gameEngine(p_list, cardDeck):
 # def printDirections(card):
 #     print CARD_ACTIONS[card]
 
-
 # def removeCard(deck, rand_num): # remove card from deck
 #     deck.pop(rand_num)
 #     print("-------------------")
 #     return deck
-
 
 if __name__ == '__main__':
     main()
