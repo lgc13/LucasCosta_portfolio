@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+  <title> Shopping List </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <!-- To link a CSS file DYNAMICALLY, you need to call a python functin url_for() as seen above -->
+
+<ul>
+  {% for item in s_list: %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
