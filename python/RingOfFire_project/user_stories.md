@@ -20,8 +20,12 @@ This repeats until all cards have been drawn.
 - main engine
   - play
 
-Player draws a card
-We check what is the card type
-We complete that card type action
-Send card to dead-pile
-Move to next player
+1. Ask how many players there are
+2. Ask for each player's name
+3. Create a CardDeck
+ - while there are still cards in the CardDeck
+
+3. Iterate through players list
+4. Ask player to draw a card
+5. Print card instructions
+6. Remove card from CardDeck list
