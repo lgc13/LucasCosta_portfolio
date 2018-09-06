@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h2> This is the how to play page</h2>
+
+  <table class="table">
+    {% for card in card_actions_list: %}
+      <tr>
+        <td><a href="how_to_play/card_info/{{ card_actions_list.index(card) }}">{{ card.rank }}</a></td>
+        <td>{{ card.rule }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+
+{% endblock %}

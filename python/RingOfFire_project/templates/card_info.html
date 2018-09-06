@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h2> This is the card_info page </h2>
+  <br>
+
+  <h3> Card Rank: {% print card_list[card_index].rank %} </h3>
+  <h3> Card Rule: {% print card_list[card_index].rule %} </ h3>
+
+  <hr>
+  <p> Done </p>
+
+{% endblock %}
