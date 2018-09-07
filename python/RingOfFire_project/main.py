@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from data import Rules
 
 app = Flask(__name__)
@@ -21,6 +21,23 @@ def card_info(c_index):
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/start', methods=['GET', 'POST'])
+def start():
+    if request.method == 'GET':
+        return render_template('start.html')
+    elif request.method == 'POST':
+        f_name = request.form.get('firstname')
+        l_name = request.form.get('lastname')
+        return render_template('play.html', fname = f_name, lname = l_name)
+
+
+
+# @app.route('/play', methods=['GET', 'POST'])
+# def play():
+#     f_name = request.form.get('firstname')
+#     l_name = request.form.get('lastname')
+#     return render_template('play.html', fname = f_name, lname = l_name)
 
 if __name__ == "__main__":
     app.run(debug = True)
