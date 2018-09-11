@@ -3,8 +3,9 @@ def fib(n):
         return n
     return fib(n - 1) + fib(n - 2)
 
-print("starting fibonacci")
-print(fib(3))
+print("starting fibonacci v3")
+n = input('What fibonacci number do you wanna find? ')
+print(n)
 
 # fib(2 - 1 = 1) + fib(2 - 2 = 0)
 # fib(1) = 1 + fib(0) = 0, fib(2) = 1
