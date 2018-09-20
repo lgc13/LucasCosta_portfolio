@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <h2> This is the create_players page </h2>
+  <p> Number of players to be created: {{ num_players }} </p>
+
+  <form method="post" action="/play">
+    {% for player_index in range(num_players): %}
+      <p> What's player {{ player_index + 1 }}'s name?
+        <input type="text" name="player_name">
+      </p>
+    {% endfor %}
+    <input type="submit" value="Let's Start!">
+  </form>
+
+{% endblock %}

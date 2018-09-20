@@ -4,7 +4,18 @@
 
   <h2> This is the Start page </h2>
 
-  <form method="post">
+  <form method="post" action="/start/create-players">
+    <label>How many players are there?</label>
+    <select name="players_amount">
+      <option disabled selected value> -- Choose from dropdown -- </option>
+      {% for number in range(5): %}
+        <option value="{{ number + 1}}">{{ number + 1}} </option>
+      {% endfor %}
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- <form method="post">
     <p>First name:
     <input type="text" name="firstname" placeholder="first name">
     <br>
@@ -12,7 +23,7 @@
     <input type="text" name="lastname" placeholder="last name">
     <br><br>
     <input type="submit" value="Submit">
-  </form>
+  </form> -->
 
 
 {% endblock %}
