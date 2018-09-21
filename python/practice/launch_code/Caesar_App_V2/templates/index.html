@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+  <p> This is my index.html fie (V1) </p>
+  <form action="/" method='POST'>
+    <div>
+      <label>Rotate by:</label>
+      <input type="text" value="0" name="rotation-amount"></input>
+    </div>
+    <br>
+
+    <div>
+      <textarea name="block-text"></textarea>
+    </div>
+    <input type="submit" value="ROTATE ME NOW!"/>
+  </form>
+
+{% endblock %}
