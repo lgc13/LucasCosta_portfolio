@@ -3,8 +3,19 @@
 {% block body %}
   <h2> This is the Play page</h2>
   <h3> Here's the info you provided:</h3>
-  <p> Amount of players: </p>
+  <p> Amount of players: {{ names_list|length }}</p>
+  <p> Players in the list:
+    {% for name in names_list: %}
+      {{ name }}
+    {% endfor %}
+  </p>
 
+  <br>
+
+  <h3> First player: {{ names_list[0] }} </h3>
+  <a href="/play/card_drawn">
+    <input type="submit" value="Draw a card"/>
+  </a>
 
 
 {% endblock %}

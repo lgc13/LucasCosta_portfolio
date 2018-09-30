@@ -7,6 +7,7 @@
   <table class="table">
     {% for card in card_actions_list: %}
       <tr>
+        <!-- Here I create a link to each specific card action -->
         <td><a href="how_to_play/card_info/{{ card_actions_list.index(card) }}">{{ card.rank }}</a></td>
         <td>{{ card.rule }}</td>
       </tr>

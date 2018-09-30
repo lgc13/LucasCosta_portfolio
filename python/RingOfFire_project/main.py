@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request
 from data import Rules
+import random
 
 app = Flask(__name__)
-c_actions = Rules()
+cards_actions_list, deck_of_cards = Rules() # returning CARD_ACTIONS, a list from Rules()
 
 @app.route('/')
 @app.route('/index')
@@ -12,11 +13,12 @@ def index():
 
 @app.route('/how_to_play')
 def how_to_play():
-    return render_template('how_to_play.html', card_actions_list = c_actions)
+    return render_template('how_to_play.html', card_actions_list = cards_actions_list)
 
+# I'm dynamically creating pages for each card here depending on which was clicked 'c_index'
 @app.route('/how_to_play/card_info/<int:c_index>/')
 def card_info(c_index):
-    return render_template('card_info.html', card_index = c_index, card_list = c_actions)
+    return render_template('card_info.html', card_index = c_index, card_list = cards_actions_list)
 
 @app.route('/about')
 def about():
@@ -33,7 +35,15 @@ def create_players():
 
 @app.route('/play', methods=['POST'])
 def play():
-    return render_template('play.html')
+    # I can use the .getlist() to make this a list:
+    names_list = request.form.getlist('players_names_list')
+    # for name in names_list:
+    #     print(name)
+    return render_template('play.html', names_list = names_list)
+
+@app.route('/play/card_drawn')
+def card_drawn():
+    return render_template('card_drawn.html', deck = deck_of_cards)
 
 
 

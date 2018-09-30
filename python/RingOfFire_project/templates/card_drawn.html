@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h4> Full deck: </h4>
+  {% for card in deck: %}
+    {{ card }}
+  {% endfor %}
+
+  <p> Card drawn: </p>
+  <p> Card action: </p>
+
+
+{% endblock %}

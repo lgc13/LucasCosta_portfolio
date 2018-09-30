@@ -1,3 +1,5 @@
+import itertools
+
 def Rules():
     CARD_ACTIONS = [
         {
@@ -54,4 +56,6 @@ def Rules():
         }
     ]
 
-    return CARD_ACTIONS
+    deck = list(itertools.product(['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'],['Diamonds','Spades','Hearts','Clubs']))
+
+    return CARD_ACTIONS, deck
