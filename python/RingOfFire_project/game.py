@@ -45,7 +45,7 @@ def getPlayers(): # ask how many players there are, and get all their names
     for player_num in range(num_players):
         playerName = raw_input("What's player %d's name? " % (player_num + 1))
         players_list.append(playerName)
-    
+
     print("\nAlright, now that we're all acquainted, we can start!")
     print("_________________________________________________________________")
 
@@ -59,13 +59,14 @@ def getDeckOfCards(): # initialize a deck of cards
 def gameEngine(p_list, cardDeck):
     while cardDeck: # while there are still cards in the deck, play game
         for player in p_list:
-            random_num = random.randint(0, len(cardDeck) - 1) # randomly getting a number between 0 and the length of the deck list
             raw_input("%s, press ENTER to randomly draw a card!" % player)
-            card_number, card_suit = cardDeck.pop(random_num) # get a random card tuple from cardDeck remove it and assign the number and suit to local variables
+            random_card = random.choice(cardDeck) # randomly getting a card from the cardDeck
+            card_number, card_suit = cardDeck.pop(cardDeck.index(random_card)) # removes random_card by its index from tuple, and assigns values to card_number and card_suit
+
             print("Your card is: %s of %s\n" % (card_number, card_suit))
             # random_card = pickACard(cardDeck, random_num) # picks a random_card
             # print 'random_card is: %s' % (random_card,)
-            print CARD_ACTIONS[card_number]
+            print(CARD_ACTIONS[card_number])
             print("---------------------------------")
 
             # cardDeck = removeCard(cardDeck, random_num) # remove this card from deck

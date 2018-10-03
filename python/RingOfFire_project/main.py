@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 from data import Rules
+from game import gameEngine
 import random
 
 app = Flask(__name__)
@@ -37,16 +38,18 @@ def create_players():
 def play():
     # I can use the .getlist() to make this a list:
     names_list = request.form.getlist('players_names_list')
-    # for name in names_list:
-    #     print(name)
-    return render_template('play.html', names_list = names_list)
+    session['username_list'] = request.form.getlist('players_names_list')
+
+    return render_template('play.html', names_list = names_list, username_list = session.get('username_list'))
 
 @app.route('/play/card_drawn')
 def card_drawn():
-    return render_template('card_drawn.html', deck = deck_of_cards)
+    # gameEngine(players_list, deck_of_cards)
+    return render_template('card_drawn.html', deck = deck_of_cards, username_list = session.get('username_list'))
 
 
 
 
 if __name__ == "__main__":
+    app.secret_key = "super secret key"
     app.run(debug = True)

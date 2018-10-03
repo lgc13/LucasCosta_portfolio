@@ -6,13 +6,19 @@
   <p> Amount of players: {{ names_list|length }}</p>
   <p> Players in the list:
     {% for name in names_list: %}
-      {{ name }}
+      {{ name }},
     {% endfor %}
   </p>
 
   <br>
+  <h3> Using session attribute </h3>
+  <p> Amount of players: {{ username_list|length }} </p>
+  <p> Players in list:
+    {% for player in username_list: %}
+      {{ player }},
+    {% endfor %}
+  </p>
 
-  <h3> First player: {{ names_list[0] }} </h3>
   <a href="/play/card_drawn">
     <input type="submit" value="Draw a card"/>
   </a>
