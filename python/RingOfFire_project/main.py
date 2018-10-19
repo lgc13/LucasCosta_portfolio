@@ -39,11 +39,26 @@ def play():
     # I can use the .getlist() to make this a list:
     names_list = request.form.getlist('players_names_list')
     session['username_list'] = request.form.getlist('players_names_list')
+    set_user(session['username_list'])
 
     return render_template('play.html', names_list = names_list, username_list = session.get('username_list'))
 
+def set_user(users_list):
+    session['username_list'] = users_list
+    return session['username_list']
+
+def get_user(func):
+    def inner():
+        print(">>>>>>>>>>>>I'm in get_user()")
+        return func()
+    return inner
+
+
+
 @app.route('/play/card_drawn')
+@get_user
 def card_drawn():
+
     # gameEngine(players_list, deck_of_cards)
     return render_template('card_drawn.html', deck = deck_of_cards, username_list = session.get('username_list'))
 
