@@ -78,7 +78,7 @@ As a Software engineer, I have used quite a lot of tools/technologies for an app
 - Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), WebLogic, WebSphere, JBoss, Apache Tomcat
 - Web Frameworks: Spring MVC, Hibernate, Django, Flask
 - Development: Python, Java, C#, C++, JSP, JSTL, PHP, Android Studio
-- Database: MySQL, Oracle
+- Database: MySQL, PostgreSQL, Oracle
 - Front end: AngularJS, jQuery, JavaScript, HTML, Bootstrap, CSS
 - Console/IDE: Git, Bash, Unix, Putty, PyCharm, Eclipse, Maven
 - Others: Agile, Jira, Pivotal Tracker, SVN
