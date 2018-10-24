@@ -1,1 +1,1 @@
-testing
+Blogz app
