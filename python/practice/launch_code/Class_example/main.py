@@ -1,13 +1,10 @@
-from MyClass import User
-imort dbstuff
+import MyClass
+# from MyClass import User # I could have done this, so I don't have to type 'MyClass.User() everytime'
 
-# create user
+# if I had instanciated MyClass, I could do user1 = User('Lucas', 'Costa')
+user1 = MyClass.User('Lucas', 'Costa')
+user2 = MyClass.User('Jeff', 'Lname')
 
-def createUser(some_user):
-    some_user.setName('Lucas')
-
-
-b = User('Jeff', 'Lname')
-print b.getName()
-createUser(b)
-# b.test()
+print user1.getName()
+user1.test()
+# createUser(b)

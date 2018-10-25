@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <p> Blogz app </p>
+
+  <h2> Current users: </h2>
+  {% for user in users %}
+    {{ user.name }}
+  {% endfor %}
+
+  <hr>
+
+  <p> Create a new user </p>
+  <form action="create" method="post">
+    <label>ID</label>
+    <input type="text" name="id"/>
+    <label>Name</label>
+    <input type="text" name="name"/>
+    <input type="submit" value="Create!">
+
+  </form>
+
+
+{% endblock %}

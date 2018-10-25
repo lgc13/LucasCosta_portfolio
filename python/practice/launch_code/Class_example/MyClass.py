@@ -1,4 +1,4 @@
-class User:
+class User():
     print('Im in class')
 
     def __init__(self, username, password):
