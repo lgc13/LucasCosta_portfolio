@@ -19,10 +19,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
 
-
-
-@app.route('/', methods=['POST', 'GET'])
-def main():
+def getUsers():
     sql = text('SELECT * FROM ltable')
     result = db.engine.execute(sql)
 
@@ -34,20 +31,36 @@ def main():
         user = User(id, name)
         users.append(user)
         print('>>> Selected user:', user.getName())
+    return users
+
+
+@app.route('/', methods=['POST', 'GET'])
+def main():
+    if request.method == 'GET':
+        users = getUsers()
+
+    elif request.method == 'POST':
+        id = request.form.get('id')
+        name = request.form.get('name')
+
+        sql = text("INSERT INTO ltable VALUES (%s, '%s')" % (id, name))
+        result = db.engine.execute(sql)
+
+        users = getUsers()
 
     return render_template('index.html', users= users)
 
-@app.route('/create', methods=['POST'])
-def create():
-
-    id = request.form.get('id')
-    name = request.form.get('name')
-    users = [User(id, name)]
-
-    sql = text("INSERT INTO ltable VALUES (%s, '%s')" % (id, name))
-    result = db.engine.execute(sql)
-
-    return render_template('create.html', users= users)
+# @app.route('/create', methods=['POST'])
+# def create():
+#
+#     id = request.form.get('id')
+#     name = request.form.get('name')
+#     users = [User(id, name)]
+#
+#     sql = text("INSERT INTO ltable VALUES (%s, '%s')" % (id, name))
+#     result = db.engine.execute(sql)
+#
+#     return render_template('create.html', users= users)
 
 
 if __name__ == "__main__":
