@@ -1,0 +1,9 @@
+# This is Lucas's bash_profile stuff
+
+# Aliases:
+alias ls='exa --long --header --git -TL 1'
+alias c='cd ~/Desktop/LucasCosta_portfolio'
+
+# Exports:
+export PATH=$PATH:/Users/tlgc1/Library/Python/2.7/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/11/bin/

@@ -1,0 +1,10 @@
+"Lucas personal changes to vim"
+
+"Turn on syntax highlighting"
+syntax on
+
+"Show line numbers"
+set number
+
+"Highlight search"
+set hlsearch
