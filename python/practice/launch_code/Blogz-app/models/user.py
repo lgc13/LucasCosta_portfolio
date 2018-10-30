@@ -5,9 +5,16 @@ class User():
 
     def __init__(self, name):
         print('>>> Instantiating object with name: %s' % (name))
-        self.id = 0
+        self.id = None
         self.name = name
 
+    def insertUser(self, db):
+        if self.id == None:
+            print('>>> Inserting user into db')
+            sql = text("INSERT INTO ltable (name) VALUES ('%s')" % self.name)
+            result = db.engine.execute(sql)
+
+            print('Result: %s' % result)
 
 class UserActions():
 
@@ -29,11 +36,3 @@ class UserActions():
             users.append(user)
 
         return users
-
-    @staticmethod
-    def insertUser(db, user):
-        print('>>> Inserting user into db')
-        sql = text("INSERT INTO ltable (name) VALUES ('%s')" % user.name)
-        result = db.engine.execute(sql)
-
-        print('Result: %s' % result)

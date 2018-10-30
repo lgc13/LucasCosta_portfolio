@@ -9,8 +9,8 @@ app.secret_key = 'super secret key'
 app.config['SQLALCHEMY_DATABASE_URI'] = config.CREDENTIALS
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
-db = SQLAlchemy(app)
-userActions = UserActions()
+db = SQLAlchemy(app) # db connection
+userActions = UserActions() # this class uses @staticmethod
 
 @app.route('/', methods=['POST', 'GET'])
 def main():
@@ -26,10 +26,12 @@ def success():
 
         new_user = User(name) # create a user object
         try:
-            userActions.insertUser(db, new_user) # insert user into DB
+            new_user.insertUser(db) # insert user into DB
+            print('--- Successfully insert user onto db: %s' % new_user.name)
         except:
+            print('--- Was not successful inserting user to DB')
             flash('Could not insert user into DB')
-            return redirect(url_for('main'))
+            return redirect(url_for('main')) # take them back to main()
 
         users_list = userActions.getUsers(db) # get updated list of users
 
