@@ -1,67 +1,39 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash, redirect, url_for
+from models.user import User, UserActions
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import text
-from models.user import User
+import config
 
 app = Flask(__name__)
 
-POSTGRES = {
-    'user': 'tlgc1',
-    'pw': 'password',
-    'db': 'tlgc1',
-    'host': 'localhost',
-    'port': '5432',
-}
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
-%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tlgc1:password@localhost/tlgc1'
+app.secret_key = 'super secret key'
+app.config['SQLALCHEMY_DATABASE_URI'] = config.CREDENTIALS
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
-
-def getUsers():
-    sql = text('SELECT * FROM ltable')
-    result = db.engine.execute(sql)
-
-    users = []
-
-    for row in result:
-        id = row[0]
-        name = row[1]
-        user = User(id, name)
-        users.append(user)
-        print('>>> Selected user:', user.getName())
-    return users
-
+userActions = UserActions()
 
 @app.route('/', methods=['POST', 'GET'])
 def main():
     if request.method == 'GET':
-        users = getUsers()
+        users_list = userActions.getUsers(db)
 
-    elif request.method == 'POST':
-        id = request.form.get('id')
+    return render_template('index.html', users= users_list)
+
+@app.route('/success', methods=['POST'])
+def success():
+    if request.method == 'POST':
         name = request.form.get('name')
 
-        sql = text("INSERT INTO ltable VALUES (%s, '%s')" % (id, name))
-        result = db.engine.execute(sql)
+        new_user = User(name) # create a user object
+        try:
+            userActions.insertUser(db, new_user) # insert user into DB
+        except:
+            flash('Could not insert user into DB')
+            return redirect(url_for('main'))
 
-        users = getUsers()
+        users_list = userActions.getUsers(db) # get updated list of users
 
-    return render_template('index.html', users= users)
-
-# @app.route('/create', methods=['POST'])
-# def create():
-#
-#     id = request.form.get('id')
-#     name = request.form.get('name')
-#     users = [User(id, name)]
-#
-#     sql = text("INSERT INTO ltable VALUES (%s, '%s')" % (id, name))
-#     result = db.engine.execute(sql)
-#
-#     return render_template('create.html', users= users)
-
+    return render_template('index.html', users= users_list)
 
 if __name__ == "__main__":
     app.run(debug = True )
