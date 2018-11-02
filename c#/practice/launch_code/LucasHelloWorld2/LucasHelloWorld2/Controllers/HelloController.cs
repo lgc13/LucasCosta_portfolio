@@ -13,7 +13,11 @@ namespace LucasHelloWorld2.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View();
+            return Content("Hello Lucas! Have a good day - From Lucas");
+        }
+        public IActionResult Goodbye()
+        {
+            return Content("Now we say goodbye");
         }
     }
 }
