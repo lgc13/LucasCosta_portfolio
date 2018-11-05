@@ -1,5 +1,5 @@
 <!-- Technology logo picture and title -->
-<img src="img/web_dev_logo.jpg" width="400" height="300" align="right">
+<img src="img/php_logo.jpg" width="400" height="300" align="right">
 <h1>PHP projects</h1>
 
 <!-- Technology welcome message -->
@@ -8,7 +8,7 @@ I learned the main Web Development concepts during high school and college, wher
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/PetStore_project">2- Pet Store project</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/PetStore_project">1- Pet Store project</a></h2>
 
 <!-- Project BIO -->
 This application allows a user to handle a Pet Store web site. For example, the user can add "Pets" to the database. The user can also view, edit, and delete any of the current Pets in this same database on a different page. Some of these pages implement data validation on the user end(client side), while others have it on the back end(server side).
