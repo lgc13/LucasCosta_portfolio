@@ -59,4 +59,4 @@ Then, start Apache Server using AMPPS
 
 <!-- Back to Projects folder -->
 <br>
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/php/" class="previous">&laquo; Back to PHP projects</a>

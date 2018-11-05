@@ -49,4 +49,4 @@ You can see that in this code snippet:
 <br>
 
 <!-- Back to Projects folder -->
-<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/" class="previous">&laquo; Back to Web Dev projects</a>
+<a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/" class="previous">&laquo; Back to Static Website projects</a>
