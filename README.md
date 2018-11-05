@@ -45,10 +45,13 @@ LucasCosta_portfolio
 ├── java
 │   └── project#
 │   └── practice
+├── php
+│   └── project#
+│   └── practice
 ├── python
 │   └── project#
 │   └── practice
-└── web_dev
+└── static_websites
     └── project#
     └── practice
 
@@ -102,12 +105,12 @@ Scroll down to see some of these bigger projects, or click on one of these ancho
   <p>
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/"><strong> Java</strong></a> >
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/"><strong>Python</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/"><strong>Web Dev</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/"><strong>Static Websites</strong></a> >
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23"><strong>C#</strong></a> >
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B"><strong>C++</strong></a> >
+    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/php"><strong>PHP</strong></a> >
     <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/"><strong>Android Studio</strong></a>
   </p>
-
 </div>
 
 <!-- Project section -->
@@ -314,7 +317,7 @@ else
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/web_dev/Corazon_project">3- Corazon Dancers project</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/Corazon_project">3- Corazon Dancers project</a></h2>
 
 <!-- Project BIO -->
 This is a static website that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This website aims to show information about the group, such as their purpose, history, and contact information. Someone going on this website should also be able to see pictures, upcoming events, and information on how to join.
@@ -328,8 +331,8 @@ This application displays some of my skills with:
 - HTML development
 
 <!-- Screenshots -->
-<img src="web_dev/Corazon_project/images/page1.png" width= 80% length= 80%>
-<img src="web_dev/Corazon_project/images/page2.png" width= 80% length= 80%>
+<img src="static_websites/Corazon_project/images/page1.png" width= 80% length= 80%>
+<img src="static_websites/Corazon_project/images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slideshow which displays any pictures and text that I input.
