@@ -1,5 +1,5 @@
 <!-- Technology logo picture and title -->
-<img src="img/php_logo.jpg" width="400" height="300" align="right">
+<img src="img/php_logo.png" width="400" height="300" align="right">
 <h1>PHP projects</h1>
 
 <!-- Technology welcome message -->
