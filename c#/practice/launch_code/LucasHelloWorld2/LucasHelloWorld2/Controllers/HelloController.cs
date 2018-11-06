@@ -19,5 +19,9 @@ namespace LucasHelloWorld2.Controllers
         {
             return Content("Now we say goodbye");
         }
+        public IActionResult Sasha()
+        {
+          return Content("Sashinha test");
+        }
     }
 }

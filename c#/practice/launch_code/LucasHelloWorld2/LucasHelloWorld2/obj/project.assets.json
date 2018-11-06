@@ -5507,7 +5507,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "H8dS2ejgqZmFmtHi9k/vTGdXKaQ34MEbssVo6S9okbuNGe+32F3e5yq5UyLGXOO0hodAdppVQSw0DFqb7cl2bg==",
+      "sha512": "ehkRZawpmF+8i2CzqvaciLR/ZJ3ir7HL4v2sVM7dytajbzAI6Fw2YrH0IFIPlG6fC1qVJ8eWQyZmcCb9aal5Lw==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
@@ -8713,7 +8713,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "4LjP7RL33zDzE7rMCd81zdpvUDpSaZR3SmqPMGacEMc5CShY9dBDqX4FBJP1mu0wzC5sVHML9qSlyuvlp9NAqg==",
+      "sha512": "m3Gm5+ZRvC18NdbeYN0HNb4iWHbBAkCO570Ud387AsNcCoL25bEenbmSdjQ+2MR4rPmeNY0aABkxHzz3eoMeNA==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -11501,23 +11501,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/tlgc1/.nuget/packages/": {},
+    "/Users/lucascosta/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/LucasHelloWorld2.csproj",
+      "projectUniqueName": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/LucasHelloWorld2.csproj",
       "projectName": "LucasHelloWorld2",
-      "projectPath": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/LucasHelloWorld2.csproj",
-      "packagesPath": "/Users/tlgc1/.nuget/packages/",
-      "outputPath": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/obj",
+      "projectPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/LucasHelloWorld2.csproj",
+      "packagesPath": "/Users/lucascosta/.nuget/packages/",
+      "outputPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorld2/LucasHelloWorld2/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/tlgc1/.config/NuGet/NuGet.Config"
+        "/Users/lucascosta/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11542,17 +11542,17 @@
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.1"
+            "version": "[2.1.1, )",
+            "autoReferenced": true
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.1.2"
+            "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "2.1",
+            "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },

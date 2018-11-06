@@ -3865,7 +3865,7 @@
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-H8dS2ejgqZmFmtHi9k/vTGdXKaQ34MEbssVo6S9okbuNGe+32F3e5yq5UyLGXOO0hodAdppVQSw0DFqb7cl2bg==",
+      "sha512": "sha512-ehkRZawpmF+8i2CzqvaciLR/ZJ3ir7HL4v2sVM7dytajbzAI6Fw2YrH0IFIPlG6fC1qVJ8eWQyZmcCb9aal5Lw==",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hashPath": "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512"
     },
@@ -4691,7 +4691,7 @@
     "System.Linq.Queryable/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4LjP7RL33zDzE7rMCd81zdpvUDpSaZR3SmqPMGacEMc5CShY9dBDqX4FBJP1mu0wzC5sVHML9qSlyuvlp9NAqg==",
+      "sha512": "sha512-m3Gm5+ZRvC18NdbeYN0HNb4iWHbBAkCO570Ud387AsNcCoL25bEenbmSdjQ+2MR4rPmeNY0aABkxHzz3eoMeNA==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
