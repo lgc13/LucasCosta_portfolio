@@ -82,10 +82,12 @@ namespace TechJobsConsole
             int choiceIdx;
             bool isValidChoice = false;
             string[] choiceKeys = new string[choices.Count];
+            Console.WriteLine("choices.Count is: " + choices.Count);
 
             int i = 0;
             foreach (KeyValuePair<string, string> choice in choices)
             {
+                Console.WriteLine("choice.Key is: " + choice.Key);
                 choiceKeys[i] = choice.Key;
                 i++;
             }

@@ -9,3 +9,14 @@
 /Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfo.cs
 /Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.dll
 /Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.pdb
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.deps.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.runtimeconfig.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.runtimeconfig.dev.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.dll
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.pdb
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.csprojAssemblyReference.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.csproj.CoreCompileInputs.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfoInputs.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfo.cs
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.dll
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.pdb

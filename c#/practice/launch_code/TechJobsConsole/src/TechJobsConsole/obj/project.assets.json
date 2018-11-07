@@ -676,11 +676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
+      "projectUniqueName": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
       "projectName": "TechJobsConsole",
-      "projectPath": "/Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
+      "projectPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
       "packagesPath": "/Users/lucascosta/.nuget/packages/",
-      "outputPath": "/Users/lucascosta/Desktop/TechJobsConsole/src/TechJobsConsole/obj",
+      "outputPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
