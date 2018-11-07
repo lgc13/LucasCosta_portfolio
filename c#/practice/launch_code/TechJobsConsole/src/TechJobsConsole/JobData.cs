@@ -14,6 +14,7 @@ namespace TechJobsConsole
         public static List<Dictionary<string, string>> FindAll()
         {
             LoadData();
+            Console.WriteLine("--- AllJobs.Count: " + AllJobs.Count);
             return AllJobs;
         }
 
@@ -26,10 +27,11 @@ namespace TechJobsConsole
             LoadData();
 
             List<string> values = new List<string>();
+            Console.WriteLine("--- AllJobs.Count: " + AllJobs.Count);
 
             foreach (Dictionary<string, string> job in AllJobs)
             {
-                string aValue = job[column];
+                string aValue = job[column]; // add the column choice (string) from AllJobs into aValue
 
                 if (!values.Contains(aValue))
                 {
@@ -70,7 +72,7 @@ namespace TechJobsConsole
                 return;
             }
 
-            List<string[]> rows = new List<string[]>();
+            List<string[]> rows = new List<string[]>(); // Create list which will hold a bunch of rows with the info from the CSV file
 
             using (StreamReader reader = File.OpenText("job_data.csv"))
             {
@@ -93,10 +95,11 @@ namespace TechJobsConsole
             {
                 Dictionary<string, string> rowDict = new Dictionary<string, string>();
 
-                Console.WriteLine(">>> headers.Length: " + headers.Length);
+                //Console.WriteLine(">>> headers.Length: " + headers.Length);
 
                 for (int i = 0; i < headers.Length; i++)
                 {
+                    //Console.WriteLine(" --- headers[i]: " + headers[i] + ", row[i]: " + row[i]);
                     rowDict.Add(headers[i], row[i]);
                 }
                 AllJobs.Add(rowDict);

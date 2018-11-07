@@ -20,3 +20,14 @@
 /Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfo.cs
 /Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.dll
 /Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.pdb
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.deps.json
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.runtimeconfig.json
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.runtimeconfig.dev.json
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.dll
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/bin/Debug/netcoreapp2.0/TechJobsConsole.pdb
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.csprojAssemblyReference.cache
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.csproj.CoreCompileInputs.cache
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfoInputs.cache
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.AssemblyInfo.cs
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.dll
+/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/Debug/netcoreapp2.0/TechJobsConsole.pdb

@@ -82,7 +82,7 @@ namespace TechJobsConsole
             int choiceIdx;
             bool isValidChoice = false;
             string[] choiceKeys = new string[choices.Count];
-            Console.WriteLine("choices.Count is: " + choices.Count);
+            //Console.WriteLine("choices.Count is: " + choices.Count);
 
             int i = 0;
             foreach (KeyValuePair<string, string> choice in choices)
@@ -120,7 +120,37 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("printJobs is not implemented yet");
+            Console.WriteLine("This is Lucass's implementation of PrintJobs:");
+
+            //List<Dictionary<string, string>> allJobsDict = new List<Dictionary<string, string>>();
+
+            Console.WriteLine("\n*** All Values ***");
+            foreach (Dictionary<string, string> allJobsDict in someJobs)
+            {
+                //string name_value = allJobsDict["name"];
+                //string employer_value = allJobsDict["employer"];
+                //string location_value = allJobsDict["location"];
+                //string position_type_value = allJobsDict["position type"];
+                //string core_competency_value = allJobsDict["core competency"];
+
+                //Console.WriteLine("*****");
+                //Console.WriteLine("position type: " + position_type_value);
+                //Console.WriteLine("name: " + name_value);
+                //Console.WriteLine("employer: " + employer_value);
+                //Console.WriteLine("location value: " + location_value);
+                //Console.WriteLine("core copetency: "+ core_competency_value);
+                //Console.WriteLine("*****\n");
+                //List<string> keyList = new List<string>(allJobsDict.Keys);
+
+                // using nested for loops on the keys
+                Console.WriteLine("*****");
+                foreach (string key in allJobsDict.Keys)
+                {
+
+                    Console.WriteLine(key + ": " + allJobsDict[key]);
+                }
+                Console.WriteLine("*****\n");
+            }
         }
     }
 }
