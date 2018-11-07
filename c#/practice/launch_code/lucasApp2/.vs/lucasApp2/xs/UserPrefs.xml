@@ -3,14 +3,18 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="lucasApp2" expanded="True">
+          <Node name="lucasApp2" expanded="True" selected="True">
             <Node name="lucasApp2" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="SdkDependencies" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="lucasApp2" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
