@@ -61,6 +61,33 @@ namespace TechJobsConsole
             return jobs;
         }
 
+        public static List<Dictionary<string, string>> FindByValue(string input_val) {
+
+            Console.WriteLine("I'm in FindByValue");
+            Console.WriteLine(">>> input_val: " + input_val);
+
+            LoadData();
+
+            List<Dictionary<string, string>> jobs_dict = new List<Dictionary<string, string>>();
+
+            foreach (Dictionary<string, string> row in AllJobs) { // iterate through AllJobs dictionary, line by line
+
+                //if (row.ContainsValue(input_val)) { // this will not work as itll check if the entire Value is == to input_val
+                //    jobs_dict.Add(row);
+                //}
+                foreach (string key in row.Keys) { // This goes through each key in the row.Keys
+
+                    if (row[key].Contains(input_val)) {
+                        Console.WriteLine(">>> The values contain the input value. Adding row to jobs_dict");
+                        jobs_dict.Add(row);
+                        break;
+                    }
+                }
+            }
+
+            return jobs_dict;
+        }
+
         /*
          * Load and parse data from job_data.csv
          */

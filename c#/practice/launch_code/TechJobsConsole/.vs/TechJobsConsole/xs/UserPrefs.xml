@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{56A0A280-DB0E-442D-A1CE-2D8C15EEB4D7}|Default">
   <MonoDevelop.Ide.ItemProperties.src.TechJobsConsole PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/TechJobsConsole/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/TechJobsConsole/JobData.cs">
     <Files>
-      <File FileName="src/TechJobsConsole/Program.cs" Line="126" Column="13" />
-      <File FileName="src/TechJobsConsole/JobData.cs" Line="101" Column="18" />
-      <File FileName="src/TechJobsConsole/job_data.csv" Line="1" Column="1" />
+      <File FileName="src/TechJobsConsole/Program.cs" Line="67" Column="47" />
+      <File FileName="src/TechJobsConsole/JobData.cs" Line="75" Column="45" />
+      <File FileName="src/TechJobsConsole/job_data.csv" Line="79" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +12,7 @@
           <Node name="TechJobsConsole" expanded="True">
             <Node name="src" expanded="True">
               <Node name="TechJobsConsole" expanded="True">
-                <Node name="Program.cs" selected="True" />
+                <Node name="JobData.cs" selected="True" />
               </Node>
             </Node>
           </Node>

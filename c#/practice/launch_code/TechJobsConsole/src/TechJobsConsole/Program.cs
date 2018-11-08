@@ -63,7 +63,16 @@ namespace TechJobsConsole
                     // Fetch results
                     if (columnChoice.Equals("all"))
                     {
-                        Console.WriteLine("Search all fields not yet implemented.");
+                        searchResults = JobData.FindByValue(searchTerm);
+                        if (searchResults.Count <= 0) {
+                            Console.WriteLine("There are no jobs with the query you gave: " + searchTerm);
+                        }
+                        else if (searchResults.Count > 0) {
+                            PrintJobs(searchResults);
+                        }
+                        else {
+                            Console.WriteLine("There was something wrong with searchResults");
+                        }
                     }
                     else
                     {
@@ -124,33 +133,48 @@ namespace TechJobsConsole
 
             //List<Dictionary<string, string>> allJobsDict = new List<Dictionary<string, string>>();
 
-            Console.WriteLine("\n*** All Values ***");
-            foreach (Dictionary<string, string> allJobsDict in someJobs)
+            if (someJobs.Count > 0) // as long as theres at least one job
             {
-                //string name_value = allJobsDict["name"];
-                //string employer_value = allJobsDict["employer"];
-                //string location_value = allJobsDict["location"];
-                //string position_type_value = allJobsDict["position type"];
-                //string core_competency_value = allJobsDict["core competency"];
+                int count = 0;
 
-                //Console.WriteLine("*****");
-                //Console.WriteLine("position type: " + position_type_value);
-                //Console.WriteLine("name: " + name_value);
-                //Console.WriteLine("employer: " + employer_value);
-                //Console.WriteLine("location value: " + location_value);
-                //Console.WriteLine("core copetency: "+ core_competency_value);
-                //Console.WriteLine("*****\n");
-                //List<string> keyList = new List<string>(allJobsDict.Keys);
-
-                // using nested for loops on the keys
-                Console.WriteLine("*****");
-                foreach (string key in allJobsDict.Keys)
+                Console.WriteLine("\n*** All Values ***");
+                foreach (Dictionary<string, string> allJobsDict in someJobs) // iterate through each Dictionary item in someJobs
                 {
+                    //string name_value = allJobsDict["name"];
+                    //string employer_value = allJobsDict["employer"];
+                    //string location_value = allJobsDict["location"];
+                    //string position_type_value = allJobsDict["position type"];
+                    //string core_competency_value = allJobsDict["core competency"];
 
-                    Console.WriteLine(key + ": " + allJobsDict[key]);
+                    //Console.WriteLine("*****");
+                    //Console.WriteLine("position type: " + position_type_value);
+                    //Console.WriteLine("name: " + name_value);
+                    //Console.WriteLine("employer: " + employer_value);
+                    //Console.WriteLine("location value: " + location_value);
+                    //Console.WriteLine("core copetency: "+ core_competency_value);
+                    //Console.WriteLine("*****\n");
+                    //List<string> keyList = new List<string>(allJobsDict.Keys);
+
+
+                    Console.WriteLine("*****"); // using nested for loops on the keys
+                    foreach (string key in allJobsDict.Keys) // iterate on each Dictionary.Keys, printing our the KEY + VALUE (allJobsDict[key])
+                    {
+
+                        Console.WriteLine(key + ": " + allJobsDict[key]);
+                    }
+                    Console.WriteLine("*****\n");
+                    count++;
                 }
-                Console.WriteLine("*****\n");
+                Console.WriteLine("count: " + count); // Making sure this adds up to the right amount of dicts in the file
             }
+            else if (someJobs.Count <= 0)
+            {
+                Console.WriteLine("There were no jobs found. Sorry :(");
+            }
+            else {
+                Console.WriteLine("There was some issue with someJobs.");
+            }
+
         }
     }
 }
