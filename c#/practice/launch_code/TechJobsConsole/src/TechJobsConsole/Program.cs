@@ -63,7 +63,8 @@ namespace TechJobsConsole
                     // Fetch results
                     if (columnChoice.Equals("all"))
                     {
-                        searchResults = JobData.FindByValue(searchTerm);
+                        searchResults = JobData.FindByValue(searchTerm); // Find all jobs by given input
+
                         if (searchResults.Count <= 0) {
                             Console.WriteLine("There are no jobs with the query you gave: " + searchTerm);
                         }

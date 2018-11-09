@@ -35,6 +35,15 @@ namespace roomClass  //declare the scope 'roomClass'
 
       Console.WriteLine("\n4- Call parameterized constructor (accepts four arguments (using object2)):");
     }
+    public Room(double t, string l, double w, double h)
+    {         //parameterized constructor that accepts 4 arguments
+      roomType = t;
+      roomLength = l;
+      roomWidth = w;
+      roomHeight = h;
+
+      Console.WriteLine("\n4- Call parameterized constructor (accepts four arguments (using object2)):");
+    }
 
     /************** mutator/'setter' methods ***************/
     public void SetType(string t = "default")    //being passed in from room_calculator.cs

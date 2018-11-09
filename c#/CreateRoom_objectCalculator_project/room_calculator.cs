@@ -113,7 +113,7 @@ namespace roomClass
       Console.WriteLine("Room Volume: " + roomObject.GetRoomVolume().ToString("F2") + " cu ft"); //output double with 2 decimals (ToString("F2"))
       Console.WriteLine("Room Volume: " + (roomObject.GetRoomVolume()/27).ToString("F2") + " cu yd"); //output double with 2 decimals (ToString("F2"))
 
-      Room roomObject2 = new Room("string", 10.0, 10.0, 10.0);  //creating new room for 'roomObject2'
+      Room roomObject2 = new Room("string", 10.0, 10.0, 10.0, "thomas");  //creating new room for 'roomObject2'
       Console.Write("Room type: ");
       roomObject2.SetType(Console.ReadLine());
 
