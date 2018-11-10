@@ -15,7 +15,7 @@ class BasicsExamples
       Console.WriteLine("\t\t3- LISTS: (You have to specify what type it is, and import System.Collections.Generic)");
       List<string> lucas_list = new List<string>();
 
-      Console.WriteLine("   List size: " + lucas_list.Count);
+      Console.WriteLine("List size: " + lucas_list.Count);
 
       lucas_list.Add("Lucas");
       lucas_list.Add("Sasha");
@@ -29,7 +29,7 @@ class BasicsExamples
       Console.WriteLine("\tBONUS: Nested FOR LOOP");
       for (int i = 1; i <= 5; i++) //i = 2, is i(2) <= 5, TRUE
 			{
-				for (int j = 1; j <= 10; j++) // j = 2, is j <= i(1) TRUE
+				for (int j = 1; j <= i; j++) // j = 2, is j <= i(1) TRUE
 				{
 					Console.Write(j + " ");  // print out j(1) + " "=  1 " "
         }
