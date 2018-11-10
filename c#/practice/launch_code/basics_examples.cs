@@ -27,8 +27,8 @@ class BasicsExamples
       }
 
       Console.WriteLine("\tBONUS: Nested FOR LOOP");
-      for (int i = 1; i <= 5; i++) //i = 2, is i(2) <= 5, TRUE
-			{
+      for (int i = 1; i <= 5; i++) { //i = 2, is i(2) <= 5, TRUE
+
 				for (int j = 1; j <= i; j++) // j = 2, is j <= i(1) TRUE
 				{
 					Console.Write(j + " ");  // print out j(1) + " "=  1 " "

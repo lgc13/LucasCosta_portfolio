@@ -63,21 +63,22 @@ namespace TechJobsConsole
                     // Fetch results
                     if (columnChoice.Equals("all"))
                     {
-                        searchResults = JobData.FindByValue(searchTerm); // Find all jobs by given input
+                        searchResults = JobData.FindByValue(searchTerm); // Find all jobs by given input (searchTerm)
 
-                        if (searchResults.Count <= 0) {
-                            Console.WriteLine("There are no jobs with the query you gave: " + searchTerm);
-                        }
-                        else if (searchResults.Count > 0) {
+                        if (searchResults.Count > 0) {
                             PrintJobs(searchResults);
+                        }
+                        else if (searchResults.Count <= 0) {
+
+                            Console.WriteLine("There are no jobs with the query you gave: " + searchTerm);
                         }
                         else {
                             Console.WriteLine("There was something wrong with searchResults");
                         }
                     }
-                    else
+                    else // If they search with any keyterms (searchTerm) other than "all"
                     {
-                        searchResults = JobData.FindByColumnAndValue(columnChoice, searchTerm);
+                        searchResults = JobData.FindByColumnAndValue(columnChoice, searchTerm); // gets a list of all the results with searchTerm
                         PrintJobs(searchResults);
                     }
                 }
