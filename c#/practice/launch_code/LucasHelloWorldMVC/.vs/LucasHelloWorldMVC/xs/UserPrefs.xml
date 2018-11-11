@@ -4,9 +4,9 @@
       <File FileName="LucasHelloWorldMVC/Views/Shared/_Layout.cshtml" Line="17" Column="23" />
       <File FileName="LucasHelloWorldMVC/Views/Home/About.cshtml" Line="9" Column="34" />
       <File FileName="LucasHelloWorldMVC/Views/Home/Index.cshtml" Line="14" Column="57" />
-      <File FileName="LucasHelloWorldMVC/Controllers/HomeController.cs" Line="11" Column="32" />
-      <File FileName="LucasHelloWorldMVC/Controllers/LucasController.cs" Line="11" Column="34" />
-      <File FileName="LucasHelloWorldMVC/Startup.cs" Line="59" Column="43" />
+      <File FileName="LucasHelloWorldMVC/Controllers/HomeController.cs" Line="6" Column="1" />
+      <File FileName="LucasHelloWorldMVC/Controllers/LucasController.cs" Line="14" Column="26" />
+      <File FileName="LucasHelloWorldMVC/Startup.cs" Line="64" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
