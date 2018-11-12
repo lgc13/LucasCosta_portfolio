@@ -519,11 +519,10 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
-      "sha512": "5BdAWDgMNwf90L0J+C/eh6kfHDa37ViL1cBL1nv5zPA4TB2cGV51YiQyvzCEy9DBE0LwwMI4+PkUpIekKyocSA==",
+      "sha512": "VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
@@ -670,23 +669,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/lucascosta/.nuget/packages/": {},
+    "/Users/tlgc1/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
+      "projectUniqueName": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
       "projectName": "TechJobsConsole",
-      "projectPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
-      "packagesPath": "/Users/lucascosta/.nuget/packages/",
-      "outputPath": "/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj",
+      "projectPath": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/TechJobsConsole.csproj",
+      "packagesPath": "/Users/tlgc1/.nuget/packages/",
+      "outputPath": "/Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsConsole/src/TechJobsConsole/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/lucascosta/.config/NuGet/NuGet.Config"
+        "/Users/tlgc1/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -709,9 +708,8 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
