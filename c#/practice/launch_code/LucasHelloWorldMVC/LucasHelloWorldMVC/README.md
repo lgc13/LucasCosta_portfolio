@@ -1,4 +1,4 @@
-How to get a dotnet application set up
+# How to get a dotnet application set up
 
 1. Create the project template
 
@@ -24,9 +24,9 @@ dotnet restore
 ```
 
 
-### Code Info
+# Code Info
 
-# Controllers folder
+### Controllers folder
 
 This holds any controllers, which can run on the browser by the first part of its name.
 
@@ -34,7 +34,7 @@ Ex: "LucasControler.cs" will be localhost:5001/Lucas
 
 HomeController is the default and will run as "index" or Home (localhost:5001/ or localhost:5001/Home)
 
-# Views folder
+### Views folder
 
 This folder has subfolders that tie to the controller by first name.
 
