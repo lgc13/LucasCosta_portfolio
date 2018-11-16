@@ -1,5 +1,18 @@
 @{
     ViewData["Title"] = "My Hello World Project";
+    @* Layout = null; *@
+    @* Layout = null will not use the layout from the Shared folder *@
+
+    List<string> cheeses = new List<string>();
 }
 
 <h1> Hello World, from Lucas's index Page </h1>
+
+<ul>
+  @foreach (string item in cheeses)
+  {
+    <li>      
+    </li>
+  }
+
+</ul>

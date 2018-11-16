@@ -42,3 +42,11 @@ Ex: Views/Home has all the HomeController.cs views
 Views/Lucas has all the LucasController.cs views
 
 Views cannot be used by different controllers, unless its in the `Shared` folder.
+
+You can -NOT- use the Layout file by adding this at the top of your cshtml file:
+```
+@{
+    Layout = null;
+
+}
+```
