@@ -1,4 +1,6 @@
-Starting up a Reactive Native app steps:
+# React Native Basics
+
+I. Starting up a Reactive Native app steps:
 
 1. Install your package managers
 ```
@@ -50,3 +52,10 @@ node_modules - have all the dependencies
 index.js - starts up the app by AppRegistry from the App component
 
 App.js - has the App component by extending React.Component
+
+II. Basics
+
+<Text>
+    - Prints out on simulator
+<Image source={require('./path_to_file.jpg')} />
+    - Adds picture
