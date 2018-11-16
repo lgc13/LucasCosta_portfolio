@@ -1,0 +1,12 @@
+"*":
+  core:
+    closeDeletedFileTabs: true
+    customFileTypes:
+      "text.html.cshtml": "cshtml"
+    telemetryConsent: "no"
+  editor:
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "f59b11ab-091e-46f3-af8c-977f1d82cf02"
+  welcome:
+    showOnStartup: false
