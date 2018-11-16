@@ -2,9 +2,9 @@ atom-beautify
 busy-signal
 file-icons
 highlight-selected
+ide-csharp
 intentions
 language-cshtml
 linter
 linter-ui-default
 pigments
-platformio-ide-terminal
