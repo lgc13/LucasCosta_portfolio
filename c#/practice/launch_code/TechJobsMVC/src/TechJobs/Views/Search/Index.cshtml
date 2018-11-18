@@ -7,13 +7,21 @@
         @foreach (KeyValuePair<string, string> column in ViewBag.columns)
         {
             <span>
-                @if (ViewBag.check == "skill")
+                <input type="radio"
+                       name="searchType"
+                       id="@column.Key"
+                       value="@column.Key"
+                       checked="@(column.Key == ViewBag.Check)"/>
+
+                       @* if the column.Key is == to ViewBag.Check, then it'll mark that radio button 'checked' *@
+
+                @* @if (column.Key == ViewBag.check) @* no longer needed as I did this all in one loop *@
                 {
                     <input type="radio"
                            name="searchType"
                            id="@column.Key"
                            value="@column.Key"
-                           checked/>
+                           checked="checked"/>
                 }
                 else
                 {
@@ -21,8 +29,7 @@
                            name="searchType"
                            id="@column.Key"
                            value="@column.Key"/>
-                }
-
+                } *@
                 <label for="@column.Key">@column.Value</label>
             </span>
         }
