@@ -64,3 +64,5 @@
 /Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorldMVC/LucasHelloWorldMVC/obj/Debug/netcoreapp2.1/LucasHelloWorldMVC.csproj.CopyComplete
 /Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorldMVC/LucasHelloWorldMVC/obj/Debug/netcoreapp2.1/Razor/Views/Lucas/Index.g.cshtml.cs
 /Users/tlgc1/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorldMVC/LucasHelloWorldMVC/obj/Debug/netcoreapp2.1/Razor/Views/Lucas/Index.g.cshtml.cs
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorldMVC/LucasHelloWorldMVC/obj/Debug/netcoreapp2.1/Razor/Views/Lucas/List.g.cshtml.cs
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/LucasHelloWorldMVC/LucasHelloWorldMVC/obj/Debug/netcoreapp2.1/Razor/Views/Lucas/New.g.cshtml.cs

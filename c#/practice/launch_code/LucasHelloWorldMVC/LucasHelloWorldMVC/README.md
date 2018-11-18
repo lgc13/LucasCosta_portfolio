@@ -50,3 +50,9 @@ You can -NOT- use the Layout file by adding this at the top of your cshtml file:
 
 }
 ```
+
+### Passing data
+
+You can pass data from the back end to front end using `ViewBag.object_name`
+
+If its a POST method, use `[HttpPost]` on top of the method. Take in any arguments (name="") within the parameters of this method, from a form.

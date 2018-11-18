@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Cheeses List";
+}
+
+<h2> List of users: </h2>
+@if (ViewBag.users.Count == 0)
+{
+    <p>
+        No users added yet
+    </p>
+}
+else
+{
+    <ul>
+        @foreach (string person in ViewBag.users)
+        {
+            <li> @person </li>
+        }
+    </ul>
+}

@@ -3,16 +3,19 @@
     @* Layout = null; *@
     @* Layout = null will not use the layout from the Shared folder *@
 
-    List<string> cheeses = new List<string>();
 }
 
 <h1> Hello World, from Lucas's index Page </h1>
 
+<p> List of cheeses made and iterated in Index.cshtml </p>
 <ul>
-  @foreach (string item in cheeses)
+  @foreach (string item in ViewBag.cheeses)
   {
-    <li>      
-    </li>
+    <li> @item </li>
   }
 
 </ul>
+
+<p>
+    <a asp-controller="Lucas" asp-action="New">Link to add users</a>
+</p>
