@@ -7,11 +7,22 @@
         @foreach (KeyValuePair<string, string> column in ViewBag.columns)
         {
             <span>
-                <input type="radio"
-                       name="searchType"
-                       id="@column.Key"
-                       value="@column.Key" 
-                       checked="@column.Key == 'all''"/>
+                @if (ViewBag.check == "skill")
+                {
+                    <input type="radio"
+                           name="searchType"
+                           id="@column.Key"
+                           value="@column.Key"
+                           checked/>
+                }
+                else
+                {
+                    <input type="radio"
+                           name="searchType"
+                           id="@column.Key"
+                           value="@column.Key"/>
+                }
+
                 <label for="@column.Key">@column.Value</label>
             </span>
         }
@@ -32,5 +43,19 @@
 
     <h3>@ViewBag.jobs.Count Result(s)</h3>
 
-    // TODO #2 - Loop over jobs dictionary and display all job fields 
+    // TODO #2 - Loop over jobs dictionary and display all job fields
+    @foreach (Dictionary<string, string> row in ViewBag.jobs)
+    {
+        <table class="job-listing">
+            @foreach (string key in row.Keys)
+            {
+                <tr>
+                    <td>@key</td>
+                    <td>@row[key]</td>
+                </tr>
+            }
+        </table>
+
+    }
+
 }
