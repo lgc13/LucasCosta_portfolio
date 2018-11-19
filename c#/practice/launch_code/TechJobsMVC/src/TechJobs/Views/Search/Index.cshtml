@@ -42,8 +42,19 @@
             @foreach (string key in row.Keys)
             {
                 <tr>
-                    <td>@key</td>
-                    <td>@row[key]</td>
+                    @* Next line will uppercase the first letter of each 'key' *@
+                    <td>@(key.Substring(0, 1).ToUpper())@(key.Substring(1, key.Length - 1))</td>
+                    <td>
+                        @if (key != "name")
+                        {
+                            <a asp-controller="List" asp-action="Jobs" asp-route-column="@key" asp-route-value="@row[key]">@row[key]</a>
+                        }
+                        else
+                        {
+                            @row[key]
+                        }
+
+                    </td>
                 </tr>
             }
         </table>

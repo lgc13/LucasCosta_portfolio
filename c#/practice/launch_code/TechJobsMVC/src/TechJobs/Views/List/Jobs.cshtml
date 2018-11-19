@@ -11,7 +11,8 @@
         @foreach (string key in row.Keys)
         {
             <tr>
-                <td>@key</td>
+                @* Next line will uppercase the first letter of each 'key' *@
+                <td>@(key.Substring(0, 1).ToUpper())@(key.Substring(1, key.Length - 1))</td>
                 <td>@row[key]</td>
             </tr>
         }
