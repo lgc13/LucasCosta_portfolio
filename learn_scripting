@@ -1,0 +1,113 @@
+#! /bin/bash
+
+# Comments
+echo "Hello World, Lucas"
+
+# Variables cannot have white spaces
+myName="Lucas"
+
+# Declaring a constant variable
+declare -r NUM1=5
+
+num2=4
+
+num3=$((NUM1+num2))
+num4=$((NUM1-num2))
+num5=$((NUM1*num2))
+num6=$((NUM1/num2))
+
+echo "5 + 4 = $num3"
+echo "5 - 4 = $num4"
+echo "5 * 4 = $num5"
+echo "5 / 4 = $num6"
+
+echo $(( 5**2 ))
+echo $(( 5%4 ))
+
+cat << END
+this text
+prints on
+many lines
+END
+
+##################### Functions....
+getDate() {
+  date
+  return
+}
+echo "----"
+echo "getDate function:" 
+getDate
+
+getSum() {
+  local num3=$1
+  local num4=$2
+  
+  local sum=$((num3+num4))
+  echo $sum # this returns this value
+}
+addition=$(getSum num2 num 3)
+
+echo "The sum is: $addition"
+
+############# User input
+
+read -p "What is your name? " user_input # The variable to save the input is written after
+echo "Hello, $user_input"
+
+
+############# Conditions
+read -p "How old are you? " age_input
+if [ $age_input -ge 18 ] # if age is GREATER or EQUAL TO
+then 
+  echo "YAAAY YOU CAN DRIVE!"
+elif [ $age_input -eq 17 ]  # If age is EQUAL TO
+then
+  echo "You can drive NEXT YEAR"
+else
+  echo "You CANNOT drive"
+fi
+
+if (( age_input >= 10 )); then
+  echo "Age is more than 10"
+elif (( age_input == 9 )); 
+then
+  echo "Age IS 9"
+else
+  echo "Age is less than 10"
+fi
+
+if (( (( age_input % 2 )) == 0 )); then
+  echo "$age_input is even"
+else
+  echo "Age is odd"
+fi
+
+###### Strings
+
+str1=""
+str2="Sad"
+str3="Happy"
+
+if [ "$str1" ]; then
+  echo "str1 is not null"
+fi
+
+if [ -z "$str1" ]; then # checking if it has a value
+  echo "str1 has no value"
+fi 
+
+if [ "$str2" == "$str3" ]; then
+  echo "$str2 equals $str3"
+elif [ "$str2" != "$str3" ]; then
+  echo "$str2 is not equal to $str3"
+fi
+
+if [ "$str2" > "$str3" ]; then 
+  echo "$str2 is greater than $str3"
+elif [ "$str2" < "$str3" ]; then
+  echo "$str2 is less than $str3"
+fi
+
+echo "###################"
+
