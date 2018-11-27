@@ -17,6 +17,7 @@
       "text.html.cshtml": "cshtml"
     telemetryConsent: "no"
   editor:
+    fontSize: 15
     showIndentGuide: true
     tabLength: 4
   "exception-reporting":
