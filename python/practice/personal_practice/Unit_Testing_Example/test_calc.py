@@ -1,5 +1,5 @@
 import unittest
-import calc
+import calc # importing file that needs to be tested
 
 
 class TestCalc(unittest.TestCase):
@@ -25,7 +25,11 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1, -1), 1)
         self.assertEqual(calc.divide(5, 2), 2.5)
 
-        self.assertRaises(ValueError, calc.divide, 10, 0)
+        self.assertRaises(ValueError, calc.divide, 10, 0) # or like this:
+
+        with self.assertRaises(ValueError):
+            calc.divide(20, 0)
+
 
 if __name__ == "__main__":
     unittest.main()
