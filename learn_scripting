@@ -30,19 +30,27 @@ prints on
 many lines
 END
 
+allowed_to_vote=0
+age=26
+
+(( age >= 18?(allowed_to_vote=1):(allowed_to_vote=0) ))
+echo "Allowed to vote? $allowed_to_vote"
+
+
+
 ##################### Functions....
 getDate() {
   date
   return
 }
 echo "----"
-echo "getDate function:" 
+echo "getDate function:"
 getDate
 
 getSum() {
   local num3=$1
   local num4=$2
-  
+
   local sum=$((num3+num4))
   echo $sum # this returns this value
 }
@@ -55,11 +63,21 @@ echo "The sum is: $addition"
 read -p "What is your name? " user_input # The variable to save the input is written after
 echo "Hello, $user_input"
 
+read -p "Enter 2 numbers to add: " num1 num2
+echo "Sum is $(( $num1 + $num2 ))"
+
+read -sp "Enter your password: " password
+
+if [ $password == "lucas" ]; then
+  echo "---- You may go on ---"
+else
+  echo "--- Bad input --- "
+fi
 
 ############# Conditions
 read -p "How old are you? " age_input
 if [ $age_input -ge 18 ] # if age is GREATER or EQUAL TO
-then 
+then
   echo "YAAAY YOU CAN DRIVE!"
 elif [ $age_input -eq 17 ]  # If age is EQUAL TO
 then
@@ -70,7 +88,7 @@ fi
 
 if (( age_input >= 10 )); then
   echo "Age is more than 10"
-elif (( age_input == 9 )); 
+elif (( age_input == 9 ));
 then
   echo "Age IS 9"
 else
@@ -95,7 +113,7 @@ fi
 
 if [ -z "$str1" ]; then # checking if it has a value
   echo "str1 has no value"
-fi 
+fi
 
 if [ "$str2" == "$str3" ]; then
   echo "$str2 equals $str3"
@@ -103,11 +121,26 @@ elif [ "$str2" != "$str3" ]; then
   echo "$str2 is not equal to $str3"
 fi
 
-if [ "$str2" > "$str3" ]; then 
+if [ "$str2" > "$str3" ]; then
   echo "$str2 is greater than $str3"
 elif [ "$str2" < "$str3" ]; then
   echo "$str2 is less than $str3"
 fi
 
+file1="./Happy"
+if [ -e "$file1" ]; then
+  echo "$file1 exists"
+fi
+
 echo "###################"
 
+####### Regular expressions
+read -p "Validate date: " date
+
+pattern="^[0-9]{8}$"
+
+if [[ $date =~ $pattern ]]; then
+  echo "$date is valid"
+else
+  echo "$date is not valid"
+fi
