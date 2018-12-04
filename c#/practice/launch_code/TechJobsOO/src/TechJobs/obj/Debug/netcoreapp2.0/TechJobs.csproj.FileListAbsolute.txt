@@ -1,0 +1,11 @@
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/bin/Debug/netcoreapp2.0/TechJobs.deps.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/bin/Debug/netcoreapp2.0/TechJobs.runtimeconfig.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/bin/Debug/netcoreapp2.0/TechJobs.runtimeconfig.dev.json
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/bin/Debug/netcoreapp2.0/TechJobs.dll
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/bin/Debug/netcoreapp2.0/TechJobs.pdb
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.csprojAssemblyReference.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.csproj.CoreCompileInputs.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.AssemblyInfoInputs.cache
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.AssemblyInfo.cs
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.dll
+/Users/lucascosta/Desktop/LucasCosta_portfolio/c#/practice/launch_code/TechJobsOO/src/TechJobs/obj/Debug/netcoreapp2.0/TechJobs.pdb
