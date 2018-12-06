@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Chocolate";
+    @* Layout = null; *@
+    @* Layout = null will not use the layout from the Shared folder *@
+
+}
+
+<h2>CHOCOLATES</h2>
+
+<h3> Add a new one:</h3>
+<form action="/Lucas/Chocolate/New" method="post">
+    Name <input type="text" name="name" />
+    Description <input type="text" name="description" />
+    <input name="Submi" type="submit"/>
+</form>
+
+<hr />
+
+@if (ViewBag.Chocolates.Count == 0)
+{
+  <p>No chocolates added yet</p>
+}
+else
+{
+  <form action="/Lucas/Chocolate/Remove" method="post">
+    <table width="50%">
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Delete?</td>
+      </tr>
+      @foreach (var chocolate in ViewBag.Chocolates)
+      {
+        <tr>
+          <td>@chocolate.ID</td>
+          <td>@chocolate.Name</td>
+          <td>@chocolate.Description</td>
+          <td><input type="checkbox" name="chocolateIds" value="@chocolate.ID" id="@chocolate.ID" /></td>
+        </tr>
+      }
+    </table>
+    <br>
+    <input type="submit" value="Remove Selected chocolate(s)" />
+  </form>
+}
