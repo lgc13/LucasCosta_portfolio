@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 //using LucasHelloWorldMVC.Models;
 using System.Text.Encodings.Web;
 using System.Collections.Generic;
-using ChocolateMVC.Models;
 using System.Linq;
+using ChocolateMVC.Models;
+using ChocolateMVC.ViewModels;
 
 namespace LucasHelloWorldMVC.Controllers
 {
@@ -44,11 +45,32 @@ namespace LucasHelloWorldMVC.Controllers
           Chocolate some_chocolate = new Chocolate();
           some_chocolate.Name = name;
           some_chocolate.Description = description;
+          
           Chocolates.Add(some_chocolate);
 
           ViewBag.Chocolates = Chocolates;
 
           return View("Chocolate");
+        }
+
+        [HttpGet("Lucas/Chocolate/List2")]
+        public IActionResult ChocolateList2()
+        {
+          AddChocolateViewModel addChocolateViewModel = new AddChocolateViewModel();
+
+          return View(addChocolateViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult New2(AddChocolateViewModel addChocolateViewModel)
+        {
+          Chocolate my_chocolate = new Chocolate();
+          my_chocolate.Name = addChocolateViewModel.Name;
+          my_chocolate.Description = addChocolateViewModel.Description;
+
+          Chocolates.Add(my_chocolate);
+
+          return View(Chocolates);
         }
 
         // POST: /Lucas/Chocolate/Remove

@@ -1,0 +1,14 @@
+@model List<ChocolateMVC.Models.Chocolate>
+
+<table>
+
+    @foreach (var chocolate in Model)
+    {
+      <tr>
+
+        <td>@chocolate.Name</td>
+        <td>@chocolate.Description</td>
+
+      </tr>
+    }
+  </table>

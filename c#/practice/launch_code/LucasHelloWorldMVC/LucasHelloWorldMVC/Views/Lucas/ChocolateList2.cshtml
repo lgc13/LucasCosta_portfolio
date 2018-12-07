@@ -1,0 +1,18 @@
+@model ChocolateMVC.ViewModels.AddChocolateViewModel
+
+<h2>CHOCOLATES LIST 2 (View models)</h2>
+
+<h3> Add a new one:</h3>
+<form asp-controller="Lucas" asp-action="New2" method="post">
+    <div class="form-group">
+      <label asp-for="Name"></label>
+      <input type="text" asp-for="Name" />
+    </div>
+    <div class="form-group">
+      <label asp-for="Description"></label>
+      <input type="text" asp-for="Description" />
+    </div>
+    <input name="Submi" type="submit"/>
+</form>
+
+<hr />
