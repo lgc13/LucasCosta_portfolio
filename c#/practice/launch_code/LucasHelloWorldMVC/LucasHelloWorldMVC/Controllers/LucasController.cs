@@ -14,6 +14,13 @@ namespace LucasHelloWorldMVC.Controllers
         static private List<string> Users_list = new List<string>();
         static private List<Chocolate> Chocolates = new List<Chocolate>();
 
+        // GET: /Lucas/Welcome/
+        // Requires using System.Text.Encodings.Web;
+        public string Welcome(string name, int numTimes = 1)
+        {
+            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+        }
+
         // GET: /Lucas/
         public IActionResult Index()
         {
@@ -27,11 +34,27 @@ namespace LucasHelloWorldMVC.Controllers
             return View();
         }
 
+        // GET: /Lucas/Users
+        public IActionResult Users()
+        {
+            ViewBag.users = Users_list;
+            return View();
+        }
+
+        // POST: /Lucas/Users
+        [HttpPost]
+        public IActionResult Users(string user)
+        {
+            Users_list.Add(user);
+
+            ViewBag.users = Users_list;
+            return View("Users");
+        }
+
         // GET: /Lucas/Chocolate
         [HttpGet]
         public IActionResult Chocolate(string name, string description)
         {
-
           ViewBag.Chocolates = Chocolates;
 
           return View();
@@ -71,8 +94,8 @@ namespace LucasHelloWorldMVC.Controllers
           return Redirect("Chocolate");
         }
 
-        [HttpGet("Lucas/Chocolate/List2")]
-        public IActionResult ChocolateList2()
+        [HttpGet("Lucas/Chocolate/ViewModel")]
+        public IActionResult ChocolateViewModel()
         {
           AddChocolateViewModel addChocolateViewModel = new AddChocolateViewModel();
 
@@ -86,32 +109,9 @@ namespace LucasHelloWorldMVC.Controllers
           my_chocolate.Name = addChocolateViewModel.Name;
           my_chocolate.Description = addChocolateViewModel.Description;
 
-          Chocolates.Add(my_chocolate);
+          ChocolateData.Add(my_chocolate);
 
-          return View(Chocolates);
-        }
-
-        // GET: /Lucas/New
-        public IActionResult New()
-        {
-            return View();
-        }
-
-        // POST: /Lucas/List
-        [HttpPost]
-        public IActionResult List(string user)
-        {
-            Users_list.Add(user);
-
-            ViewBag.users = Users_list;
-            return View();
-        }
-
-        // GET: /Lucas/Welcome/
-        // Requires using System.Text.Encodings.Web;
-        public string Welcome(string name, int numTimes = 1)
-        {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+          return View(ChocolateData.GetAll());
         }
 
     }

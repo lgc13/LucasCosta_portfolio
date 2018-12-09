@@ -1,6 +1,13 @@
 @{
-    ViewData["Title"] = "Cheeses List";
+    ViewData["Title"] = "Add Users";
 }
+
+<h2> Add a new user here </h2>
+<form action="/Lucas/Users" method="post">
+    <input name="user" type="text"/>
+    <input name="Submit" type="submit"/>
+</form>
+
 
 <h2> List of users: </h2>
 @if (ViewBag.users.Count == 0)
