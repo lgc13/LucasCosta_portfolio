@@ -45,12 +45,30 @@ namespace LucasHelloWorldMVC.Controllers
           Chocolate some_chocolate = new Chocolate();
           some_chocolate.Name = name;
           some_chocolate.Description = description;
-          
+
           Chocolates.Add(some_chocolate);
 
           ViewBag.Chocolates = Chocolates;
 
           return View("Chocolate");
+        }
+
+        // POST: /Lucas/Chocolate/Remove
+        [HttpPost("Lucas/Chocolate/Remove")]
+        public IActionResult ChocolateRemove(int[] chocolateIds)
+        {
+          Console.WriteLine("chocolateIds before: ");
+          foreach (int item in chocolateIds)
+          {
+            Console.WriteLine("id is: " + item);
+          }
+          Console.WriteLine(">>> Removing from list.");
+          foreach (int id in chocolateIds)
+          {
+            Chocolates.RemoveAll(x => x.ID == id);
+          }
+
+          return Redirect("Chocolate");
         }
 
         [HttpGet("Lucas/Chocolate/List2")]
@@ -71,24 +89,6 @@ namespace LucasHelloWorldMVC.Controllers
           Chocolates.Add(my_chocolate);
 
           return View(Chocolates);
-        }
-
-        // POST: /Lucas/Chocolate/Remove
-        [HttpPost("Lucas/Chocolate/Remove")]
-        public IActionResult ChocolateRemove(int[] chocolateIds)
-        {
-          Console.WriteLine("chocolateIds before: ");
-          foreach (int item in chocolateIds)
-          {
-            Console.WriteLine("id is: " + item);
-          }
-          Console.WriteLine(">>> Removing from list.");
-          foreach (int id in chocolateIds)
-          {
-            Chocolates.RemoveAll(x => x.ID == id);
-          }
-
-          return Redirect("Chocolate");
         }
 
         // GET: /Lucas/New
