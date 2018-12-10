@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ChocolateMVC.Models;
 using ChocolateMVC.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LucasHelloWorldMVC.Controllers
 {
@@ -91,7 +92,9 @@ namespace LucasHelloWorldMVC.Controllers
             Chocolates.RemoveAll(x => x.ID == id);
           }
 
-          return Redirect("Chocolate");
+          ViewBag.Chocolates = Chocolates;
+
+          return View("Chocolate");
         }
 
         [HttpGet("Lucas/Chocolate/ViewModel")]
@@ -103,15 +106,21 @@ namespace LucasHelloWorldMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult New2(AddChocolateViewModel addChocolateViewModel)
+        public IActionResult AddChocolate(AddChocolateViewModel addChocolateViewModel)
         {
-          Chocolate my_chocolate = new Chocolate();
-          my_chocolate.Name = addChocolateViewModel.Name;
-          my_chocolate.Description = addChocolateViewModel.Description;
+          if (ModelState.IsValid)
+          {
+            Chocolate my_chocolate = new Chocolate();
+            my_chocolate.Name = addChocolateViewModel.Name;
+            my_chocolate.Description = addChocolateViewModel.Description;
+            my_chocolate.Type = addChocolateViewModel.Type;
 
-          ChocolateData.Add(my_chocolate);
+            ChocolateData.Add(my_chocolate);
 
-          return View(ChocolateData.GetAll());
+            return View(ChocolateData.GetAll());
+          }
+          return View("ChocolateViewModel");
+
         }
 
     }

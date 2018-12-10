@@ -62,7 +62,7 @@ using LucasHelloWorldMVC.Models;
             WriteLiteral("\n<h2> Add a new user here </h2>\n");
             EndContext();
             BeginContext(74, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "993919db1b384597bf7456fec079f5ac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bda83cc12aa54309a8224a947df93774", async() => {
                 BeginContext(116, 79, true);
                 WriteLiteral("\n    <input name=\"user\" type=\"text\"/>\n    <input name=\"Submit\" type=\"submit\"/>\n");
                 EndContext();

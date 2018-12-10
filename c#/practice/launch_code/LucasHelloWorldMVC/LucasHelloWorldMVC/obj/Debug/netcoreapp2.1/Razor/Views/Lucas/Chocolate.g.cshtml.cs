@@ -64,7 +64,7 @@ using LucasHelloWorldMVC.Models;
             WriteLiteral("\n<h2>CHOCOLATES</h2>\n\n<h3> Add a new one:</h3>\n");
             EndContext();
             BeginContext(186, 198, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08e8f165e7a84b7ab13e3dbda921e591", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0ed590b672a4bdba5edc336331ac51e", async() => {
                 BeginContext(236, 141, true);
                 WriteLiteral("\n    Name <input type=\"text\" name=\"name\" />\n    Description <input type=\"text\" name=\"description\" />\n    <input name=\"Submi\" type=\"submit\"/>\n");
                 EndContext();
@@ -108,7 +108,7 @@ else
             WriteLiteral("  ");
             EndContext();
             BeginContext(476, 605, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebc6517ffcd74ea9b528c0162786eea7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f99a221cbcf4a54acc56746474330f8", async() => {
                 BeginContext(529, 144, true);
                 WriteLiteral("\n    <table width=\"50%\">\n      <tr>\n        <td>ID</td>\n        <td>Name</td>\n        <td>Description</td>\n        <td>Delete?</td>\n      </tr>\n");
                 EndContext();
