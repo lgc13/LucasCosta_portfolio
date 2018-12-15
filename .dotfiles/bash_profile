@@ -22,6 +22,4 @@ export PATH=$PATH:/Users/$USER/Library/Python/2.7/bin
 export PATH=$PATH:/Users/$USER/Library/Python/3.7/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/11/bin/
 export PATH=$PATH:/usr/bin/java
-
-export PATH=$PATH:/usr/local/opt/icu4c/bin
-export PATH=$PATH:/usr/local/opt/icu4c/sbin
+export PATH="$PATH:`yarn global bin`"
