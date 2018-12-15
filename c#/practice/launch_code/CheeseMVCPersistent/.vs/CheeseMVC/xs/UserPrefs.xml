@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{6AFD9555-CD44-4530-AEFF-15264D392DF0}|Default">
+  <MonoDevelop.Ide.ItemProperties.src.CheeseMVC PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/CheeseMVC/Program.cs">
+    <Files>
+      <File FileName="src/CheeseMVC/Program.cs" Line="24" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
