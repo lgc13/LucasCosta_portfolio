@@ -4,5 +4,6 @@ namespace CheeseMVC.Models
     {
         public string Name { get; set; }
         public int ID { get; set; }
+        public IList<Cheese> Cheese { get; set; }
     }
 }
