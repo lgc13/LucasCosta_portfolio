@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{6AFD9555-CD44-4530-AEFF-15264D392DF0}|Default">
   <MonoDevelop.Ide.ItemProperties.src.CheeseMVC PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/CheeseMVC/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/CheeseMVC/Data/CheeseDbContext.cs">
     <Files>
-      <File FileName="src/CheeseMVC/Program.cs" Line="24" Column="1" />
+      <File FileName="src/CheeseMVC/Program.cs" Line="19" Column="1" />
+      <File FileName="src/CheeseMVC/appsettings.json" Line="9" Column="1" />
+      <File FileName="src/CheeseMVC/Data/CheeseDbContext.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
