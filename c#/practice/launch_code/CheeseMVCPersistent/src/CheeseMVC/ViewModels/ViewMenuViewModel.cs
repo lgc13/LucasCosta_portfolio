@@ -11,7 +11,7 @@ namespace CheeseMVC.ViewModels
     public class ViewMenuViewModel
     {
         [Display(Name = "Menu Name")]
-        public string Menu { get; set; }
+        public Menu Menu { get; set; }
 
         [Display(Name = "Items Name")]
         public IList<CheeseMenu> Items { get; set; }

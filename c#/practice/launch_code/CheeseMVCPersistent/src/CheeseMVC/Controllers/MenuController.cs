@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CheeseMVC.ViewModels;
 using CheeseMVC.Data;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace CheeseMVC.Controllers
 {
@@ -11,7 +12,7 @@ namespace CheeseMVC.Controllers
     {
         private readonly CheeseDbContext context;
 
-        public CategoryController(CheeseDbContext dbContext)
+        public MenuController(CheeseDbContext dbContext)
         {
           context = dbContext;
         }
@@ -38,13 +39,13 @@ namespace CheeseMVC.Controllers
                 // Add the new menu to my existing menu
                 Menu newMenu = new Menu
                 {
-                    Name = addMenuViewModel.Name
+                    Name = addMenuViewModel.Menu
                 };
 
                 context.Menus.Add(newMenu);
                 context.SaveChanges();
 
-                return Redirect("/Menu/ViewMenu/" + newMenu.ID)
+                return Redirect("/Menu/ViewMenu/" + newMenu.ID);
             }
 
             return View(addMenuViewModel);
@@ -71,9 +72,18 @@ namespace CheeseMVC.Controllers
         public IActionResult AddItem(int id)
         {
             Menu menu = context.Menus.Single(c => c.ID == id);
-            IEnumerable<Cheese> cheese = context.Cheeses.ToList();
-            AddMenuItemViewModel addMenuItemViewModel = new AddMenuItemViewModel(menu, cheese);
+            List<Cheese> cheeses = context.Cheeses.ToList();
+            AddMenuItemViewModel addMenuItemViewModel = new AddMenuItemViewModel(menu, cheeses);
             return View(addMenuItemViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult AddItem(AddMenuItemViewModel addMenuItemViewModel)
+        {
+            // Menu menu = context.Menus.Single(c => c.ID == id);
+            // List<Cheese> cheeses = context.Cheeses.ToList();
+            // AddMenuItemViewModel addMenuItemViewModel = new AddMenuItemViewModel(menu, cheeses);
+            return View("AddItem");
         }
     }
 }
