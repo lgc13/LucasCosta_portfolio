@@ -12,6 +12,8 @@ alias gs='git status'
 alias gcm='git commit -m'
 alias gp='git push'
 alias gc='git checkout'
+# This checks all branches not merged with origin, other than master, develop and staging, then deletes them from local
+alias gclean='git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging)" | xargs -n 1 git branch -d'
 # alias gpull='git pull'
 # alias gph='git push origin HEAD'
 # alias gpo='git push origin'
