@@ -13,7 +13,7 @@ alias gcm='git commit -m'
 alias gp='git push'
 alias gc='git checkout'
 # This checks all branches not merged with origin, other than master, develop and staging, then deletes them from local
-alias gclean='git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging)" | xargs -n 1 git branch -d'
+alias gclean='echo "Doing a git pull and a gclean" && git pull && git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging)" | xargs -n 1 git branch -d'
 alias gcb='git checkout -b' # add branchName to be created/checked out after
 # alias gpull='git pull'
 # alias gph='git push origin HEAD'
