@@ -8,7 +8,54 @@ C# was the first language that taught me object-oriented programming more in-dep
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/CreateRoom_objectCalculator_project">1- Create Room Calculator</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/CheeseMVCPersistent">1- Cheese Web App</a></h2>
+
+<!-- Project BIO -->
+This web application allows a user to do different actions with "cheese". A user can create a cheese type, create a cheese category which can have multiple cheese in it, and create a menu which can have multiple cheese and categories. This is a simple dynamic web application created while I taught at a organization called LaunchCode. The students and I both worked together on the creation of this dotnet app.
+
+This application displays some of my skills with:
+
+- Dotnet MVC web app with a Microsoft SqlServer database (through Docker)
+- ViewModels being passed as parameters to the frontend
+- Lambda expressions
+- Utilization of DB migrator files
+- Basic server-side validation
+- Teaching and helping a group of beginner developers
+
+<!-- Screenshots -->
+<img src="c%23/CheeseMVCPersistent/img/home.png" width= 60% length= 60%>
+
+<!-- Code explanation -->
+I use dbContext in order to persist any data the users puts in the front end, onto my SqlServer database. The use of lambdas comes in handy when retrieving and adding items from queries. I also make good use of models/ViewModels in order to properly create the objects that should be displayed on each view.
+
+<!-- Code snippet -->
+You can see that in this code snippet:
+
+```c#
+  if (ModelState.IsValid)
+  {
+      CheeseCategory newCheeseCategory =
+              context.Categories.Single(c => c.ID == addCheeseViewModel.CategoryID);
+
+      // Add the new cheese to my existing cheeses
+      Cheese newCheese = new Cheese
+      {
+          Name = addCheeseViewModel.Name,
+          Description = addCheeseViewModel.Description,
+          Category = newCheeseCategory
+      };
+
+      context.Cheeses.Add(newCheese);
+      context.SaveChanges();
+
+      return Redirect("/Cheese");
+  }
+```
+
+<!-- ......................E N D  O F  P R O J E C T........................ -->
+
+<!-- Project section -->
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/CreateRoom_objectCalculator_project">2- Create Room Calculator</a></h2>
 
 <!-- Project BIO -->
 This application creates different "Room" objects, by asking for user input for information such as a Room name, length, width, and height. Afterward, methods are called in order to return attribute values about this Room, such as its name, area, volume in cubed feet and in cubed yards. It also provides information about a default Room (from default constructor properties.)
@@ -57,7 +104,7 @@ roomObject2.SetHeight(rHeight);
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/LanguageIntegratedQuery_project">2- LINQ - Language Integrated Query project</a></h2>
+<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23/LanguageIntegratedQuery_project">3- LINQ - Language Integrated Query project</a></h2>
 
 <!-- Project BIO -->
 This project demonstrates how someone can use LINQ - Language Integrated Query to interact with data. It can be used to query many different types of data including relational, XML, and even objects. LINQ uses SQL-like syntax to produce usable objects.
