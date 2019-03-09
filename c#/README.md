@@ -23,7 +23,12 @@ This application displays some of my skills with:
 - Teaching and helping a group of beginner developers
 
 <!-- Screenshots -->
-<img src="c%23/CheeseMVCPersistent/img/home.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/home.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/addCheese.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/categories.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/addCategory.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/menus.png" width= 60% length= 60%>
+<img src="/c%23/CheeseMVCPersistent/img/addMenuItem.png" width= 60% length= 60%>
 
 <!-- Code explanation -->
 I use dbContext in order to persist any data the users puts in the front end, onto my SqlServer database. The use of lambdas comes in handy when retrieving and adding items from queries. I also make good use of models/ViewModels in order to properly create the objects that should be displayed on each view.
