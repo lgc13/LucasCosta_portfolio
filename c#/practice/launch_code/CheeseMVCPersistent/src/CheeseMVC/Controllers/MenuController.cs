@@ -39,7 +39,7 @@ namespace CheeseMVC.Controllers
                 // Add the new menu to my existing menu
                 Menu newMenu = new Menu
                 {
-                    Name = addMenuViewModel.Menu
+                    Name = addMenuViewModel.Name
                 };
 
                 context.Menus.Add(newMenu);
@@ -80,10 +80,29 @@ namespace CheeseMVC.Controllers
         [HttpPost]
         public IActionResult AddItem(AddMenuItemViewModel addMenuItemViewModel)
         {
-            // Menu menu = context.Menus.Single(c => c.ID == id);
-            // List<Cheese> cheeses = context.Cheeses.ToList();
-            // AddMenuItemViewModel addMenuItemViewModel = new AddMenuItemViewModel(menu, cheeses);
-            return View("AddItem");
-        }
+          if (ModelState.IsValid)
+          {
+              var cheese = addMenuItemViewModel.cheeseID;
+              var menu = addMenuItemViewModel.menuID;
+
+              IList<CheeseMenu> existingItems = context.CheeseMenus
+                .Where(cm => cm.CheeseID == cheese)
+                .Where(cm => cm.MenuID == menu).ToList();
+
+              if (existingItems.Count == 0) {
+                  CheeseMenu menuItem = new CheeseMenu
+                  {
+                      Cheese = context.Cheeses.Single(c=> c.ID == cheese),
+                      Menu = context.Menus.Single(c => c.ID == menu),
+                  };
+
+                  context.CheeseMenus.Add(menuItem);
+                  context.SaveChanges();
+              }
+              return Redirect("/Menu/ViewMenu/" + menu);
+          }
+
+          return View(addMenuItemViewModel);
+      }
     }
 }

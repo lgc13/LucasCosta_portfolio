@@ -7,13 +7,13 @@
 <h1>Add Menu Item</h1>
 
 <form asp-controller="Menu" asp-action="AddItem" method="post">
-
     <div class="form-group">
-        <label asp-for="MenuID"></label>
-        <input type="hidden" name="MenuID" value="@Model.Menu.ID" />
-        <span asp-validation-for="MenuID"></span>
+        <label asp-for="cheeseID"></label>
+        <select asp-for="cheeseID" asp-items="Model.Cheeses"></select>
+        <span asp-validation-for="cheeseID"></span>
     </div>
 
-    <input type="submit" value="Add Menu" />
+    <input type="hidden" name="MenuID" value="@Model.Menu.ID" />
 
+    <input type="submit" value="Add Item" />
 </form>

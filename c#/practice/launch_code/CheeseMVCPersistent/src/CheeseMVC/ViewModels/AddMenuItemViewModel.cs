@@ -23,7 +23,8 @@ namespace CheeseMVC.ViewModels
 
         public AddMenuItemViewModel(){}
 
-        public AddMenuItemViewModel(Menu Menu, IEnumerable<Cheese> cheeses){
+        public AddMenuItemViewModel(Menu menu, IEnumerable<Cheese> cheeses){
+          Menu = menu;
           Cheeses = new List<SelectListItem>();
 
           foreach (var cheese in cheeses)

@@ -1,14 +1,25 @@
-@model CheeseMVC.ViewModels.ViewMenuViewModel
-
 @{
-    ViewBag.Title = @Model.Menu;
+    ViewBag.Title = "Menu";
 }
 
-<ul>
-  @foreach (var menu in Model.Items)
-  {
-    <li>@cheeseMenu.Cheeses.Name</li>
-  }
-</ul>
+<h2>@Model.Menu.Name</h2>
 
-<p><a asp-controller="Menu" asp-action="AddItem" asp-route-id=@Model.Menu.ID>Add Menu</a></p>
+<table class="table">
+
+    <ul>
+        @foreach (var cheeseMenu in Model.Items)
+        {
+            <li>
+                @cheeseMenu.Cheese.Name
+            </li>
+        }
+    </ul>
+
+</table>
+
+@if (Model.Items.Count == 0)
+{
+    <p>No cheeses yet!</p>
+}
+
+<p><a asp-controller="Menu" asp-action="AddItem" asp-route-id="@Model.Menu.ID">Add Item</a></p>
