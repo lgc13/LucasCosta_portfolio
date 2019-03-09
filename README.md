@@ -17,11 +17,7 @@
   <p> Thanks for checking out my GitHub monorepository! This is part of my online portfolio. Here you will find information about me, my skills, and projects that I’ve worked on. </p>
 </div>
 
-<hr>
-
-
-
-## Monorepository Portfolio
+# Monorepository Portfolio
 
 As of August 2018, I decided to revamp my entire portfolio onto a single centralized GitHub Monorepository! This allows me to:
 
@@ -59,9 +55,7 @@ LucasCosta_portfolio
 
 Each folder holds the biggest projects that I've done with that specific technology right inside its directory. There is also a 'practice' folder which has all other project/example exercises that I've done with said language.
 
----
-
-## About Lucas
+# About Lucas
 
 <div align="center">
   <h3>
@@ -91,9 +85,8 @@ I have also worked as a computer technician, and I have a lot of experience with
 
 Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
 
----
 
-## Projects Showcase
+# Projects Showcase
 
 This section of my monorepo portfolio displays some of my biggest and favorite projects that I have worked on. You will also find other details about these projects such as their summary, skills and concepts utilized, screenshots of the working applications, code snippets and their explanation.
 
@@ -448,9 +441,8 @@ protected void onCreate(Bundle savedInstanceState) {
 
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
----
 
-## Contact Info
+# Contact Info
 
 Do you like what you see? Here are some other pages where you can get some more info, and/or connect with me!
 
