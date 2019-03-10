@@ -72,13 +72,13 @@ I am enthusiastic, adaptive, responsible and hardworking. I strive at using my l
 
 As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
 
-- Infrastructure: Jenkins, IBM UrbanCode Deploy, Amazon Web Services (AWS), WebLogic, WebSphere, JBoss, Apache Tomcat
-- Web Frameworks: Spring MVC, Hibernate, Django, Flask
+- Infrastructure: OpenShift, Jenkins, Amazon Web Services (AWS), WebLogic, WebSphere, JBoss, Apache Tomcat, IBM UrbanCode Deploy
+- Web Frameworks: Spring Boot, Flask, Hibernate, Django
 - Development: Python, Java, C#, C++, JSP, JSTL, PHP, Android Studio
-- Database: MySQL, PostgreSQL, Oracle
-- Front end: AngularJS, jQuery, JavaScript, HTML, Bootstrap, CSS
-- Console/IDE: Git, Bash, Unix, Putty, PyCharm, Eclipse, Maven
-- Others: Agile, Jira, Pivotal Tracker, SVN
+- Database: MySQL, PostgreSQL, Oracle, Microsoft SQL Server
+- Front end: React Native, AngularJS, Redux, jQuery, JavaScript, HTML, Bootstrap, CSS
+- Console/IDE: Git, Bash, Unix, IntelliJ, PyCharm, Eclipse, Maven, Putty
+- Others: Docker, RabbitMQ, Jira, Pivotal Tracker, SVN, Agile
 
 
 I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
