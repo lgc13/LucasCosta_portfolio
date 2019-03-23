@@ -16,6 +16,9 @@
     closeDeletedFileTabs: true
     customFileTypes:
       "text.html.cshtml": "cshtml"
+    disabledPackages: [
+      "autocomplete-atom-api"
+    ]
     telemetryConsent: "no"
   editor:
     showIndentGuide: true
