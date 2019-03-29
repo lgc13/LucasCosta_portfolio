@@ -4,6 +4,13 @@ mock functions by putting them in separate separate files
 
 spyOn for functions within same file
 
+Note:
+
+Importing a class syntax:
+`import { ClassScreen } from ./somePath`
+Importing a component:
+`import SomeComponent from ./somePath;`
+
 - Import the following:
 
 ```js
