@@ -58,6 +58,28 @@ const component = shallow(
 expect(component.find({ testID: 'someIdNameHere' })).toHaveLength(1);
 ```
 
+4. Check component text by testID:
+```js
+expect(
+        wrapper
+          .find({ testID: 'someTestID' })
+          .childAt(0)  
+          .text(),
+      ).toEqual('Some Text');
+```
+
+4. Check a component value by its index number (how many times it showed):
+```js
+
+expect(
+     component
+       .find('Text')
+       .at(0) // this is where you specify the index number.... 0 for first time it showed
+       .render()
+       .text(),
+   ).toEqual('Something');
+```
+
 4. Check what props a component is using
 ```js
 // Looks for <SomeComponent clickable someOtherProp="123">
@@ -67,7 +89,31 @@ expect(component.find('SomeComponent').props()).toEqual({
     });
 ```
 
-5. Testing a function within the same component:
+5. Check a specific prop value
+```js
+// Looks for <SomeComponent clickable someOtherProp="123">
+expect(component.find('SomeComponent').prop('specificComponent')).toEqual('123');
+```
+
+5. Check a child component
+```js
+// You must mock the component
+jest.mock(
+  'navigators/dashboard/screens/final-mile/components/FinalMileDelivery',
+  () => 'FinalMileDelivery',
+);
+
+it('renders correct props for <FinalMileDelivery />', () => {
+    const component = mount(<FinalMileDeliveryScreen {...defaultProps} />);
+    expect(component).toHaveChild('FinalMileDelivery', {
+      orderIdentifier: defaultProps.navigation.state.params.orderIdentifier,
+      productDetails: defaultProps.navigation.state.params.productDetails,
+    });
+  });
+
+
+```
+6. Testing a function within the same component:
 
 ```js
 // Function generateOrderNumberText() calls getArrivalTask() within component AddressWrapper
@@ -108,6 +154,30 @@ it('Shows correct order number text', () => {
       expect(text(textNode)).toEqual('U-1-1-1-A-B-C');
 
       expect(getArrivalTask).toHaveBeenCalledWith(defaultProps.location);
+    });
+```
+
+7. Testing a function within a class (component)
+```js
+
+export class SomeScreenClass extends React.Component<Props, State> {
+  handleSave = () => {
+    console.warn('Pressed the save button');
+  };
+  render() {
+    return (
+      <ComponentName
+        onSave={this.handleSave}
+      />
+    );
+  }
+}
+
+it('ComponentName renders with correct props', () => {
+  const wrapper = shallow(<FinalMileDeliveryScreen {...defaultProps} />);
+      expect(wrapper.find('ComponentName').props()).toEqual({
+        onSave: wrapper.instance().handleSave,
+      });
     });
 ```
 
