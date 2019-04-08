@@ -181,6 +181,19 @@ it('ComponentName renders with correct props', () => {
     });
 ```
 
+8. Simulate onPress
+
+```js
+<SomeComponent
+          onPress={someFunction}
+        />
+
+it('calls someFunction on press', () => {
+      wrapper.find('SomeComponent').simulate('press');
+      expect(defaultProps.someFunction).toHaveBeenCalled();
+    });
+
+```
 6. Mocking function
 
 - Import that function
