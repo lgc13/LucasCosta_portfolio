@@ -95,7 +95,7 @@ expect(component.find('SomeComponent').props()).toEqual({
 expect(component.find('SomeComponent').prop('specificComponent')).toEqual('123');
 ```
 
-5. Check a child component
+6. Check a child component
 ```js
 // You must mock the component
 jest.mock(
@@ -113,6 +113,19 @@ it('renders correct props for <FinalMileDelivery />', () => {
 
 
 ```
+
+7. Check if a component's props are correct (when a function needs to be mocked)
+```js
+it('renders with correct props', () => {
+      expect(JSON.stringify(wrapper.find('SomeComponent').props())).toEqual(
+        JSON.stringify({
+          onPress: () => jest.fn(),
+        }),
+      );
+    });
+
+```
+
 6. Testing a function within the same component:
 
 ```js
@@ -252,4 +265,14 @@ it('filters out FINAL_MILE orders', async () => {
       getState().appReducer.media,
     );
   });
+  ```
+
+  10. Resetting and clearing mocks:
+
+  ```js
+  afterEach(() => {
+    jest.resetAllMocks();
+    jest.clearAllMocks();
+  });
+
   ```
