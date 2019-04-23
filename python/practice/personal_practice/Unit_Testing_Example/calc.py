@@ -1,5 +1,8 @@
-def add(x, y):
-    return x + y
+def add(numArray):
+    result = 0
+    for num in numArray:
+        result = result + num
+    return result
 
 def subtract(x, y):
     return x - y
