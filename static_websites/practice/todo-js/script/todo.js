@@ -4,3 +4,5 @@ let todos = [
   {id: 3, text: "Get oil change", complete: false},
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
+
+// initial commit
