@@ -4,3 +4,12 @@ let todos = [
   {id: 3, text: "Get oil change", complete: false},
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
+
+function displayTodosText() {
+    for (var i = 0; i < todos.length; i++) {
+        document.write('<div class="todo">')
+        document.write('<input type="checkbox" class="todo-checkbox" />')
+        document.write('<span class="todo-text">' + todos[i].text + '</span>')
+        document.write('</div>')
+    }
+}
