@@ -34,10 +34,10 @@ body {
   color: red;
 }
 
-/*input[type=checkbox]:checked + .todo-text{
+input[type=checkbox]:checked + .todo-text{
     text-decoration: line-through;
     color: #ccc;
-}*/
+}
 
 .todo:first-child {
     border-top: 0;
