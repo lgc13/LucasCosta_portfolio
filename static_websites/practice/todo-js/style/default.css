@@ -34,10 +34,10 @@ body {
   color: red;
 }
 
-input[type=checkbox]:checked + span{
+/*input[type=checkbox]:checked + .todo-text{
     text-decoration: line-through;
     color: #ccc;
-}
+}*/
 
 .todo:first-child {
     border-top: 0;
@@ -54,7 +54,7 @@ input[type=checkbox]:checked + span{
     font-weight: 100;
 }
 
-input[type=text] + #todo-text {
+input[type=text]{
     width: 600px;
     border: 0;
     height: 40px;
