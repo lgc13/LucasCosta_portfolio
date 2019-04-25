@@ -8,8 +8,8 @@ let todos = [
 function displayTodosText() {
     for (var i = 0; i < todos.length; i++) {
         document.write('<div class="todo">')
-        document.write('<input type="checkbox" class="todo-checkbox" />')
-        document.write('<span class="todo-text">' + todos[i].text + '</span>')
+        document.write('<input type="checkbox" class="todo-checkbox" name="todo-complete"/>')
+        document.write('<span for="todo-complete" class="todo-text" id="todo-text">' + todos[i].text + '</span>')
         document.write('</div>')
     }
 }

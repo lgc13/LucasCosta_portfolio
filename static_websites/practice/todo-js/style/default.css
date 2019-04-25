@@ -30,7 +30,11 @@ body {
         justify-content: flex-start;
 }
 
-.todo.complete {
+.selected {
+  color: red;
+}
+
+input[type=checkbox]:checked + span{
     text-decoration: line-through;
     color: #ccc;
 }
@@ -50,7 +54,7 @@ body {
     font-weight: 100;
 }
 
-input[type=text] {
+input[type=text] + #todo-text {
     width: 600px;
     border: 0;
     height: 40px;
