@@ -3,18 +3,19 @@
   <head>
     <title>Things to do (JavaScript)</title>
     <link rel="stylesheet" type="text/css" href="style/default.css" />
-    <script src="script/todo.js"></script>
   </head>
   <body>
     <div class="app">
       <h1>Things to do</h1>
       <div id="main-todo-list" class="todo-list">
-        <script>
-          displayTodosText()
-        </script>
+        <div class="todo">
+          <input type="checkbox" class="todo-checkbox"/>
+          <span class="todo-text"/>
+        </div>
       </div>
       <input type="text" placeholder="New todo">
       <p><span id="remaining-count">0</span> items remain</p>
     </div>
+    <script src="script/todo.js"></script>
   </body>
 </html>

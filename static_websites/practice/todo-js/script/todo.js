@@ -5,13 +5,17 @@ let todos = [
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
 
-function displayTodosText() {
-    for (var i = 0; i < todos.length; i++) {
-        document.write('<div class="todo">')
-        document.write('<input type="checkbox" class="todo-checkbox" />')
-        document.write('<span class="todo-text">' + todos[i].text + '</span>')
-        document.write('</div>')
-    }
+const displayTodo = () => {
+  const mainTodoList = document.getElementById('main-todo-list');
+  const todoDiv = document.getElementsByClassName('todo')[0];
+
+  document.getElementsByClassName('todo')[0].remove();
+
+  todos.forEach((todo) => {
+    newTodo = todoDiv.cloneNode(true);
+    newTodo.getElementsByClassName('todo-text')[0].innerHTML = todo.text;
+    mainTodoList.appendChild(newTodo);
+  });
 }
 
-//initial commit
+displayTodo();
