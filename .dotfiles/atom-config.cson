@@ -12,6 +12,10 @@
       "td"
       "li"
     ]
+  "browser-refresh-on-save":
+    chromeCanary: false
+    safari: false
+    vivaldi: false
   core:
     closeDeletedFileTabs: true
     customFileTypes:
