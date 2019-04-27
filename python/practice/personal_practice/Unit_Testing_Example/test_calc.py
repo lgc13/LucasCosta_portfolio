@@ -5,9 +5,10 @@ import calc # importing file that needs to be tested
 class TestCalc(unittest.TestCase):
 
     def test_add(self):
-        self.assertEqual(calc.add(10, 5), 15)
-        self.assertEqual(calc.add(-1, 1), 0)
-        self.assertEqual(calc.add(-1, -1), -2)
+        mockNumArray = [10, 5]
+        self.assertEqual(calc.add(mockNumArray), 16)
+        # self.assertEqual(calc.add(-1, 1), 0)
+        # self.assertEqual(calc.add(-1, -1), -2)
 
     def test_subtract(self):
         self.assertEqual(calc.subtract(10, 5), 5)
@@ -23,7 +24,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(10, 5), 2)
         self.assertEqual(calc.divide(-1, 1), -1)
         self.assertEqual(calc.divide(-1, -1), 1)
-        self.assertEqual(calc.divide(5, 2), 2.5)
+        # self.assertEqual(calc.divide(5, 2), 2.5)
 
         self.assertRaises(ValueError, calc.divide, 10, 0) # or like this:
 
