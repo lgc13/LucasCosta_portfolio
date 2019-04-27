@@ -5,25 +5,26 @@ let todos = [
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
 let itemsComplete = todos.filter((todo) => todo.complete === true).length;
+const mainTodoList = document.getElementById('main-todo-list');
+const todoDiv = document.getElementsByClassName('todo')[0]; // make a copy of main todo div
 
-const displayInitialTodo = () => {
-  const mainTodoList = document.getElementById('main-todo-list');
-  const todoDiv = document.getElementsByClassName('todo')[0]; // make a copy of main todo div
+const displayInitialPage = () => {
+  document.getElementsByTagName('input')[1].id = 'inputBox';
+  document.getElementsByTagName('input')[1].onClick = saveNewItem();
 
   document.getElementsByClassName('todo')[0].remove(); // delete current
 
   todos.forEach((todo) => {
-    newTodoDiv = todoDiv.cloneNode(true);
-    newTodoDiv.getElementsByTagName('span')[0].innerHTML = todo.text;
+    const newTodoDiv = todoDiv.cloneNode(true);
     newTodoDiv.getElementsByTagName('span')[0].id = todo.id;
+    newTodoDiv.getElementsByTagName('span')[0].innerHTML = todo.text;
     styleTodoItem(todo, newTodoDiv);
     mainTodoList.appendChild(newTodoDiv);
     if (todo.complete === true) {
       itemsComplete =+ 1;
     }
-    changeItemsRemain();
   });
-
+  changeItemsRemain();
 }
 
 const styleTodoItem = (todoItem, divTodo) => {
@@ -65,4 +66,26 @@ const changeItemsRemain = () => {
     .innerHTML = todos.length - itemsComplete;
 }
 
-displayInitialTodo();
+const saveNewItem = () => {
+  const inputTextElem = document.getElementById('inputBox');
+
+  inputTextElem.addEventListener("keyup", (event) => {
+    if (event.keyCode === 13) {
+      const newItem = {
+        id: todos[todos.length - 1].id + 1,
+        text: inputTextElem.value,
+        complete: false
+      };
+      todos.push(newItem);
+      const divTodoClone = todoDiv.cloneNode(true);
+      divTodoClone.getElementsByTagName('span')[0].id = newItem.id;
+      divTodoClone.getElementsByTagName('span')[0].innerHTML = newItem.text;
+
+      mainTodoList.appendChild(divTodoClone);
+      inputTextElem.value = '';
+    }
+  });
+}
+
+
+displayInitialPage();
