@@ -4,6 +4,7 @@ let todos = [
   {id: 3, text: "Get oil change", complete: false},
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
+let itemsComplete = todos.filter((todo) => todo.complete === true).length;
 
 const displayInitialTodo = () => {
   const mainTodoList = document.getElementById('main-todo-list');
@@ -17,7 +18,12 @@ const displayInitialTodo = () => {
     newTodoDiv.getElementsByTagName('span')[0].id = todo.id;
     styleTodoItem(todo, newTodoDiv);
     mainTodoList.appendChild(newTodoDiv);
+    if (todo.complete === true) {
+      itemsComplete =+ 1;
+    }
+    changeItemsRemain();
   });
+
 }
 
 const styleTodoItem = (todoItem, divTodo) => {
@@ -29,24 +35,34 @@ const styleTodoItem = (todoItem, divTodo) => {
   }
 }
 
-
 const checkBoxPress = (input) => {
-  const todoId = Number(input.parentElement.getElementsByClassName('todo-text')[0].id); // get todoId of item clicked on
+  // get todoId of item clicked on
+  const todoId = Number(input.parentElement
+    .getElementsByClassName('todo-text')[0].id);
 
-  const todoItem = todos.find(todo => todo.id === todoId); // find item with that id
+  // find item with that id
+  const todoItem = todos.find(todo => todo.id === todoId);
 
-  todoItem.complete ? todoItem.complete = false : todoItem.complete = true;
+  if (todoItem.complete) {
+    todoItem.complete = false;
+    itemsComplete -= 1;
+  } else {
+    todoItem.complete = true;
+    itemsComplete += 1;
+  }
 
   styleTodoItem(todoItem, input.parentElement);
+
+  changeItemsRemain();
 
   todos.filter((todo) => todo.complete == true )
     .forEach((todo) => {console.log('true:' , todo.text)});
   console.log('------');
 }
 
+const changeItemsRemain = () => {
+  document.getElementById('remaining-count')
+    .innerHTML = todos.length - itemsComplete;
+}
 
 displayInitialTodo();
-
-todos.filter((todo) => todo.complete == true )
-  .forEach((todo) => {console.log('true:' , todo.text)});
-console.log('------');
