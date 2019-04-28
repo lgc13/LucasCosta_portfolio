@@ -35,6 +35,10 @@ body {
     color: #ccc;
 }
 
+.todo.complete.hidden {
+  display: none;
+}
+
 .todo:first-child {
     border-top: 0;
 }
@@ -64,4 +68,8 @@ input[type=text] {
 
 #remaining-count {
   font-weight: bold;
+}
+
+#hide-show-div {
+  margin-top: 5px;
 }

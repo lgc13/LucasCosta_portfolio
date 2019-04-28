@@ -7,6 +7,7 @@ let todos = [
 let itemsComplete = todos.filter((todo) => todo.complete === true).length;
 const mainTodoList = document.getElementById('main-todo-list');
 const todoDiv = document.getElementsByClassName('todo')[0];
+let isHiding = false;
 
 const displayInitialPage = () => {
   document.getElementsByTagName('input')[1].id = 'inputBox';
@@ -24,7 +25,34 @@ const displayInitialPage = () => {
       itemsComplete =+ 1;
     }
   });
-  changeItemsRemain();
+}
+
+const createHideOrShowButton = () => {
+  const divElem = document.createElement('div');
+  divElem.id = 'hide-show-div';
+  const buttonElem = document.createElement('button');
+  buttonElem.id = 'hide-show-button';
+  buttonElem.innerHTML = 'Hide completed items';
+  buttonElem.addEventListener('click', hideOrShowTodos);
+
+  divElem.appendChild(buttonElem);
+  document.getElementById('remaining-count').parentElement.appendChild(divElem);
+}
+
+const hideOrShowTodos = () => {
+  if (!isHiding) {
+    todos.filter(todo => todo.complete === true).forEach(todo => {
+      document.getElementById(todo.id).parentElement.classList.add('hidden');
+      document.getElementById('hide-show-button').innerHTML = 'Show completed items';
+    });
+    isHiding = true;
+  } else {
+    todos.filter(todo => todo.complete === true).forEach(todo => {
+      document.getElementById(todo.id).parentElement.classList.remove('hidden');
+      document.getElementById('hide-show-button').innerHTML = 'Hide completed items';
+    });
+    isHiding = false;
+  }
 }
 
 const styleTodoItem = (todoItem, divTodo) => {
@@ -96,3 +124,5 @@ const setNewDivAttributes = (newTodoDiv, todo) => {
 }
 
 displayInitialPage();
+createHideOrShowButton();
+changeItemsRemain();
