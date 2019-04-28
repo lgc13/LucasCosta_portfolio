@@ -6,18 +6,16 @@ let todos = [
 ];
 let itemsComplete = todos.filter((todo) => todo.complete === true).length;
 const mainTodoList = document.getElementById('main-todo-list');
-const todoDiv = document.getElementsByClassName('todo')[0]; // make a copy of main todo div
+const todoDiv = document.getElementsByClassName('todo')[0];
 
 const displayInitialPage = () => {
   document.getElementsByTagName('input')[1].id = 'inputBox';
-  document.getElementsByTagName('input')[1].onClick = saveNewItem();
 
   document.getElementsByClassName('todo')[0].remove(); // delete current
 
   todos.forEach((todo) => {
     const newTodoDiv = todoDiv.cloneNode(true);
-    newTodoDiv.getElementsByTagName('span')[0].id = todo.id;
-    newTodoDiv.getElementsByTagName('span')[0].innerHTML = todo.text;
+    setNewDivAttributes(newTodoDiv, todo);
     styleTodoItem(todo, newTodoDiv);
     mainTodoList.appendChild(newTodoDiv);
     if (todo.complete === true) {
@@ -30,15 +28,17 @@ const displayInitialPage = () => {
 const styleTodoItem = (todoItem, divTodo) => {
 
   if (todoItem.complete) {
-    divTodo.className = 'todo complete';
+    divTodo.classList.add('complete');
+    divTodo.getElementsByTagName('input')[0].checked = true;
   } else {
-    divTodo.className = 'todo';
+    divTodo.classList.remove('complete');
+    divTodo.getElementsByTagName('input')[0].checked = false;
   }
 }
 
-const checkBoxPress = (input) => {
+const checkBoxPress = (spanElem) => {
   // get todoId of item clicked on
-  const todoId = Number(input.parentElement
+  const todoId = Number(spanElem.parentElement
     .getElementsByClassName('todo-text')[0].id);
 
   // find item with that id
@@ -52,7 +52,7 @@ const checkBoxPress = (input) => {
     itemsComplete += 1;
   }
 
-  styleTodoItem(todoItem, input.parentElement);
+  styleTodoItem(todoItem, spanElem.parentElement);
 
   changeItemsRemain();
 
@@ -66,26 +66,34 @@ const changeItemsRemain = () => {
     .innerHTML = todos.length - itemsComplete;
 }
 
-const saveNewItem = () => {
-  const inputTextElem = document.getElementById('inputBox');
+const saveNewItem = (event) => {
+  console.log('in saveNewItem');
+  if (event.keyCode === 13) {
+    const inputTextElem = document.getElementById('inputBox');
+    const newItem = {
+      id: todos[todos.length - 1].id + 1,
+      text: inputTextElem.value,
+      complete: false
+    };
+    todos.push(newItem);
+    changeItemsRemain();
+    const newTodoDiv = todoDiv.cloneNode(true);
+    setNewDivAttributes(newTodoDiv, newItem);
 
-  inputTextElem.addEventListener("keyup", (event) => {
-    if (event.keyCode === 13) {
-      const newItem = {
-        id: todos[todos.length - 1].id + 1,
-        text: inputTextElem.value,
-        complete: false
-      };
-      todos.push(newItem);
-      const divTodoClone = todoDiv.cloneNode(true);
-      divTodoClone.getElementsByTagName('span')[0].id = newItem.id;
-      divTodoClone.getElementsByTagName('span')[0].innerHTML = newItem.text;
-
-      mainTodoList.appendChild(divTodoClone);
-      inputTextElem.value = '';
-    }
-  });
+    mainTodoList.appendChild(newTodoDiv);
+    inputTextElem.value = '';
+  }
 }
 
+const setNewDivAttributes = (newTodoDiv, todo) => {
+  newTodoDiv.getElementsByTagName('span')[0].id = todo.id;
+  newTodoDiv.getElementsByTagName('span')[0].innerHTML = todo.text;
+
+  newTodoDiv.addEventListener("click", () => checkBoxPress(newTodoDiv
+    .getElementsByTagName('span')[0]));
+}
 
 displayInitialPage();
+
+document.getElementById('inputBox')
+  .addEventListener("keyup", saveNewItem);
