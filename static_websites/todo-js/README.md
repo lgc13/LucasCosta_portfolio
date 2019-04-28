@@ -1,8 +1,23 @@
 # JavaScript:  To-do List
 
-Your task is to iteratively create a to-do list application using only JavaScript and HTML. A basic HTML layout and CSS styles have been provided in the repository.
+This was a simple JS project where I created a To-do list. I worked on this to give myself a better Vanilla JS foundation in order to jump into React. By using DOM manipulation, I was able to create an app that runs fully on JS.
+
+A user of this app is able to mark items completed, uncompleted, add new items to the list, hide all completed items, and display them again.
+
+Here are some pictures of the finished product:
+
+![Main](img/Main.PNG)
+
+![Save Items](img/SaveItems.PNG)
+
+![Hide completed](img/HideCompleted.PNG)
+
+The idea of working on this app came from one of my coworkers at QDivision. He started a training program for first time developers, which I volunteered to help with. Here are the instructions given by his repo:
+
 
 ## Tasks
+
+Your task is to iteratively create a to-do list application using only JavaScript and HTML. A basic HTML layout and CSS styles have been provided in the repository.
 
 ### Fork this repository
 
