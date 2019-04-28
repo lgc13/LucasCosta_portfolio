@@ -10,6 +10,8 @@ const todoDiv = document.getElementsByClassName('todo')[0];
 
 const displayInitialPage = () => {
   document.getElementsByTagName('input')[1].id = 'inputBox';
+  document.getElementById('inputBox')
+    .addEventListener("keyup", saveNewItem);
 
   document.getElementsByClassName('todo')[0].remove(); // delete current
 
@@ -56,9 +58,9 @@ const checkBoxPress = (spanElem) => {
 
   changeItemsRemain();
 
-  todos.filter((todo) => todo.complete == true )
-    .forEach((todo) => {console.log('true:' , todo.text)});
-  console.log('------');
+  // todos.filter((todo) => todo.complete == true )
+  //   .forEach((todo) => {console.log('true:' , todo.text)});
+  // console.log('------');
 }
 
 const changeItemsRemain = () => {
@@ -68,11 +70,11 @@ const changeItemsRemain = () => {
 
 const saveNewItem = (event) => {
   console.log('in saveNewItem');
-  if (event.keyCode === 13) {
-    const inputTextElem = document.getElementById('inputBox');
+  const inputTextElem = document.getElementById('inputBox');
+  if (event.keyCode === 13 && inputTextElem.value.trim()) {
     const newItem = {
       id: todos[todos.length - 1].id + 1,
-      text: inputTextElem.value,
+      text: inputTextElem.value.trim(),
       complete: false
     };
     todos.push(newItem);
@@ -94,6 +96,3 @@ const setNewDivAttributes = (newTodoDiv, todo) => {
 }
 
 displayInitialPage();
-
-document.getElementById('inputBox')
-  .addEventListener("keyup", saveNewItem);
