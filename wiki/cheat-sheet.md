@@ -43,8 +43,11 @@ chown -R `whoami`:staff
 
 - Processes
 ```sh
-netstat -aon | findstr port_number  # find the PID of a process running on port_number
 kill -9 pid_number  # kills process running with pid_number
+
+# Fow Windows cmd shell, run the following:
+netstat -aon | findstr port_number  # find the PID of a process running on port_number
+taskkill /PID typeyourPIDhere /F # kill that process
 ```
 
 ## Git
