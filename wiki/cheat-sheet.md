@@ -136,6 +136,34 @@ CREATE USER newuser'@'localhost IDENTIFIED BY 'password'; -- creates new user
 GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to user
 ```
 
+## PSQL
+
+```sql
+\l    -- lists all databases
+:\q   -- exits (END)/quits anything you’re in
+\dn   -- shows all schemas
+\c database_name -- connects to a database_name
+\dt   -- show all tables
+\du   -- show users
+\conninfo -- shows connection info like db name, username name, and port
+CREATE DATABASE db_name; -- creates a db_name
+CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
+SERIAL PRIMARY KEY -- SERIAL makes it auto increment
+SELECT * FROM table_name; -- displays everything from a table
+INSERT INTO table_name VALUES (info, info); -- insert a single row with all values from cols
+UPDATE table_name SET col_name = new_value WHERE col_name = current_value;
+-- update row value
+ALTER TABLE table_name ADD COLUMN new_col new_col_type
+-- add col to table
+UPDATE table_name SET col_name = ‘new_value’
+WHERE other_col IN (‘row1_value’, ‘row2_value’);
+-- update multiple rows (from a single row query)
+DELETE FROM table1 WHERE name = 'chris'
+AND age = 24 AND sex = 'F' AND happy = 'M';
+-- delete row depending on many col_values
+SOURCE ~/location_of/file_name.sql -- import file into database
+```
+
 ### Pipenv
 
 ```sh
