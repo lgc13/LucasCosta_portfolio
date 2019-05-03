@@ -1,29 +1,35 @@
+QTP Week 2 plans:
 
-Literally '''everything''' subject to change
+- Advise apprentices to start their own wikis (show how/why)
 
+# Day 1
 
+1. Setup
 
----- tell them about creating themselves a wiki, places to write down cmds, etcs
+- create-react-app
 
-For other weeks see the [[QTP Curriculum]] page. Click [[React Week Two | here]] to go to the next week
+[Instructions](https://github.com/facebook/create-react-app)
 
+2. JSX
 
-= Day 1 =
-== Morning ==
-* Setup and Lecture
-** <code>create-react-app</code> [https://github.com/facebook/create-react-app '']
-*** Want to get them set up with things to tinker with right up front.
-** JSX
-*** Introducing JSX [https://reactjs.org/docs/introducing-jsx.html '']
-*** JSX In-Depth [https://reactjs.org/docs/jsx-in-depth.html#why-jsx '']
-*** Babel compiler [https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA '']
+- Introducing [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
+
+3. Babel
+
+- [Babel compiler](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+
 **** Good for showing a quick JSX => JS breakdown
-** Components and props [https://reactjs.org/docs/components-and-props.html '']
 
-== Afternoon ==
-* Live coding demonstration
-* Some time to tinker
-* Reconvene for Q&A and day wrap-up
+4. Components and props
+
+- [Components and props](https://reactjs.org/docs/components-and-props.html)
+
+5. Live coding demonstration
+
+- Go over React Todo list
+- Some time to tinker
+- Reconvene for Q&A and day wrap-up
 
 
 

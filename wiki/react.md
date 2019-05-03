@@ -25,3 +25,5 @@ create-react-app my-app
 cd your-app-name
 yarn start
 ```
+
+- This will run your app on localhost:3000
