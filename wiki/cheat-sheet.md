@@ -1,7 +1,5 @@
 # Programming Cheat Sheet
 
-this is my super handy cheat sheet with commands I keep forgetting, or just stuff I'm learning :D
-
 ## Bash/ZSH
 
 - Bash basics
@@ -113,6 +111,29 @@ Shift + p # pastes
 :set number   # show line numbers
 :syntax on    # turn syntax highlighting on
 :set hlsearch # highlights searches
+```
+
+## MySQL
+
+To login MYSQL from terminal: `mysql -u username -ppassword`
+
+- MySQL basics
+```sql
+SHOW DATABASES; -- shows all databases
+CREATE DATABASE databasename; -- creates the DB
+CREATE DATABASE IF NOT EXISTS databasename; -- does at it says
+USE database name; -- selects that db
+SHOW TABLES -- shows tables in that db
+SELECT * FROM tablename; -- shows everything in that table
+```
+
+- User and privileges
+```sql
+CREATE USER username identified by 'passwordhere'; --does as it says
+SELECT User FROM mysql.user; -- lists all users
+SELECT user, host, WHATEVER; -- shows the user, host, or whatever you put here
+CREATE USER newuser'@'localhost IDENTIFIED BY 'password'; -- creates new user
+GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to user
 ```
 
 ### Pipenv
