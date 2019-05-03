@@ -251,15 +251,26 @@ default:
 ### Setting up new Mac terminal environment
 
 1- install iterm2
+
 2- Install zsh
+
   https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/
+
   2.1 - change shell to zsh
+
 3- Get Cobalt2
+
 https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa
+
   3.1 - Clone this repo
+
   https://github.com/wesbos/Cobalt2-iterm
+
 4- Install hexa
+
   4.1- Add this to `~/.bash_profile` once exa has been installed:
+
   `alias ls='exa --long --header --git -TL 1'`
+
 5- Install Atom, an IDE,
 ​
