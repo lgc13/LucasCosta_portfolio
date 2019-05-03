@@ -1,6 +1,10 @@
 
 Literally '''everything''' subject to change
 
+
+
+---- tell them about creating themselves a wiki, places to write down cmds, etcs
+
 For other weeks see the [[QTP Curriculum]] page. Click [[React Week Two | here]] to go to the next week
 
 
