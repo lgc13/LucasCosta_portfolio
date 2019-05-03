@@ -77,7 +77,6 @@ git fetch —all —prune # fetches origin, and prunes local comparing to it
 git log # find previous commits and their commit_id s
 git revert commit_id # revert changes made by that commit_id
 git merge —abort # aborts the merge (which has conflicts)
-git checkout origin/master -- filename.txt # reverts files back to how it is in that branch (origin/master in this case)
 git checkout origin/master filename # reverts file back to how it is in master
 ```
 
