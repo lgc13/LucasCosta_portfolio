@@ -164,6 +164,16 @@ AND age = 24 AND sex = 'F' AND happy = 'M';
 SOURCE ~/location_of/file_name.sql -- import file into database
 ```
 
+### AWS CLI
+
+```sh
+aws s3 ls s3://bucket-name/ # List S3
+aws s3 cp s3://path_to_file - # displays file in terminal
+aws s3 cp s3://path_to_file ~/some/local/path  # copies file to some/local/path
+aws s3 rm s3://path-to-directory/ —recursive # deletes entire folder
+​
+```
+
 ### Pipenv
 
 ```sh
@@ -185,12 +195,28 @@ prompt -p type  # try this one
 prompt -s type  # activate this one
 ````
 
+### IntelliJ Shortcuts
+
+```sh
+CMD + O # find class
+CMD + SHIFT + O # find file
+CMD + SHIFT + F # find globally
+CMD + SHIFT - OR + # collapses/expands everything collapsable
+CMD + SHIFT + T # goes between test file and file being tested
+```
+
 ### Brew
 
 ```sh
 brew doctor # open brew
 update brew # updates brew
 ```
+
+### SDK Man
+
+All info found here (Favorite on Chrome):
+https://sdkman.io/usage
+​
 
 ### C++
 
