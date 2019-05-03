@@ -31,7 +31,7 @@ wc filename.txt                 # lines, word count, bytes
 cat. users.txt | grep -n lgc13  # (grep -n looks for line where the following word is at)
 tar -xf file_name.tar.gz        # extract files
 grep -winr “some text” .        # r (looks within the entire directory, RECURSIVELY)
-grep -win -B 4 “some text” ./*  # w: whole words| i: not case sensitive| n: line number 
+grep -win -B 4 “some text” ./*  # w: whole words| i: not case sensitive| n: line number
   # B 4: shows 4 lines before text is found
 ```
 
@@ -113,6 +113,19 @@ Shift + p # pastes
 :set number   # show line numbers
 :syntax on    # turn syntax highlighting on
 :set hlsearch # highlights searches
+```
+
+### Pipenv
+
+```sh
+pipenv install # looks for ‘pipfile’ and ‘pipfile.lock’, then installs those dependencies
+pipenv install some_dependency # installs some_dependency
+  # Dependencies example: flask, request, flask-SQLAlchemy
+pipenv shell  # opens shell in the environment created
+pipenv graph  # lists dependencies being used
+pipenv —vena  # shows directory of virtualenv saved
+pipenv —rm    # removes current project environment
+exit          # gets out of environment
 ```
 
 ### iTerm2
