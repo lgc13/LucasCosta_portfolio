@@ -215,6 +215,16 @@ brew doctor # open brew
 update brew # updates brew
 ```
 
+### Yarn
+
+- Installing on Windows:
+
+1. Get Node.js
+https://nodejs.org/en/
+2. Install Yarn package
+https://yarnpkg.com/latest.msi
+
+
 ### SDK Man
 
 All info found here (Favorite on Chrome):
