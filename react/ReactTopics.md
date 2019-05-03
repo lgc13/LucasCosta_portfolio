@@ -16,20 +16,20 @@
 * Composition vs Inheritance
 
 ## Reading Assignments
+
 [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+
 [Read React docs](https://reactjs.org/docs/getting-started.html)
 
 ## Exercises
 
-#### Individual assignment:
-
-##### Todo List in React
+#### Todo List in React
 
 This is intended to show familiarity and comfort with the basic ideas of building an interactive application with React. It corresponds to the (very similar) Javascript assignment, allowing the apprentices to compare and contrast building applications with pure Javascript and React.
 
 After the allotted time, I gave a walkthrough session in which I built a reference implementation live in front of them, to help them think about the problem in new ways and ask questions in a group setting.
 
-- Purpose
+##### Purpose
 
 Demonstrate understanding of the following concepts:
 * JSX
@@ -37,15 +37,15 @@ Demonstrate understanding of the following concepts:
 * Component decomposition
 * Managing simple application state with React
 
-- Method
+##### Method:
 
 Exercise:  Uses same basic instructions as [Todo List](https://gitee.unigroupinc.com/qtp2018/todo-js) (Javascript)
 
-- Timeframe
+##### Timeframe
 
 About one day.
 
-- Notes
+##### Notes
 
 This is intended to show familiarity and comfort with the basic ideas of building an interactive application with React, and to allow the apprentices to compare and contrast building the same application with pure Javascript and the React library.
 
