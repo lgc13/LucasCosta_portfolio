@@ -45,6 +45,7 @@ chown -R `whoami`:staff
 - Processes
 ```sh
 netstat -aon | findstr port_number # find the PID of a process running on port_number
+kill -9 pid_number # kills process running with pid_number
 ```
 
 ## Git
