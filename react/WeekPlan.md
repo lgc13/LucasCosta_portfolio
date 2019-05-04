@@ -4,20 +4,121 @@ QTP Week 2 plans:
 
 # Day 1
 
-1. Setup
+##### React
+
+[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces. Its simple core concepts make the library a useful base for building applications for a variety of platforms, including both web and mobile interfaces. Its popularity and widespread adoption have resulted in a large community that has produced libraries and plugins that make working with React a pleasure.
+
+- Components: encapsulate code to smaller isolated pieces, so its more maintainable and dynamic.
+- Declarative (efficiently update and render components as data changes)
+
+##### Setup
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
-2. JSX
+1. Install yarn
+
+  1. Get Node.js
+  https://nodejs.org/en/
+  2. Install Yarn package
+  https://yarnpkg.com/latest.msi
+
+2. Run `yarn create react-app your-app-name`
+
+- if you come across an issue like `is not recognized as an internal or external command, operable program or batch file`, then run the following:
+
+```sh
+yarn global add create-react-app
+create-react-app your-app-name
+```
+
+3. Run your app
+
+```sh
+cd your-app-name
+yarn start
+```
+
+- This will run your app on localhost:3000
+
+
+##### First look
+
+- for now, focus attention on public/index.html, src/index.js and src/App.js
+
+File structure: https://facebook.github.io/create-react-app/docs/folder-structure
+
+1. React
+
+- Allows usage of JSX elements
+
+`import React from 'react';`
+
+2. ReactDom
+
+- Allows us to render through its render()
+
+`import ReactDOM from 'react-dom';`
+
+- ReactDom.render() takes 2 args: itemToBeRendered and locationToRender. Ex:
+
+```js
+ReactDOM.render(
+  <ComponentName {...props} />,
+  document.getElementById('root') // <div id="root"></div>
+);
+```
+
+##### JSX
 
 - Introducing [JSX](https://reactjs.org/docs/introducing-jsx.html)
-- [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
 
-3. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+1. JSK looks like HTML (although its not). Its available by importing from 'react'
+
+2. Optional, not required
+
+ ```js
+ // Ex of react without JSK
+ React.createElement('h1', /* ... h1 children ... */)
+ ```
+
+3. You cannot render more than 1 JSK element next to each other (in the same render return)
+
+4. You CAN however, wrap elements within other elements. Ex: a <div> within another <div>
+
+```js
+// Allowed:
+render() {
+  return (
+    <div>
+      <h2>Hello world! I am wrapped</h2>
+    </div>
+  )
+}
+
+// Not allowed
+render() {
+  return (
+    <h2>Hello world! I am wrapped</h2>
+    <h2>I am not wrapped</h2>
+  )
+}
+```
+
+5. You can only render built-in DOM components such as <div>, <p>, <li>, etc, but you can create your own components with any name you want.
+
+
+
+
+6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
+
+7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 
 **** Good for showing a quick JSX => JS breakdown
 
-4. [Components and props](https://reactjs.org/docs/components-and-props.html)
+##### [Components and props](https://reactjs.org/docs/components-and-props.html)
+
+1. Uses XML-like syntax (JSK)
+2. Can maintain its own internal state
 
 5. Afternoon
 

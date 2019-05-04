@@ -84,7 +84,7 @@ git checkout origin/master filename # reverts file back to how it is in master
 
 ## Vim
 
-- You can make permanent changes to your VIM editor by changing ~/vimrc
+- You can make permanent changes to your VIM editor by changing ~/.vimrc
 
 - Vim basics:
 ```sh
