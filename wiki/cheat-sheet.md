@@ -139,7 +139,7 @@ CREATE USER newuser'@'localhost IDENTIFIED BY 'password'; -- creates new user
 GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to user
 ```
 
-## PSQL
+## PostgreSQL/ PSQL
 
 ```sql
 \l    -- lists all databases
@@ -165,6 +165,17 @@ DELETE FROM table1 WHERE name = 'chris'
 AND age = 24 AND sex = 'F' AND happy = 'M';
 -- delete row depending on many col_values
 SOURCE ~/location_of/file_name.sql -- import file into database
+
+-- Sequences
+SELECT * FROM information_schema.sequences; -- shows all sequences in a database
+
+create sequence IF not exists schemaName.sequenceName_id_seq
+OWNED BY schemaName.tableName.colName; -- does as it says
+
+SELECT currval('schemaName.sequenceName_id_seq'); -- displays sequence current value
+SELECT nextval('schemaName.sequenceName_id_seq'); -- displays sequence next value
+SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value to 3, next value will be 4
+
 ```
 
 ### AWS CLI
@@ -261,15 +272,26 @@ default:
 ### Setting up new Mac terminal environment
 
 1- install iterm2
+
 2- Install zsh
+
   https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/
+
   2.1 - change shell to zsh
+
 3- Get Cobalt2
+
 https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa
+
   3.1 - Clone this repo
+
   https://github.com/wesbos/Cobalt2-iterm
+
 4- Install hexa
+
   4.1- Add this to `~/.bash_profile` once exa has been installed:
+
   `alias ls='exa --long --header --git -TL 1'`
+
 5- Install Atom, an IDE,
 ​
