@@ -4,6 +4,82 @@ QTP Week 2 plans:
 
 # Day 1
 
+### ES6
+
+(Features of ES6)[http://exploringjs.com/es6/ch_overviews.html]
+
+Some common used ones:
+
+- Usage of const/let vs var
+```js
+let name = 'lucas';
+name = 'sasha'; // allowed
+
+const lastName = 'costa';
+lastName = 'gomes'; // not allowed
+```
+
+- for of loop
+```js
+const colors = ['red', 'blue', 'green', 'purple'];
+
+for (let color of colors) {
+  console.log(color);
+}
+for (const [index, element] of colors.entries()) {
+    console.log(`${index}. ${element}`);
+}
+```
+
+- Arrow functions
+``` js
+const HelloEveryone = () => <div><p>How you doin... </p></div>
+
+const arr = [1, 2, 3];
+const squares = arr.map(x => x * x);
+
+// Traditional function expression:
+const squares = arr.map(function (x) { return x * x });
+```
+
+- Array manipulation methods (available from ES5 but worth mentioning)
+
+```js
+const persons = [
+  {
+    id: 1,
+    name: "Lucas",
+    mood: "Hungry"
+  },
+  {
+    id: 2,
+    name: "Sasha",
+    mood: "Excited"
+  },
+  {
+    id: 3,
+    name: "David",
+    mood: "Uncaffeinated"
+  }
+];
+// forEach
+persons.forEach(person => console.log(person.name));
+// map
+let result = persons.map(person => {
+  console.log('Currently iterating through person', person.name);
+  if (person.mood === 'Excited') {
+    person.mood = "Hungry";
+  }
+  return person;
+})
+console.log("Array of people hungry: ", result);
+// filter
+let peopleHungry = result.filter(person => person.mood === "Hungry");
+peopleHungry.forEach(person => console.log("Names of people hungry: ", person.name));
+```
+
+More ES5 stuff (here)[https://www.w3schools.com/whatis/whatis_es5.asp]
+
 ### React
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces. Its simple core concepts make the library a useful base for building applications for a variety of platforms, including both web and mobile interfaces. Its popularity and widespread adoption have resulted in a large community that has produced libraries and plugins that make working with React a pleasure.
@@ -111,7 +187,7 @@ render() {
 
 [Components and props](https://reactjs.org/docs/components-and-props.html)
 
-1. Components use XML-like syntax (JSK)
+1. Components use XML-like syntax (JSX)
 
 2. Can maintain its own internal state
 
@@ -160,6 +236,8 @@ import HelloEveryone from './components/HelloEveryone.js'
 6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
 
 7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+
+.... STILL NNED TO TALK ABOUT PROPS
 
 **** Good for showing a quick JSX => JS breakdown
 
