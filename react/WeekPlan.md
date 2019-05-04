@@ -4,14 +4,14 @@ QTP Week 2 plans:
 
 # Day 1
 
-##### React
+### React
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces. Its simple core concepts make the library a useful base for building applications for a variety of platforms, including both web and mobile interfaces. Its popularity and widespread adoption have resulted in a large community that has produced libraries and plugins that make working with React a pleasure.
 
 - Components: encapsulate code to smaller isolated pieces, so its more maintainable and dynamic.
 - Declarative (efficiently update and render components as data changes)
 
-##### Setup
+### Setup
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
@@ -41,9 +41,10 @@ yarn start
 - This will run your app on localhost:3000
 
 
-##### First look
+### First look
 
 - for now, focus attention on public/index.html, src/index.js and src/App.js
+- also notice that this files are imported in the src/index.js file
 
 File structure: https://facebook.github.io/create-react-app/docs/folder-structure
 
@@ -68,7 +69,7 @@ ReactDOM.render(
 );
 ```
 
-##### JSX
+### JSX
 
 - Introducing [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
@@ -106,19 +107,49 @@ render() {
 
 5. You can only render built-in DOM components such as <div>, <p>, <li>, etc, but you can create your own components with any name you want.
 
+### Components and props
 
+[Components and props](https://reactjs.org/docs/components-and-props.html)
 
+1. Components use XML-like syntax (JSK)
 
-6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
-
-7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
-
-**** Good for showing a quick JSX => JS breakdown
-
-##### [Components and props](https://reactjs.org/docs/components-and-props.html)
-
-1. Uses XML-like syntax (JSK)
 2. Can maintain its own internal state
+
+3. Simple functional component:
+
+```js
+function HelloEveryone() {
+  return (
+    <div>
+      <p>How you doin... </p>
+    </div>
+  );
+}
+```
+
+4. Render it:
+
+```js
+ReactDOM.render(
+  <HelloEveryone />,
+  document.getElementById("root")
+);
+```
+
+5. You can also put this component in a separate file, export it, and import it in your main file
+
+```js
+// HelloEveryone.js
+export default HelloEveryone;
+
+// index.js
+import HelloEveryone from './components/HelloEveryone.js'
+```
+
+
+
+
+
 
 5. Afternoon
 
@@ -126,6 +157,13 @@ render() {
 - Some time to tinker
 - Reconvene for Q&A and day wrap-up
 
+6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
+
+7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+
+**** Good for showing a quick JSX => JS breakdown
+
+-----------------
 
 # Day 2
 
