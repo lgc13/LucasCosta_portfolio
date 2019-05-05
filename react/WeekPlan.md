@@ -6,6 +6,10 @@ QTP Week 2 plans:
 
 ## ES6
 
+Put simply, ECMAScript is a standard. While JavaScript is the most popular implementation of that standard. JavaScript implements ECMAScript and builds on top of it
+
+Read about it [here](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c)
+
 [Features of ES6](http://exploringjs.com/es6/ch_overviews.html)
 
 Some common used ones:
@@ -32,17 +36,22 @@ for (const [index, element] of colors.entries()) {
 ```
 
 - Arrow functions
+
+Also called fat arrows. They are similar to lambdas in Python/C#. This allows you to NOT type `function`, ` return`(this is implicit in arrow functions), and curly braces.
+
+
+Read more [here](https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/)
+
 ``` js
-const numbers = [1, 2, 3];
-// Traditional function expression:
-const squares = arr.map(function (x) { return x * x });
-squares = [1, 4, 9]
+// ES5
+var multiplyES5 = function(x, y) {
+  return x * y;
+};
+multiplyES5(1, 3);
 
-// With arrow function
-const squares = arr.map(x => x * x);
-
-// Arrow function on functions (component)
-const HelloEveryone = () => <div><p>How you doin... </p></div>
+// ES6 (note the curly braces are not required)
+const multiplyES6 = (x, y) => { return x * y };
+multiplyES6(5, 6);
 ```
 
 - Array manipulation methods (available from ES5 but worth mentioning)
@@ -65,20 +74,36 @@ const persons = [
     mood: "Uncaffeinated"
   }
 ];
+// find
+let result = persons.find(person => person.id === 1);
+console.log('Result with id of 1: ', result);
+
 // forEach
 persons.forEach(person => console.log(person.name));
+
 // map
-let result = persons.map(person => {
-  console.log('Currently iterating through person', person.name);
-  if (person.mood === 'Excited') {
-    person.mood = "Hungry";
-  }
-  return person;
-})
+  // ES5
+result = persons.map(function(person) {
+console.log('Currently iterating through person', person.name, 'who is', person.mood);
+if (person.mood === 'Excited') {
+  person.mood = "Hungry";
+}
+return person;
+});
 console.log("result: ", result);
+  // ES6
+result = persons.map(person => {
+console.log('Currently iterating through person', person.name, 'who is', person.mood);
+if (person.mood === 'Uncaffeinated') {
+  person.mood = "Sleepy";
+}
+return person;
+})
+console.log("result 2: ", result);
+
 // filter
 let peopleHungry = result.filter(person => person.mood === "Hungry");
-peopleHungry.forEach(person => console.log("Names of people hungry: ", person.name));
+console.log("People hungry: ", peopleHungry);
 ```
 
 More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
@@ -230,6 +255,11 @@ function HelloEveryone() {
     </div>
   );
 }
+```
+
+``` js
+// Arrow function on functions (component)
+const HelloEveryone = () => <div><p>How you doin... </p></div>
 ```
 
 4. Render it:
