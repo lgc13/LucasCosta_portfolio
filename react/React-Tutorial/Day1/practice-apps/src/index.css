@@ -1,0 +1,16 @@
+h2 {
+  color: blue;
+}
+
+.coin {
+  width: 100pt;
+  height: 100pt
+}
+
+.result.winner {
+  color: green;
+}
+
+.result.loser {
+  color: red;
+}
