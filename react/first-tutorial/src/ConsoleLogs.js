@@ -43,6 +43,10 @@ const persons = [
 let result = persons.find(person => person.id === 1);
 console.log('Result with id of 1: ', result);
 
+// filter
+let peopleHungry = persons.filter(person => person.mood === "Hungry");
+console.log("People hungry: ", peopleHungry);
+
 // forEach
 persons.forEach(person => console.log(person.name));
 
@@ -65,7 +69,3 @@ if (person.mood === 'Uncaffeinated') {
 return person;
 })
 console.log("result 2: ", result);
-
-// filter
-let peopleHungry = result.filter(person => person.mood === "Hungry");
-console.log("People hungry: ", peopleHungry);

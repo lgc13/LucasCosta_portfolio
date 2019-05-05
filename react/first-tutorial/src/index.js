@@ -21,13 +21,23 @@ const superPeople = [
   }
 ];
 
-class Main extends React.Component {
-  render() {
-    return (<MainComponent superPeople={superPeople} />)
-  }
+const restaurants = ['Cosmic Stones Wings', 'BK', 'Rye of Agamotto']
+
+const Main = () => {
+    return (
+      <MainComponent
+        superPeople={superPeople}
+        restaurants={restaurants}
+        onClick={handleClick}
+      />
+    );
 }
 
-ReactDOM.render(
-  <Main />,
-  document.getElementById('root')
-);
+const handleClick = () => {
+  ReactDOM.render(
+    <Main />,
+    document.getElementById('root')
+  );
+}
+
+handleClick();

@@ -6,6 +6,7 @@ const HelloEveryone = (props) => {
   );
   return (
     <div>
+      <h3>Super people</h3>
       {listItems}
     </div>
   );

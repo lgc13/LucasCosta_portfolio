@@ -78,6 +78,10 @@ const persons = [
 let result = persons.find(person => person.id === 1);
 console.log('Result with id of 1: ', result);
 
+// filter
+let peopleHungry = persons.filter(person => person.mood === "Hungry");
+console.log("People hungry: ", peopleHungry);
+
 // forEach
 persons.forEach(person => console.log(person.name));
 
@@ -100,10 +104,6 @@ if (person.mood === 'Uncaffeinated') {
 return person;
 })
 console.log("result 2: ", result);
-
-// filter
-let peopleHungry = result.filter(person => person.mood === "Hungry");
-console.log("People hungry: ", peopleHungry);
 ```
 
 More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
@@ -124,7 +124,7 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 });
 ```
 
-[See it in actionl](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+[See it in action](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 
 ## React
 
@@ -258,7 +258,7 @@ function HelloEveryone() {
 ```
 
 ``` js
-// Arrow function on functions (component)
+// Component declaration with arrow function
 const HelloEveryone = () => <div><p>How you doin... </p></div>
 ```
 
@@ -315,7 +315,83 @@ const MainComponent = () => (
 
 [Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
-9. Creating classes
+9. Passing multiple props, and deconstructing
+
+``` js
+// index.js
+function Main() {
+  return (
+    <MainComponent
+      superPeople={superPeople}
+      restaurants={restaurants}
+      onClick={handleClick}
+    />
+  )
+}
+
+const handleClick = () => {
+  ReactDOM.render(
+    <Main />,
+    document.getElementById('root')
+  );
+}
+
+handleClick(); // rendering when browser first starts
+
+// MainComponent.js
+<Randomizer
+  superPeople={props.superPeople}
+  restaurants={props.restaurants}
+  onClick={props.onClick}
+/>
+
+// Randomizer.js
+let randomPerson;
+let randomRestaurant;
+
+const randomize = (props) => {
+  const { superPeople, restaurants } = props;
+  randomPerson = superPeople[Math.floor(Math.random() * superPeople.length)];
+  randomRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
+  props.onClick();
+}
+
+const Randomizer = (props) => {
+  return (
+    <div>
+      <h3>Randomizer</h3>
+      <button onClick={() => randomize(props)}>
+        Click me
+      </button>
+      {(randomPerson && randomRestaurant) &&
+        <h4>{randomPerson.name} likes to eat at {randomRestaurant}</h4>}
+    </div>
+  );
+}
+```
+
+5. Afternoon
+
+- Go over React Todo list
+- Some time to tinker
+- Reconvene for Q&A and day wrap-up
+
+
+
+
+
+
+
+
+-----------------
+
+# Day 2
+
+##. [State & Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
+- State is similar to props, but it is private and fully controlled by the component.
+
+1. Creating classes
 
 ```js
 // index.js
@@ -359,25 +435,6 @@ const HelloEveryone = (props) => {
   );
 }
 ```
-
-5. Afternoon
-
-- Go over React Todo list
-- Some time to tinker
-- Reconvene for Q&A and day wrap-up
-
-
-
-
-
-
-
-
------------------
-
-# Day 2
-
-1. [State & Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
 2. [Handling Events](https://reactjs.org/docs/handling-events.html)
 
