@@ -183,9 +183,19 @@ render() {
 
 5. You can only render built-in DOM components such as `<div>, <p>, <li>, etc` but you can create your own components with any name you want.
 
-### Components
+6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
 
-[Components](https://reactjs.org/docs/components-and-props.html)
+Some important points from the link above:
+
+- User-Defined Components Must Be Capitalized
+
+- Props Default to “True”
+
+- Spread Attributes
+
+### Components and Props
+
+[Documentation - Click me!](https://reactjs.org/docs/components-and-props.html)
 
 1. Components use XML-like syntax (JSX)
 
@@ -222,7 +232,39 @@ export default HelloEveryone;
 import HelloEveryone from './components/HelloEveryone.js'
 ```
 
+6. Components can take JSX attributes, called props (short for properties)
+```js
+const HelloEveryone = (props) => <div><p>How you doin... {props.name} </p></div>
 
+ReactDOM.render(
+  <HelloEveryone name="Thanos" />,
+  document.getElementById('root')
+);
+```
+
+- note that the component must take a `props` argument.
+
+7. Components can refer to other components:
+```js
+// index.js
+ReactDOM.render(
+  <MainComponent />,
+  document.getElementById('root')
+);
+
+// MainComponent.js
+const MainComponent = () => (
+  <div>
+    <HelloEveryone name="Thanos" />
+    <HelloEveryone name="Iron Man" />
+    <HelloEveryone name="Dr Strange" />
+  </div>
+)
+```
+
+8. Props are Read-Only
+
+[Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
 
 
@@ -233,7 +275,7 @@ import HelloEveryone from './components/HelloEveryone.js'
 - Some time to tinker
 - Reconvene for Q&A and day wrap-up
 
-6. [JSX In-Depth](https://reactjs.org/docs/jsx-in-depth.html#why-jsx)
+
 
 7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 

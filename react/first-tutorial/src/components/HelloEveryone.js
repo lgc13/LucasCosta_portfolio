@@ -1,5 +1,9 @@
 import React from 'react';
 
-const HelloEveryone = () => <div><p>How you doin... </p></div>
+const HelloEveryone = (props) => (
+  <div>
+    <p>How you doin...{props.name} </p>
+  </div>
+)
 
 export default HelloEveryone;
