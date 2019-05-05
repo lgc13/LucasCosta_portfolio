@@ -6,7 +6,7 @@ QTP Week 2 plans:
 
 ### ES6
 
-(Features of ES6)[http://exploringjs.com/es6/ch_overviews.html]
+[Features of ES6](http://exploringjs.com/es6/ch_overviews.html)
 
 Some common used ones:
 
@@ -78,7 +78,7 @@ let peopleHungry = result.filter(person => person.mood === "Hungry");
 peopleHungry.forEach(person => console.log("Names of people hungry: ", person.name));
 ```
 
-More ES5 stuff (here)[https://www.w3schools.com/whatis/whatis_es5.asp]
+More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 
 ### React
 
@@ -91,14 +91,11 @@ More ES5 stuff (here)[https://www.w3schools.com/whatis/whatis_es5.asp]
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
-1. Install yarn
+1. Install (Node.js)[https://nodejs.org/en/]
 
-  1. Get Node.js
-  https://nodejs.org/en/
-  2. Install Yarn package
-  https://yarnpkg.com/latest.msi
+2. Install (Yarn)[https://yarnpkg.com/latest.msi]
 
-2. Run `yarn create react-app your-app-name`
+3. Run `yarn create react-app your-app-name`
 
 - if you come across an issue like `is not recognized as an internal or external command, operable program or batch file`, then run the following:
 
@@ -107,7 +104,7 @@ yarn global add create-react-app
 create-react-app your-app-name
 ```
 
-3. Run your app
+4. Run your app
 
 ```sh
 cd your-app-name
@@ -120,7 +117,7 @@ yarn start
 ### First look
 
 - for now, focus attention on public/index.html, src/index.js and src/App.js
-- also notice that this files are imported in the src/index.js file
+- also notice that these files are imported in the src/index.js file
 
 File structure: https://facebook.github.io/create-react-app/docs/folder-structure
 
@@ -168,6 +165,7 @@ render() {
   return (
     <div>
       <h2>Hello world! I am wrapped</h2>
+      <h3> I am still wrapper </h3>
     </div>
   )
 }
@@ -181,11 +179,11 @@ render() {
 }
 ```
 
-5. You can only render built-in DOM components such as <div>, <p>, <li>, etc, but you can create your own components with any name you want.
+5. You can only render built-in DOM components such as `<div>, <p>, <li>, etc` but you can create your own components with any name you want.
 
-### Components and props
+### Components
 
-[Components and props](https://reactjs.org/docs/components-and-props.html)
+[Components](https://reactjs.org/docs/components-and-props.html)
 
 1. Components use XML-like syntax (JSX)
 
@@ -238,6 +236,8 @@ import HelloEveryone from './components/HelloEveryone.js'
 7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 
 .... STILL NNED TO TALK ABOUT PROPS
+
+### Props
 
 **** Good for showing a quick JSX => JS breakdown
 
