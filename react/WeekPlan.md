@@ -24,22 +24,24 @@ lastName = 'gomes'; // not allowed
 const colors = ['red', 'blue', 'green', 'purple'];
 
 for (let color of colors) {
-  console.log(color);
+  console.log(color); // prints out each individual color
 }
 for (const [index, element] of colors.entries()) {
-    console.log(`${index}. ${element}`);
+    console.log(`${index}. ${element}`); // prints out each index, then the color
 }
 ```
 
 - Arrow functions
 ``` js
-const HelloEveryone = () => <div><p>How you doin... </p></div>
-
 const arr = [1, 2, 3];
-const squares = arr.map(x => x * x);
-
 // Traditional function expression:
 const squares = arr.map(function (x) { return x * x });
+
+// With arrow function
+const squares = arr.map(x => x * x);
+
+// Arrow function on functions (component)
+const HelloEveryone = () => <div><p>How you doin... </p></div>
 ```
 
 - Array manipulation methods (available from ES5 but worth mentioning)
@@ -91,9 +93,9 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
-1. Install (Node.js)[https://nodejs.org/en/]
+1. Install [Node.js](https://nodejs.org/en/)
 
-2. Install (Yarn)[https://yarnpkg.com/latest.msi]
+2. Install [Yarn](https://yarnpkg.com/latest.msi)
 
 3. Run `yarn create react-app your-app-name`
 
