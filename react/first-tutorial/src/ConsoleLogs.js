@@ -45,7 +45,7 @@ let result = persons.map(person => {
   }
   return person;
 })
-console.log("Array of people hungry: ", result);
+console.log("result: ", result);
 // filter
 let peopleHungry = result.filter(person => person.mood === "Hungry");
 peopleHungry.forEach(person => console.log("Names of people hungry: ", person.name));

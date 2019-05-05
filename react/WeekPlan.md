@@ -33,9 +33,10 @@ for (const [index, element] of colors.entries()) {
 
 - Arrow functions
 ``` js
-const arr = [1, 2, 3];
+const numbers = [1, 2, 3];
 // Traditional function expression:
 const squares = arr.map(function (x) { return x * x });
+squares = [1, 4, 9]
 
 // With arrow function
 const squares = arr.map(x => x * x);
@@ -74,7 +75,7 @@ let result = persons.map(person => {
   }
   return person;
 })
-console.log("Array of people hungry: ", result);
+console.log("result: ", result);
 // filter
 let peopleHungry = result.filter(person => person.mood === "Hungry");
 peopleHungry.forEach(person => console.log("Names of people hungry: ", person.name));

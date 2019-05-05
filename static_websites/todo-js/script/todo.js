@@ -21,9 +21,6 @@ const displayInitialPage = () => {
     setNewDivAttributes(newTodoDiv, todo);
     styleTodoItem(todo, newTodoDiv);
     mainTodoList.appendChild(newTodoDiv);
-    if (todo.complete === true) {
-      itemsComplete =+ 1;
-    }
   });
 }
 
