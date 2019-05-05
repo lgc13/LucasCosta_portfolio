@@ -14,6 +14,8 @@ const MainComponent = (props) => (
       superPeople={props.superPeople}
       restaurants={props.restaurants}
       onClick={props.onClick}
+      randomPerson={props.randomPerson}
+      randomRestaurant={props.randomRestaurant}
     />
   </div>
 )

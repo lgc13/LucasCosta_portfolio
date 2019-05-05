@@ -9,6 +9,8 @@ QTP Intro to React Week plans:
 - JSX
 - Components
 - Props
+- Class component
+- State
 - Practice (create 3 small apps)
 
 
@@ -27,53 +29,18 @@ QTP Intro to React Week plans:
 
 # Day 2
 
-##. [State & Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
-- State is similar to props, but it is private and fully controlled by the component.
+## Lifecycle Methods
 
-1. Creating classes
+``` js
+// runs after the component output has been rendered to the DOM
+componentDidMount() {
 
-```js
-// index.js
-const superPeople = [
-  {
-    name: 'Thanos',
-    power: 'The Snap'
-  },
-  {
-    name: 'Iron Man',
-    power: 'Intelligence x 3000'
-  },
-  {
-    name: 'Dr Strange',
-    power: 'the Time Stone'
-  }
-];
-
-class Main extends React.Component {
-  render() {
-    return (<MainComponent superPeople={superPeople} />)
-  }
 }
 
-// MainComponent.js
-const MainComponent = (props) => (
-  <div>
-    <HelloEveryone superPeople={props.superPeople}/>
-  </div>
-)
+  componentWillUnmount() {
 
-// HelloEveryone.js
-const HelloEveryone = (props) => {
-  const listItems = props.superPeople.map((person) => (
-    <p key={person.name}>{person.name} has {person.power}</p>)
-  );
-  return (
-    <div>
-      {listItems}
-    </div>
-  );
-}
+  }
 ```
 
 2. [Handling Events](https://reactjs.org/docs/handling-events.html)
