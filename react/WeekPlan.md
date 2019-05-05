@@ -4,7 +4,7 @@ QTP Week 2 plans:
 
 # Day 1
 
-### ES6
+## ES6
 
 [Features of ES6](http://exploringjs.com/es6/ch_overviews.html)
 
@@ -82,14 +82,32 @@ peopleHungry.forEach(person => console.log("Names of people hungry: ", person.na
 
 More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 
-### React
+## Babel
+
+[Babel docs](https://babeljs.io/docs/en/)
+
+- TLDR: Toolchain that converts ES6 into older versions of JS. Ex:
+
+```js
+// Babel Input: ES2015 arrow function
+[1, 2, 3].map((n) => n + 1);
+
+// Babel Output: ES5 equivalent
+[1, 2, 3].map(function(n) {
+  return n + 1;
+});
+```
+
+[See it in actionl](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
+
+## React
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces. Its simple core concepts make the library a useful base for building applications for a variety of platforms, including both web and mobile interfaces. Its popularity and widespread adoption have resulted in a large community that has produced libraries and plugins that make working with React a pleasure.
 
 - Components: encapsulate code to smaller isolated pieces, so its more maintainable and dynamic.
 - Declarative (efficiently update and render components as data changes)
 
-### Setup
+## Setup
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
@@ -116,7 +134,7 @@ yarn start
 - This will run your app on localhost:3000
 
 
-### First look
+## First look
 
 - for now, focus attention on public/index.html, src/index.js and src/App.js
 - also notice that these files are imported in the src/index.js file
@@ -144,7 +162,7 @@ ReactDOM.render(
 );
 ```
 
-### JSX
+## JSX
 
 - Introducing [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
@@ -193,7 +211,7 @@ Some important points from the link above:
 
 - Spread Attributes
 
-### Components and Props
+## Components and Props
 
 [Documentation - Click me!](https://reactjs.org/docs/components-and-props.html)
 
@@ -266,8 +284,50 @@ const MainComponent = () => (
 
 [Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
+9. Creating classes
 
+```js
+// index.js
+const superPeople = [
+  {
+    name: 'Thanos',
+    power: 'The Snap'
+  },
+  {
+    name: 'Iron Man',
+    power: 'Intelligence x 3000'
+  },
+  {
+    name: 'Dr Strange',
+    power: 'the Time Stone'
+  }
+];
 
+class Main extends React.Component {
+  render() {
+    return (<MainComponent superPeople={superPeople} />)
+  }
+}
+
+// MainComponent.js
+const MainComponent = (props) => (
+  <div>
+    <HelloEveryone superPeople={props.superPeople}/>
+  </div>
+)
+
+// HelloEveryone.js
+const HelloEveryone = (props) => {
+  const listItems = props.superPeople.map((person) => (
+    <p key={person.name}>{person.name} has {person.power}</p>)
+  );
+  return (
+    <div>
+      {listItems}
+    </div>
+  );
+}
+```
 
 5. Afternoon
 
@@ -277,13 +337,10 @@ const MainComponent = () => (
 
 
 
-7. [Babel](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)
 
-.... STILL NNED TO TALK ABOUT PROPS
 
-### Props
 
-**** Good for showing a quick JSX => JS breakdown
+
 
 -----------------
 

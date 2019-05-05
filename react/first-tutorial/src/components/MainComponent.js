@@ -1,12 +1,15 @@
 import React from 'react';
 
 import HelloEveryone from './HelloEveryone.js'
+import Restaurants from './Restaurants.js'
 
-const MainComponent = () => (
+const MainComponent = (props) => (
   <div>
-    <HelloEveryone name="Thanos" />
-    <HelloEveryone name="Iron Man" />
-    <HelloEveryone name="Dr Strange" />
+    <HelloEveryone superPeople={props.superPeople}/>
+    <Restaurants
+      superPeople={props.superPeople}
+      restaurants={props.restaurants}
+    />
   </div>
 )
 
