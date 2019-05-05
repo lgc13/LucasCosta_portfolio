@@ -84,7 +84,7 @@ git checkout origin/master filename # reverts file back to how it is in master
 
 ## Vim
 
-- You can make permanent changes to your VIM editor by changing ~/vimrc
+- You can make permanent changes to your VIM editor by changing ~/.vimrc
 
 - Vim basics:
 ```sh
@@ -225,6 +225,16 @@ CMD + SHIFT + T # goes between test file and file being tested
 brew doctor # open brew
 update brew # updates brew
 ```
+
+### Yarn
+
+- Installing on Windows:
+
+1. Get Node.js
+https://nodejs.org/en/
+2. Install Yarn package
+https://yarnpkg.com/latest.msi
+
 
 ### SDK Man
 

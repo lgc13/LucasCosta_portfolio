@@ -38,3 +38,5 @@ Happy
 *.map
 *.dll
 *.pdb
+
+node_modules
