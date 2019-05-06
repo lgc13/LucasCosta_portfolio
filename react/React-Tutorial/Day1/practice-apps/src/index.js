@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import tails from './img/tails.jpg';
-import heads from './img/heads.png';
+
 import './index.css';
+import GameLayout from './components/GameLayout.js';
+import { headTailImages, handImages } from './data.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,9 @@ class App extends React.Component {
       randomToss: '',
       resultMessage: '',
       isWinner: '',
+      handChoices: ['rock', 'paper', 'scissors'],
+      randomComputerChoice: '',
+
     }
   }
   handleRandomToss = (coinFace) => {
@@ -24,28 +28,34 @@ class App extends React.Component {
     const { randomToss } = this.state;
     if (coinFace === randomToss) {
       this.setState({ isWinner: true });
-      this.setState({ resultMessage: `${randomToss}. You won!... lucky :P` });
+      this.setState({ resultMessage: `Flipped... ${randomToss}. You won!... lucky :P` });
     } else {
       this.setState({ isWinner: false });
-      this.setState({ resultMessage: `${randomToss}. You lose. Better luck next time...` });
+      this.setState({ resultMessage: `Flipped... ${randomToss}. You lose. Better luck next time...` });
     }
   };
+  handleHandChoice = (handChoice) => {
+    console.log('handChoice: ', handChoice);
+  }
   render() {
     return (
       <div>
-        <h2>Coin Flip</h2>
-        <h4>Heads or Tails? Click one</h4>
-        <div>
-          <img src={heads} className="coin" onClick={() => this.handleRandomToss('heads')} alt="heads-coin"/>
-          <img src={tails} className="coin" onClick={() => this.handleRandomToss('tails')} alt="tails-coin"/>
-        </div>
-        {this.state.resultMessage &&
-          <div className={this.state.isWinner
-            ? 'result winner'
-            : 'result loser'}>
-              Result: {this.state.resultMessage}
-          </div>
-        }
+        <GameLayout
+          title="Headers or Tails?"
+          instructions="Click one"
+          images={headTailImages}
+          onClick={this.handleRandomToss}
+          resultMessage={this.state.resultMessage}
+          isWinner={this.state.isWinner}
+        />
+        <GameLayout
+          title="Rock/Paper/Scissors"
+          instructions="Pick one"
+          images={handImages}
+          onClick={this.handleHandChoice}
+          resultMessage={this.state.resultMessage}
+          isWinner={this.state.isWinner}
+        />
       </div>
     );
   }
