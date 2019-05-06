@@ -240,6 +240,13 @@ https://yarnpkg.com/latest.msi
 
 All info found here (Favorite on Chrome):
 https://sdkman.io/usage
+
+```sh
+# List all installed by tech
+sdk list techName # ex: sdk list java
+
+sdk install techName versionNumber # ex: sdk install java 7.0.222-zulu
+```
 ​
 
 ### C++
