@@ -41,8 +41,6 @@ class App extends React.Component {
   };
   changeResultMessage = (userPick, gameId) => {
     let gameState = this.state[gameId];
-    console.log('gameId: ', gameId);
-    console.log('gameState: ', gameState);
     const { randomChoice } = gameState;
     if (gameId === this.state.coinToss.id) {
       this.checkWinnerForHeadsOrTails(gameState, userPick, randomChoice);
