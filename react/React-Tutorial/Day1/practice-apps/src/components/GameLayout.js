@@ -10,7 +10,7 @@ const GameLayout = (props) => {
           key={image.id}
           src={image.src}
           className="image"
-          onClick={() => props.onClick(image.face)}
+          onClick={() => props.onClick(image.face, props.gameId)}
           alt={image.alt}
           />
       )}

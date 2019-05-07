@@ -9,33 +9,77 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      coinChoices: ['heads', 'tails'],
-      randomToss: '',
-      resultMessage: '',
-      isWinner: '',
-      handChoices: ['rock', 'paper', 'scissors'],
-      randomComputerChoice: '',
-
+      coinToss: {
+        id: 'coinToss',
+        choices: ['heads', 'tails'],
+        randomChoice: '',
+        isWinner: '',
+        resultMessage: ''
+      },
+      rockPaperScissors: {
+        id: 'rockPaperScissors',
+        choices: ['rock', 'paper', 'scissors'],
+        randomChoice: '',
+        isWinner: '',
+        resultMessage: '',
+      },
     }
   }
-  handleRandomToss = (coinFace) => {
-    const { coinChoices } = this.state;
-    this.setState({ randomToss: coinChoices[Math.floor(
-      Math.random() * coinChoices.length)]},
-      () => this.changeResultMessage(coinFace));
+  randomizer = (choices) => {
+    return choices[Math.floor(Math.random() * choices.length)];
   }
-  changeResultMessage = (coinFace) => {
-    const { randomToss } = this.state;
-    if (coinFace === randomToss) {
-      this.setState({ isWinner: true });
-      this.setState({ resultMessage: `Flipped... ${randomToss}. You won!... lucky :P` });
-    } else {
-      this.setState({ isWinner: false });
-      this.setState({ resultMessage: `Flipped... ${randomToss}. You lose. Better luck next time...` });
-    }
+  handleUserPick = (userPick, gameId) => {
+    const gameState = this.state[gameId];
+    const randomToss = this.randomizer(gameState.choices);
+    this.setState({
+      ...this.state,
+      [gameState.id]: {
+        ...gameState,
+        randomChoice: randomToss
+      }
+    }, () => this.changeResultMessage(userPick, gameId));
   };
-  handleHandChoice = (handChoice) => {
-    console.log('handChoice: ', handChoice);
+  changeResultMessage = (userPick, gameId) => {
+    let gameState = this.state[gameId];
+    console.log('gameId: ', gameId);
+    console.log('gameState: ', gameState);
+    const { randomChoice } = gameState;
+    if (gameId === this.state.coinToss.id) {
+      this.checkWinnerForHeadsOrTails(gameState, userPick, randomChoice);
+    } else {
+      this.checkWinnerForRockPaperScissors(gameState, userPick, randomChoice);
+    }
+    this.setState({
+      ...this.state,
+      [gameState.id]: {
+        ...gameState,
+        isWinner: gameState.isWinner,
+        resultMessage: gameState.resultMessage
+      }
+    });
+  };
+  checkWinnerForHeadsOrTails = (gameState, userPick, randomChoice) => {
+    if (userPick === randomChoice) {
+      gameState.isWinner = true;
+      gameState.resultMessage = `Rolled ${randomChoice}. Nice, you won!`;
+    } else {
+      gameState.isWinner = false;
+      gameState.resultMessage = `Rolled ${randomChoice}... You lose!`;
+    }
+  }
+  checkWinnerForRockPaperScissors = (gameState, userPick, randomChoice) => {
+    if (userPick === randomChoice) {
+      gameState.isWinner = false;
+      gameState.resultMessage = `Computer picked ${randomChoice}. It was a tie`;
+    } else if ((userPick === 'rock' && randomChoice === 'paper') ||
+               (userPick === 'paper' && randomChoice === 'scissors') ||
+               (userPick === 'scissors' && randomChoice === 'rock')) {
+      gameState.isWinner = false;
+      gameState.resultMessage = `Computer picked ${randomChoice}. ${randomChoice} beats ${userPick}. You lose`;
+    } else {
+      gameState.isWinner = true;
+      gameState.resultMessage = `Computer picked ${randomChoice}. ${userPick} beats ${randomChoice}. You win!`;
+    }
   }
   render() {
     return (
@@ -44,17 +88,19 @@ class App extends React.Component {
           title="Headers or Tails?"
           instructions="Click one"
           images={headTailImages}
-          onClick={this.handleRandomToss}
-          resultMessage={this.state.resultMessage}
-          isWinner={this.state.isWinner}
+          gameId={this.state.coinToss.id}
+          onClick={this.handleUserPick}
+          resultMessage={this.state.coinToss.resultMessage}
+          isWinner={this.state.coinToss.isWinner}
         />
         <GameLayout
           title="Rock/Paper/Scissors"
           instructions="Pick one"
           images={handImages}
-          onClick={this.handleHandChoice}
-          resultMessage={this.state.resultMessage}
-          isWinner={this.state.isWinner}
+          gameId={this.state.rockPaperScissors.id}
+          onClick={this.handleUserPick}
+          resultMessage={this.state.rockPaperScissors.resultMessage}
+          isWinner={this.state.rockPaperScissors.isWinner}
         />
       </div>
     );
