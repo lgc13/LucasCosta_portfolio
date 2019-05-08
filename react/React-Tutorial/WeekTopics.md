@@ -15,70 +15,28 @@ QTP Intro to React Week plans:
 # Day 2
 
 - Review 'About me' apps, and live demo
+- Styling
+- Conditional rendering
+- Lists and keys
 - Class component
 - State
 - Lifecycle of a component
-- Conditional rendering
-- Practice (create 2 small apps)
-
--- move these to the right places
-
+- Practice (create 2 small game apps)
 
 # Day 3
 
+- Review 2 small game apps, and live demo
 - Handling events
-- Lists and keys
 - Forms
 - Lifting state up
 - Composition vs Inheritance
-
-
-
-
-
-
-2. [Handling Events](https://reactjs.org/docs/handling-events.html)
-
-3. [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
-
-4. Afternoon
-
-- Live coding demonstration
-- Some time to tinker
-- Reconvene for Q&A and day wrap-up
-
-
-# Day 3
-
-1. [Lists & Keys](https://reactjs.org/docs/lists-and-keys.html)
-
-2. [Forms](https://reactjs.org/docs/forms.html)
-
-3. [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
-
-4. [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
-
-5. [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-
-6. Afternoon
-
-- Project overview
-- Coding time
-- Reconvene for questions and day wrap-up
+- Thinking in React
+- Practice: Todo app
 
 # Day 4
 
-1. Project status check, Q&A
-
-2. Coding time
-
-3. Reconvene for questions and day wrap-up
-
+- Practice: user interface to build (FB/Instragram/Youtube/Twitter)
 
 # Day 5
 
-1. Project status check, Q&A
-
-2. Coding time
-
-3. Demos, code reviews, and final Q&A
+- Practice: user interface continued
