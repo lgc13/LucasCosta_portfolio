@@ -9,39 +9,33 @@ QTP Intro to React Week plans:
 - JSX
 - Components
 - Props
-- Class component
-- State
-- Practice (create 3 small apps)
-
-
--- move these to the right places
-* Lifecycle of a component
-* Handling events
-* Conditional rendering
-* Lists and keys
-* Forms
-* Lifting state up
-* Composition vs Inheritance
-
-
-
------------------
+- Practice:
+  'About me' app with components and props
 
 # Day 2
 
+- Review 'About me' apps, and live demo
+- Class component
+- State
+- Lifecycle of a component
+- Conditional rendering
+- Practice (create 2 small apps)
 
-## Lifecycle Methods
+-- move these to the right places
 
-``` js
-// runs after the component output has been rendered to the DOM
-componentDidMount() {
 
-}
+# Day 3
 
-  componentWillUnmount() {
+- Handling events
+- Lists and keys
+- Forms
+- Lifting state up
+- Composition vs Inheritance
 
-  }
-```
+
+
+
+
 
 2. [Handling Events](https://reactjs.org/docs/handling-events.html)
 
