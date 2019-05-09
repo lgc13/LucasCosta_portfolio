@@ -43,11 +43,15 @@ chown -R `whoami`:staff
 
 - Processes
 ```sh
+
+lsof -i:portNumber # find process running on portNumber
+
 kill -9 pid_number  # kills process running with pid_number
 
 # Fow Windows cmd shell, run the following:
-netstat -aon | findstr port_number  # find the PID of a process running on port_number
+netstat -aon | findstr portNumber  # find the PID of a process running on portNumber
 taskkill /PID typeyourPIDhere /F # kill that process
+
 ```
 
 ## Git
