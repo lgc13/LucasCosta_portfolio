@@ -6,9 +6,11 @@ Talk about why/how to create and use one.
 
 ## ES6
 
-Put simply, ECMAScript is a standard. While JavaScript is the most popular implementation of that standard. JavaScript implements ECMAScript and builds on top of it
+Let's create a folder with a HTML and JS file, to play around with everything mentioned below.
 
 Read about it [here](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c)
+
+Put simply, ECMAScript is a standard. While JavaScript is the most popular implementation of that standard. JavaScript implements ECMAScript and builds on top of it
 
 [Features of ES6](http://exploringjs.com/es6/ch_overviews.html)
 
@@ -138,6 +140,8 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 - First, check out hello-world app
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
+
+- You can check if you already have yarn with `yarn --version`
 
 1. Install [Node.js](https://nodejs.org/en/)
 
