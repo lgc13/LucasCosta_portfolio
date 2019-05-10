@@ -176,3 +176,63 @@ const TextArea = (props) => (
   </form>
 );
 ```
+
+3. Select
+
+```js
+const Select = (props) => (
+  <form onSubmit={props.onSubmit}>
+     <label>
+       Pick your favorite chocolate bar:
+       <select value={props.chocolate} onChange={props.onChange}>
+         <option value="grapefruit">Grapefruit</option>
+         <option value="lime">Lime</option>
+         <option value="coconut">Coconut</option>
+         <option value="mango">Mango</option>
+       </select>
+     </label>
+     <input type="submit" value="Submit" />
+   </form>
+)
+```
+
+#### Multiple Inputs
+
+In their docs, they talk about doing it this way:
+
+[Click me](https://reactjs.org/docs/forms.html#handling-multiple-inputs)
+
+I have personally done it slighly different in this example. (By passing the 'name' as a parameter onto handleSubmit, and changing that directly. This allow me to not have to worry on how many inputs use the handleSubmit())
+
+```js
+handleChange = (event, stateKey) => {
+    this.setState({
+      ...this.state,
+      [stateKey]: event.target.value
+    });
+ }
+
+<TextArea
+  onChange={(event) => this.handleChange(event, 'poem')}
+/>
+<Select
+  onChange={(event) => this.state.handleChange(event, this.state.chocolate.id)}
+/>
+```
+
+#### State key
+
+Notice you can update state by using a dynamic key:
+
+```js
+handleChange = (event, stateKey) => {
+    this.setState({
+      ...this.state,
+      [stateKey]: event.target.value
+    });
+ }
+```
+
+From docs:
+
+- Overall, this makes it so that <input type="text">, <textarea>, and <select> all work very similarly - they all accept a value attribute that you can use to implement a controlled component.
