@@ -135,9 +135,23 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 - Components: encapsulate code to smaller isolated pieces, so its more maintainable and dynamic.
 - Declarative (efficiently update and render components as data changes)
 
-## Setup
+## Hello World
 
-- First, check out hello-world app
+- Let's make a very simple Hello World React App.
+
+1. Create a index.html file that imports the React and JSX dependecies, and a mina.js file.
+
+2. Run a local http.server with `python3 -m http.server` on that folder's directory
+
+3. Write your code (components) in you main.js file
+
+- This will be very basic so we get a feel for it.
+
+(note that React apps are not usually like this)
+
+[Example](https://github.com/lgc13/LucasCosta_portfolio/tree/master/react/React-Tutorial/Day1/HelloWorld-NoYarn)
+
+## Setup: create-react-app
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 

@@ -5,7 +5,9 @@ QTP Intro to React Week plans:
 - Wiki
 - ES6
 - Babel
-- React: create-react-app
+- React
+- Hello World
+- Setup: create-react-app
 - JSX
 - Components
 - Props
