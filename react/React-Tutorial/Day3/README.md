@@ -73,8 +73,11 @@ You can use arrow functions to do so:
 
 ```js
 // index.js
-handleChange = (event) => {
-    this.setState({ name: event.target.value });
+handleChange = (event, stateKey) => {
+    this.setState({
+      ...this.state,
+      [stateKey]: event.target.value
+    });
  }
 handleEnterPress = (event) => {
   if (event.key === 'Enter') {
@@ -90,14 +93,25 @@ handleEnterPress = (event) => {
 }
 
 // EventsAndState.js
-<p> Current Name: {this.state.name} </p>
-<p> Current array of people: {this.state.people.map((person, index) => {
-  if (index !== (this.state.people.length - 1)) {
-    return `${person}, `;
-  } else {
-    return person;
-  }
-})} </p>
+const EventsAndState = (props) => (
+  <div>
+    <h2> Input a name </h2>
+    <input
+      type="text"
+      value={props.name}
+      onKeyDown={props.onKeyDown}
+      onChange={props.onChange}
+    />
+    <p> Current Name: {props.name} </p>
+    <p> Current array of people: {props.people.map((person, index) => {
+      if (index !== (props.people.length - 1)) {
+        return `${person}, `;
+      } else {
+        return person;
+      }
+    })} </p>
+  </div>
+);
 ```
 
 - Passing arguments into event functions:
@@ -114,21 +128,25 @@ handleEnterPress = (event) => {
 
 ```js
 // index.js
-handleFoodChange = (event) => {
-  this.setState({ food: event.target.value })
-}
-handleSubmit = (event) => {
-  alert(`Your favorite food is: ${this.state.food}`);
-}
+handleChange = (event, stateKey) => {
+    this.setState({
+      ...this.state,
+      [stateKey]: event.target.value
+    });
+ }
+ handleSubmit = (event, input) => {
+   alert(`Sumited: ${input}`);
+   event.preventDefault();
+ }
 
 // Form.js
 const Form = (props) => (
   <div>
-    <form onSubmit={(event) => props.onSubmit(event, props.food)}>
+    <form onSubmit={props.onSubmit}>
       <p>My cool form:</p>
       <label>
         Input your favorite food
-        <input type="text" value={props.food} onChange={props.handleFoodChange} />
+        <input type="text" value={props.food} onChange={props.onChange} />
       </label>
       <input type="submit" value="Submit" />
     </form>
@@ -141,14 +159,14 @@ const Form = (props) => (
 ```js
 // index.js
 <TextArea
-  onSubmit={this.handleSubmit}
+  onSubmit={(event) => this.handleSubmit(this.state.poem, this.state.poem)}
   poem={this.state.poem}
-  onChange={this.handleChangePoem}
+  onChange={(event) => this.handleChange(event, 'poem')}
 />
 
 // TextArea.js
 const TextArea = (props) => (
-  <form onSubmit={(event) => props.onSubmit(event, props.poem)}>
+  <form onSubmit={props.onSubmit}>
     <p>Write me a poem</p>
     <label>
       Poem:

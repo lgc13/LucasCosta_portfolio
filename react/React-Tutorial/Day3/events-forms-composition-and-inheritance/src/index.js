@@ -6,6 +6,7 @@ import Toggle from './components/Toggle.js';
 import EventsAndState from './components/EventsAndState.js';
 import Form from './components/Form.js';
 import TextArea from './components/TextArea.js';
+import Select from './components/Select.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +16,11 @@ class App extends React.Component {
       name: '',
       people: [],
       food: '',
-      poem: ''
+      poem: '',
+      chocolate: {
+        id: 'chocolate',
+        value: ''
+      },
     };
   }
   handleClick = () => {
@@ -23,8 +28,11 @@ class App extends React.Component {
       isToggleOn: !state.isToggleOn
     }));
   }
-  handleChange = (event) => {
-      this.setState({ name: event.target.value });
+  handleChange = (event, stateKey) => {
+      this.setState({
+        ...this.state,
+        [stateKey]: event.target.value
+      });
    }
   handleEnterPress = (event) => {
     if (event.key === 'Enter') {
@@ -38,16 +46,9 @@ class App extends React.Component {
       });
     }
   }
-  handleFoodChange = (event) => {
-    this.setState({ food: event.target.value })
-  }
   handleSubmit = (event, input) => {
     alert(`Sumited: ${input}`);
     event.preventDefault();
-  }
-  handleChangePoem = (event) => {
-    console.log('in handleChangePoem');
-    this.setState({ poem: event.target.value });
   }
   render() {
     return (
@@ -60,20 +61,26 @@ class App extends React.Component {
         <EventsAndState
           name={this.state.name}
           onKeyDown={this.handleEnterPress}
-          onChange={this.handleChange}
+          onChange={(event) => this.handleChange(event, 'name')}
           people={this.state.people}
         />
         <hr/>
         <Form
-          onSubmit={this.handleSubmit}
+          onSubmit={(event) => this.handleSubmit(event, this.state.food)}
           food={this.state.food}
-          onChange={this.handleFoodChange}
+          onChange={(event) => this.handleChange(event, 'food')}
         />
         <hr/>
         <TextArea
-          onSubmit={this.handleSubmit}
+          onSubmit={(event) => this.handleSubmit(this.state.poem, this.state.poem)}
           poem={this.state.poem}
-          onChange={this.handleChangePoem}
+          onChange={(event) => this.handleChange(event, 'poem')}
+        />
+        <hr />
+        <Select
+          onSubmit={(event) => this.handleSubmit(event, this.state.chocolate)}
+          chocolate={this.state.chocolate.value}
+          onChange={(event) => this.state.handleChange(event, this.state.chocolate.id)}
         />
       </div>
     );

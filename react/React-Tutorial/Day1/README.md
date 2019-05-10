@@ -1,5 +1,22 @@
 # Day 1 topics
 
+## Install Yarn
+
+- This can be time consuming, so let's get it started and move on to the next few topics.
+
+- You can check if you already have yarn with `yarn --version`
+
+- If you don't have it, first try installing it with brew:
+
+`brew install yarn`
+
+If that doesn't work, then install it from this link:
+
+[Yarn](https://yarnpkg.com/latest.msi)
+
+(If necessary, here's Node's link)
+[Node.js](https://nodejs.org/en/)
+
 ## Wiki
 
 Talk about why/how to create and use one.
@@ -155,20 +172,6 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
-1. Install Yarn (and possibly Node)
-
-- You can check if you already have yarn with `yarn --version`
-
-- If you don't have it, first try installing it with brew:
-
-`brew install yarn`
-
-If that doesn't work, then install it from this link:
-
-[Yarn](https://yarnpkg.com/latest.msi)
-
-(If necessary, here's Node's link)
-[Node.js](https://nodejs.org/en/)
 
 2. Run `yarn create react-app your-app-name`
 

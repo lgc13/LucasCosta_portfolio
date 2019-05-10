@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = (props) => (
   <div>
-    <form onSubmit={(event) => props.onSubmit(event, props.food)}>
+    <form onSubmit={props.onSubmit}>
       <p>My cool form:</p>
       <label>
         Input your favorite food

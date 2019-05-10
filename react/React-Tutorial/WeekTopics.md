@@ -2,6 +2,7 @@ QTP Intro to React Week plans:
 
 # Day 1
 
+- Install Yarn
 - Wiki
 - ES6
 - Babel

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TextArea = (props) => (
-  <form onSubmit={(event) => props.onSubmit(event, props.poem)}>
+  <form onSubmit={props.onSubmit}>
     <p>Write me a poem</p>
     <label>
       Poem:
