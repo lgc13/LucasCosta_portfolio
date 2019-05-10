@@ -141,13 +141,22 @@ More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
 
 - create-react-app [(Instructions)](https://github.com/facebook/create-react-app)
 
+1. Install Yarn (and possibly Node)
+
 - You can check if you already have yarn with `yarn --version`
 
-1. Install [Node.js](https://nodejs.org/en/)
+- If you don't have it, first try installing it with brew:
 
-2. Install [Yarn](https://yarnpkg.com/latest.msi)
+`brew install yarn`
 
-3. Run `yarn create react-app your-app-name`
+If that doesn't work, then install it from this link:
+
+[Yarn](https://yarnpkg.com/latest.msi)
+
+(If necessary, here's Node's link)
+[Node.js](https://nodejs.org/en/)
+
+2. Run `yarn create react-app your-app-name`
 
 - if you come across an issue like `is not recognized as an internal or external command, operable program or batch file`, then run the following:
 
@@ -156,7 +165,7 @@ yarn global add create-react-app
 create-react-app your-app-name
 ```
 
-4. Run your app
+3. Run your app
 
 ```sh
 cd your-app-name

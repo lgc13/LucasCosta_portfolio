@@ -21,7 +21,8 @@ QTP Intro to React Week plans:
 - Class component
 - State
 - Lifecycle of a component
-- Practice (create 2 small game apps)
+- Practice:
+  Create 2 small game apps: Heads/Tails and Rock/Paper/Scissors
 
 # Day 3
 
@@ -31,12 +32,16 @@ QTP Intro to React Week plans:
 - Lifting state up
 - Composition vs Inheritance
 - Thinking in React
-- Practice: Todo app
+- Practice:
+  Todo List app
 
 # Day 4
 
-- Practice: user interface to build (FB/Instragram/Youtube/Twitter)
+- Practice:
+  build a user interface
+  Ex: FB/Instragram/Youtube/Twitter
 
 # Day 5
 
-- Practice: user interface continued
+- Practice:
+  user interface continued

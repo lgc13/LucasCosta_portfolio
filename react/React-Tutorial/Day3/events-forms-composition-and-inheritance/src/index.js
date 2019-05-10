@@ -2,13 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import Toggle from './components/Toggle.js';
+import EventsAndState from './components/EventsAndState.js';
+import Form from './components/Form.js';
+import TextArea from './components/TextArea.js';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isToggleOn: true,
       name: '',
-      people: []
+      people: [],
+      food: '',
+      poem: ''
     };
   }
   handleClick = () => {
@@ -31,32 +38,43 @@ class App extends React.Component {
       });
     }
   }
+  handleFoodChange = (event) => {
+    this.setState({ food: event.target.value })
+  }
+  handleSubmit = (event, input) => {
+    alert(`Sumited: ${input}`);
+    event.preventDefault();
+  }
+  handleChangePoem = (event) => {
+    console.log('in handleChangePoem');
+    this.setState({ poem: event.target.value });
+  }
   render() {
     return (
       <div className="App">
-        <div>
-          <button onClick={this.handleClick}>
-            Click me
-          </button>
-          <p> Current isToggleOn: {this.state.isToggleOn.toString()} </p>
-        </div>
-        <div>
-          <h2> Input a name </h2>
-          <input
-            type="text"
-            value={this.state.name}
-            onKeyDown={this.handleEnterPress}
-            onChange={this.handleChange}
-          />
-          <p> Current Name: {this.state.name} </p>
-          <p> Current array of people: {this.state.people.map((person, index) => {
-            if (index !== (this.state.people.length - 1)) {
-              return `${person}, `;
-            } else {
-              return person;
-            }
-          })} </p>
-        </div>
+        <Toggle
+          handleClick={this.handleClick}
+          isToggleOn={this.state.isToggleOn}
+        />
+        <hr/>
+        <EventsAndState
+          name={this.state.name}
+          onKeyDown={this.handleEnterPress}
+          onChange={this.handleChange}
+          people={this.state.people}
+        />
+        <hr/>
+        <Form
+          onSubmit={this.handleSubmit}
+          food={this.state.food}
+          onChange={this.handleFoodChange}
+        />
+        <hr/>
+        <TextArea
+          onSubmit={this.handleSubmit}
+          poem={this.state.poem}
+          onChange={this.handleChangePoem}
+        />
       </div>
     );
   }

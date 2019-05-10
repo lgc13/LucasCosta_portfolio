@@ -25,7 +25,6 @@ const HowTo = React.createClass({
           <li>In your main.js file, add class components</li>
           <li>At the bottom of that file, you can use React.render() to render those components </li>
         </ol>
-
       </div>
     )
   }

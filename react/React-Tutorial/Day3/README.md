@@ -72,6 +72,7 @@ class App extends React.Component {
 You can use arrow functions to do so:
 
 ```js
+// index.js
 handleChange = (event) => {
     this.setState({ name: event.target.value });
  }
@@ -88,6 +89,7 @@ handleEnterPress = (event) => {
   }
 }
 
+// EventsAndState.js
 <p> Current Name: {this.state.name} </p>
 <p> Current array of people: {this.state.people.map((person, index) => {
   if (index !== (this.state.people.length - 1)) {
@@ -96,4 +98,63 @@ handleEnterPress = (event) => {
     return person;
   }
 })} </p>
+```
+
+- Passing arguments into event functions:
+
+```js
+<form onSubmit={(event) => props.onSubmit(event, props.food)}>
+```
+
+## Forms
+
+- Use State as the 'single source of truth' for your data. Do so by changing state variables with onChange
+
+1. Form
+
+```js
+// index.js
+handleFoodChange = (event) => {
+  this.setState({ food: event.target.value })
+}
+handleSubmit = (event) => {
+  alert(`Your favorite food is: ${this.state.food}`);
+}
+
+// Form.js
+const Form = (props) => (
+  <div>
+    <form onSubmit={(event) => props.onSubmit(event, props.food)}>
+      <p>My cool form:</p>
+      <label>
+        Input your favorite food
+        <input type="text" value={props.food} onChange={props.handleFoodChange} />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+);
+```
+
+2. Textarea
+
+```js
+// index.js
+<TextArea
+  onSubmit={this.handleSubmit}
+  poem={this.state.poem}
+  onChange={this.handleChangePoem}
+/>
+
+// TextArea.js
+const TextArea = (props) => (
+  <form onSubmit={(event) => props.onSubmit(event, props.poem)}>
+    <p>Write me a poem</p>
+    <label>
+      Poem:
+      <textarea value={props.poem} onChange={props.onChange} />
+    </label>
+    <input type="submit" value="Submit" />
+  </form>
+);
 ```
