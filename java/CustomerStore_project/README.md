@@ -50,6 +50,7 @@ You can see that in this code snippet:
 In order to run on local Apache tomcat, project must be within these directories:
 
 /Applications/AMPPS/mysql/bin
+
 /Applications/tomcat/webapps
 
 <!-- Adding a blank line -->
