@@ -236,3 +236,7 @@ handleChange = (event, stateKey) => {
 From docs:
 
 - Overall, this makes it so that <input type="text">, <textarea>, and <select> all work very similarly - they all accept a value attribute that you can use to implement a controlled component.
+
+## Composition vs Inheritance
+
+[Read here](https://reactjs.org/docs/composition-vs-inheritance.html)
