@@ -4,6 +4,18 @@
 
 - This can be time consuming, so let's get it started and move on to the next few topics.
 
+- First check if you have node installed:
+
+`node --version`
+
+- If you don't have it installed, go ahead and install it now:
+
+`brew install node`
+
+- If you don't have brew, follow these steps:
+
+https://brew.sh/
+
 - You can check if you already have yarn with `yarn --version`
 
 - If you don't have it, first try installing it with brew:
