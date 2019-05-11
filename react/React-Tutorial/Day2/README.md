@@ -10,7 +10,7 @@
 
 2. Use standard css rules/syntax in this file. Example:
 
-```
+```css
 // element
 h1 {
   color: yellow
