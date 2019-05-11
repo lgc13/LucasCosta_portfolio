@@ -2,32 +2,39 @@
 
 ## Install Yarn
 
-- This can be time consuming, so let's get it started and move on to the next few topics.
+This can be time consuming, so let's get it started and move on to the next few topics.
 
-- First check if you have node installed:
+1. Install Brew
+
+Check if you already have it installed:
+
+`brew -version`
+
+If you don't, install it from here: https://brew.sh/
+
+2. Install Node
+
+Check if you already have it installed
 
 `node --version`
 
-- If you don't have it installed, go ahead and install it now:
+If you don't have it installed, go ahead and install it now:
 
 `brew install node`
 
-- If you don't have brew, follow these steps:
+3. Install Yarn
 
-https://brew.sh/
+Check if you already have it installed
 
-- You can check if you already have yarn with `yarn --version`
+`yarn --version`
 
-- If you don't have it, first try installing it with brew:
+If you don't have it, first try installing it with brew:
 
 `brew install yarn`
 
-If that doesn't work, then install it from this link:
+If that doesn't work, then install it from this link: [Yarn](https://yarnpkg.com/latest.msi)
 
-[Yarn](https://yarnpkg.com/latest.msi)
-
-(If necessary, here's Node's link)
-[Node.js](https://nodejs.org/en/)
+If necessary, here's Node's link: [Node.js](https://nodejs.org/en/)
 
 ## Wiki
 
