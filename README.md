@@ -76,7 +76,7 @@ As a Software engineer, I have used quite a lot of tools/technologies for an app
 - Web Frameworks: Spring Boot, Flask, Hibernate, Django
 - Development: Python, Java, C#, C++, JSP, JSTL, PHP, Android Studio
 - Database: MySQL, PostgreSQL, Oracle, Microsoft SQL Server
-- Front end: React Native, AngularJS, Redux, jQuery, JavaScript, HTML, Bootstrap, CSS
+- Front end: React, React Native, AngularJS, Redux, jQuery, JavaScript, HTML, Bootstrap, CSS
 - Console/IDE: Git, Bash, Unix, IntelliJ, PyCharm, Eclipse, Maven, Putty
 - Others: Docker, RabbitMQ, Jira, Pivotal Tracker, SVN, Agile
 
