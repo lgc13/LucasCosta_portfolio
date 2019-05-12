@@ -5,10 +5,10 @@ const Select = (props) => (
      <label>
        Pick your favorite chocolate bar:
        <select value={props.chocolate} onChange={props.onChange}>
-         <option value="grapefruit">Grapefruit</option>
-         <option value="lime">Lime</option>
-         <option value="coconut">Coconut</option>
-         <option value="mango">Mango</option>
+         <option>Select One</option>
+         <option value="White Chocolate">White Chocolate</option>
+         <option value="Milk Chocolate">Milk Chocolate</option>
+         <option value="Dark Chocolate">Dark Chocolate</option>
        </select>
      </label>
      <input type="submit" value="Submit" />
