@@ -14,6 +14,20 @@ Follow these [instructions](./composition-and-inheritance)
 
 Demo:
 
-![Demo](./composition-and-inheritance/demo.gif)
+![Demo](./composition-and-inheritance/demo.PNG)
 
 [Read here](https://reactjs.org/docs/composition-vs-inheritance.html)
+
+## Thinking in React
+
+[Read me!](https://reactjs.org/docs/thinking-in-react.html)
+
+## Practice
+
+- Let's create a Todo List App using all the skills we learned
+
+Follow the instructions given [here](https://github.com/QDivision/todo-js), but using React rather than plain JS.
+
+Something along these lines:
+
+![Demo](./state-practice-with-games/demo.gif)
