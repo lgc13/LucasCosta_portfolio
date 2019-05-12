@@ -367,7 +367,7 @@ Lifting state involves writing more “boilerplate” code than two-way binding 
 If something can be derived from either props or state, it probably shouldn’t be in the state. For example, instead of storing both celsiusValue and fahrenheitValue, we store just the last edited temperature and its scale. The value of the other input can always be calculated from them in the render() method. This lets us clear or apply rounding to the other field without losing any precision in the user input.
 
 
-Open my `lifting-state-thermometer` project to see this in action.
+Open my [lifting-state-thermometer](./lifting-state-thermormeter) project to see this in action.
 
 ![Temperature Example](./temperature.gif)
 
