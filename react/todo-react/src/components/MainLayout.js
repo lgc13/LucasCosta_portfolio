@@ -12,6 +12,8 @@ const MainLayout = (props) => {
         <ListItem
           key={todo.id}
           todo={todo}
+          onChange={props.onChange}
+          style={todo.complete ? 'todo complete' : 'todo'}
         />
       )}
       <div>
