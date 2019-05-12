@@ -369,6 +369,8 @@ If something can be derived from either props or state, it probably shouldn’t 
 
 Open my `lifting-state-thermometer` project to see this in action.
 
+![Temperature Example](./temperature.gif)
+
 ## Practice
 
 - Let's create 2 small apps using everything you just learned (class, components, state)

@@ -48,5 +48,3 @@ QTP Intro to React Week plans:
 
 - Practice:
   user interface continued
-
-![My Cool Video](./myvideo2.gif)
