@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './index.css';
 import MainComponent from './components/MainComponent.js'
 
 import './index.css';
-import './ConsoleLogs.js';
 
 const superPeople = [
   {
@@ -41,13 +41,15 @@ class Main extends React.Component {
   }
   render() {
     return (
-      <MainComponent
-        superPeople={this.state.superPeople}
-        restaurants={this.state.restaurants}
-        onClick={this.handleClick}
-        randomPerson={this.state.randomPerson}
-        randomRestaurant={this.state.randomRestaurant}
-      />
+      <div className="main-component">
+        <MainComponent
+          superPeople={this.state.superPeople}
+          restaurants={this.state.restaurants}
+          onClick={this.handleClick}
+          randomPerson={this.state.randomPerson}
+          randomRestaurant={this.state.randomRestaurant}
+        />
+      </div>
     );
   }
 }

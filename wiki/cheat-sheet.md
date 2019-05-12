@@ -43,15 +43,14 @@ chown -R `whoami`:staff
 
 - Processes
 ```sh
-
+# MacOS terminal
 lsof -i:portNumber # find process running on portNumber
-
 kill -9 pid_number  # kills process running with pid_number
 
 # Fow Windows cmd shell, run the following:
 netstat -aon | findstr portNumber  # find the PID of a process running on portNumber
 taskkill /PID typeyourPIDhere /F # kill that process
-
+taskkill //PID typeyourPIDhere //F # for BASH on Windows
 ```
 
 ## Git
@@ -306,3 +305,7 @@ https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2
 
 5- Install Atom, an IDE,
 ​
+
+### Gif screen recoding program
+
+https://www.screentogif.com/
