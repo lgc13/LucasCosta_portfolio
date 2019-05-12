@@ -6,10 +6,10 @@ const coolInstruments = ['guitar', 'sexyphone', 'drums'];
 
 const renderFaveMusic = (props) => {
   let musicParagraph;
-  if (props.faveMusic === 'pop') {
-    musicParagraph = <p>Pop is awesome</p>;
-  } else if (props.faveMusic === 'rock') {
-    musicParagraph = <p>Rock is better </p>;
+  if (props.faveMusic === 'rock') {
+    musicParagraph = <p>Rock is awesome</p>;
+  } else if (props.faveMusic === 'house') {
+    musicParagraph = <p>House is better </p>;
   } else {
     musicParagraph = <p>I guess country it is....</p>;
   }
@@ -27,7 +27,7 @@ const isUserBusy = (props) => {
 const LuckyNumbers = () => {
   const luckyNumbers = [15, 32, 3, 54, 25];
   const listItems = luckyNumbers.map((number) =>
-    <li>{number}</li>
+    <li key={number}>{number}</li>
   );
   return (
     <div>
@@ -61,6 +61,6 @@ function App(props) {
 }
 
 ReactDOM.render(
-  <App name="Lucas" faveMusic="pop" isBusy={false}/>,
+  <App name="Lucas" faveMusic="rock" isBusy={false}/>,
   document.getElementById('root')
 );
