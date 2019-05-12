@@ -18,6 +18,7 @@ class TodoApp extends React.Component {
         console.log('completed:', todo.text);
       }
     });
+    console.log('---');
   }
   handleOnClick = (todo) => {
     this.setState({
@@ -31,7 +32,7 @@ class TodoApp extends React.Component {
         }
         return td;
       })
-    }, this.consoleCompleted);
+    });
   }
 
   render() {
