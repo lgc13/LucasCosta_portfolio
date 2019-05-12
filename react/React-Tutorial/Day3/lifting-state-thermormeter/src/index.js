@@ -2,16 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <p> Hi</p>
-    </div>
-  );
+import TemperatureInput from './components/TemperatureInput.js';
+import BoilingVerdict from './components/BoilingVerdict.js';
+
+class Calculator extends React.Component {
+  render() {
+    return (
+      <div>
+        <TemperatureInput scale="c" />
+        <TemperatureInput scale="f" />
+      </div>
+    );
+  }
 }
 
 
 ReactDOM.render(
-  <App />,
+  <Calculator />,
   document.getElementById('root')
 );
