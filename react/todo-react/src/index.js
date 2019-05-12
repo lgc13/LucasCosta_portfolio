@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import MainLayout from './components/MainLayout.js';
+
 let todos = [
   {id: 1, text: "Take out trash and recycling", complete: true},
   {id: 2, text: "Pick up dry cleaning", complete: false},
@@ -9,13 +11,17 @@ let todos = [
   {id: 4, text: "Write thank-you notes", complete: false},
 ];
 
-const App = () => {
-  return (
-    <p>hi</p>
-  )
+class TodoApp extends React.Component {
+  render() {
+    return (
+      <MainLayout
+        title="Things to do"
+      />
+    )
+  }
 }
 
 ReactDOM.render(
-  <App />,
+  <TodoApp />,
   document.getElementById('root')
 );
