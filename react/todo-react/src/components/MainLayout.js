@@ -8,8 +8,12 @@ const MainLayout = (props) => {
   return (
     <div className="app">
       <h1>{props.title}</h1>
-      <ListItem
-      />
+      {props.initialTodos.map(todo =>
+        <ListItem
+          key={todo.id}
+          todo={todo}
+        />
+      )}
       <div>
         <NewItemInput
         />

@@ -5,7 +5,7 @@ const ListItem = (props) => {
     <div id="main-todo-list" className="todo-list">
       <div className="todo">
         <input type="checkbox" className="todo-checkbox" />
-        <span className="todo-text">Delete me!</span>
+        <span className="todo-text">{props.todo.text}</span>
       </div>
     </div>
   );
