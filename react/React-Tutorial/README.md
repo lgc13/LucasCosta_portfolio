@@ -11,7 +11,7 @@ QTP Intro to React Week topics:
 - Hello World with create-react-app
 - JSX, Components and Props
 - Practice:
-  'About me' app with components and props
+  >'About me' app with components and props
 
 # [Day 2](./Day2)
 
@@ -24,7 +24,7 @@ QTP Intro to React Week topics:
 - Lifecycle of a component
 - Lifting state up
 - Practice:
-  Create 2 small game apps: Heads/Tails and Rock/Paper/Scissors
+  > Create 2 small game apps: Heads/Tails and Rock/Paper/Scissors
 
 # [Day 3](./Day3)
 
@@ -34,15 +34,14 @@ QTP Intro to React Week topics:
 - Composition vs Inheritance
 - Thinking in React
 - Practice:
-  Todo List app
+  > Todo List app
 
 # Day 4
 
 - Practice:
-  build a user interface
-  Ex: FB/Instragram/Youtube/Twitter
+  > Build a user interface (FB/Instragram/Youtube/Twitter)
 
 # Day 5
 
 - Practice:
-  user interface continued
+  > Continue on user interface app
