@@ -1,5 +1,7 @@
 # JSX, Components and Props
 
+Demo:
+
 ![Demo](./demo.gif)
 
 ## JSX

@@ -1,5 +1,9 @@
 # Hello World with create-react-app
 
+Demo:
+
+![Hello World with yarn](./hello-world-with-yarn.PNG)
+
 React Docs [(Instructions)](https://github.com/facebook/create-react-app)
 
 1. Run `yarn create react-app your-app-name`
@@ -67,5 +71,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
-
-![Hello World with yarn](./hello-world-with-yarn.PNG)

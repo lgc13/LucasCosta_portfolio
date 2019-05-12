@@ -1,5 +1,9 @@
 # ES6 practice
 
+Demo:
+
+![console-logs-practice](./console-logs-practice.PNG)
+
 Read about it [here](https://codeburst.io/javascript-wtf-is-es6-es8-es-2017-ecmascript-dca859e4821c)
 
 Put simply, ECMAScript is a standard. While JavaScript is the most popular implementation of that standard. JavaScript implements ECMAScript and builds on top of it
@@ -103,6 +107,3 @@ console.log("result 2: ", result);
 ```
 
 More ES5 stuff [here](https://www.w3schools.com/whatis/whatis_es5.asp)
-
-Demo:
-![console-logs-practice](./console-logs-practice.PNG)

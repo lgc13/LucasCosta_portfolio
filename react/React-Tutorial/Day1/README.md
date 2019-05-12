@@ -42,11 +42,10 @@ Talk about why/how to create and use one.
 
 ## ES6
 
-Follow this guide:
-
-[Example](./es6-practice)
+Follow this [guide](./es6-practice)
 
 Demo:
+
 ![console-logs-practice](./es6-practice/console-logs-practice.PNG)
 
 ## Babel
