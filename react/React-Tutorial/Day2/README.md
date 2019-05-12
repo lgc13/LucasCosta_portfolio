@@ -66,9 +66,9 @@ If the condition is true, the element right after && will appear in the output. 
 
 - If-Else with Conditional Operator
 
-"Another method for conditionally rendering elements inline is to use the JavaScript conditional operator `condition ? true : false`."
+Another method for conditionally rendering elements inline is to use the JavaScript conditional operator `condition ? true : false`.
 
-- you can do in line ternaries
+- you can do in-line ternaries
 
 ```js
 <div id="name-div">
