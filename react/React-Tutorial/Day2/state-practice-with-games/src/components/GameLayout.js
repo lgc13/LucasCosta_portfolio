@@ -1,6 +1,16 @@
 import React from 'react';
 
 const GameLayout = (props) => {
+  let classResult;
+  if (props.isWinner === true) {
+    classResult = 'result winner';
+  }
+  else if (props.isWinner === 'tie') {
+    classResult = 'result tie';
+  }
+  else {
+    classResult = ' result loser';
+  }
   return (
     <div>
       <h2>{props.title}</h2>
@@ -15,9 +25,7 @@ const GameLayout = (props) => {
           />
       )}
       {props.resultMessage &&
-        <div className={props.isWinner
-          ? 'result winner'
-          : 'result loser'}>
+        <div className={classResult}>
            {props.resultMessage}
         </div>
       }

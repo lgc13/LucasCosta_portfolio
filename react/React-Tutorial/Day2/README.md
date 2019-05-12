@@ -35,3 +35,7 @@ Demo:
 2. rock-paper-sizors
 
 - similar to the coin flip, but this time the user can choose between rock, paper or scissors. You will randomize the result, letting the user know whether they won, lost, or if it was a tie.
+
+Something along these lines:
+
+![Demo](./state-practice-with-games/demo.gif)

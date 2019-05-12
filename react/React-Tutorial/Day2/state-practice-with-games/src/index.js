@@ -67,7 +67,7 @@ class App extends React.Component {
   }
   checkWinnerForRockPaperScissors = (gameState, userPick, randomChoice) => {
     if (userPick === randomChoice) {
-      gameState.isWinner = false;
+      gameState.isWinner = 'tie';
       gameState.resultMessage = `Computer picked ${randomChoice}. It was a tie`;
     } else if ((userPick === 'rock' && randomChoice === 'paper') ||
                (userPick === 'paper' && randomChoice === 'scissors') ||
