@@ -16,8 +16,6 @@ Demo:
 
 ![Demo](./composition-and-inheritance/demo.PNG)
 
-[Read here](https://reactjs.org/docs/composition-vs-inheritance.html)
-
 ## Thinking in React
 
 [Read me!](https://reactjs.org/docs/thinking-in-react.html)
@@ -30,4 +28,4 @@ Follow the instructions given [here](https://github.com/QDivision/todo-js), but 
 
 Something along these lines:
 
-![Demo](./state-practice-with-games/demo.gif)
+![Demo](./todo-react/demo.gif)

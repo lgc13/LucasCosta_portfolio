@@ -4,6 +4,8 @@ Demo:
 
 ![Demo](./demo.PNG)
 
+[Read here](https://reactjs.org/docs/composition-vs-inheritance.html)
+
 When you have a component that will take different types of children, you might want to use composition.
 
 You can have multiple components that pass different children to this one specific component.
