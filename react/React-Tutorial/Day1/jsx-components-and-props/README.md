@@ -135,7 +135,7 @@ const MainComponent = () => (
 
 ``` js
 // index.js
-function Main() {
+const Main = () => {
   return (
     <MainComponent
       superPeople={superPeople}
@@ -144,7 +144,6 @@ function Main() {
     />
   )
 }
-
 const handleClick = () => {
   ReactDOM.render(
     <Main />,
@@ -155,11 +154,34 @@ const handleClick = () => {
 handleClick(); // rendering when browser first starts
 
 // MainComponent.js
-<Randomizer
-  superPeople={props.superPeople}
-  restaurants={props.restaurants}
-  onClick={props.onClick}
-/>
+const MainComponent = (props) => (
+  <div>
+    <HelloEveryone
+      superPeople={props.superPeople}
+    />
+    <Restaurants
+      restaurants={props.restaurants}
+    />
+    <Randomizer
+      superPeople={props.superPeople}
+      restaurants={props.restaurants}
+      onClick={props.onClick}
+    />
+  </div>
+)
+
+// HelloEveryone.js
+const HelloEveryone = (props) => {
+  const listItems = props.superPeople.map((person) => (
+    <p key={person.name}>{person.name} has {person.power}</p>)
+  );
+  return (
+    <div>
+      <h3>Super people</h3>
+      {listItems}
+    </div>
+  );
+}
 
 // Randomizer.js
 let randomPerson;

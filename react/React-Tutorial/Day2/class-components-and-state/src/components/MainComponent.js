@@ -6,9 +6,7 @@ import Randomizer from './Randomizer.js'
 
 const MainComponent = (props) => (
   <div>
-    <HelloEveryone
-      superPeople={props.superPeople}
-    />
+    <HelloEveryone superPeople={props.superPeople}/>
     <Restaurants
       restaurants={props.restaurants}
     />
@@ -16,6 +14,8 @@ const MainComponent = (props) => (
       superPeople={props.superPeople}
       restaurants={props.restaurants}
       onClick={props.onClick}
+      randomPerson={props.randomPerson}
+      randomRestaurant={props.randomRestaurant}
     />
   </div>
 )

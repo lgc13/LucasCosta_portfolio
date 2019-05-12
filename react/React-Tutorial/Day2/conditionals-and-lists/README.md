@@ -168,4 +168,4 @@ const todoItems = todos.map((todo) =>
 );
 ```
 
-(Read more about it here)[https://reactjs.org/docs/lists-and-keys.html#keys-must-only-be-unique-among-siblings]
+[Read more about it here](https://reactjs.org/docs/lists-and-keys.html#keys-must-only-be-unique-among-siblings)

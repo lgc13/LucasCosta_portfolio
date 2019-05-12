@@ -16,10 +16,8 @@ QTP Intro to React Week topics:
 # [Day 2](./Day2)
 
 - Review 'About me' apps, and live demo
-- Styling
-- Conditional rendering
-- Lists and keys
-- Class component
+- Styling, Conditional rendering, and Lists
+- Class components
 - State
 - Lifecycle of a component
 - Lifting state up
