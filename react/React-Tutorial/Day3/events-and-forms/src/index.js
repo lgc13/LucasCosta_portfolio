@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
 import Toggle from './components/Toggle.js';
 import EventsAndState from './components/EventsAndState.js';
@@ -17,10 +16,7 @@ class App extends React.Component {
       people: [],
       food: '',
       poem: '',
-      chocolate: {
-        id: 'chocolate',
-        value: ''
-      },
+      chocolate: '',
     };
   }
   handleClick = () => {
@@ -46,8 +42,12 @@ class App extends React.Component {
       });
     }
   }
-  handleSubmit = (event, input) => {
+  handleSubmit = (event, stateKey, input) => {
     alert(`Sumited: ${input}`);
+    this.setState({
+      ...this.state,
+      [stateKey]: '',
+    });
     event.preventDefault();
   }
   render() {
@@ -66,21 +66,21 @@ class App extends React.Component {
         />
         <hr/>
         <Form
-          onSubmit={(event) => this.handleSubmit(event, this.state.food)}
+          onSubmit={(event) => this.handleSubmit(event, 'food', this.state.food)}
           food={this.state.food}
           onChange={(event) => this.handleChange(event, 'food')}
         />
         <hr/>
         <TextArea
-          onSubmit={(event) => this.handleSubmit(this.state.poem, this.state.poem)}
+          onSubmit={(event) => this.handleSubmit(event, 'poem', this.state.poem)}
           poem={this.state.poem}
           onChange={(event) => this.handleChange(event, 'poem')}
         />
         <hr />
         <Select
-          onSubmit={(event) => this.handleSubmit(event, this.state.chocolate)}
-          chocolate={this.state.chocolate.value}
-          onChange={(event) => this.state.handleChange(event, this.state.chocolate.id)}
+          onSubmit={(event) => this.handleSubmit(event, 'chocolate', this.state.chocolate)}
+          chocolate={this.state.chocolate}
+          onChange={(event) => this.handleChange(event, 'chocolate')}
         />
       </div>
     );
