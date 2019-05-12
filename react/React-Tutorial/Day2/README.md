@@ -369,7 +369,7 @@ If something can be derived from either props or state, it probably shouldn’t 
 
 Open my [lifting-state-thermometer](./lifting-state-thermormeter) project to see this in action.
 
-![Temperature Example](./temperature.gif)
+![Temperature Example](./lifting-state-thermormeter/temperature.gif)
 
 ## Practice
 
