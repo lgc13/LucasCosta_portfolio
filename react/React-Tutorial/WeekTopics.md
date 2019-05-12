@@ -24,6 +24,7 @@ QTP Intro to React Week plans:
 - Class component
 - State
 - Lifecycle of a component
+- Lifting state up
 - Practice:
   Create 2 small game apps: Heads/Tails and Rock/Paper/Scissors
 
@@ -32,7 +33,6 @@ QTP Intro to React Week plans:
 - Review 2 small game apps, and live demo
 - Handling events
 - Forms
-- Lifting state up
 - Composition vs Inheritance
 - Thinking in React
 - Practice:
