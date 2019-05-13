@@ -20,6 +20,7 @@ const MainLayout = (props) => {
         <NewItemInput
         />
         <RemainingItems
+          itemsRemaining={props.itemsRemaining}
         />
       </div>
     </div>
