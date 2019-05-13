@@ -10,7 +10,12 @@ class TodoApp extends React.Component {
     super(props);
     this.state = {
       todos,
+      itemsComplete: 0,
+      itemsRemaining: 0,
     }
+  }
+  componentDidMount() {
+    this.changeItemsRemaining();
   }
   consoleCompleted = () => {
     this.state.todos.forEach(todo => {
@@ -27,20 +32,32 @@ class TodoApp extends React.Component {
         if (td.id === todo.id) {
           return {
             ...td,
-            complete: todo.complete ? false : true
+            complete: td.complete ? false : true
           }
         }
         return td;
       })
+    }, this.changeItemsRemaining);
+  }
+  changeItemsRemaining = () => {
+    let {itemsComplete} = this.state;
+    this.state.todos.forEach(todo => {
+      if (todo.complete) {
+        itemsComplete += 1;
+      }
+    });
+    this.setState({
+      ...this.state,
+      itemsRemaining: this.state.todos.length - itemsComplete
     });
   }
-
   render() {
     return (
       <MainLayout
         title="Things to do"
         initialTodos={this.state.todos}
         onChange={this.handleOnClick}
+        itemsRemaining={this.state.itemsRemaining}
       />
     )
   }
