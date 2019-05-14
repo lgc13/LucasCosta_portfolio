@@ -28,4 +28,4 @@ Follow the instructions given [here](https://github.com/QDivision/todo-js), but 
 
 Something along these lines:
 
-![Demo](./todo-react/demo.gif)
+![Demo](../../todo-react/demo.gif)
