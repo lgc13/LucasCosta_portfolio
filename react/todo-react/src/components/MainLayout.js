@@ -12,7 +12,7 @@ const MainLayout = (props) => {
         <ListItem
           key={todo.id}
           todo={todo}
-          onChange={props.onClick}
+          onClick={props.onClick}
           style={todo.complete ? 'todo complete' : 'todo'}
         />
       )}
@@ -20,7 +20,7 @@ const MainLayout = (props) => {
         <NewItemInput
           value={props.newItem}
           onChange={props.onNewItem}
-          onSubmit={props.onEnter}
+          onSubmit={props.onSubmit}
         />
         <RemainingItems
           itemsRemaining={props.itemsRemaining}
