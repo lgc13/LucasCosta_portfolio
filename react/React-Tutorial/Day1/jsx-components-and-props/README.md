@@ -8,7 +8,7 @@ Demo:
 
 - Introducing [JSX](https://reactjs.org/docs/introducing-jsx.html)
 
-1. JSK looks like HTML (although its not). Its available by importing from 'react'
+1. JSX looks like HTML (although its not). Its available by importing from 'react'
 
 2. Optional, not required
 
@@ -19,7 +19,7 @@ Demo:
 
 3. You cannot render more than 1 JSX element next to each other (in the same render return)
 
-4. You CAN however, wrap elements within other elements. Ex: a <div> within another <div>
+4. You CAN however, wrap elements within other elements. Ex: a `<div>` within another `<div>`
 
 ```js
 // Allowed:

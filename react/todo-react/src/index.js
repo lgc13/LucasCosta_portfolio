@@ -11,26 +11,11 @@ class TodoApp extends React.Component {
     this.state = {
       todos,
       itemsRemaining: 0,
+      newItem: '',
     }
   }
   componentDidMount() {
     this.getInitialItemsRemaining();
-  }
-  handleOnClick = (todo) => {
-    let { itemsRemaining } = this.state;
-    const difference = todo.complete ? 1 : -1;
-    this.setState({
-      itemsRemaining: itemsRemaining += difference,
-      todos: this.state.todos.map(td => {
-        if (td.id === todo.id) {
-          return {
-            ...td,
-            complete: td.complete ? false : true
-          }
-        }
-        return td;
-      })
-    });
   }
   getInitialItemsRemaining = () => {
     let itemsCompleted = 0;
@@ -43,20 +28,53 @@ class TodoApp extends React.Component {
       itemsRemaining: this.state.todos.length - itemsCompleted
     });
   }
-  consoleCompleted = () => {
-    this.state.todos.forEach(todo => {
-      if (todo.complete === true) {
-        console.log('completed:', todo.text);
-      }
+  handleOnClick = (todo) => {
+    const { itemsRemaining } = this.state;
+    const newItemsRemaining = todo.complete ? itemsRemaining + 1 : itemsRemaining - 1;
+    this.setState({
+      itemsRemaining: newItemsRemaining,
+      todos: this.state.todos.map(td => {
+        if (td.id === todo.id) {
+          return {
+            ...td,
+            complete: td.complete ? false : true
+          }
+        }
+        return td;
+      })
     });
-    console.log('---');
+  }
+  handleItemTyping = (event) => {
+    this.setState({ newItem: event.target.value});
+  }
+  handleEnterPress = (event) => {
+    event.preventDefault();
+    const { todos, itemsRemaining, newItem } = this.state;
+    if (newItem.trim()) {
+      const newTodo = {
+        id: todos[todos.length - 1].id + 1,
+        text: newItem.trim(),
+        complete: false
+      };
+      this.setState({
+        todos: [
+          ...todos,
+          newTodo,
+        ],
+        itemsRemaining: itemsRemaining + 1,
+        newItem: '',
+      });
+    }
   }
   render() {
     return (
       <MainLayout
         title="Things to do"
-        initialTodos={this.state.todos}
-        onChange={this.handleOnClick}
+        todos={this.state.todos}
+        onClick={this.handleOnClick}
+        newItem={this.state.newItem}
+        onNewItem={this.handleItemTyping}
+        onEnter={this.handleEnterPress}
         itemsRemaining={this.state.itemsRemaining}
       />
     )

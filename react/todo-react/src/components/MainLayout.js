@@ -8,16 +8,19 @@ const MainLayout = (props) => {
   return (
     <div className="app">
       <h1>{props.title}</h1>
-      {props.initialTodos.map(todo =>
+      {props.todos.map(todo =>
         <ListItem
           key={todo.id}
           todo={todo}
-          onChange={props.onChange}
+          onChange={props.onClick}
           style={todo.complete ? 'todo complete' : 'todo'}
         />
       )}
       <div>
         <NewItemInput
+          value={props.newItem}
+          onChange={props.onNewItem}
+          onSubmit={props.onEnter}
         />
         <RemainingItems
           itemsRemaining={props.itemsRemaining}

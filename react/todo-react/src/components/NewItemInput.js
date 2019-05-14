@@ -2,7 +2,15 @@ import React from 'react';
 
 const NewItemInput = (props) => {
   return (
-    <input type="text" placeholder="New todo" />
+    <form onSubmit={props.onSubmit}>
+      <input
+        type="text"
+        value={props.value}
+        placeholder="New todo"
+        onChange={props.onChange}
+      />
+    </form>
+
   )
 }
 
