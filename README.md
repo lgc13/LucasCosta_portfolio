@@ -47,6 +47,12 @@ LucasCosta_portfolio
 ├── python
 │   └── project#
 │   └── practice
+├── react
+│   └── project#
+│   └── practice
+├── react_native
+│   └── project#
+│   └── practice
 └── static_websites
     └── project#
     └── practice
