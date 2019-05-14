@@ -12,6 +12,7 @@ class TodoApp extends React.Component {
       todos,
       itemsRemaining: 0,
       newItem: '',
+      button: '',
     }
   }
   componentDidMount() {
@@ -25,7 +26,8 @@ class TodoApp extends React.Component {
       }
     });
     this.setState({
-      itemsRemaining: this.state.todos.length - itemsCompleted
+      itemsRemaining: this.state.todos.length - itemsCompleted,
+      button: 'hide'
     });
   }
   handleOnClick = (todo) => {
@@ -66,16 +68,25 @@ class TodoApp extends React.Component {
       });
     }
   }
+  handleButtonPress = (button) => {
+    this.setState({
+      button: button === 'hide' ? 'show' : 'hide',
+      styles: button === 'hide' ? 'hidden' : '',
+    });
+  }
   render() {
     return (
       <MainLayout
         title="Things to do"
         todos={this.state.todos}
         onClick={this.handleOnClick}
+        styles={this.state.styles}
         newItem={this.state.newItem}
         onNewItem={this.handleItemTyping}
         onSubmit={this.handleEnterPress}
         itemsRemaining={this.state.itemsRemaining}
+        button={this.state.button}
+        onButtonPress={this.handleButtonPress}
       />
     )
   }
