@@ -74,7 +74,7 @@ class TodoApp extends React.Component {
         onClick={this.handleOnClick}
         newItem={this.state.newItem}
         onNewItem={this.handleItemTyping}
-        onEnter={this.handleEnterPress}
+        onSubmit={this.handleEnterPress}
         itemsRemaining={this.state.itemsRemaining}
       />
     )
