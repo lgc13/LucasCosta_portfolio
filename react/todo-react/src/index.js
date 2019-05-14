@@ -10,24 +10,17 @@ class TodoApp extends React.Component {
     super(props);
     this.state = {
       todos,
-      itemsComplete: 0,
       itemsRemaining: 0,
     }
   }
   componentDidMount() {
-    this.changeItemsRemaining();
-  }
-  consoleCompleted = () => {
-    this.state.todos.forEach(todo => {
-      if (todo.complete === true) {
-        console.log('completed:', todo.text);
-      }
-    });
-    console.log('---');
+    this.getInitialItemsRemaining();
   }
   handleOnClick = (todo) => {
+    let { itemsRemaining } = this.state;
+    const difference = todo.complete ? 1 : -1;
     this.setState({
-      ...this.state,
+      itemsRemaining: itemsRemaining += difference,
       todos: this.state.todos.map(td => {
         if (td.id === todo.id) {
           return {
@@ -37,19 +30,26 @@ class TodoApp extends React.Component {
         }
         return td;
       })
-    }, this.changeItemsRemaining);
+    });
   }
-  changeItemsRemaining = () => {
-    let {itemsComplete} = this.state;
+  getInitialItemsRemaining = () => {
+    let itemsCompleted = 0;
     this.state.todos.forEach(todo => {
       if (todo.complete) {
-        itemsComplete += 1;
+        itemsCompleted += 1;
       }
     });
     this.setState({
-      ...this.state,
-      itemsRemaining: this.state.todos.length - itemsComplete
+      itemsRemaining: this.state.todos.length - itemsCompleted
     });
+  }
+  consoleCompleted = () => {
+    this.state.todos.forEach(todo => {
+      if (todo.complete === true) {
+        console.log('completed:', todo.text);
+      }
+    });
+    console.log('---');
   }
   render() {
     return (
