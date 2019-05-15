@@ -1,0 +1,42 @@
+{
+  "_from": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+  "_id": "browser-refresh-on-save@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-r9H1P3w5Jup8nG5skJGv53odItl0whjjjtS1M6GWH6phKQ/c5rJTfl3jqVMtuAUR2JdOHwVO2ZIahzHvgAQN0w==",
+  "_location": "/browser-refresh-on-save",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+  "_shasum": "8a0e2b010d9e4c6ca50b58372ac059c3ed26acca",
+  "_spec": "https://www.atom.io/api/packages/browser-refresh-on-save/versions/1.0.0/tarball",
+  "_where": "/private/var/folders/vk/pbll4rfj76b6230nngcld7ljf_sffc/T/apm-install-dir-119326-7821-1j864fv.5xnfi",
+  "bugs": {
+    "url": "https://github.com/jkroso/atom-browser-refresh-on-save/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "reloads assets in the browser as soon as you save them",
+  "engines": {
+    "atom": "1"
+  },
+  "homepage": "https://github.com/jkroso/atom-browser-refresh-on-save#readme",
+  "license": "MIT",
+  "main": "plugin.coffee",
+  "name": "browser-refresh-on-save",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkroso/atom-browser-refresh-on-save.git"
+  },
+  "version": "1.0.0"
+}

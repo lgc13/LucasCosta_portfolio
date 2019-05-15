@@ -1,0 +1,41 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+  "_id": "language-cshtml@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-/Y4Ri8bn9ciEiMYRcBaw0tIuaqNNGIZ17zL1rUqDC3PQwKdbsdSrzJQhJhrStTVMyVCDwvOp2aPyWw3udxReoQ==",
+  "_location": "/language-cshtml",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+  "_shasum": "feec31835d6a6989ebba25327ea0e55b03a9ba0a",
+  "_spec": "https://www.atom.io/api/packages/language-cshtml/versions/0.4.2/tarball",
+  "_where": "/private/var/folders/vk/pbll4rfj76b6230nngcld7ljf_sffc/T/apm-install-dir-1181019-5880-iql329.pl6tq",
+  "bugs": {
+    "url": "https://github.com/demyte/language-cshtml/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "ASP.NET Razor (cshtml) language support in Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/demyte/language-cshtml",
+  "license": "MIT",
+  "name": "language-cshtml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demyte/language-cshtml.git"
+  },
+  "version": "0.4.2"
+}
