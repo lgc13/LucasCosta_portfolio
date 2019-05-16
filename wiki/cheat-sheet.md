@@ -304,6 +304,12 @@ https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2
   `alias ls='exa --long --header --git -TL 1'`
 
 5- Install Atom, an IDE,
+
+- Personal preferences:
+
+   - Turn off Mojave Dock recent applications:
+
+   Settings > Dock > 'Show recent applications in Dock'
 ​
 
 ### Gif screen recoding program
