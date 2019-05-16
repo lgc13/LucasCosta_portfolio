@@ -7,7 +7,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
     "react": "16.8.3",
+    "react-dom": "^16.8.6",
     "react-native": "0.59.8"
   },
   "devDependencies": {
@@ -19,6 +22,9 @@
     "react-test-renderer": "16.8.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
   }
 }

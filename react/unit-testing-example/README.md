@@ -31,7 +31,7 @@ describe('App', () => {
 
 ```sh
 yarn add enzyme
-yarn add enzyme-adapter-react-16 # this should be the version of your react, found in your-app-name/package.json, under 'dependencies{ react }'
+yarn add enzyme-adapter-react-16 # same as your react version, found in the package.json
 ```
 
 5. Create a `setupTests.js` file under your-app-name/src/ with the following:
@@ -41,7 +41,6 @@ import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16'; // same version as you added
 
 configure({ adapter: new Adapter() });
-
 ```
 6. Here's a simple test:
 

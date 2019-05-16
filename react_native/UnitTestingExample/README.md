@@ -1,5 +1,56 @@
 # React Native uniot testing
 
+## Setup
+
+1. You must import 3 dependencies:
+
+```sh
+yarn add enzyme
+yarn add enzyme-adapter-react-16 # same as your react version, found in the package.json
+yarn add react-dom
+```
+
+2. Create a setup file
+
+- This file can be called anything. For example: `setupTests.js`
+
+```js
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+configure({ adapter: new Adapter() });
+```
+
+3. In your package.json, point to your setup file:
+
+```json
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
+  }
+```
+
+4. You can now use enzyme:
+
+```js
+import 'react-native';
+import React from 'react';
+import App from '../App';
+import { shallow } from 'enzyme';
+
+describe('App', () => {
+  it('exists', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper).toHaveLength(1);
+  })
+});
+```
+
+Use `yarn test` to your heart's content
+
+## Examples
+
 mock functions by putting them in separate separate files
 
 spyOn for functions within same file
