@@ -3,9 +3,8 @@ autoclose-html
 busy-signal
 file-icons
 highlight-selected
-ide-csharp
-intentions
 language-cshtml
+language-jenkinsfile
 linter
 linter-ui-default
 pigments
