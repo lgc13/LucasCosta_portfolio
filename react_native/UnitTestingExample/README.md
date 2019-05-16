@@ -1,4 +1,4 @@
-# How to test in RN
+# React Native uniot testing
 
 mock functions by putting them in separate separate files
 

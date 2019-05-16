@@ -2,47 +2,49 @@
 
 I. Starting up a Reactive Native app steps:
 
-1. Install your package managers
-```
-brew install node
-brew install yarn
+(yarn must be installed)
+
+1. Install react-native
+
+```sh
+yarn global add react-native-cli
 ```
 
-2. Install react-native
-```
-npm install -g react-native-cli
+2. Create app, and install all needed dependencies
+
+```sh
+react-native init YourProjectName
 ```
 
-3. Create app, and install all needed dependencies
-```
-react-native init project_name
-```
+3. Start the bundler
 
-4. Start the bundler
-```
+```sh
 yarn start
-```
-or
-```
+# or
 react-native start
 ```
+
 # Use this to clear cache when using a new picture or file
-```
+
+```sh
 yarn start --reset-cache
 ```
 
-5. Run app
-```
+4. Run app on simulator
+
+```sh
 react-native run-ios
-```
-or with specific iPhone:
-```
+# or with specific iPhone:
 react-native run-ios --simulator="iPhone 8 Plus" # or whatever version number
 ```
 
-6. Create own scripts for Starting
+5. Create own scripts for Starting
 
-Go to 'package.json' and add your own "script" such as "ios": react-native run-ios
+Go to 'package.json' and add your own "script" such as
+
+```sh
+"ios": react-native run-ios
+```
 
 # Code info
 android, and ios - hold config files for the native app
