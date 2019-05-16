@@ -1,4 +1,4 @@
-# React Native uniot testing
+# React Native unit testing
 
 mock functions by putting them in separate separate files
 
