@@ -2,12 +2,12 @@
 
 ## Python
 
-Follow this [project and README](../python/practice/person_practice/Unit_Testing_Example)
+Here's an [example project and README](../python/practice/personal_practice/Unit_Testing_Example)
 
 ## React
 
-Follow this [project and README](../react/unit-testing-example)
+Here's an [example project and README](../react/unit-testing-example)
 
 ## React Native
 
-Follow this [project and README](../react_native/UnitTestingExample)
+Here's an [example project and README](../react_native/UnitTestingExample)
