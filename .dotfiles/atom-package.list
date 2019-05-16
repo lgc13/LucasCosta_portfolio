@@ -3,6 +3,7 @@ autoclose-html
 busy-signal
 file-icons
 highlight-selected
+intentions
 language-cshtml
 language-jenkinsfile
 linter
