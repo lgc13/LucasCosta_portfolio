@@ -19,6 +19,10 @@ alias gcb='git checkout -b' # add branchName to be created/checked out after
 # alias gph='git push origin HEAD'
 # alias gpo='git push origin'
 
+# Scripts
+alias atomInstall='~/Desktop/LucasCosta_portfolio/.dotfiles/scripts/install-atom-packages.sh'
+alias atomGetPackages='~/Desktop/LucasCosta_portfolio/.dotfiles/scripts/get-atom-packages.sh'
+
 # Exports:
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/mysql/bin
