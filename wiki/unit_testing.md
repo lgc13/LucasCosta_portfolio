@@ -38,6 +38,7 @@ You can look at this project for examples: [unit-testing-example](../react/unit-
 - The following notes are expecting you to have used `yarn create react-app`
 
 1. The `index.js` file should only render your App component.
+
    We will not test the component under index.test.js. This file COULD have tests for your ReactDom method
 
 2. The `App.js` could be a basic file such as:
@@ -61,9 +62,9 @@ describe('App', () => {
 });
 ```
 
-4. To use `shallow`, you must add it as a dependency:
+4. To use `enzyme`, you must add it as a dependency:
 
-   `yarn add shallow`
+   `yarn add enzyme`
 
 5. Here's a simple test:
 
@@ -79,3 +80,7 @@ describe('App', () => {
   });
 });
 ```
+
+## React Native
+
+I created a wiki separately for this. Check out this [readme](./react-native-testing.md)
