@@ -64,7 +64,7 @@ Some important points from the link above:
 3. Simple functional component:
 
 ```js
-function HelloEveryone() {
+function MyAwesomeFirstComponent() {
   return (
     <div>
       <p>How you doin... </p>
@@ -75,14 +75,14 @@ function HelloEveryone() {
 
 ``` js
 // Component declaration with arrow function
-const HelloEveryone = () => <div><p>How you doin... </p></div>
+const MyAwesomeFirstComponent = () => <div><p>How you doin... </p></div>
 ```
 
 4. Render it:
 
 ```js
 ReactDOM.render(
-  <HelloEveryone />,
+  <MyAwesomeFirstComponent />,
   document.getElementById("root")
 );
 ```
@@ -90,81 +90,150 @@ ReactDOM.render(
 5. You can also put this component in a separate file, export it, and import it in your main file
 
 ```js
-// HelloEveryone.js
-export default HelloEveryone;
+// MyAwesomeFirstComponent.js
+import React from 'react';
+
+const MyAwesomeFirstComponent = () => <div><p>How you doin... </p></div>
+
+export default MyAwesomeFirstComponent;
 
 // index.js
-import HelloEveryone from './components/HelloEveryone.js'
+import MyAwesomeFirstComponent from './components/MyAwesomeFirstComponent.js'
 ```
 
 6. Components can take JSX attributes, called props (short for properties)
 ```js
-const HelloEveryone = (props) => <div><p>How you doin... {props.name} </p></div>
+const MyAwesomeFirstComponent = (props) => <div><p>How you doin... {props.name} </p></div>
 
 ReactDOM.render(
-  <HelloEveryone name="Thanos" />,
+  <MyAwesomeFirstComponent name="Thanos" />,
   document.getElementById('root')
 );
 ```
 
-- note that the component must take a `props` argument.
+- note that the component must take a `props` argument for this to work.
 
 7. Components can refer to other components:
 ```js
 // index.js
 ReactDOM.render(
-  <MainComponent />,
+  <MyAwesomeFirstComponent />,
   document.getElementById('root')
 );
 
-// MainComponent.js
-const MainComponent = () => (
+// MyAwesomeFirstComponent.js
+import HelloEveryone from './HelloEveryone.js';
+
+const MyAwesomeFirstComponent = () => (
   <div>
     <HelloEveryone name="Thanos" />
     <HelloEveryone name="Iron Man" />
     <HelloEveryone name="Dr Strange" />
   </div>
 )
+
+// HelloEveryone.js
+const HelloEveryone = (props) => (
+  <div><p>How you doin... {props.name} </p></div>
+)
 ```
 
-8. Props are Read-Only
+8. Passing multiple props
+
+```js
+// index.js
+ReactDOM.render(
+  <MyAwesomeFirstComponent />,
+  document.getElementById('root')
+);
+
+// MyAwesomeFirstComponent.js
+const superPeople = [
+  {
+    name: 'Thanos',
+    power: 'The Snap!'
+  },
+  {
+    name: 'Iron Man',
+    power: 'Intelligence x 3000'
+  },
+  {
+    name: 'Dr Strange',
+    power: 'the Time Stone'
+  }
+];
+const restaurants = ['Cosmic Stones Wings', 'BK', 'Rye of Agamotto']
+
+
+const MyAwesomeFirstComponent = () => (
+  <div>
+    <HelloEveryone
+      superPeople={superPeople}
+      restaurants={restaurants}
+    />
+  </div>
+)
+
+// HelloEveryone.js
+const HelloEveryone = (props) => {
+  const listItems = props.superPeople.map((person) => (
+    <p key={person.name}>{person.name} has {person.power}</p>)
+  );
+  return (
+    <div>
+      <h3>Super people</h3>
+      {listItems}
+      <h3> Restaurants </h3>
+      {props.restaurants.map(restaurant => <p key={restaurant}>{restaurant}</p>)}
+    </div>
+  );
+}
+```
+
+9. Props are Read-Only
 
 [Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
-9. Passing multiple props, and deconstructing
+Because props are not mutable, we cannot change the view directly. For this example, we are going to rerender the app whenever onClick is called: (React is not used this way - we're only doing this to understand this concept)
+
+```js
+// index.js
+const handleClick = () => {
+  ReactDOM.render(
+    <MyAwesomeFirstComponent />,
+    document.getElementById('root')
+  );
+}
+
+handleClick(); // rendering when browser first starts
+```
+
+10. Having some fun:
 
 ``` js
 // index.js
-const Main = () => {
-  return (
-    <MainComponent
-      superPeople={superPeople}
-      restaurants={restaurants}
-      onClick={handleClick}
-    />
-  )
-}
 const handleClick = () => {
   ReactDOM.render(
-    <Main />,
+    <MyAwesomeFirstComponent
+      onClick={handleClick}/>,
     document.getElementById('root')
   );
 }
 
 handleClick(); // rendering when browser first starts
 
-// MainComponent.js
-const MainComponent = (props) => (
+// MyAwesomeFirstComponent.js
+const MyAwesomeFirstComponent = (props) => (
   <div>
     <HelloEveryone
-      superPeople={props.superPeople}
+      superPeople={superPeople}
     />
     <Restaurants
-      restaurants={props.restaurants}
+      restaurants={restaurants}
     />
     <Randomizer
-      superPeople={props.superPeople}
-      restaurants={props.restaurants}
+      superPeople={superPeople}
+      restaurants={restaurants}
       onClick={props.onClick}
     />
   </div>
@@ -182,6 +251,14 @@ const HelloEveryone = (props) => {
     </div>
   );
 }
+
+// Restaurants.js
+const Restaurants = (props) => (
+  <div>
+    <h3>Best Restaurants:</h3>
+    {props.restaurants.map(restaurant => <p key={restaurant}>{restaurant}</p>)}
+  </div>
+);
 
 // Randomizer.js
 let randomPerson;
