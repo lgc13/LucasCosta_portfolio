@@ -39,7 +39,7 @@ const FancyBorder = (props) => {
 
 Taken from FB React docs:
 
-Anything inside the <FancyBorder> JSX tag gets passed into the FancyBorder component as a children prop. Since FancyBorder renders {props.children} inside a <div>, the passed elements appear in the final output.
+Anything inside the <FancyBorder> JSX tag gets passed into the FancyBorder component as a children prop. Since FancyBorder renders {props.children} inside a `<div>`, the passed elements appear in the final output.
 
 - So What About Inheritance?
 
