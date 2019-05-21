@@ -8,14 +8,6 @@ Demo:
 
 ![Demo](./events-and-forms/demo.gif)
 
-## Composition vs Inheritance
-
-Follow these [instructions](./composition-and-inheritance)
-
-Demo:
-
-![Demo](./composition-and-inheritance/demo.PNG)
-
 ## Thinking in React
 
 [Read me!](https://reactjs.org/docs/thinking-in-react.html)
