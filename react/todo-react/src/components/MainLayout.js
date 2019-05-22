@@ -22,7 +22,7 @@ const MainLayout = (props) => {
       <div>
         <NewItemInput
           value={props.newItem}
-          onChange={props.onNewItem}
+          onChange={props.onChange}
           onSubmit={props.onSubmit}
         />
         <RemainingItems

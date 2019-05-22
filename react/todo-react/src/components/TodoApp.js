@@ -38,7 +38,7 @@ class TodoApp extends React.Component {
         if (td.id === todo.id) {
           return {
             ...td,
-            complete: td.complete ? false : true
+            complete: !td.complete
           }
         }
         return td;
@@ -81,7 +81,7 @@ class TodoApp extends React.Component {
         onClick={this.handleOnClick}
         styles={this.state.styles}
         newItem={this.state.newItem}
-        onNewItem={this.handleItemTyping}
+        onChange={this.handleItemTyping}
         onSubmit={this.handleEnterPress}
         itemsRemaining={this.state.itemsRemaining}
         button={this.state.button}
