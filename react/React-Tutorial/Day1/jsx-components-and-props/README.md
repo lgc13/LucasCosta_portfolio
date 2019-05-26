@@ -126,18 +126,18 @@ ReactDOM.render(
 );
 
 // MyAwesomeFirstComponent.js
-import HelloEveryone from './HelloEveryone.js';
+import SuperPeople from './SuperPeople.js';
 
 const MyAwesomeFirstComponent = () => (
   <div>
-    <HelloEveryone name="Thanos" />
-    <HelloEveryone name="Iron Man" />
-    <HelloEveryone name="Dr Strange" />
+    <SuperPeople name="Thanos" />
+    <SuperPeople name="Iron Man" />
+    <SuperPeople name="Dr Strange" />
   </div>
 )
 
-// HelloEveryone.js
-const HelloEveryone = (props) => (
+// SuperPeople.js
+const SuperPeople = (props) => (
   <div><p>How you doin... {props.name} </p></div>
 )
 ```
@@ -171,15 +171,51 @@ const restaurants = ['Cosmic Stones Wings', 'BK', 'Rye of Agamotto']
 
 const MyAwesomeFirstComponent = () => (
   <div>
-    <HelloEveryone
+    <SuperPeople
       superPeople={superPeople}
       restaurants={restaurants}
     />
   </div>
 )
 
-// HelloEveryone.js
-const HelloEveryone = (props) => {
+// SuperPeople.js
+const SuperPeople = (props) => {
+  const listItems = props.superPeople.map((person) => (
+    <p key={person.name}>{person.name} has {person.power}</p>)
+  );
+  return (
+    <div>
+      <h3>Super people</h3>
+      {listItems}
+      <h3> Best Restaurants </h3>
+      {props.restaurants.map(restaurant => <p key={restaurant}>{restaurant}</p>)}
+    </div>
+  );
+}
+```
+
+9. Making specific components
+
+Its better for each component to be specific as possible. In this case, let's pull out 'restaurants' into its own component:
+
+```js
+// MyAwesomeFirstComponent.js
+import SuperPeople from './SuperPeople.js'
+import Restaurants from './Restaurants.js'
+
+const MainComponent = (props) => (
+  <div>
+    <SuperPeople
+      superPeople={superPeople}
+    />
+    <Restaurants
+      restaurants={restaurants}
+    />
+  </div>
+)
+
+// SuperPeople.js
+const SuperPeople = (props) => {
   const listItems = props.superPeople.map((person) => (
     <p key={person.name}>{person.name} has {person.power}</p>)
   );
@@ -192,10 +228,18 @@ const HelloEveryone = (props) => {
     </div>
   );
 }
+
+// Restaurants
+const Restaurants = (props) => (
+  <div>
+    <h3>Best Restaurants:</h3>
+    {props.restaurants.map(restaurant => <p key={restaurant}>{restaurant}</p>)}
+  </div>
+);
 ```
 
-9. Props are Read-Only
+10. Props are Read-Only
 
 [Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
-Because props are not mutable, we cannot change the view directly. 
+Because props are not mutable, we cannot change the view directly.

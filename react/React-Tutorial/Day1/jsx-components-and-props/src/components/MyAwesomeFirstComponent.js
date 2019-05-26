@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HelloEveryone from './HelloEveryone.js'
+import SuperPeople from './SuperPeople.js'
 import Restaurants from './Restaurants.js'
 
 const superPeople = [
@@ -22,7 +22,7 @@ const restaurants = ['Cosmic Stones Wings', 'BK', 'Rye of Agamotto']
 
 const MainComponent = (props) => (
   <div>
-    <HelloEveryone
+    <SuperPeople
       superPeople={superPeople}
     />
     <Restaurants

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HelloEveryone = (props) => {
+const SuperPeople = (props) => {
   const listItems = props.superPeople.map((person) => (
     <p key={person.name}>{person.name} has {person.power}</p>)
   );
@@ -12,4 +12,4 @@ const HelloEveryone = (props) => {
   );
 }
 
-export default HelloEveryone;
+export default SuperPeople;
