@@ -103,10 +103,14 @@ import MyAwesomeFirstComponent from './components/MyAwesomeFirstComponent.js'
 
 6. Components can take JSX attributes, called props (short for properties)
 ```js
+// MyAwesomeFirstComponent.js
 const MyAwesomeFirstComponent = (props) => <div><p>How you doin... {props.name} </p></div>
 
+// index.js
 ReactDOM.render(
-  <MyAwesomeFirstComponent name="Thanos" />,
+  <MyAwesomeFirstComponent
+    name="Thanos"
+  />,
   document.getElementById('root')
 );
 ```
@@ -194,93 +198,4 @@ const HelloEveryone = (props) => {
 
 [Read here](https://reactjs.org/docs/components-and-props.html#props-are-read-only)
 
-Because props are not mutable, we cannot change the view directly. For this example, we are going to rerender the app whenever onClick is called: (React is not used this way - we're only doing this to understand this concept)
-
-```js
-// index.js
-const handleClick = () => {
-  ReactDOM.render(
-    <MyAwesomeFirstComponent />,
-    document.getElementById('root')
-  );
-}
-
-handleClick(); // rendering when browser first starts
-```
-
-10. Having some fun:
-
-``` js
-// index.js
-const handleClick = () => {
-  ReactDOM.render(
-    <MyAwesomeFirstComponent
-      onClick={handleClick}/>,
-    document.getElementById('root')
-  );
-}
-
-handleClick(); // rendering when browser first starts
-
-// MyAwesomeFirstComponent.js
-const MyAwesomeFirstComponent = (props) => (
-  <div>
-    <HelloEveryone
-      superPeople={superPeople}
-    />
-    <Restaurants
-      restaurants={restaurants}
-    />
-    <Randomizer
-      superPeople={superPeople}
-      restaurants={restaurants}
-      onClick={props.onClick}
-    />
-  </div>
-)
-
-// HelloEveryone.js
-const HelloEveryone = (props) => {
-  const listItems = props.superPeople.map((person) => (
-    <p key={person.name}>{person.name} has {person.power}</p>)
-  );
-  return (
-    <div>
-      <h3>Super people</h3>
-      {listItems}
-    </div>
-  );
-}
-
-// Restaurants.js
-const Restaurants = (props) => (
-  <div>
-    <h3>Best Restaurants:</h3>
-    {props.restaurants.map(restaurant => <p key={restaurant}>{restaurant}</p>)}
-  </div>
-);
-
-// Randomizer.js
-let randomPerson;
-let randomRestaurant;
-
-const randomize = (props) => {
-  const { superPeople, restaurants } = props;
-  randomPerson = superPeople[Math.floor(Math.random() * superPeople.length)];
-  randomRestaurant = restaurants[Math.floor(Math.random() * restaurants.length)];
-  props.onClick();
-}
-
-const Randomizer = (props) => {
-  return (
-    <div>
-      <h3>Randomizer</h3>
-      <button onClick={() => randomize(props)}>
-        Click me
-      </button>
-      {(randomPerson && randomRestaurant) &&
-        <h4>{randomPerson.name} likes to eat at {randomRestaurant}</h4>}
-    </div>
-  );
-}
-```
+Because props are not mutable, we cannot change the view directly. 

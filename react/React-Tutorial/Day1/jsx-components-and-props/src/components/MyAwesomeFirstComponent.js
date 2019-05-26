@@ -2,7 +2,6 @@ import React from 'react';
 
 import HelloEveryone from './HelloEveryone.js'
 import Restaurants from './Restaurants.js'
-import Randomizer from './Randomizer.js'
 
 const superPeople = [
   {
@@ -28,11 +27,6 @@ const MainComponent = (props) => (
     />
     <Restaurants
       restaurants={restaurants}
-    />
-    <Randomizer
-      superPeople={superPeople}
-      restaurants={restaurants}
-      onClick={props.onClick}
     />
   </div>
 )
