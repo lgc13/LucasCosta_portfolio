@@ -95,7 +95,7 @@ Demo:
 
 Demo:
 
-![Demo](./jsx-components-and-props/demo.gif)
+![Demo](./jsx-components-and-props/demo.PNG)
 
 ## Practice
 
