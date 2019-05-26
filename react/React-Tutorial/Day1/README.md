@@ -99,4 +99,7 @@ Demo:
 
 ## Practice
 
-Let's create an 'About me' small app that uses functional components, and props. This should have hard coded data to display to the user. The data will not be mutable.
+Let's create an 'About me' small app that uses functional components, and props.
+   - This should have hard coded data to display to the user.
+   - The data will not be mutable.
+   - Try thinking of ways to create reusable components, so you don't have to keep repeating yourself.
