@@ -14,6 +14,16 @@ Ex:
 
 ```js
 // index.js
+import WelcomeDialog from './components/WelcomeDialog.js';
+
+ReactDOM.render(
+  <WelcomeDialog />,
+  document.getElementById('root')
+);
+// WelcomeDialog.js
+import React from 'react';
+import FancyBorder from './FancyBorder.js';
+
 const WelcomeDialog = () => {
   return (
     <FancyBorder color="blue">
@@ -26,6 +36,8 @@ const WelcomeDialog = () => {
     </FancyBorder>
   );
 }
+
+export default WelcomeDialog;
 
 // FancyBorder.js
 const FancyBorder = (props) => {
