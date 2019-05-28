@@ -14,6 +14,14 @@ Here's how to convert the app from a functional component to a class component:
 
 ```js
 // index.js
+import MainComponent from './components/MainComponent.js'
+
+ReactDOM.render(
+  <MainComponent />,
+  document.getElementById('root')
+);
+
+// MainComponent.js
 const superPeople = [
   {
     name: 'Thanos',
@@ -28,28 +36,20 @@ const superPeople = [
     power: 'the Time Stone'
   }
 ];
+const restaurants = ['Cosmic Stones Wings', 'BK', 'Rye of Agamotto']
 
-class Main extends React.Component {
+class MainComponent extends React.Component {
   render() {
     return (
-      <MainComponent
+      <SuperPeople
         superPeople={superPeople}
-        restaurants={restaurants}
-        onClick={handleClick}
       />
     );
   }  
 }
 
-// MainComponent.js
-const MainComponent = (props) => (
-  <div>
-    <HelloEveryone superPeople={props.superPeople}/>
-  </div>
-)
-
-// HelloEveryone.js
-const HelloEveryone = (props) => {
+// SuperPeople.js
+const SuperPeople = (props) => {
   const listItems = props.superPeople.map((person) => (
     <p key={person.name}>{person.name} has {person.power}</p>)
   );
@@ -92,18 +92,16 @@ class Main extends React.Component {
 - Super goes to the parent class (React.component), and imports its methods (example: this.setState())
 
 ``` js
-// index.js
-class Main extends React.Component {
+// MainComponent.js
+class MainComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <MainComponent
+      <SuperPeople
         superPeople={superPeople}
-        restaurants={restaurants}
-        onClick={handleClick}
       />
     );
   }
@@ -113,7 +111,7 @@ class Main extends React.Component {
 - Changing the state will change how things look in the screen (any child components using a state variable will be rerendered)
 
 ```js
-// index.js
+// MainComponent.js
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -132,7 +130,13 @@ class Main extends React.Component {
   }
   render() {
     return (
-      <MainComponent
+      <SuperPeople
+        superPeople={this.state.superPeople}
+      />
+      <Restaurants
+        restaurants={this.state.restaurants}
+      />
+      <Randomizer
         superPeople={this.state.superPeople}
         restaurants={this.state.restaurants}
         onClick={this.handleClick}
