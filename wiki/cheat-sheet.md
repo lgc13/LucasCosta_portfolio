@@ -310,6 +310,33 @@ https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2
    - Turn off Mojave Dock recent applications:
 
    Settings > Dock > 'Show recent applications in Dock'
+
+VS Code settings
+
+   - Plugings:
+      1. ESLint
+         
+         1. Go to JS project directory
+         2. Run `eslint --int`
+            - You might need to run `yarn init`
+         3. Choose a populat style guide (maybe Airbnb?)
+         4. Use some settings similar to what is in [this file](/react/.eslintrc.json)
+         5. Add the 'devDependencies' found from [this file](/react/package.json)
+         6. Run `yarn` again to install them 
+
+      2. Prettier - Code formatter
+         1. Add the following to your settings.json:
+         ```json
+          {
+              "editor.formatOnSave": true,
+              "prettier.tabWidth": 4,
+              "prettier.eslintIntegration": true,
+              "prettier.stylelintIntegration": true,
+              "eslint.alwaysShowStatus": true
+          }
+         ```
+ 
+
 ​
 
 ### Gif screen recoding program
