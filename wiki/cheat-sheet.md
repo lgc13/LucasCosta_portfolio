@@ -39,6 +39,8 @@ chmod 644 filename.sh   # change permission.
 chmod +x filename.sh    # allows all permissions, creates executable .sh file
 chmod 744 filename.sh   # allows .sh file to be executable
 chown -R `whoami`:staff
+
+stat -f "%A %a %N" filename.sh # find file permission in octal notation. eg: 644, 755
 ```
 
 - Processes
