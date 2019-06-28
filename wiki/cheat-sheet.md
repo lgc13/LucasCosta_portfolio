@@ -193,6 +193,45 @@ aws s3 rm s3://path-to-directory/ —recursive # deletes entire folder
 ​
 ```
 
+   * Using different profiles
+
+     1. In `~/.aws/`, create (if it doesn't already exist) a `credentials` file
+     2. Add any profiles that you want as such:
+
+     ```sh
+     [default]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+
+     [stg]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+
+     [prod]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+     ```
+
+     3. (I'm no sure if this step is needed) Create a `config` file and add any other parameters you need there:
+
+     ```sh
+     [default]
+     region = us-east-1
+
+     [profile stg]
+     region = us-east-1
+
+     [profile prod]
+     region = us-east-1
+     ```
+  Now you can see different buckets:
+
+  ```sh
+  aws s3 ls s3://dev-bucket-name/               # List default S3
+  aws s3 ls s3://stg-bucket-name/ --profile stg # List stg S3
+  aws s3 ls s3://prd-bucket-name/ --profile prd # List prd S3
+  ```
+
 ### Pipenv
 
 ```sh
@@ -317,14 +356,14 @@ VS Code settings
 
    - Plugings:
       1. ESLint
-         
+
          1. Go to JS project directory
          2. Run `eslint --int`
             - You might need to run `yarn init`
          3. Choose a populat style guide (maybe Airbnb?)
          4. Use some settings similar to what is in [this file](/react/.eslintrc.json)
          5. Add the 'devDependencies' found from [this file](/react/package.json)
-         6. Run `yarn` again to install them 
+         6. Run `yarn` again to install them
 
       2. Prettier - Code formatter
          1. Add the following to your settings.json:
@@ -337,7 +376,7 @@ VS Code settings
               "eslint.alwaysShowStatus": true
           }
          ```
- 
+
 
 ​
 
