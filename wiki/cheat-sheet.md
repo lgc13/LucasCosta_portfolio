@@ -189,7 +189,7 @@ SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value
 aws s3 ls s3://bucket-name/ # List S3
 aws s3 cp s3://path_to_file - # displays file in terminal
 aws s3 cp s3://path_to_file ~/some/local/path  # copies file to some/local/path
-aws s3 rm s3://path-to-directory/ —recursive # deletes entire folder
+aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 ​
 ```
 
