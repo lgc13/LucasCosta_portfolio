@@ -31,6 +31,8 @@ tar -xf file_name.tar.gz        # extract files
 grep -winr “some text” .        # r (looks within the entire directory, RECURSIVELY)
 grep -win -B 4 “some text” ./*  # w: whole words| i: not case sensitive| n: line number
   # B 4: shows 4 lines before text is found
+
+ls -l | grep -v ^l | wc -l      # counts how many files in current directory
 ```
 
 - Permission
