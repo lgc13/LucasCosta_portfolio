@@ -355,33 +355,38 @@ https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2
 
    Settings > Dock > 'Show recent applications in Dock'
 
-VS Code settings
+### VS Code settings
 
-   - Plugings:
-      1. ESLint
+I. Install One Dark Pro Theme
 
-         1. Go to JS project directory
-         2. Run `eslint --int`
-            - You might need to run `yarn init`
-         3. Choose a populat style guide (maybe Airbnb?)
-         4. Use some settings similar to what is in [this file](/react/.eslintrc.json)
-         5. Add the 'devDependencies' found from [this file](/react/package.json)
-         6. Run `yarn` again to install them
+II. Set up eslint for VS code:
 
-      2. Prettier - Code formatter
-         1. Add the following to your settings.json:
-         ```json
-          {
-              "editor.formatOnSave": true,
-              "prettier.tabWidth": 4,
-              "prettier.eslintIntegration": true,
-              "prettier.stylelintIntegration": true,
-              "eslint.alwaysShowStatus": true
-          }
-         ```
+  1. Create a `.eslintrc` file in your project directory
 
+  2. Add rules found in [this file](/react/eslintrc-to-copy-from)
 
-​
+III. Add the dependencies 
+
+  1. Go to your package.json and [these](/react/package-json-to-copy-from)
+
+IV. Get Eslint extension
+
+  1. Add the Eslint extension from the marketplace (for Visual Studio)
+
+  2. Add the following to your VS Code user settings.json: 
+  (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
+
+  ```
+  {
+      "workbench.colorTheme": "One Dark Pro",
+      "workbench.tree.indent": 20,
+      "window.zoomLevel": 1,
+      "editor.formatOnSave": true,
+      "eslint.autoFixOnSave": true,
+      "eslint.alwaysShowStatus": true,
+  }​
+
+    https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
 ### Gif screen recoding program
 
