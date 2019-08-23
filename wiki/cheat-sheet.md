@@ -385,7 +385,11 @@ IV. Get Eslint extension
       "eslint.autoFixOnSave": true,
       "eslint.alwaysShowStatus": true,
   }​
+  ```
 
+
+   How to set it up globally: (I have not gotten it work yet)
+   
     https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
 ### Gif screen recoding program
