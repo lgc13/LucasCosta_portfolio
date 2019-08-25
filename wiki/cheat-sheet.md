@@ -340,35 +340,20 @@ default:
 
 ### Setting up new Mac terminal environment
 
-1- install iterm2
+- Install iterm2
 
-2- Install zsh
+- Install [zsh](https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/)
 
-  https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/
+- Get [Cobalt2](https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa)
 
-  2.1 - change shell to zsh
+   - Clone this [repo](https://github.com/wesbos/Cobalt2-iterm)
 
-3- Get Cobalt2
+- Install hexa
 
-https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa
+   - Add the following to `~/.bash_profile` once exa has been installed:
+   `alias ls='exa --long --header --git -TL 1'`
 
-  3.1 - Clone this repo
-
-  https://github.com/wesbos/Cobalt2-iterm
-
-4- Install hexa
-
-  4.1- Add this to `~/.bash_profile` once exa has been installed:
-
-  `alias ls='exa --long --header --git -TL 1'`
-
-5- Install Atom, an IDE,
-
-- Personal preferences:
-
-   - Turn off Mojave Dock recent applications:
-
-   Settings > Dock > 'Show recent applications in Dock'
+- Install an IDE/Text editor (Atom,VSCode)
 
 ### VS Code settings
 
@@ -407,6 +392,13 @@ IV. Get Eslint extension
 
     https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
-### Gif screen recoding program
 
-https://www.screentogif.com/
+### Mac Tips
+
+- Turn off Mojave Dock recent applications:
+
+   Settings > Dock > 'Show recent applications in Dock'
+
+- Gif screen recoding program
+
+   https://www.screentogif.com/
