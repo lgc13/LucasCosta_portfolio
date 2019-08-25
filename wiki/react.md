@@ -19,7 +19,7 @@ yarn global add create-react-app
 create-react-app my-app
 ```
 
-3. Run your app
+## Run your app
 
 ```sh
 cd your-app-name

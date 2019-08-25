@@ -1,17 +1,21 @@
-# C# and dotnet cheat sheet
+# C# and dotnet
 
-To compile and build c# files, use the following cmd:
+# Commands
 
-`mcs file_name.cs file_class.cs`
+```sh
+# To compile and build c# files, use the following cmd:
+mcs file_name.cs file_class.cs
 
-then run with:
-
-`mono file_name.exe`
+# then run with:
+mono file_name.exe
+```
 
 ## DB Migrations (mssql)
 
-Use this to create a migration file:
-`dotnet ef migrations add something`
+```sh
+# To create a migration file:
+dotnet ef migrations add something
 
-To update database:
-`dotnet ef database update`
+# To update database:
+dotnet ef database update
+```

@@ -1,9 +1,8 @@
-# Lucas's cheat sheet for any and all databases I use...
+# Databases
 
 ## Microsoft SQLServer
 
-
-### Installation
+- Installation
 
 Install SQL Server (through Docker):
 `docker pull microsoft/mssql-server-linux`
@@ -14,8 +13,7 @@ Install the sql-cli command line shell:
 Install the Docker instance:
 `docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallyStrongPwd123' -p 1433:1433 microsoft/mssql-server-linux`
 
-
-## Running it
+- Running it
 
 Run a Docker container
 `docker container start container_id`

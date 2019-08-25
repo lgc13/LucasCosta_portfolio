@@ -237,6 +237,9 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 
 ### Pipenv
 
+Links to useful guides:
+https://realpython.com/pipenv-guide/
+
 ```sh
 pipenv install # looks for ‘pipfile’ and ‘pipfile.lock’, then installs those dependencies
 pipenv install some_dependency # installs some_dependency
@@ -248,22 +251,17 @@ pipenv —rm    # removes current project environment
 exit          # gets out of environment
 ```
 
-### iTerm2
+### Docker
 
 ```sh
-prompt -l       # lists the type of fonts available
-prompt -p type  # try this one
-prompt -s type  # activate this one
-````
+docker ps # Checks instances running
+docker container ls -a # Find all container instances (running and not running)
 
-### IntelliJ Shortcuts
+docker start instance_name # start instance
+docker container start container_id # start a Docker container
+docker stop container_id # Stop instance running
 
-```sh
-CMD + O # find class
-CMD + SHIFT + O # find file
-CMD + SHIFT + F # find globally
-CMD + SHIFT - OR + # collapses/expands everything collapsable
-CMD + SHIFT + T # goes between test file and file being tested
+docker pull microsoft/mssql-server-linux # Installing SQL Server
 ```
 
 ### Brew
@@ -294,8 +292,25 @@ sdk list techName # ex: sdk list java
 
 sdk install techName versionNumber # ex: sdk install java 7.0.222-zulu
 ```
-​
 
+### iTerm2
+
+```sh
+prompt -l       # lists the type of fonts available
+prompt -p type  # try this one
+prompt -s type  # activate this one
+````
+
+### IntelliJ Shortcuts
+
+```sh
+CMD + O # find class
+CMD + SHIFT + O # find file
+CMD + SHIFT + F # find globally
+CMD + SHIFT - OR + # collapses/expands everything collapsable
+CMD + SHIFT + T # goes between test file and file being tested
+```
+​
 ### C++
 
 ```c++
@@ -312,7 +327,7 @@ make // compile it automatically
 2. `mcs filename.cs` - compiles file
 3. `mono filename.ext` - executes file
 
-```c#
+```cs
 default:
   using System;
     public class program_name;
@@ -365,7 +380,7 @@ II. Set up eslint for VS code:
 
   2. Add rules found in [this file](/react/eslintrc-to-copy-from)
 
-III. Add the dependencies 
+III. Add the dependencies
 
   1. Go to your package.json and [these](/react/package-json-to-copy-from)
 
@@ -373,10 +388,10 @@ IV. Get Eslint extension
 
   1. Add the Eslint extension from the marketplace (for Visual Studio)
 
-  2. Add the following to your VS Code user settings.json: 
+  2. Add the following to your VS Code user settings.json:
   (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
 
-  ```
+  ```json
   {
       "workbench.colorTheme": "One Dark Pro",
       "workbench.tree.indent": 20,
@@ -389,7 +404,7 @@ IV. Get Eslint extension
 
 
    How to set it up globally: (I have not gotten it work yet)
-   
+
     https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
 ### Gif screen recoding program
