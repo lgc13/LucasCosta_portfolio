@@ -322,7 +322,7 @@ it('filters out FINAL_MILE orders', async () => {
 
   ```js
   afterEach(() => {
-    jest.resetAllMocks();
+    jest.resetAllMocks(); // slow?
     jest.clearAllMocks();
   });
 

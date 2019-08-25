@@ -31,6 +31,8 @@ tar -xf file_name.tar.gz        # extract files
 grep -winr “some text” .        # r (looks within the entire directory, RECURSIVELY)
 grep -win -B 4 “some text” ./*  # w: whole words| i: not case sensitive| n: line number
   # B 4: shows 4 lines before text is found
+
+ls -l | grep -v ^l | wc -l      # counts how many files in current directory
 ```
 
 - Permission
@@ -39,6 +41,8 @@ chmod 644 filename.sh   # change permission.
 chmod +x filename.sh    # allows all permissions, creates executable .sh file
 chmod 744 filename.sh   # allows .sh file to be executable
 chown -R `whoami`:staff
+
+stat -f "%A %a %N" filename.sh # find file permission in octal notation. eg: 644, 755
 ```
 
 - Processes
@@ -187,9 +191,49 @@ SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value
 aws s3 ls s3://bucket-name/ # List S3
 aws s3 cp s3://path_to_file - # displays file in terminal
 aws s3 cp s3://path_to_file ~/some/local/path  # copies file to some/local/path
-aws s3 rm s3://path-to-directory/ —recursive # deletes entire folder
+aws s3 cp s3://path_to_directory s3://some/other/directory --recursive  # copies entire directory to s3://some/other/directory
+aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 ​
 ```
+
+   * Using different profiles
+
+     1. In `~/.aws/`, create (if it doesn't already exist) a `credentials` file
+     2. Add any profiles that you want as such:
+
+     ```sh
+     [default]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+
+     [stg]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+
+     [prod]
+     aws_access_key_id = some-key
+     aws_secret_access_key = some-secret-access-key
+     ```
+
+     3. (I'm no sure if this step is needed) Create a `config` file and add any other parameters you need there:
+
+     ```sh
+     [default]
+     region = us-east-1
+
+     [profile stg]
+     region = us-east-1
+
+     [profile prod]
+     region = us-east-1
+     ```
+  Now you can see different buckets:
+
+  ```sh
+  aws s3 ls s3://dev-bucket-name/               # List default S3
+  aws s3 ls s3://stg-bucket-name/ --profile stg # List stg S3
+  aws s3 ls s3://prd-bucket-name/ --profile prd # List prd S3
+  ```
 
 ### Pipenv
 
@@ -310,7 +354,43 @@ https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2
    - Turn off Mojave Dock recent applications:
 
    Settings > Dock > 'Show recent applications in Dock'
-​
+
+### VS Code settings
+
+I. Install One Dark Pro Theme
+
+II. Set up eslint for VS code:
+
+  1. Create a `.eslintrc` file in your project directory
+
+  2. Add rules found in [this file](/react/eslintrc-to-copy-from)
+
+III. Add the dependencies 
+
+  1. Go to your package.json and [these](/react/package-json-to-copy-from)
+
+IV. Get Eslint extension
+
+  1. Add the Eslint extension from the marketplace (for Visual Studio)
+
+  2. Add the following to your VS Code user settings.json: 
+  (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
+
+  ```
+  {
+      "workbench.colorTheme": "One Dark Pro",
+      "workbench.tree.indent": 20,
+      "window.zoomLevel": 1,
+      "editor.formatOnSave": true,
+      "eslint.autoFixOnSave": true,
+      "eslint.alwaysShowStatus": true,
+  }​
+  ```
+
+
+   How to set it up globally: (I have not gotten it work yet)
+   
+    https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
 ### Gif screen recoding program
 

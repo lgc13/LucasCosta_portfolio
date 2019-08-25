@@ -46,6 +46,17 @@ function ActionLink() {
 - When you define a component using an ES6 class, a common pattern is for an event handler to be a method on the class. For example, this Toggle component renders a button that lets the user toggle between “ON” and “OFF” states:
 
 ```js
+// index.js
+import App from './components/App'
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+
+// App.js
+import React from 'react';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -69,6 +80,7 @@ class App extends React.Component {
     );
   }
 }
+export default App;
 ```
 
 - Ex of events with state
@@ -76,7 +88,7 @@ class App extends React.Component {
 You can use arrow functions to do so:
 
 ```js
-// index.js
+// App.js
 handleChange = (event, stateKey) => {
     this.setState({
       ...this.state,
@@ -131,7 +143,7 @@ const EventsAndState = (props) => (
 1. Form
 
 ```js
-// index.js
+// App.js
 handleChange = (event, stateKey) => {
     this.setState({
       ...this.state,
@@ -165,7 +177,7 @@ const Form = (props) => (
 2. Textarea
 
 ```js
-// index.js
+// App.js
 <TextArea
   onSubmit={(event) => this.handleSubmit(event, 'poem', this.state.poem)}
   poem={this.state.poem}

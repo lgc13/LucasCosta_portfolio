@@ -7,5 +7,6 @@ intentions
 language-cshtml
 language-jenkinsfile
 linter
+linter-jshint
 linter-ui-default
 pigments

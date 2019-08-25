@@ -30,6 +30,24 @@ h1 {
   color: red;
 }
 ```
+```js
+// App.js
+const App = () => {
+  const name = 'Lucas';
+  const faveMusic = 'rock';
+  const isBusy = false;
+  return (
+    <div>
+      <div className="header-div">
+        <h1> Learning about styling, conditional rendering, lists/keys! </h1>
+      </div>
+      <div id="name-div">
+        I am red
+      </div>
+    </div>
+  )
+}
+```
 
 ## Conditional rendering
 
@@ -40,16 +58,34 @@ h1 {
 - note that you can return JSX elements, or even entire components
 
 ```js
-const renderFaveMusic = (props) => {
+// App.js
+const renderFaveMusic = (faveMusic) => {
   let musicParagraph;
-  if (props.faveMusic === 'rock') {
+  if (faveMusic === 'rock') {
     musicParagraph = <p>Rock is awesome</p>;
-  } else if (props.faveMusic === 'house') {
+  } else if (faveMusic === 'house') {
     musicParagraph = <p>House is better </p>;
   } else {
     musicParagraph = <p>I guess country it is....</p>;
   }
   return musicParagraph;
+}
+
+const App = () => {
+  const faveMusic = 'rock';
+  return (
+    <div>
+      <div className="header-div">
+        <h1> Learning about styling, conditional rendering, lists/keys! </h1>
+      </div>
+      <div id="name-div">
+        I am red
+      </div>
+      <div>
+        {renderFaveMusic(faveMusic)}
+      </div>
+    </div>
+  )
 }
 ```
 
@@ -60,7 +96,16 @@ Use of `&&`
 If the condition is true, the element right after && will appear in the output. If it is false, React will ignore and skip it.
 
 ```js
-<p>plays the {coolInstruments.length > 2 && coolInstruments[1]} </p>
+const coolInstruments = ['guitar', 'sexyphone', 'drums'];
+
+
+const App = () => {
+  const isBusy = false;
+  // keep everything the same
+  <div>
+    <p>Coolest instrument: {coolInstruments.length > 2 && coolInstruments[1]} </p>
+  </div>
+}
 ```
 
 3. Using ternaries
@@ -72,9 +117,15 @@ Another method for conditionally rendering elements inline is to use the JavaScr
 - you can do in-line ternaries
 
 ```js
-<div id="name-div">
-  { props.name ? props.name : 'No name provided'}
-</div>
+const name = 'Lucas';
+
+const App = () => {
+  const isBusy = false;
+  // keep everything the same
+  <div>
+    Name: { name ? name : 'not provided'}
+  </div>
+}
 ```
 
 4. Not displaying a component
@@ -82,12 +133,20 @@ Another method for conditionally rendering elements inline is to use the JavaScr
 - just return null
 
 ```js
-const isUserBusy = (props) => {
-  if (!props.isBusy) {
+const isUserBusy = (isBusy) => {
+  if (!isBusy) {
     return <p>Nah Im not busy</p>;
   } else {
     return null;
   }
+}
+
+const App = () => {
+  const isBusy = false;
+  // keep everything the same
+  <div>
+    {isUserBusy(isBusy)}
+  </div>
 }
 ```
 
