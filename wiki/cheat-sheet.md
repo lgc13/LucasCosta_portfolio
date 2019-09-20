@@ -153,10 +153,13 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 \l    -- lists all databases
 :\q   -- exits (END)/quits anything you’re in
 \dn   -- shows all schemas
-\c database_name -- connects to a database_name
 \dt   -- show all tables
 \du   -- show users
+\c database_name -- connects to a database_name
 \conninfo -- shows connection info like db name, username name, and port
+
+SET search_path TO someSchema; -- choose someSchema as search_path so now you can query any tables within it
+
 CREATE DATABASE db_name; -- creates a db_name
 CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
 SERIAL PRIMARY KEY -- SERIAL makes it auto increment
@@ -183,7 +186,6 @@ OWNED BY schemaName.tableName.colName; -- does as it says
 SELECT currval('schemaName.sequenceName_id_seq'); -- displays sequence current value
 SELECT nextval('schemaName.sequenceName_id_seq'); -- displays sequence next value
 SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value to 3, next value will be 4
-
 ```
 
 ### AWS CLI
