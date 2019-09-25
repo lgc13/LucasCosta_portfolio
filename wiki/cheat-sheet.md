@@ -87,6 +87,7 @@ git log                  # find previous commits and their commit_id s
 git revert commit_id     # revert changes made by that commit_id
 git merge —abort         # aborts the merge (which has conflicts)
 git checkout origin/master filename # reverts file back to how it is in master
+git reset HEAD^          # gets rid of previous commit
 ```
 
 ## Vim
