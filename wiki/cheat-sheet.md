@@ -89,6 +89,8 @@ git reset --soft HEAD~1  # revert the last commit (locally)
 git merge —abort         # aborts the merge (which has conflicts)
 git checkout origin/master filename # reverts file back to how it is in master
 git reset HEAD^          # gets rid of previous commit
+
+git config --local user.email "my.email.here@gmail.com" # changes this specific repos email to push from (do it from proj root folder)
 ```
 
 ## Vim
