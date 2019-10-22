@@ -1,0 +1,18 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.tree.indent": 20,
+    "window.zoomLevel": 1,
+    "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editor.enablePreview": false,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "git.enableSmartCommit": true
+}

@@ -7,3 +7,4 @@ ln -sv ~/Desktop/LucasCosta_portfolio/.dotfiles/zshrc ~/.zshrc
 ln -shv ~/Desktop/LucasCosta_portfolio/.dotfiles/oh-my-zsh ~/.oh-my-zsh
 ln -sv ~/Desktop/LucasCosta_portfolio/.dotfiles/atom-package.list ~/.atom/package.list
 ln -sv ~/Desktop/LucasCosta_portfolio/.dotfiles/atom-config.cson ~/.atom/config.cson
+ln -sv ~/Desktop/LucasCosta_portfolio/.dotfiles/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
