@@ -49,7 +49,9 @@ stat -f "%A %a %N" filename.sh # find file permission in octal notation. eg: 644
 ```sh
 # MacOS terminal
 lsof -i:portNumber # find process running on portNumber
+lsof -i:portnumber -t # gets PID of process running on that port
 kill -9 pid_number  # kills process running with pid_number
+kill -9 `lsof -i:portNumber` # kills process on that specific portNumber
 
 # Fow Windows cmd shell, run the following:
 netstat -aon | findstr portNumber  # find the PID of a process running on portNumber
