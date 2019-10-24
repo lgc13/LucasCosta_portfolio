@@ -352,6 +352,8 @@ default:
 
 - Install [zsh](https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/)
 
+   - Set up font color on iTerm properly: [click me](robbyrussell/oh-my-zsh#1906 (comment))
+
 - Get [Cobalt2](https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa)
 
    - Clone this [repo](https://github.com/wesbos/Cobalt2-iterm)
