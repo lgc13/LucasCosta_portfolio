@@ -15,7 +15,7 @@ const MainLayout = (props) => {
             key={todo.id}
             todo={todo}
             onClick={props.onClick}
-            style={todo.complete ? `todo complete ${props.styles}`  : 'todo'}
+            style={todo.complete ? `todo complete ${props.styles}` : 'todo'}
           />
         )}
       </div>
