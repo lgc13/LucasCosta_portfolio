@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "One Dark Pro",
     "workbench.tree.indent": 20,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
@@ -14,5 +14,6 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "eslint.packageManager": "yarn"
 }
