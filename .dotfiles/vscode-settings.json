@@ -15,5 +15,6 @@
         "**/.factorypath": true
     },
     "git.enableSmartCommit": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "oneDarkPro.bold": true
 }
