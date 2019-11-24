@@ -15,5 +15,6 @@
         "**/.factorypath": true
     },
     "git.enableSmartCommit": true,
-    "eslint.packageManager": "yarn"
+    "editor.minimap.enabled": false,
+    "oneDarkPro.bold": true
 }

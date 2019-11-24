@@ -317,6 +317,9 @@ CMD + SHIFT + O # find file
 CMD + SHIFT + F # find globally
 CMD + SHIFT - OR + # collapses/expands everything collapsable
 CMD + SHIFT + T # goes between test file and file being tested
+
+CTRL + G # selects the next occurance of that word
+OPTION + SHIFT # multiple cursor selection
 ```
 ​
 ### C++
