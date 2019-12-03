@@ -74,22 +74,23 @@ Each folder holds the biggest projects that I've done with that specific technol
   </h3>
 </div>
 
-I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
+Here are some of the tools/technologies that I have used:
 
-As a Software engineer, I have used quite a lot of tools/technologies for an application's client side, server side, and infrastructure. For example:
-
-- Infrastructure: OpenShift, Jenkins, Amazon Web Services (AWS), WebLogic, WebSphere, JBoss, Apache Tomcat, IBM UrbanCode Deploy
-- Web Frameworks: Spring Boot, Flask, Hibernate, Django
-- Development: Python, Java, C#, C++, JSP, JSTL, PHP, Android Studio
+- Front end: React, React Native, Redux, AngularJS, JavaScript, jQuery, Flexbox, Bootstrap, HTML, CSS
+- Back end: Java, Python, C#, C++, JSP, JSTL, PHP
+- Frameworks: Spring Boot, Flask, .NET, Hibernate
 - Database: MySQL, PostgreSQL, Oracle, Microsoft SQL Server
-- Front end: React, React Native, AngularJS, Redux, jQuery, JavaScript, HTML, Bootstrap, CSS
-- Console/IDE: Git, Bash, Unix, IntelliJ, PyCharm, Eclipse, Maven, Putty
-- Others: Docker, RabbitMQ, Jira, Pivotal Tracker, SVN, Agile
+- Infrastructure: OpenShift, Jenkins, Amazon Web Services (AWS), WebLogic, WebSphere, JBoss, Apache Tomcat, IBM UrbanCode Deploy
+- Console/IDE: Git, Bash, Zsh, Unix, IntelliJ, PyCharm, Eclipse, Maven, Putty
+- Others: Android Studio, Docker, RabbitMQ, Jira, Pivotal Tracker, SVN, Agile
 
+A bit more about me:
+
+I am enthusiastic, adaptive, responsible and hardworking. I strive at using my life and work experiences to plan ahead for any possible future challenges, as well as properly handling any current ongoing problems that I encounter. I enjoy investing time in learning and research, as new breakthroughs do not happen on their own.
 
 I have also worked as a computer technician, and I have a lot of experience with overall computer hardware, repairs, and upgrades.
 
-Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant-manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
+Lastly, I am a very motivated individual who has held many leadership roles (such as a manager, assistant manager, senior technician, and team leader) in previous jobs. I enjoy taking on responsibility and seeing progress all the way through.
 
 
 # Projects Showcase
