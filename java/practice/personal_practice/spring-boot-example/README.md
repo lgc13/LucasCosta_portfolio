@@ -27,11 +27,26 @@ For this example, let's say I'm creating a `spring-boot-example` on the Desktop 
 
  ```sh
  cd ~/Desktop/spring-boot-example # Go to root directoy of your project
+```
 
+ - For Maven Projects:
+
+ ```sh
  mvn spring-boot:run # For Maven Projects
- # OR
- gradle bootRun # For Gradle Projects
  ```
+
+ - For Gradle Projects:
+
+ ```sh
+ gradle bootRun # For Gradle Projects
+
+ # If you don't have Gradle installed:
+ brew install gradle
+
+ # If you need to build:
+ gradle build
+ ```
+ 
 
 ## Annotations:
 
