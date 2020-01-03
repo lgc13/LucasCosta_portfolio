@@ -46,8 +46,59 @@ For this example, let's say I'm creating a `spring-boot-example` on the Desktop 
  # If you need to build:
  gradle build
  ```
- 
 
+ ## Simple Rest API
+
+1. Create controller
+
+ ```sh
+ # 1. Creating controllers folder:
+ mkdir ~/Desktop/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers
+
+ # 2. Create controller (ex: DogsController.java)
+ cd ~/Desktop/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers
+ touch DogsController.java
+ ```
+
+- Make simple RestController:
+
+ ```java
+ // DogsController.java
+package com.lucas.springbootexample.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@RestController
+@RequestMapping("dogs")
+public class DogController {
+
+    @GetMapping("/")
+    public String getAllDogs() {
+        System.out.println("Return all dogs here!");
+        return "I am a Dog! (string)...";
+    }
+}
+ ```
+
+ - If the spring web framework is not installed, you can add it:
+
+ ```sh
+ # Gradle:
+
+ # Go to build.gradle and change:
+ implementation 'org.springframework.boot:spring-boot-starter' # from
+
+ implementation 'org.springframework.boot:spring-boot-starter-web' # to
+ ```
+
+ 2. Call API
+
+ From a browser or Postman, call:
+
+ `http://localhost:8080/dogs/`
+ 
 ## Annotations:
 
 1. @Entity
