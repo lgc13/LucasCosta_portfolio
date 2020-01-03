@@ -101,7 +101,42 @@ public class DogController {
  
 ## Annotations:
 
-1. @Entity
+### @Autowired
+
+This guy had a good answer: https://stackoverflow.com/a/3153617/8238895
+
+`Autowiring happens by placing an instance of one bean into the desired field in an instance of another bean. Both classes should be beans, i.e. they should be defined to live in the application context.`
+
+Example:
+
+```java
+// DogsController.java
+@RestController // Defines that this class is a spring bean
+@RequestMapping("dogs")
+public class DogsController {
+
+    @Autowired // Tells the application context to inject an instance of DogsService here
+    private DogsService dogsService;
+
+    @GetMapping("/")
+    public String getAllDogs() {
+        // The DogsService is already injected and you can use it
+        return dogsService.getAllDogs();
+    }
+}
+
+// DogsService.java
+import org.springframework.stereotype.Component;
+
+@Component // Defines that this class is a spring bean
+public class DogsService {
+    public String getAllDogs() {
+        return "Im in Dogs service";
+    }
+}
+```
+
+### @Entity
 
    - lets you use `@Entity`, `@Id`, `@GeneratedValue`
 
