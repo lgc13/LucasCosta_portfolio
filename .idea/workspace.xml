@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5ddd0dd-72a7-4a32-91d2-6c6003c66acf" name="Default Changelist" comment="" />
+    <list default="true" id="a5ddd0dd-72a7-4a32-91d2-6c6003c66acf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/service/DogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/service/DogsService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -27,6 +51,16 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringBootExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-example.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lucas.springbootexample.SpringBootExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -50,7 +84,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578168162112</updated>
-      <workItem from="1578168170122" duration="117000" />
+      <workItem from="1578168170122" duration="501000" />
+      <workItem from="1578168715183" duration="166000" />
+      <workItem from="1578168913970" duration="1087000" />
     </task>
     <servers />
   </component>
@@ -62,6 +98,19 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="240" y="77" key="#ESLint/0.23.1280.777@0.23.1280.777" timestamp="1578168289126" />
+    <state x="489" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578168576537">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="489" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.777@0.23.1280.777" timestamp="1578168576537" />
+    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2" timestamp="1578170375477">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578170375477" />
+    <state x="159" y="53" key="SettingsEditor" timestamp="1578168883680">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578168673924" />
+    <state x="159" y="53" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578168883680" />
     <state x="317" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1578168171905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
