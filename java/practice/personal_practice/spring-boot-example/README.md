@@ -98,6 +98,78 @@ public class DogController {
  From a browser or Postman, call:
 
  `http://localhost:8080/dogs/`
+
+
+## Database integration
+
+1. Create your database
+
+(I used psql to create a public db)
+
+```shell script
+# in psql
+CREATE DATABASE dogsdb;
+
+\c dogsdb # connects to db
+```
+
+2. Connect to database
+
+- in your `src/main/resources/application.properties`, add the following:
+
+```shell script
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url=jdbc:postgresql://localhost:5432/dogsdb # any your db name here in the end. in our case, dosdb
+spring.datasource.username=tlgc1
+spring.datasource.password=
+
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = create-drop
+```
+
+3. Create an entity
+
+- An @Entity is what is used for each table so that `Hibernate` can handle it
+
+Here's an entity example:
+
+```java
+package com.lucas.springbootexample.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Column;
+
+@Entity
+@Table(name = "dog")
+public class Dog {
+    @Id
+    @GeneratedValue // no need for column here
+    private long id;
+
+    @Column(name = "name")
+    private String name;
+}
+```
+
+4. Import needed dependencies
+
+```shell script
+# buid.gradle file
+
+# in order to use Hibernate, we need to import a jpa dependency:
+implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+# postgres driver needed:
+implementation 'org.postgresql:postgresql'
+```
+
+Now when you run your project, it'll create that table every time it starts.
  
 ## Annotations:
 
