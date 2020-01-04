@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5ddd0dd-72a7-4a32-91d2-6c6003c66acf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/service/DogsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/service/DogsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers/DogsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/practice/personal_practice/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers/DogsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiki/cheat-sheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/wiki/cheat-sheet.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -86,12 +88,24 @@
       <updated>1578168162112</updated>
       <workItem from="1578168170122" duration="501000" />
       <workItem from="1578168715183" duration="166000" />
-      <workItem from="1578168913970" duration="1087000" />
+      <workItem from="1578168913970" duration="2546000" />
     </task>
+    <task id="LOCAL-00001" summary=".idea changes">
+      <created>1578170396583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578170396583</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea changes" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="77" key="#ESLint" timestamp="1578168289126">
@@ -102,15 +116,51 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="489" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1280.777@0.23.1280.777" timestamp="1578168576537" />
-    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2" timestamp="1578170375477">
+    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2" timestamp="1578170395709">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578170375477" />
-    <state x="159" y="53" key="SettingsEditor" timestamp="1578168883680">
+    <state x="89" y="64" width="1302" height="795" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578170395709" />
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom" timestamp="1578171778763">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1578171778763" />
+    <state width="1398" height="329" key="GridCell.Tab.0.center" timestamp="1578171778762">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1578171778762" />
+    <state width="1398" height="329" key="GridCell.Tab.0.left" timestamp="1578171778761">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1578171778761" />
+    <state width="1398" height="329" key="GridCell.Tab.0.right" timestamp="1578171778762">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1578171778762" />
+    <state width="1398" height="329" key="GridCell.Tab.1.bottom" timestamp="1578171778765">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1578171778765" />
+    <state width="1398" height="329" key="GridCell.Tab.1.center" timestamp="1578171778764">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1578171778764" />
+    <state width="1398" height="329" key="GridCell.Tab.1.left" timestamp="1578171778764">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1578171778764" />
+    <state width="1398" height="329" key="GridCell.Tab.1.right" timestamp="1578171778765">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="329" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1578171778765" />
+    <state x="159" y="53" key="SettingsEditor" timestamp="1578170889783">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1578168673924" />
-    <state x="159" y="53" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578168883680" />
+    <state x="159" y="53" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578170889783" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1578170399896">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1578170399896" />
     <state x="317" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1578168171905">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

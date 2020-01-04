@@ -167,6 +167,8 @@ SET search_path TO someSchema; -- choose someSchema as search_path so now you ca
 
 CREATE DATABASE db_name; -- creates a db_name
 CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
+CREATE ROLE role-name;
+ALTER ROLE "role-name" WITH LOGIN;
 SERIAL PRIMARY KEY -- SERIAL makes it auto increment
 SELECT * FROM table_name; -- displays everything from a table
 INSERT INTO table_name VALUES (info, info); -- insert a single row with all values from cols

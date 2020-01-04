@@ -11,8 +11,12 @@ import com.lucas.springbootexample.service.DogsService;
 @RequestMapping("dogs")
 public class DogsController {
 
-    @Autowired // Tells the application context to inject an instance of DogsService here
-    private DogsService dogsService;
+    private final DogsService dogsService;
+
+    @Autowired
+    public DogsController(DogsService dogsService) {
+        this.dogsService = dogsService;
+    }
 
     @GetMapping("/")
     public String getAllDogs() {
