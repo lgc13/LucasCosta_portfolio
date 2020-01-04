@@ -38,3 +38,5 @@ Happy
 *.pdb
 
 node_modules
+
+.idea/workspace.xml
