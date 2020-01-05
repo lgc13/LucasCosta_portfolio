@@ -3,8 +3,9 @@ import './App.css';
 import axios from 'axios'
 
 const App = () => {
-  const [doggo, setDoggo] = useState(null)
-  const [love, setLove] = useState(null)
+    const [doggo, setDoggo] = useState(null)
+    const [love, setLove] = useState(null)
+    const [dogService, setDogService] = useState(null)
 
   useEffect(() => {
     axios.get('https://dog.ceo/api/breeds/image/random')
@@ -31,10 +32,14 @@ const App = () => {
     }).catch(err => {
       console.log('err: ', err)
     })
+
+    axios.get('https://dog-spring-boot-example.herokuapp.com/dogs/')
+        .then(res => {
+            console.log('res: ', res)
+            setDogService(res.data)
+        })
      
   }, [])
-
-  console.log('doggo: ', doggo)
 
   return (
     <div className="App">
@@ -45,6 +50,11 @@ const App = () => {
             <p>Love result: {love.result}</p>
             <p>Love percentage: {love.percentage}</p>
           </div>
+        )}
+        {dogService && (
+            <div>
+                <p>Dog service result: {dogService}</p>
+            </div>
         )}
     </div>
   );
