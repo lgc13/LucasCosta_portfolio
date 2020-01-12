@@ -166,6 +166,7 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 SET search_path TO someSchema; -- choose someSchema as search_path so now you can query any tables within it
 
 CREATE DATABASE db_name; -- creates a db_name
+DROP DATABASE dbName; -- deletes dbName
 CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
 CREATE ROLE role-name;
 ALTER ROLE "role-name" WITH LOGIN;
