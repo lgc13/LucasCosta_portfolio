@@ -120,7 +120,7 @@ CREATE DATABASE dogsdb;
 ```shell script
 ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
 spring.datasource.url=jdbc:postgresql://localhost:5432/dogsdb # any your db name here in the end. in our case, dosdb
-spring.datasource.username=tlgc1
+spring.datasource.username=lucascosta
 spring.datasource.password=
 
 # The SQL dialect makes Hibernate generate better SQL for the chosen database
@@ -170,6 +170,66 @@ implementation 'org.postgresql:postgresql'
 ```
 
 Now when you run your project, it'll create that table every time it starts.
+ 
+ 
+## Liquibase
+
+Example: https://www.roytuts.com/spring-boot-liquibase-gradle-example/
+
+1. Add needed dependency
+
+```sh
+# gradle
+implementation 'org.liquibase:liquibase-core:3.8.2'
+```
+
+2. Create changelog file
+
+```sh
+# in projRoot/src/main/resources/db
+
+touch db.changelog-master.yaml # this can also be .xml, .json, or .sql formats
+```
+
+3. Add a change log into the file
+
+```yaml
+# example
+databaseChangeLog:
+  - changeSet:  # you could have multiple change Sets
+      id: 1     # each changeSet needs its own id
+      author: lucasc
+      changes:
+        - createTable:
+            tableName: dogsdb
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+```
+
+4. Add the classpath to your changelog file
+
+```sh
+# in src/main/resource/application.properties
+
+#liquibase.change-log=classpath:db/db.changelog-master.yaml
+spring.liquibase.changeLog=classpath:db/db.changelog-master.yaml
+```
  
 ## Annotations:
 
@@ -222,4 +282,3 @@ public class DogsService {
    </dependency>
   ```
   
- 

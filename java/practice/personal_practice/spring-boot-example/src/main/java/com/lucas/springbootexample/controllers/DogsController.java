@@ -1,5 +1,7 @@
 package com.lucas.springbootexample.controllers;
 
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,8 +21,12 @@ public class DogsController {
     }
 
     @GetMapping("/")
-    public String getAllDogs() {
+    public ResponseEntity<String> getAllDogs() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add(HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN, "*");
         // The DogsService is already injected and you can use it
-        return dogsService.getAllDogs();
+        return ResponseEntity.ok()
+                .headers(headers)
+                .body(dogsService.getAllDogs());
     }
 }
