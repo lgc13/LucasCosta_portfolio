@@ -115,19 +115,35 @@ CREATE DATABASE dogsdb;
 
 2. Connect to database
 
-- in your `src/main/resources/application.properties`, add the following:
+- you probably have a `src/main/resources/application.properties` file. 
+   Delete that one and create a `application.yml` file instead
+- in your `src/main/resources/application.yml`, add the following:
 
-```shell script
-## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
-spring.datasource.url=jdbc:postgresql://localhost:5432/dogsdb # any your db name here in the end. in our case, dosdb
-spring.datasource.username=lucascosta
-spring.datasource.password=
+```yml
+### Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect # The SQL dialect makes Hibernate generate better SQL for the chosen database
+    hibernate.ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
+  
+```
 
-# The SQL dialect makes Hibernate generate better SQL for the chosen database
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+- you can also create a `application-local.yml` so you can use it for a local profile (and not push on git)
 
-# Hibernate ddl auto (create, create-drop, validate, update)
-spring.jpa.hibernate.ddl-auto = create-drop
+```yml
+### Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dogsdb # any your db name here in the end. in our case, dogsdb
+    username: myUserNameGoesHere
+    password: somePassWord # if you have one
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect # The SQL dialect makes Hibernate generate better SQL for the chosen database
+    hibernate.ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
+  
 ```
 
 3. Create an entity
