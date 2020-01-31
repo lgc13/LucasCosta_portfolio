@@ -37,10 +37,10 @@ public class DogsService {
         return allDogs;
     }
 
-    public Dog createDog(String name) {
-        System.out.println("Creating a dog for name: " + name);
-        Dog dogCreated = dogRepository.save(new Dog(name));
-        System.out.println("Dog created: " + dogCreated.getName());
+    public Dog createDog(String name, String color) {
+        System.out.println("Creating a dog for name: " + name + " and color: " + color);
+        Dog dogCreated = dogRepository.save(new Dog(name, color));
+        System.out.println("Dog created: " + dogCreated.getName() + " color: " + dogCreated.getColor());
 
         return dogCreated;
     }

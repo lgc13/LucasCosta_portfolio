@@ -15,11 +15,18 @@ public class Dog {
     @Column(name = "color")
     private String color;
 
-    public Dog(String name) {
+    public Dog() {}
+
+    public Dog(String name, String color) {
         this.name = name;
+        this.color = color;
     }
 
     public String getName() {
         return this.name;
+    }
+
+    public String getColor() {
+        return this.color;
     }
 }

@@ -3,10 +3,7 @@ package com.lucas.springbootexample.controllers;
 import com.lucas.springbootexample.entity.Dog;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.lucas.springbootexample.service.DogsService;
@@ -45,9 +42,9 @@ public class DogController {
     }
 
     @GetMapping("/create/{name}")
-    public Dog createDog(@PathVariable String name) {
+    public Dog createDog(@PathVariable String name, @RequestParam String color) {
 
-        return dogsService.createDog(name);
+        return dogsService.createDog(name, color);
     }
 
 
