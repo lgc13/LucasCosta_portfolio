@@ -95,6 +95,16 @@ git reset HEAD^          # gets rid of previous commit
 git config --local user.email "my.email.here@gmail.com" # changes this specific repos email to push from (do it from proj root folder)
 ```
 
+- Heroku client
+
+```sh
+# If your app does not have a .git folder yet and you want to connect to a remote app, do the following:
+git init
+git remote -v # this will return nothing
+heroku git:remote -a your-heroku-app-name-here # add your heroku app name
+git remote -v # you will see them connected now
+```
+
 ## Vim
 
 - You can make permanent changes to your VIM editor by changing ~/.vimrc
@@ -280,6 +290,7 @@ docker pull microsoft/mssql-server-linux # Installing SQL Server
 ```sh
 brew doctor # open brew
 update brew # updates brew
+brew cask install java # install Java (or w/e else you might want)
 ```
 
 ### Yarn

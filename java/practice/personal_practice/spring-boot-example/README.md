@@ -13,7 +13,7 @@ Repositories: http://blog.sapiensworks.com/post/2014/06/02/The-Repository-Patter
 
 ## Create Project:
 
-For this example, let's say I'm creating a `spring-boot-example` on the Desktop (aka on ~/Desktop/spring-boot-example/)
+For this example, let's say I'm creating a `dog-spring-service` on the Desktop (aka on ~/Desktop/dog-spring-service/)
 
 1. Download project start up
 
@@ -26,7 +26,7 @@ For this example, let's say I'm creating a `spring-boot-example` on the Desktop 
  2. Start it:
 
  ```sh
- cd ~/Desktop/spring-boot-example # Go to root directoy of your project
+ cd ~/Desktop/dog-spring-service # Go to root directoy of your project
 ```
 
  - For Maven Projects:
