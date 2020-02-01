@@ -53,10 +53,10 @@ For this example, let's say I'm creating a `dog-spring-service` on the Desktop (
 
  ```sh
  # 1. Creating controllers folder:
- mkdir ~/Desktop/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers
+ mkdir ~/Desktop/dog-spring-service/src/main/java/com/lucas/dogspringservice/controllers
 
  # 2. Create controller (ex: DogsController.java)
- cd ~/Desktop/spring-boot-example/src/main/java/com/lucas/springbootexample/controllers
+ cd ~/Desktop/dog-spring-service/src/main/java/com/lucas/dogspringservice/controllers
  touch DogsController.java
  ```
 
@@ -64,7 +64,7 @@ For this example, let's say I'm creating a `dog-spring-service` on the Desktop (
 
  ```java
  // DogsController.java
-package com.lucas.springbootexample.controllers;
+package com.lucas.dogspringservice.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -152,7 +152,7 @@ spring:
 Here's an entity example:
 
 ```java
-package com.lucas.springbootexample.entity;
+package com.lucas.dogspringservice.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
