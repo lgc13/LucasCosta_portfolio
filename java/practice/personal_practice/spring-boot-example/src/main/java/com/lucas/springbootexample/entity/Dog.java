@@ -22,6 +22,10 @@ public class Dog {
         this.color = color;
     }
 
+    public long getId() {
+        return this.id;
+    }
+
     public String getName() {
         return this.name;
     }

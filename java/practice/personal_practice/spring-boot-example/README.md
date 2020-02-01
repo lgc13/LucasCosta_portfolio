@@ -143,7 +143,6 @@ spring:
   jpa:
     properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect # The SQL dialect makes Hibernate generate better SQL for the chosen database
     hibernate.ddl-auto: update # Hibernate ddl auto (create, create-drop, validate, update)
-  
 ```
 
 3. Create an entity
