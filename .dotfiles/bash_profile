@@ -1,4 +1,4 @@
-# This is Lucas's .bash_profile, last updated on October, 2018
+# This is Lucas's .bash_profile
 
 # Aliases:
 alias ls='exa --long --header --git -TL 1' # must download exa first

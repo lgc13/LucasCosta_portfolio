@@ -69,6 +69,9 @@ git commit -m “message here” # commits with message
 git push
 git remote -v # show origin/master. Can also click the config folder in .git folder
 
+# If you already have a project created (separately then a git repo), here's how to connect them
+git remote add origin https://github.com/lgc13/your-git-repo-here.git
+
 ```
 
 - Branches
