@@ -1,10 +1,12 @@
 # This is Lucas's .bash_profile
 
+export LC_PORTFOLIO_DIR=~/Desktop/LucasProjects/LucasCosta_portfolio
+
 # Aliases:
 alias ls='exa --long --header --git -TL 1' # must download exa first
 alias la='ls -la'
 alias cpwd="pwd | tr -d '\n' | pbcopy" # copying pwd co clipboard
-alias c='cd ~/Desktop/LucasProjects/LucasCosta_portfolio'
+alias c="cd $LC_PORTFOLIO_DIR"
 
 # Git Aliases
 alias ga='git add .; git status'
@@ -20,8 +22,9 @@ alias gcb='git checkout -b' # add branchName to be created/checked out after
 # alias gpo='git push origin'
 
 # Scripts
-alias atomInstall='~/Desktop/LucasCosta_portfolio/.dotfiles/scripts/install-atom-packages.sh'
-alias atomGetPackages='~/Desktop/LucasCosta_portfolio/.dotfiles/scripts/get-atom-packages.sh'
+alias atomInstall="$LC_PORTFOLIO_DIR/.dotfiles/scripts/install-atom-packages.sh"
+alias atomGetPackages="$LC_PORTFOLIO_DIR/.dotfiles/scripts/get-atom-packages.sh"
+alias gcall="$LC_PORTFOLIO_DIR/.dotfiles/scripts/git-checkout-master-all.sh"
 
 # Exports:
 export PATH=$PATH:/usr/local/sbin
