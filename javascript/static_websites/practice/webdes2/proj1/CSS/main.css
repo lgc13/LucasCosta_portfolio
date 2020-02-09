@@ -1,0 +1,44 @@
+@charset "utf-8";
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	color: #CF3;
+	text-decoration: underline;
+	background-color: #06F;
+}
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #000;
+	background-color: #09C;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00F;
+	text-decoration: underline;
+}
+a:link {
+	color: #00F;
+	text-decoration: underline;
+}
+a:visited {
+	color: #C6C;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	color: #99F;
+}
+h3 {
+	list-style-type: square;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}

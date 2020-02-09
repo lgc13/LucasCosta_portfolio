@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* CSS Document created by Lucas Costa, February 05, 2014*/
+
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+        font-style: normal;
+	line-height: 1.6em;
+	color: #000;
+	background-color: #0C1BE8;
+}
+#container {
+  width: 900px;
+  margin: 0 auto;
+  border: 0px solid #000;
+  background-color: #fff;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 5px;
+}
+#header{
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  border-bottom: solid #999933 1px;
+}
+#header h2{
+  font-family: sans-serif;
+}
+#header p {
+  font-size: .7em;
+  margin: 0;
+}
+#content{
+  width: 650px;
+  background-color: #FFFFFF;
+  padding: 0px;
+  float: right; 
+  margin-top: 20px;
+}
+#sidebar{
+  width: 128px;
+  background-color: #eee;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  border: solid #999933 1px;
+  border-radius: 6px;
+}
+#sidebar h1{
+    color: #FFFFFF;
+    border-bottom: hidden;
+    border-top: double;
+    border-top-color: #ddb62f;
+}
+#footer{
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  clear: both;
+  border-top: solid #999933 1px;
+}
+#footer p{
+  color: black;
+  font-size: 10px;
+}
+img {
+	float: right;
+	padding: 8px;
+	margin: 8px;
+}
+iframe {
+	border: solid #999933 1px;
+	padding: 8px;
+	margin: 8px;
+}
+a:link {
+	font-weight: bold;
+	color: #9B9744;
+	text-decoration: none;
+        text-decoration: underline;
+}
+a:visited {
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFF00;
+}
+
+hr {
+	border: solid #999933 1px;
+}
+
+h1 {    font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 4px;
+	padding-left: 0px;
+	font-variant: small-caps;
+	letter-spacing: .5em;
+	line-height: 2em;
+        text-decoration: underline;
+        background-color: #0C1BE8;
+}
+h2 {    color: #F9F6FC;
+	font-size: 25px;
+	background-color: #1E31FF;
+	letter-spacing: 0.5em;
+	padding: 6px;
+	font-variant: small-caps;
+	font-style: bold;
+	}
+h3 {
+	font-size: 17px;
+	letter-spacing: 0.5em;
+	border-bottom-width: 1px;
+	border-bottom-style: inset;
+	border-bottom-color: #9B9744;
+	padding: 4px 0;
+	font-variant: small-caps;
+	font-style: italic;
+}
+h4 {    font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-variant: small-caps;
+	letter-spacing: 0.5em;
+}
+
+p, li, td {
+	letter-spacing: 0.1em;
+	color: #000000;
+        font-size: 16px;
+}
+ul li {
+	list-style-image: url(images/star.png);
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+table {
+	border: solid #999933 1px;
+}
+td {
+	padding: 6px;
+	border: solid #999933 1px;
+}
+th {
+	font-weight: bold;
+	background-color: #999938;
+	text-align: center;
+	padding: 6px;
+	border: solid #999933 1px;
+}
