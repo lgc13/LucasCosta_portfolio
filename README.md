@@ -29,9 +29,6 @@ The goal is to make browsing through my project/directories fairly intuitive. He
 ```sh
 
 LucasCosta_portfolio
-├── android_studio
-│   └── project#
-│   └── practice
 ├── c#
 │   └── project#
 │   └── practice
@@ -41,22 +38,22 @@ LucasCosta_portfolio
 ├── java
 │   └── project#
 │   └── practice
+├── javascript
+│   └── react
+│       └── project#
+│       └── practice
+│   └── react_native
+│       └── project#
+│       └── practice
+│   └── static_websites
+│       └── project#
+│       └── practice
 ├── php
 │   └── project#
 │   └── practice
 ├── python
 │   └── project#
 │   └── practice
-├── react
-│   └── project#
-│   └── practice
-├── react_native
-│   └── project#
-│   └── practice
-└── static_websites
-    └── project#
-    └── practice
-
 ```
 
 Each folder holds the biggest projects that I've done with that specific technology right inside its directory. There is also a 'practice' folder which has all other project/example exercises that I've done with said language.
