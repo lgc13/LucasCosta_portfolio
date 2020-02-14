@@ -94,19 +94,16 @@ Lastly, I am a very motivated individual who has held many leadership roles (suc
 
 This section of my monorepo portfolio displays some of my biggest and favorite projects that I have worked on. You will also find other details about these projects such as their summary, skills and concepts utilized, screenshots of the working applications, code snippets and their explanation.
 
-Currently, my most impressive projects are done with Java. I am also currently working on some bigger applications with Python.
-
-Scroll down to see some of these bigger projects, or click on one of these anchors to see a specific technology folder. I ranked these in order of MOST to LEAST experience (from left to right):
+Scroll down to see some of these bigger projects, or click on one of these anchors to see a specific technology folder (ranked from MOST to LEAST experience, left to right):
 
 <div align="center">
   <p>
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/"><strong> Java</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/python/"><strong>Python</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/"><strong>Static Websites</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%23"><strong>C#</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/c%2B%2B"><strong>C++</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/php"><strong>PHP</strong></a> >
-    <a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/android_studio/"><strong>Android Studio</strong></a>
+    [Javascript](./javascript) >
+    [Java](./java) >
+    [Python](./python) >
+    [C#](./c%23) >
+    [C++](./c%2B%2B) >
+    [Php](./Php) 
   </p>
 </div>
 
