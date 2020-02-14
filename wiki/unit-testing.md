@@ -6,8 +6,12 @@ Here's an [example project and README](../python/practice/personal_practice/Unit
 
 ## React
 
-Here's an [example project and README](../react/unit-testing-example)
+Here's an [example project and README](../javascript/react/unit-testing-example)
 
 ## React Native
 
-Here's an [example project and README](../react_native/UnitTestingExample)
+Here's an [example project and README](../javascript/react_native/UnitTestingExample)
+
+## Spring (Java)
+
+Here's an [example project and README](../java/testing-example)

@@ -287,6 +287,14 @@ docker container start container_id # start a Docker container
 docker stop container_id # Stop instance running
 
 docker pull microsoft/mssql-server-linux # Installing SQL Server
+docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallyStrongPwd123' -p 1433:1433 microsoft/mssql-server-linux # Install the Docker instance
+```
+
+### Microsoft SQLServer
+
+```bash
+yarn global add sql-cli # Install the sql-cli command line shell
+mssql -u sa -p reallyStrongPwd123 # Connect to sql-cli shell
 ```
 
 ### Brew
@@ -367,6 +375,16 @@ default:
     }
 ```
 
+- DB Migrations (mssql)
+  
+```sh
+  # To create a migration file:
+  dotnet ef migrations add something
+  
+  # To update database:
+  dotnet ef database update
+```
+
 ### Setting up new Mac terminal environment
 
 - Install iterm2
@@ -394,11 +412,11 @@ II. Set up eslint for VS code:
 
   1. Create a `.eslintrc` file in your project directory
 
-  2. Add rules found in [this file](/react/eslintrc-to-copy-from)
+  2. Add rules found in [this file](../javascript/eslintrc-to-copy-from)
 
 III. Add the dependencies
 
-  1. Go to your package.json and [these](/react/package-json-to-copy-from)
+  1. Go to your package.json and [these](../javascript/package-json-to-copy-from)
 
 IV. Get Eslint extension
 
