@@ -316,8 +316,8 @@ This application displays some of my skills with:
 - HTML development
 
 <!-- Screenshots -->
-<img src="static_websites/Corazon_project/images/page1.png" width= 80% length= 80%>
-<img src="static_websites/Corazon_project/images/page2.png" width= 80% length= 80%>
+<img src="javascript/static_websites/Corazon_project/images/page1.png" width= 80% length= 80%>
+<img src="javascript/static_websites/Corazon_project/images/page2.png" width= 80% length= 80%>
 
 <!-- Code explanation -->
 Bootstrap has a lot of nifty features, such a the grid system that allows me to organize my website with rows and columns within Divs. Another nice thing is the "carousel". Using some of their CSS and JS, I am able to easily create an ongoing carousel slideshow which displays any pictures and text that I input.
@@ -407,8 +407,8 @@ You can see that in this code snippet:
 <!-- My Business Card app BIO -->
 Using Android Studio, I created a small 2 page app which is displayed on a Nexus 5 API. It uses avatar emoticons, picture imports and radio buttons. Upon clicking the "Details" radio button, this link will display the second page which contains some plain text with some of my contact info.
 
-![First page](android_studio/MyBusinessCard_app_project/img/my_app.png)
-![Second page](android_studio/MyBusinessCard_app_project/img/my_app2.png)
+![First page](java/android_studio/MyBusinessCard_app_project/img/my_app.png)
+![Second page](java/android_studio/MyBusinessCard_app_project/img/my_app2.png)
 
 <!-- Code explanation -->
 The majority of the hard work comes from extending the android support library AppCompatActivity. With this, I'm able to call upon methods for each specific task that I'm trying to accomplish, for example, the setOnClickListener for my button. You can see some of the code here:
