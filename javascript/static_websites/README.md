@@ -8,7 +8,7 @@ I learned the main Web Development concepts during high school and college, wher
 <h6>Click the title links if you want to see more details about a particular project.</h6>
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/Corazon_project">1- Corazon Dancers project</a></h2>
+## [1- Corazon Dancers project](Corazon_project)
 
 <!-- Project BIO -->
 This is a static website that I created for a Salsa group that I was a member of while at FSU - Corazon Salsa Dancers. This website aims to show information about the group, such as their purpose, history, and contact information. Someone going on this website should also be able to see pictures, upcoming events, and information on how to join.
@@ -58,7 +58,7 @@ You can see that in this code snippet:
 <!-- ......................E N D  O F  P R O J E C T........................ -->
 
 <!-- Project section -->
-<h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/RockinIt_project">2- Rockin' It project</a></h2>
+## [2- Rockin' It project](RockinIt_project)
 
 <!-- Project BIO -->
 This is a static website which displays some information about Rock n' Roll! By opening this website, a user can see information about Rock's history, some statistics of its genres, an embedded Youtube video, and some other references. This is one of the first projects that I made using HTML, CSS, JS, and Bootstrap.
@@ -104,7 +104,7 @@ For this website, I use a simple nav bar id from Bootstrap. This makes it very e
 
 Although these were my biggest projects with Web Dev, I have worked on a lot of other smaller projects, practice problems, and trivia questions. You can see these by clicking this link:
 
-[Practice Directory](https://github.com/lgc13/LucasCosta_portfolio/tree/master/static_websites/practice)
+[Practice Directory](practice)
 
 <!-- Contact info -->
 # Let's Connect! Don't be shy...
