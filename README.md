@@ -95,17 +95,8 @@ Lastly, I am a very motivated individual who has held many leadership roles (suc
 This section of my monorepo portfolio displays some of my biggest and favorite projects that I have worked on. You will also find other details about these projects such as their summary, skills and concepts utilized, screenshots of the working applications, code snippets and their explanation.
 
 Scroll down to see some of these bigger projects, or click on one of these anchors to see a specific technology folder (ranked from MOST to LEAST experience, left to right):
-
-<div align="center">
-  <p>
-    [Javascript](./javascript) >
-    [Java](./java) >
-    [Python](./python) >
-    [C#](./c%23) >
-    [C++](./c%2B%2B) >
-    [Php](./Php) 
-  </p>
-</div>
+	
+[Javascript](./javascript) > [Java](./java) > [Python](./python) > [C#](./c%23) > [C++](./c%2B%2B) > [PHP](./php)
 
 <!-- Project section -->
 <h2><a href="https://github.com/lgc13/LucasCosta_portfolio/tree/master/java/RevatureTown_project">1- Revature Town</a></h2>
