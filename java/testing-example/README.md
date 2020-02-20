@@ -1,122 +1,73 @@
 # Testing with Spring
 
-1- Setup:
+1- Basics:
 
 - make a public class:
+- instantiate the class you want to test
+   - you can add this to a `@Before`
+- add any methods (tests)
+   - each method takes a `@Test`
+- use `Assertions`
 
-```java
-public class SomeTest() {
-
-}
-```
-
-- use mockito and junit
 ```java
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
-```
 
-- set up mockito to run with your class
-
-```java
-@RunWith(MockitoJUnitRunner.class)
-public class SomeTest() {
-
-}
-```
-
-- add any @Before each implementations:
-
-```java
-@RunWith(MockitoJUnitRunner.class)
-public class SomeTest() {
-    // any mocks go here
-
-    @Before
-    public void initMocks() {
-        // instantiate anything here
-    }
-}
-```
-
-2- Write a test
-
-```java
-@RunWith(MockitoJUnitRunner.class)
-public class SomeTest() {
-    private Dog dog;
-
-    @Before
-    public void initMocks() {
-        dog = new Dog();
-    }
-
-    @Test
-    public void getDog_getsADog() {
-
-    }
-}
-```
-
-3- Mocks
-
-- use mockito to mock any other classes within your test:
-
-```java
-import static org.mockito.Mockito.*;
-
-@Test
-    public void getDog_getsADog() {
-        Cat someCat = mock(Cat.class);
-    }
-```
-
-- use @Mock to mock any other modules/libraries:
-
-```java
-public class SomeTest() {
-    
-    @Mock
-    private Cat cat;
-
-    @Test
-    public void someTest() {
-    }
-}
-```
-
-0 use mockito `when` to mock return values from functions:
-
-```java
-import static org.mockito.Mockito.when;
-
-public class SomeTest() {
-    @Mock
-    private Cat cat;
-
-    @Test
-    public void someTest() {
-        when(cat.meows()).thenReturn(true);
-    }
-}
-```
-
-4- Assertions
-
-use assertj:
-
-```java
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SomeTest() {
+public class DogTest {
+    
+    private Dog dog;   // class to be tests
 
-    @Test
-    public void someTest() {
-        assertThat(1 + 1).isEqual(2);
+    @Before
+    public void init() {
+        dog = new Dog();  // instantiate class 
     }
+    
+    @Test
+    public void getDogId_whenCalled_returns5() {  // test name: methodName_whenX_returnsY
+        // assertions here
+        assertThat(dog.getDogId).isEqualTo(5);
+    }   
+}
+```
+
+2. Mocks
+
+- use `@RunWith(MockitoJUnitRunner.class)` to set up your class
+- mock any classes with `@Mock`
+- use `InjectMocks` on the class to be tested
+- use `when` to make returns of methods
+
+
+```java
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.InjectMocks;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class) // set up mockito to run with your class
+public class DogTest {
+   
+    @Mock    // you can mock like this
+    private Cat cat; // or:  Cat someCat = mock(Cat.class);  
+
+    @InjectMocks
+    private Dog dog;   
+
+    @Before
+    public void init() {
+     dog = new Dog();  
+    }
+    
+    @Test
+    public void getDogId_whenCatIdIs10_returns10() {  
+    when(cat.getId()).thenReturn(10);
+     assertThat(dog.getDogId).isEqualTo(10);
+    }  
 }
 ```
 
