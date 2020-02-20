@@ -41,6 +41,7 @@ public class DogTest {
 - use `@RunWith(MockitoJUnitRunner.class)` to set up your class
 - mock any classes with `@Mock`
 - use `InjectMocks` on the class to be tested
+   - this instantiates the class as well
 - use `when` to make returns of methods
 
 
@@ -59,13 +60,8 @@ public class DogTest {
     @Mock    // you can mock like this
     private Cat cat; // or:  Cat someCat = mock(Cat.class);  
 
-    @InjectMocks
-    private Dog dog;   
-
-    @Before
-    public void init() {
-     dog = new Dog();  
-    }
+    @InjectMocks  // this instantiates the class as well. Bonus!
+    private Dog dog;
     
     @Test
     public void getDogId_whenCatIdIs10_returns10() {  
