@@ -1,6 +1,10 @@
 # Testing with Spring
 
-1- Basics:
+Decent doc:
+
+https://reflectoring.io/unit-testing-spring-boot/
+
+## Basics:
 
 - make a public class:
 - instantiate the class you want to test
@@ -32,7 +36,7 @@ public class DogTest {
 }
 ```
 
-2. Mocks
+## Mocks
 
 - use `@RunWith(MockitoJUnitRunner.class)` to set up your class
 - mock any classes with `@Mock`
@@ -70,6 +74,10 @@ public class DogTest {
     }  
 }
 ```
+
+## Intermediate
+
+- Using `@RunWith(SpringRunner.class)` will make your test run with Spring, making it slower (try not using it)
 
 
 
