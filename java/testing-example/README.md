@@ -1,8 +1,9 @@
 # Testing with Spring
 
-Decent doc:
+Solid docs:
 
 https://reflectoring.io/unit-testing-spring-boot/
+https://reflectoring.io/spring-boot-web-controller-test/
 
 ## Basics:
 
@@ -38,7 +39,9 @@ public class DogTest {
 
 ## Mocks
 
-- use `@RunWith(MockitoJUnitRunner.class)` to set up your class
+- Add Mockito annotation to class:
+   - JUnit 5: `@ExtendWith(MockitoExtension.class)`
+   - JUnit 4: `@RunWith(MockitoJUnitRunner.class)`
 - mock any classes with `@Mock`
 - use `InjectMocks` on the class to be tested
    - this instantiates the class as well
@@ -68,6 +71,49 @@ public class DogTest {
     when(cat.getId()).thenReturn(10);
      assertThat(dog.getDogId).isEqualTo(10);
     }  
+}
+```
+
+## Controller Test
+
+- annotate class with: `@WebMvcTest(MyClassName.class)`
+- use `MockMvc`
+- Mock any Beans (dependencies) of tested class
+
+```java
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lucas.dogspringservice.entity.Dog;
+import com.lucas.dogspringservice.services.DogsService;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+
+@WebMvcTest(DogController.class)  // need this to run Spring
+class DogControllerTest {
+    
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+    
+    @MockBean
+    DogsService dogsService;
+
+    @Test
+    public void getDogById_whenDogIsFoundByIdProvided_returnsDog() throws Exception {
+        Dog dog = new Dog("Sasha", "blue");
+        when(dogsService.getDogById(1)).thenReturn(dog);
+
+        mockMvc.perform(get("/dog/1"))
+                .andExpect(content().string(objectMapper.writeValueAsString(dog)));
+    }
 }
 ```
 
