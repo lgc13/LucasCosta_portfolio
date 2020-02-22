@@ -120,9 +120,13 @@ class DogControllerTest {
 
 ## Intermediate
 
+#### `@RunWith(SpringRunner.class)`
+
 - Using `@RunWith(SpringRunner.class)` will make your test run with Spring, making it slower (try not using it)
 
-- make `contextLoads` pass by adding the following: 
+#### `contextLoads` test
+
+- you might need an embedded DB for this test to pass. If you, add the following: 
 
 ```groovy
 // build.gradle
@@ -146,6 +150,42 @@ class DogSpringServiceApplicationTests {
 }
 ```
 
+#### `@Nested`
+
+- allow you to nest tests
+- you can use `@DisplatName` if you want as well
+- change IntelliJ settings to allow Gradle to show test names:
+   - Settings > Build, Execution, Deployment > Build Tools > Gradle > Run tests using `IntelliJ IDEA`
+   - https://github.com/gradle/gradle/issues/5975#issuecomment-589895374
+ 
+```java
+import org.junit.jupiter.api.Nested;
+
+class DogsServiceTest {
+    
+    // ...any set up, mocks, etc
+
+    @Nested
+    @DisplayName("getDogById") // this is optional... but it might help showing the name
+    class getDogById {
+         @Test
+         public void whenNoDogInRepository_returnsNull() {
+            when(dogRepository.findById((long) 1)).thenReturn(Optional.empty());
+            Dog result = dogsService.getDogById(1);
+            assertThat(result).isNull();
+         }
+    
+        @Test
+        public void whenDogFoundInRepo_returnsDog() {
+            Dog dog = new Dog("Lucas", "red");
+            when(dogRepository.findById((long) 1)).thenReturn(Optional.of(dog));
+            Dog result = dogsService.getDogById(1);
+            
+            assertThat(result).isEqualTo(dog);
+        }
+    }   
+}
+```
 
 
 
