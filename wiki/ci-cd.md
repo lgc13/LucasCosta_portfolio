@@ -40,3 +40,6 @@ jobs:
 3. Check the `Require status checks to pass before merging` box
 4. In `Status checks found in the last week for this repository`, add the `job` name that you want
    - in this case: `build` 
+   
+## Heroku
+
