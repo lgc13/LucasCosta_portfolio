@@ -79,6 +79,7 @@ public class DogTest {
 - annotate class with: `@WebMvcTest(MyClassName.class)`
 - use `MockMvc`
 - Mock any Beans (dependencies) of tested class
+- use `objectMapper` to Serialize/De-serialize anything
 
 ```java
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -120,6 +121,30 @@ class DogControllerTest {
 ## Intermediate
 
 - Using `@RunWith(SpringRunner.class)` will make your test run with Spring, making it slower (try not using it)
+
+- make `contextLoads` pass by adding the following: 
+
+```groovy
+// build.gradle
+dependencies {
+    // ... others
+	testCompile group: 'com.h2database',name: 'h2', version: '1.4.200'
+}
+```
+
+```java
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+@AutoConfigureTestDatabase // this replaces dataSource bean with embedded version
+class DogSpringServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+}
+```
 
 
 
