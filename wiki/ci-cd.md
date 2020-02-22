@@ -43,3 +43,14 @@ jobs:
    
 ## Heroku
 
+You can have Heroku automatically deploy your app once merged to `master`:
+
+1. Open Heroku website > your-app-name > `Deploy` tab
+2. Connect it to your `GitHub` account
+3. Under `App connected to GitHub`, you want to:
+    - `Enable Automic Deploys`
+    - Check `Wait for CI to pass before deploy`
+    
+Example:
+
+![automatic deploy](../img/heroku-automatic-deploy.png)
