@@ -3,7 +3,7 @@
 ## Bash/ZSH
 
 - Bash basics
-```sh
+```shell script
 mkdir	# create directory
 cd    # change directory, go to that folder
 cd .. # go back one directory
@@ -20,7 +20,7 @@ man some_command # open that manual
 ```
 
 - File manipulation
-```sh
+```shell script
 vim     # text editor
 nano    # text editor
 pico    # another text editor?
@@ -36,7 +36,7 @@ ls -l | grep -v ^l | wc -l      # counts how many files in current directory
 ```
 
 - Permission
-```sh
+```shell script
 chmod 644 filename.sh   # change permission.
 chmod +x filename.sh    # allows all permissions, creates executable .sh file
 chmod 744 filename.sh   # allows .sh file to be executable
@@ -46,7 +46,7 @@ stat -f "%A %a %N" filename.sh # find file permission in octal notation. eg: 644
 ```
 
 - Processes
-```sh
+```shell script
 # MacOS terminal
 lsof -i:portNumber # find process running on portNumber
 lsof -i:portnumber -t # gets PID of process running on that port
@@ -62,10 +62,10 @@ taskkill //PID typeyourPIDhere //F # for BASH on Windows
 ## Git
 
 - Git basics
-```sh
+```shell script
 git add
 git status
-git commit -m “message here” # commits with message
+git commit -m 'message here' # commits with message
 git push
 git remote -v # show origin/master. Can also click the config folder in .git folder
 
@@ -75,7 +75,7 @@ git remote add origin https://github.com/lgc13/your-git-repo-here.git
 ```
 
 - Branches
-```sh
+```shell script
 git branch -a                # list all branches, local and remote
 git branch -d branch name    # deletes branch locally.
   # use `-D` to force delete the branch
@@ -86,7 +86,7 @@ git push origin --delete branch_name # deletes remote branch
 
 - Advanced
 
-```sh
+```shell script
 git fetch —all —prune    # fetches origin, and prunes local comparing to it
 git log                  # find previous commits and their commit_id s
 git revert commit_id     # revert changes made by that commit_id
@@ -101,7 +101,7 @@ git config user.email # checks what user email you are using
 
 - Heroku client
 
-```sh
+```shell script
 # If your app does not have a .git folder yet and you want to connect to a remote app, do the following:
 git init
 git remote -v # this will return nothing
@@ -114,7 +114,7 @@ git remote -v # you will see them connected now
 - You can make permanent changes to your VIM editor by changing ~/.vimrc
 
 - Vim basics:
-```sh
+```shell script
 vim filename.txt    # opens file in vim editor from bash/terminal
 i	  # enters insert mode
 A	  # enters insert mode at the end of the line
@@ -126,7 +126,7 @@ A	  # enters insert mode at the end of the line
 ```
 
 - Moving around file
-```sh
+```shell script
 w   # jumps to beginning of next word
 b	  # move to beginning of previous word
 0	  # move to start of line
@@ -137,7 +137,7 @@ Shift + p # pastes
 ```
 
 - Making life easier
-```sh
+```shell script
 :set number   # show line numbers
 :syntax on    # turn syntax highlighting on
 :set hlsearch # highlights searches
@@ -158,7 +158,7 @@ SELECT * FROM tablename; -- shows everything in that table
 ```
 
 - User and privileges
-```sql
+```postgresql
 CREATE USER username identified by 'passwordhere'; --does as it says
 SELECT User FROM mysql.user; -- lists all users
 SELECT user, host, WHATEVER; -- shows the user, host, or whatever you put here
@@ -168,7 +168,7 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 
 ## PostgreSQL/ PSQL
 
-```sql
+```postgresql
 \l    -- lists all databases
 :\q   -- exits (END)/quits anything you’re in
 \dn   -- shows all schemas
@@ -212,7 +212,7 @@ SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value
 
 ### AWS CLI
 
-```sh
+```shell script
 aws s3 ls s3://bucket-name/ # List S3
 aws s3 cp s3://path_to_file - # displays file in terminal
 aws s3 cp s3://path_to_file ~/some/local/path  # copies file to some/local/path
@@ -254,7 +254,7 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
      ```
   Now you can see different buckets:
 
-  ```sh
+  ```shell script
   aws s3 ls s3://dev-bucket-name/               # List default S3
   aws s3 ls s3://stg-bucket-name/ --profile stg # List stg S3
   aws s3 ls s3://prd-bucket-name/ --profile prd # List prd S3
@@ -265,7 +265,7 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 Links to useful guides:
 https://realpython.com/pipenv-guide/
 
-```sh
+```shell script
 pipenv install # looks for ‘pipfile’ and ‘pipfile.lock’, then installs those dependencies
 pipenv install some_dependency # installs some_dependency
   # Dependencies example: flask, request, flask-SQLAlchemy
@@ -278,7 +278,7 @@ exit          # gets out of environment
 
 ### Docker
 
-```sh
+```shell script
 docker ps # Checks instances running
 docker container ls -a # Find all container instances (running and not running)
 
@@ -292,14 +292,14 @@ docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallySt
 
 ### Microsoft SQLServer
 
-```bash
+```shell script
 yarn global add sql-cli # Install the sql-cli command line shell
 mssql -u sa -p reallyStrongPwd123 # Connect to sql-cli shell
 ```
 
 ### Brew
 
-```sh
+```shell script
 brew doctor # open brew
 update brew # updates brew
 brew cask install java # install Java (or w/e else you might want)
@@ -320,7 +320,7 @@ https://yarnpkg.com/latest.msi
 All info found here (Favorite on Chrome):
 https://sdkman.io/usage
 
-```sh
+```shell script
 # List all installed by tech
 sdk list techName # ex: sdk list java
 
@@ -329,7 +329,7 @@ sdk install techName versionNumber # ex: sdk install java 7.0.222-zulu
 
 ### iTerm2
 
-```sh
+```shell script
 prompt -l       # lists the type of fonts available
 prompt -p type  # try this one
 prompt -s type  # activate this one
@@ -337,7 +337,7 @@ prompt -s type  # activate this one
 
 ### IntelliJ Shortcuts
 
-```sh
+```shell script
 CMD + O # find class
 CMD + SHIFT + O # find file
 CMD + SHIFT + F # find globally
@@ -377,7 +377,7 @@ default:
 
 - DB Migrations (mssql)
   
-```sh
+```shell script
   # To create a migration file:
   dotnet ef migrations add something
   
@@ -404,42 +404,56 @@ default:
 
 - Install an IDE/Text editor (Atom,VSCode)
 
+### Eslint + Prettier
+
+```shell script
+# 1. Add eslint to project
+cd projDir
+yarn add eslint -D # -D (same as --save-dev) saves as a devDepency
+
+# 2. Install eslint dependencies
+yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D
+
+
+# 3. Install prettier and its dependencies
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+# 4. Add `.eslintrc` in your project root directory
+touch .eslintrc  
+```
+
+5. In `.eslintrc`, add the following: [this file](../javascript/eslintrc-to-copy-from)
+
+6. Allow your IDE's to use it:
+
+- IntelliJ
+
+- Just add a keyboard bind:
+
+Preferences > Keymap > Plug-ins > JavaScript and TypeScript > `Fix ESLint Problems` (I suggest CMD + SHIFT + P)
+
+
+- VC Code:
+
+1. Add the Eslint extension from the marketplace (for Visual Studio)
+
+2. Add the following to your VS Code user settings.json:
+(User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
+
+```json
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.tree.indent": 20,
+  "window.zoomLevel": 1,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+}​
+```
+
 ### VS Code settings
 
 I. Install One Dark Pro Theme
-
-II. Set up eslint for VS code:
-
-  1. Create a `.eslintrc` file in your project directory
-
-  2. Add rules found in [this file](../javascript/eslintrc-to-copy-from)
-
-III. Add the dependencies
-
-  1. Go to your package.json and [these](../javascript/package-json-to-copy-from)
-
-IV. Get Eslint extension
-
-  1. Add the Eslint extension from the marketplace (for Visual Studio)
-
-  2. Add the following to your VS Code user settings.json:
-  (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
-
-  ```json
-  {
-      "workbench.colorTheme": "One Dark Pro",
-      "workbench.tree.indent": 20,
-      "window.zoomLevel": 1,
-      "editor.formatOnSave": true,
-      "eslint.autoFixOnSave": true,
-      "eslint.alwaysShowStatus": true,
-  }​
-  ```
-
-
-   How to set it up globally: (I have not gotten it work yet)
-
-    https://medium.com/@davidchristophersally/how-to-set-up-eslint-in-vscode-globally-253f25fbaff9
 
 
 ### Mac Tips
