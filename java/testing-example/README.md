@@ -64,7 +64,7 @@ public class DogTest {
 - mock any classes with `@Mock`
 - use `InjectMocks` on the class to be tested
    - this instantiates the class as well
-- use `when` to make returns of methods
+- use `when` to mock returns of methods
 
 
 ```java
