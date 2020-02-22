@@ -5,6 +5,24 @@ Solid docs:
 https://reflectoring.io/unit-testing-spring-boot/
 https://reflectoring.io/spring-boot-web-controller-test/
 
+## Running tests on terminal
+
+```shell script
+gradle test
+```
+
+- You can add the following to your `build.gradle` so it shows better loggin:
+
+```groovy
+test {
+	useJUnitPlatform()
+	testLogging {
+		events = ["passed", "skipped", "failed"]
+		exceptionFormat = "full"
+	}
+}
+```
+
 ## Basics:
 
 - make a public class:
