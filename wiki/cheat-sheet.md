@@ -451,14 +451,9 @@ touch .eslintrc
 
 1. Install One Dark Pro Theme
 
-2. Link your user settings.json to the one saved in this repo:
+2. Link your user settings.json to the one saved in this repo: [settings.json](../.dotfiles/vscode-settings.json)
 
-[settings.json](../.dotfiles/vscode-settings.json)
-
-You can use this scipr to link it:
-
-[script](../.dotfiles/scripts/create_links.sh)
-
+   - You can use this [script](../.dotfiles/scripts/create_links.sh) to link it:
 
 ### Mac Tips
 
