@@ -431,7 +431,21 @@ touch .eslintrc
    - Just add a keyboard bind:
 
    `Preferences > Keymap > Plug-ins > JavaScript and TypeScript > Fix ESLint Problems` (I suggest CMD + SHIFT + P)
+
+- VC Code:
+
+   1. Add the Eslint extension from the marketplace (for Visual Studio)
    
+   2. Add these settings to your `settings.json`:
+   
+   ```json
+   {
+     "editor.formatOnSave": true,
+     "eslint.autoFixOnSave": true,
+     "eslint.alwaysShowStatus": true
+   }​
+   ```
+
 ### Java Prettier
 
 [Documentation](https://github.com/jhipster/prettier-java)
@@ -479,20 +493,6 @@ overrides:
    2. Add shortcut: `Preferences > Keymap > External Tools > External Tools`
       - Pick your tool (ex: Prettier Java)
       - Add a shortcut (ex: CMD + SHIFT + J)
-
-- VC Code:
-
-   1. Add the Eslint extension from the marketplace (for Visual Studio)
-   
-   2. Add these settings to your `settings.json`:
-   
-   ```json
-   {
-     "editor.formatOnSave": true,
-     "eslint.autoFixOnSave": true,
-     "eslint.alwaysShowStatus": true
-   }​
-   ```
 
 ### VS Code settings
 
