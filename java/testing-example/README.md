@@ -56,6 +56,43 @@ public class DogTest {
 }
 ```
 
+#### `@Nested`
+
+- allow you to nest tests
+- you can use `@DisplayName` if you want as well
+- change IntelliJ settings to allow Gradle to show test names:
+   - Settings > Build, Execution, Deployment > Build Tools > Gradle > Run tests using `IntelliJ IDEA`
+   - https://github.com/gradle/gradle/issues/5975#issuecomment-589895374
+ 
+```java
+import org.junit.jupiter.api.Nested;
+
+class DogsServiceTest {
+    
+    // ...any set up, mocks, etc
+
+    @Nested
+    @DisplayName("getDogById") // this is optional... but it might help showing the name
+    class getDogById {
+         @Test
+         public void whenNoDogInRepository_returnsNull() {
+            when(dogRepository.findById((long) 1)).thenReturn(Optional.empty());
+            Dog result = dogsService.getDogById(1);
+            assertThat(result).isNull();
+         }
+    
+        @Test
+        public void whenDogFoundInRepo_returnsDog() {
+            Dog dog = new Dog("Lucas", "red");
+            when(dogRepository.findById((long) 1)).thenReturn(Optional.of(dog));
+            Dog result = dogsService.getDogById(1);
+            
+            assertThat(result).isEqualTo(dog);
+        }
+    }   
+}
+```
+
 ## Mocks
 
 - Add Mockito annotation to class:
@@ -151,7 +188,7 @@ class DogControllerTest {
 // build.gradle
 dependencies {
     // ... others
-	testCompile group: 'com.h2database',name: 'h2', version: '1.4.200'
+	testCompile group: 'com.h2database', name: 'h2', version: '1.4.200'
 }
 ```
 
@@ -166,43 +203,6 @@ class DogSpringServiceApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-}
-```
-
-#### `@Nested`
-
-- allow you to nest tests
-- you can use `@DisplatName` if you want as well
-- change IntelliJ settings to allow Gradle to show test names:
-   - Settings > Build, Execution, Deployment > Build Tools > Gradle > Run tests using `IntelliJ IDEA`
-   - https://github.com/gradle/gradle/issues/5975#issuecomment-589895374
- 
-```java
-import org.junit.jupiter.api.Nested;
-
-class DogsServiceTest {
-    
-    // ...any set up, mocks, etc
-
-    @Nested
-    @DisplayName("getDogById") // this is optional... but it might help showing the name
-    class getDogById {
-         @Test
-         public void whenNoDogInRepository_returnsNull() {
-            when(dogRepository.findById((long) 1)).thenReturn(Optional.empty());
-            Dog result = dogsService.getDogById(1);
-            assertThat(result).isNull();
-         }
-    
-        @Test
-        public void whenDogFoundInRepo_returnsDog() {
-            Dog dog = new Dog("Lucas", "red");
-            when(dogRepository.findById((long) 1)).thenReturn(Optional.of(dog));
-            Dog result = dogsService.getDogById(1);
-            
-            assertThat(result).isEqualTo(dog);
-        }
-    }   
 }
 ```
 

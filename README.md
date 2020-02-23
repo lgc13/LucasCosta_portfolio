@@ -152,8 +152,7 @@ AngularJS can be used to create single page applications. For this project, I us
 <!-- Code snippet -->
 You can see that in this code snippet:
 
-```js
-
+```javascript
 var myApp = angular.module('myApp', ['ngRoute']);
 
 //this will remove the URL prefix
@@ -162,22 +161,17 @@ myApp.config(['$locationProvider', function($locationProvider) {
 	}]);
 
 
-  myApp.config(function($routeProvider) {
-
-  	$routeProvider
-
-    .when('/', {
-      templateUrl : 'pages/home.html',
-      controller  : 'HomeController'
-    })
-
-    .when('/about', {
-      templateUrl : 'pages/about.html',
-      controller  : 'AboutController'
-    })
-  }
-
-
+myApp.config(function($routeProvider) {
+    $routeProvider
+        .when('/', {
+          templateUrl : 'pages/home.html',
+          controller  : 'HomeController'
+        })
+        .when('/about', {
+          templateUrl : 'pages/about.html',
+          controller  : 'AboutController'
+        })
+});
 ```
 
 <!-- comment -->
