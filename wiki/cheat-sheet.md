@@ -487,8 +487,8 @@ overrides:
       ```shell script
       Name: # w/e you want. ex: Prettier Java
       Program: ./node_modules/.bin/prettier
-      Arguments: --write src/main/$FilePathRelativeToProjectRoot$
-      Working directory: # pathToProj/
+      Arguments: --write ../$FileRelativeDir$/$FileName$
+      Working directory: # pathToProj/ || you can also use $ContentRoot$/../../
       ```
    2. Add shortcut: `Preferences > Keymap > External Tools > External Tools`
       - Pick your tool (ex: Prettier Java)
