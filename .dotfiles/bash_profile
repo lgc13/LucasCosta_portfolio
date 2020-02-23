@@ -27,13 +27,13 @@ alias atomGetPackages="$LC_PORTFOLIO_DIR/.dotfiles/scripts/get-atom-packages.sh"
 alias gcall="$LC_PORTFOLIO_DIR/.dotfiles/scripts/git-checkout-master-all.sh"
 
 # Exports:
+export PATH=$(pyenv root)/shims:$PATH
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/mysql/bin
-export PATH=$PATH:/Users/$USER/Library/Python/3.7/bin
+# export PATH=$PATH:/Users/$USER/Library/Python/3.7/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin/
 export PATH=$PATH:/usr/bin/java
 export PATH="$PATH:`yarn global bin`"
-export DATABASE_URL=postgres://$(whoami)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"
