@@ -428,28 +428,28 @@ touch .eslintrc
 
 - IntelliJ
 
-- Just add a keyboard bind:
+   - Just add a keyboard bind:
 
-Preferences > Keymap > Plug-ins > JavaScript and TypeScript > `Fix ESLint Problems` (I suggest CMD + SHIFT + P)
+   `Preferences > Keymap > Plug-ins > JavaScript and TypeScript > Fix ESLint Problems` (I suggest CMD + SHIFT + P)
 
 
 - VC Code:
 
-1. Add the Eslint extension from the marketplace (for Visual Studio)
-
-2. Add the following to your VS Code user settings.json:
-(User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
-
-```json
-{
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.tree.indent": 20,
-  "window.zoomLevel": 1,
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.alwaysShowStatus": true,
-}​
-```
+   1. Add the Eslint extension from the marketplace (for Visual Studio)
+   
+   2. Add the following to your VS Code user settings.json:
+   (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
+   
+   ```json
+   {
+     "workbench.colorTheme": "One Dark Pro",
+     "workbench.tree.indent": 20,
+     "window.zoomLevel": 1,
+     "editor.formatOnSave": true,
+     "eslint.autoFixOnSave": true,
+     "eslint.alwaysShowStatus": true,
+   }​
+   ```
 
 ### VS Code settings
 
