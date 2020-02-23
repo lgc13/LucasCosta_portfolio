@@ -437,23 +437,27 @@ touch .eslintrc
 
    1. Add the Eslint extension from the marketplace (for Visual Studio)
    
-   2. Add the following to your VS Code user settings.json:
-   (User settings file is saved under `~/Library/Application Support/Code/User/settings.json`)
+   2. Add these settings to your `settings.json`:
    
    ```json
    {
-     "workbench.colorTheme": "One Dark Pro",
-     "workbench.tree.indent": 20,
-     "window.zoomLevel": 1,
      "editor.formatOnSave": true,
      "eslint.autoFixOnSave": true,
-     "eslint.alwaysShowStatus": true,
+     "eslint.alwaysShowStatus": true
    }​
    ```
 
 ### VS Code settings
 
-I. Install One Dark Pro Theme
+1. Install One Dark Pro Theme
+
+2. Link your user settings.json to the one saved in this repo:
+
+[settings.json](../.dotfiles/vscode-settings.json)
+
+You can use this scipr to link it:
+
+[script](../.dotfiles/scripts/create_links.sh)
 
 
 ### Mac Tips
