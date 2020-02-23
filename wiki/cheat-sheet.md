@@ -158,7 +158,7 @@ SELECT * FROM tablename; -- shows everything in that table
 ```
 
 - User and privileges
-```postgresql
+```sql
 CREATE USER username identified by 'passwordhere'; --does as it says
 SELECT User FROM mysql.user; -- lists all users
 SELECT user, host, WHATEVER; -- shows the user, host, or whatever you put here
@@ -168,7 +168,7 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 
 ## PostgreSQL/ PSQL
 
-```postgresql
+```sql
 \l    -- lists all databases
 :\q   -- exits (END)/quits anything you’re in
 \dn   -- shows all schemas
