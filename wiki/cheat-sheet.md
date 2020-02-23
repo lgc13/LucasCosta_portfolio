@@ -314,7 +314,6 @@ https://nodejs.org/en/
 2. Install Yarn package
 https://yarnpkg.com/latest.msi
 
-
 ### SDK Man
 
 All info found here (Favorite on Chrome):
@@ -348,6 +347,7 @@ CTRL + G # selects the next occurance of that word
 OPTION + SHIFT # multiple cursor selection
 ```
 ​
+
 ### C++
 
 ```c++
@@ -431,7 +431,54 @@ touch .eslintrc
    - Just add a keyboard bind:
 
    `Preferences > Keymap > Plug-ins > JavaScript and TypeScript > Fix ESLint Problems` (I suggest CMD + SHIFT + P)
+   
+### Java Prettier
 
+[Documentation](https://github.com/jhipster/prettier-java)
+
+```shell script
+# in proj dir
+yarn add prettier-plugin-java -D
+
+# Or globally
+yarn add prettier prettier-plugin-java -D
+
+# run prettier:
+yarn prettier --write path/to/file.java # prettifies a specific file
+yarn prettier --write "**/*.java" # prettifies all Java files in this dir
+```
+
+- Add any configuration/customization:
+
+```shell script
+# create a .prettierrc.yml file
+touch .prettierrc.yml
+```
+
+```yaml
+# prettierrc.yml file
+overrides:
+  - files:
+      - "*.java"
+    options:
+      printWidth: 140
+      tabWidth: 4
+      useTabs: false
+      trailingComma: "none"
+```
+
+- Add a KB shortut in IntelliJ
+
+   1. Add an external tool: `Preferences > Tools > External Tools` 
+      ```shell script
+      Name: # w/e you want. ex: Prettier Java
+      Program: ./node_modules/.bin/prettier
+      Arguments: --write src/main/$FilePathRelativeToProjectRoot$
+      Working directory: # pathToProj/
+      ```
+   2. Add shortcut: `Preferences > Keymap > External Tools > External Tools`
+      - Pick your tool (ex: Prettier Java)
+      - Add a shortcut (ex: CMD + SHIFT + J)
 
 - VC Code:
 
