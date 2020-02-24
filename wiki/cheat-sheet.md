@@ -493,6 +493,7 @@ overrides:
    2. Add shortcut: `Preferences > Keymap > External Tools > External Tools`
       - Pick your tool (ex: Prettier Java)
       - Add a shortcut (ex: CMD + SHIFT + J)
+    3. Fix CMD + SHIFT + A shortcut: [instructions](https://intellij-support.jetbrains.com/hc/en-us/community/posts/360003367639-2019-1-Find-Action-shortcut-opens-terminal-securityuploadd-?page=1#community_comment_360000446239)
 
 ### VS Code settings
 
