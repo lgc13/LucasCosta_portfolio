@@ -469,17 +469,7 @@ yarn prettier --write "**/*.java" # prettifies all Java files in this dir
 touch .prettierrc.yml
 ```
 
-```yaml
-# prettierrc.yml file
-overrides:
-  - files:
-      - "*.java"
-    options:
-      printWidth: 140
-      tabWidth: 4
-      useTabs: false
-      trailingComma: "none"
-```
+You can make it look like [this one](../.dotfiles/prettierrc.yml)
 
 - Add a KB shortut in IntelliJ
 
