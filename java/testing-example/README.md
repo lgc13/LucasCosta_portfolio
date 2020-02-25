@@ -1,5 +1,7 @@
 # Testing with Spring
 
+Project being test: [dog-spring-service](https://github.com/lgc13/dog-spring-service)
+
 Solid docs:
 
 https://reflectoring.io/unit-testing-spring-boot/
