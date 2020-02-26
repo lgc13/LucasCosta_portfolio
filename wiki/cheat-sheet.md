@@ -429,6 +429,8 @@ touch .eslintrc
 
 - IntelliJ
 
+   - activate ESLint: `Preferences > Editor > Inspections > Javascript > Code Quality Tools > Eslint (check)`
+
    - Just add a keyboard bind:
 
    `Preferences > Keymap > Plug-ins > JavaScript and TypeScript > Fix ESLint Problems` (I suggest CMD + SHIFT + P)
