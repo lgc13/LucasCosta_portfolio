@@ -430,6 +430,8 @@ touch .eslintrc
 - IntelliJ
 
    - activate ESLint: `Preferences > Editor > Inspections > Javascript > Code Quality Tools > Eslint (check)`
+   
+   - add IntelliJ `jest` library (for JS only) `Preferences > Languanges & Frameworks > Javascript > Libraries > Download > then serach for jest`
 
    - Just add a keyboard bind:
 
