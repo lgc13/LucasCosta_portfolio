@@ -413,7 +413,7 @@ cd projDir
 yarn add eslint -D # -D (same as --save-dev) saves as a devDepency
 
 # 2. Install eslint dependencies
-yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react -D
+yarn add eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react babel-eslint -D
 
 
 # 3. Install prettier and its dependencies
