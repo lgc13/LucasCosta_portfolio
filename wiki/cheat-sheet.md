@@ -457,7 +457,7 @@ touch .eslintrc
 
 ```shell script
 # in proj dir
-yarn add prettier-plugin-java -D
+yarn add prettier prettier-plugin-java -D
 
 # Or globally
 yarn add prettier prettier-plugin-java -D
