@@ -11,6 +11,7 @@ for repo in "${CURRENT_DIR}/"*; do
         if [[ $BRANCH != "master" ]] then
             echo "repo: $repo"
             git checkout master
+            git pull
         fi
     fi
 done
