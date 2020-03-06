@@ -56,3 +56,8 @@ describe('App', () => {
   });
 });
 ```
+
+### IntelliJ
+
+- Follow [these instructions](https://github.com/lgc13/LucasCosta_portfolio/blob/master/wiki/cheat-sheet.md#eslint--prettier) > IntelliJ section
+   - these will enable testing through IntelliJ 

@@ -431,9 +431,12 @@ touch .eslintrc
 
    - activate ESLint: `Preferences > Editor > Inspections > Javascript > Code Quality Tools > Eslint (check)`
    
-   - add IntelliJ `jest` library (for JS only) `Preferences > Languanges & Frameworks > Javascript > Libraries > Download > then serach for jest`
+   - ~~add IntelliJ `jest` library (for JS only) `Preferences > Languanges & Frameworks > Javascript > Libraries > Download > then serach for jest`~~
+   
+   - add a `@types/jest` to your project with `yarn add @types/jest`
+      - this will allow IntelliJ to give your `describe/it`s a nice color :)
 
-   - Just add a keyboard bind:
+   - add a keyboard bind:
 
    `Preferences > Keymap > Plug-ins > JavaScript and TypeScript > Fix ESLint Problems` (I suggest CMD + SHIFT + P)
 
