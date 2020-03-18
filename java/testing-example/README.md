@@ -184,7 +184,7 @@ class DogControllerTest {
 
 #### `contextLoads` test
 
-- you might need an embedded DB for this test to pass. If you, add the following: 
+- you might need an embedded DB for this test to pass. Add the following: 
 
 ```groovy
 // build.gradle
