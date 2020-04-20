@@ -17,5 +17,6 @@
     "git.enableSmartCommit": true,
     "editor.minimap.enabled": false,
     "oneDarkPro.bold": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "update.showReleaseNotes": false
 }
