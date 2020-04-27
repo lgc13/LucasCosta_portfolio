@@ -1,0 +1,43 @@
+input StudentInput {
+    name: String!
+    age: Int!
+    phone: String
+    address: AddressInput!
+}
+input AddressInput {
+     street: String!,
+     city:   String!,
+     zipcode: Int!
+}
+input HeroInput {
+     name: String!,
+     superPower: String!
+}
+
+type Address {
+    street: String!,
+    city:   String!,
+    zipcode: Int!
+}
+
+type Student {
+    name: String!
+    age: Int!
+    phone: String
+    address: Address!
+}
+
+type Hero {
+    name: String!,
+    superPower: String!
+}
+
+type Query {
+        student(name:String) : Student;
+        hero(name:String) : Hero;
+}
+
+type Mutation {
+        createStudent(input: StudentInput) : Student;
+        createHero(input: HeroInput) : Hero;
+}
