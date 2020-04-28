@@ -183,7 +183,7 @@ CREATE DATABASE db_name; -- creates a db_name
 DROP DATABASE dbName; -- deletes dbName
 CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
 CREATE ROLE role-name;
-ALTER ROLE "role-name" WITH LOGIN;
+ALTER ROLE role-name WITH LOGIN;
 ALTER ROLE roleName WITH PASSWORD 'newPassWordHere'; -- changes password for that user (roleName)
 SERIAL PRIMARY KEY -- SERIAL makes it auto increment
 SELECT * FROM table_name; -- displays everything from a table
