@@ -97,6 +97,8 @@ git reset HEAD^          # gets rid of previous commit
 
 git config --local user.email "my.email.here@gmail.com" # changes this specific repos email to push from (do it from proj root folder)
 git config user.email # checks what user email you are using 
+
+git commit -m "empty commit" --allow-empty
 ```
 
 - Heroku client
