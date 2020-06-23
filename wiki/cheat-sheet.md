@@ -172,35 +172,43 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 
 ```sql
 \l    -- lists all databases
-:\q   -- exits (END)/quits anything you’re in
+\q   -- exits (END)/quits anything you’re in
 \dn   -- shows all schemas
-\dt   -- show all tables
 \du   -- show users
+\dt   -- show all tables
 \c database_name -- connects to a database_name
 \conninfo -- shows connection info like db name, username name, and port
+\i fullScriptPath.sql -- runs a scripts from your computer. Useful to add databases, creates users, etc
 
-SET search_path TO someSchema; -- choose someSchema as search_path so now you can query any tables within it
-
+-- DATABASES
 CREATE DATABASE db_name; -- creates a db_name
-DROP DATABASE dbName; -- deletes dbName
-CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
-CREATE ROLE role-name;
-ALTER ROLE role-name WITH LOGIN;
+DROP DATABASE db_name; -- deletes dbName
+
+-- USERS/ROLES
+CREATE ROLE roleName;
+DROP user roleName; -- deletes that user/role
+
+CREATE ROLE roleName
+WITH LOGIN PASSWORD 'password'; -- creates a user `roleName` with login permission, and a password `password`
+ALTER ROLE roleName WITH LOGIN;
 ALTER ROLE roleName WITH PASSWORD 'newPassWordHere'; -- changes password for that user (roleName)
-SERIAL PRIMARY KEY -- SERIAL makes it auto increment
+
+-- TABLES
+CREATE TABLE table_name(col_1 type, col2 type(number)); -- creates a table
+DROP TABLE table_name;
+
 SELECT * FROM table_name; -- displays everything from a table
 INSERT INTO table_name VALUES (info, info); -- insert a single row with all values from cols
-UPDATE table_name SET col_name = new_value WHERE col_name = current_value;
--- update row value
-ALTER TABLE table_name ADD COLUMN new_col new_col_type
--- add col to table
+UPDATE table_name SET col_name = new_value WHERE col_name = current_value; -- update row value
+ALTER TABLE table_name ADD COLUMN new_col new_col_type; -- add col to table
+
 UPDATE table_name SET col_name = ‘new_value’
-WHERE other_col IN (‘row1_value’, ‘row2_value’);
--- update multiple rows (from a single row query)
+WHERE other_col IN (‘row1_value’, ‘row2_value’); -- update multiple rows (from a single row query)
 DELETE FROM table1 WHERE name = 'chris'
-AND age = 24 AND sex = 'F' AND happy = 'M';
--- delete row depending on many col_values
-SOURCE ~/location_of/file_name.sql -- import file into database
+AND age = 24 AND sex = 'F' AND happy = 'M'; -- delete row depending on many col_values
+
+-- Other
+SET search_path TO someSchema; -- choose someSchema as search_path so now you can query any tables within it
 
 -- Sequences
 SELECT * FROM information_schema.sequences; -- shows all sequences in a database
@@ -211,6 +219,10 @@ OWNED BY schemaName.tableName.colName; -- does as it says
 SELECT currval('schemaName.sequenceName_id_seq'); -- displays sequence current value
 SELECT nextval('schemaName.sequenceName_id_seq'); -- displays sequence next value
 SELECT setval('schemaName.sequenceName_id_seq', 3, true); -- sets sequence value to 3, next value will be 4
+```
+
+```shell script
+source ~/location_of/file_name.sql # import file into database
 ```
 
 ### AWS CLI
