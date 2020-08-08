@@ -134,6 +134,13 @@ if [ -e "$file1" ]; then
   echo "$file1 exists"
 fi
 
+
+upperCaseWord="I am LowerCase"
+lowerCaseWord=$(echo "$upperCaseWord" | tr '[:upper:]' '[:lower:]')
+
+echo "lowerCaseWord: $lowerCaseWord"
+
+
 echo "###################"
 
 ####### Regular expressions
@@ -146,3 +153,7 @@ if [[ $date =~ $pattern ]]; then
 else
   echo "$date is not valid"
 fi
+
+
+# Reading file data
+cat test-data.yml | grep -A10 "\<data\>" | head | grep URL
