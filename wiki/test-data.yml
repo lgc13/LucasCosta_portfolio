@@ -3,10 +3,13 @@ data:
   SOME_URL: https://cool-website-not-real.com
   SOME_URL2: https://cool-website-not-real2.com
   SOME_URL4: https://cool-website-not-real2.com
+secrets:
+  MY_SECRET: Njc0ZmM1OTAtMjU4MC00YTgyLTkwNjktNzViZmQ3MjhmZTQ3
+  ANOTHER_SECRET: OGJFMjJDMjUwOGMwNDViRTgyRDYxZmNmNEU4ODlDQkI-
+  COOL_PASSWORD: ZNNZYTV5SGR0NE05ZFdDVw==
+  SOME_API_KEY: OUIyMzlBOUYtNzNBQS00MEM2LTlBRjQtM0UyM0UwODE3MzQ3
 kind: ConfigMap
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1"}
   creationTimestamp: null
-  name: some-config
+  name: my-name-is
+  selfLink: /api/v1/namespaces/some-link
