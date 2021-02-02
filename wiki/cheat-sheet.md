@@ -402,20 +402,23 @@ default:
 
 ### Setting up new Mac terminal environment
 
-- Install iterm2
+- Install iTerm2
+  
+   this should already have the `zsh` shell installed
 
-- Install [zsh](https://www.smashingmagazine.com/2015/07/become-command-line-power-user-oh-my-zsh-z/)
+- Run [create_links.sh](../.dotfiles/scripts/create_links.sh)
+    
+    - this should add: `oh-my-zsh`, `cobalt2`, `exa`
+    - in case it doesn't, follow the following: 
 
-   - Set up font color on iTerm properly: [click me](robbyrussell/oh-my-zsh#1906 (comment))
-
-- Get [Cobalt2](https://medium.com/@jcmadrigalg/how-to-install-the-cobalt2-theme-for-iterm2-89e2cb396afa)
-
-   - Clone this [repo](https://github.com/wesbos/Cobalt2-iterm)
-
-- Install hexa
-
-   - Add the following to `~/.bash_profile` once exa has been installed:
-   `alias ls='exa --long --header --git -TL 1'`
+        - Install [oh-my-zsh](https://ohmyz.sh/)
+        
+        - Get [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
+        
+        - Install [exa](https://the.exa.website/)
+        
+           - Add the following to `~/.bash_profile` once exa has been installed:
+           `alias ls='exa --long --header --git -TL 1'`
 
 - Install an IDE/Text editor (Atom,VSCode)
 
