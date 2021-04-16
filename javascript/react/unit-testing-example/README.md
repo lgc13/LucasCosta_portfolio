@@ -1,6 +1,40 @@
-# React Unit Testing Example
+# React Testing
 
 - The following notes are expecting you to have used `yarn create react-app`
+
+## Basics
+
+### Set up
+
+#### IntelliJ
+
+- For better IntelliJ test colors and Eslint checks: [Go here > IntelliJ section](https://github.com/lgc13/LucasCosta_portfolio/blob/master/wiki/cheat-sheet.md#eslint--prettier)
+
+#### Dependencies
+
+- create-react-app already comes with `jest` installed. You only need to add a component testing library. The two main options are:
+    - [Enzyme](https://enzymejs.github.io/enzyme/)
+    - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/)
+
+1. To use `enzyme`, you must add 2 dependencies:
+
+```sh
+yarn add enzyme
+yarn add enzyme-adapter-react-16 # same as your react version, found in the package.json
+```
+
+5. Create a `setupTests.js` file under your-app-name/src/ with the following:
+
+```js
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16'; // same version as you added
+
+configure({ adapter: new Adapter() });
+```
+
+### Jest - Function testing
+
+### Enzyme - Component testing
 
 1. The `index.js` file should only render your App component.
 
@@ -27,21 +61,6 @@ describe('App', () => {
 });
 ```
 
-4. To use `enzyme`, you must add 2 dependencies:
-
-```sh
-yarn add enzyme
-yarn add enzyme-adapter-react-16 # same as your react version, found in the package.json
-```
-
-5. Create a `setupTests.js` file under your-app-name/src/ with the following:
-
-```js
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16'; // same version as you added
-
-configure({ adapter: new Adapter() });
-```
 6. Here's a simple test:
 
 ```js
@@ -57,7 +76,4 @@ describe('App', () => {
 });
 ```
 
-### IntelliJ
 
-- Follow [these instructions](https://github.com/lgc13/LucasCosta_portfolio/blob/master/wiki/cheat-sheet.md#eslint--prettier) > IntelliJ section
-   - these will enable testing through IntelliJ 
