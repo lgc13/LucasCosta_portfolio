@@ -15,6 +15,7 @@
 - create-react-app already comes with `jest` installed. You only need to add a component testing library. The two main options are:
     - [Enzyme](https://enzymejs.github.io/enzyme/)
     - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/)
+- This tutorial will be using Enzyme
 
 1. To use `enzyme`, you must add 2 dependencies:
 
