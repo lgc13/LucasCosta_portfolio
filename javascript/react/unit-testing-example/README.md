@@ -91,7 +91,7 @@ describe(getUsers.name, () => {
     mockHttpGet.mockResolvedValue({ data: '' }); // Step 3: mock returned or resolved value of function
     getUsers();
 
-    expect(http.get).toHaveBeenCalledWith('/api/users');
+    expect(mockHttpGet).toHaveBeenCalledWith('/api/users');
   });
 
 
@@ -369,7 +369,7 @@ const WelcomeScreen = () => {
   );
 };
 
-// WelcomeScreen.test.ts
+// WelcomeScreen.test.tsx
 import React from 'react';
 import { shallow } from 'enzyme';
 import { useQuery } from 'react-query';
@@ -416,6 +416,65 @@ describe(WelcomeScreen.name, () => {
       const wrapper = shallow(<WelcomeScreen />)
 
       expect(wrapper.find(Loading.name)).toHaveLength(0)
+    });
+  });
+});
+```
+
+5. Async results
+
+- if you make async calls, you can await your simulations so your state can rerender
+
+```typescript jsx
+// WelcomeScreen.ts
+import http from 'axios';
+
+const WelcomeScreen = () => {
+  const [message, setMessage] = useState("I should show on first render")
+  
+  const handleUpdate = () => {
+    axios.put('/api/messages').then(r => setMessage(r.data))
+  }
+
+  return (
+      <div>
+        <div data-testid={'message'}>{message}</div>
+        <button onClick={handleUpdate}>Click me</button>
+      </div>
+  );
+};
+
+// WelcomeScreen.test.tsx
+import http from 'axios';
+import { mocked } from 'ts-jest/utils';
+
+jest.mock('axios'); // Step 1: mock all functions from given package
+
+const mockHttpPut = mocked(axios.put)
+
+describe(WelcomeScreen.name, () => {
+  it('shows the correct initial message', () => {
+    const wrapper = shallow(<WelcomeScreen />)
+    
+    expect(wrapper.find({ 'data-testid': 'message' }).text()).toEqual("I should show on first render")
+  });
+
+  describe('when button is clicked', () => {
+    it('makes http request', () => {
+      const wrapper = shallow(<WelcomeScreen />)
+      
+      wrapper.find('button').simulate('click')
+      
+      expect(mockHttpPut).toHaveBeenCalledWith('/api/messages')
+    });
+
+    it('renders the new message', async () => { // Step 1: async function
+      mockHttpPut.mockResolvedValue({ data: 'a new message' })
+      const wrapper = shallow(<WelcomeScreen />)
+
+      await wrapper.find('button').simulate('click') // Step 2: await simulation (http mock call)
+
+      expect(wrapper.find({ 'data-testid': 'message' }).text()).toEqual('a new message' )
     });
   });
 });
