@@ -181,7 +181,7 @@ describe(WelcomeScreen.name, () => {
 });
 ```
 
-2- "Props/State" tests
+2. "Props/State" tests
 
 - Important: although Enzyme allows you to test things such as state and props, you should not focus implementation details. 
 - Instead, test what the end goal should be (what the user sees or interacts with)
@@ -265,10 +265,9 @@ describe(WelcomeScreen.name, () => {
 });
 ```
 
-3- Events test
+3. Events test
 
 - A user can click/submit/hover/... components on your UI. Enzyme allows you to simulate those events, so you can test the final result
-
 
 ```typescript jsx
 // WelcomeScreen.ts
@@ -287,7 +286,7 @@ const WelcomeScreen = () => {
 import React from 'react';
 import { shallow } from 'enzyme';
 
-describe('WelcomeScreen', () => {
+describe(WelcomeScreen.name, () => {
   // ... previous tests...
 
   describe('when button is clicked', () => {
@@ -319,3 +318,76 @@ describe('WelcomeScreen', () => {
 });
 ```
 
+4. External data
+
+- Most data that is not in the file being tested should be mocked. That individual data/functionality being provided should be unit tested on its own.
+
+```typescript jsx
+// WelcomeScreen.ts
+import { useQuery } from 'react-query';
+import { someApi } from './WelcomeApi';
+import Loading from '../Loading';
+
+const WelcomeScreen = () => {
+  const { data: message, isLoading } = useQuery('getSomeData', someApi);
+
+  return isLoading ? (
+      <Loading />
+  ) : (
+      <div>
+        <div data-testid={'message'}>{message}</div>
+      </div>
+  );
+};
+
+// WelcomeScreen.test.ts
+import React from 'react';
+import { shallow } from 'enzyme';
+import { useQuery } from 'react-query';
+import { mocked } from 'ts-jest/utils';
+
+jest.mock('react-query'); // Step 1: mock all functions from given package
+
+const mockUseQuery = mocked(useQuery); // Step 2: create typescript mockable value
+
+describe(WelcomeScreen.name, () => {
+  // ... previous tests...
+
+  describe('when data is still loading', () => {
+    it('displays the loading icon', () => {
+      mockUseQuery.mockReturnValue({ isLoading: true }) // Step 3: mock the returned value
+      
+      const wrapper = shallow(<WelcomeScreen />)
+      
+      expect(wrapper.find(Loading.name)).toHaveLength(1)
+    });
+
+    // alternative test
+    it('does NOT display the message', () => {
+      mockUseQuery.mockReturnValue({ isLoading: true }) // Step 3: mock the returned value
+
+      const wrapper = shallow(<WelcomeScreen />)
+
+      expect(wrapper.find({ 'data-testid': 'message' })).toHaveLength(0)
+    });
+  });
+
+  describe('when data has been fetched', () => {
+    it('displays the message', () => {
+      mockUseQuery.mockReturnValue({ isLoading: false, data: 'I am a message!' }) // Step 3: mock the returned value
+
+      const wrapper = shallow(<WelcomeScreen />)
+
+      expect(wrapper.find({ 'data-testid': 'message' }).text()).toEqual('I am a message!')
+    });
+
+    it('does not display the loading icon', () => {
+      mockUseQuery.mockReturnValue({ isLoading: false, data: 'I am a message!'  }) // Step 3: mock the returned value
+
+      const wrapper = shallow(<WelcomeScreen />)
+
+      expect(wrapper.find(Loading.name)).toHaveLength(0)
+    });
+  });
+});
+```
