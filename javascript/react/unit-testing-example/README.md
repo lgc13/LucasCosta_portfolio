@@ -79,7 +79,6 @@ describe(areAllUsersAdminAndOlderThan30.name, () => {
 const getUsers = (): User[] => axios.get('/api/users').then(r => r.data)
 
 // userApi.test.ts
-import { areAllUsersAdminAndOlderThan30 } from './userApi'
 import http from 'axios';
 import { mocked } from 'ts-jest/utils';
 
@@ -110,7 +109,7 @@ describe(getUsers.name, () => {
 
 3. Async functions
 
-- You should either use `async/await` or put your expects within `.then()`s
+- You need use `async/await`
 
 ```typescript
 // userAPI.ts
@@ -193,9 +192,9 @@ const WelcomeScreen = () => {
   const [message, setMessage] = React.useState('Some message here...');
 
   return (
-          <div>
-            <div data-testid={'message'}>{message}</div>
-          </div>
+    <div>
+      <div data-testid={'message'}>{message}</div>
+    </div>
   );
 };
 
@@ -211,6 +210,13 @@ describe('WelcomeScreen', () => {
     shallow(<WelcomeScreen />);
 
     expect(useStateSpy).toHaveBeenCalledWith('Some message here...');
+  });
+
+  // BAD EXAMPLE WHEN USING CLASS COMPONENTS
+  it('sets the initial message in state', () => {
+    const wrapper = shallow(<WelcomeScreen />);
+    
+    expect(wrapper.state).toEqual({ message: 'Some message here...'})
   });
 
   // GOOD EXAMPLE
