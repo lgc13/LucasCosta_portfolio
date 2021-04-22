@@ -316,6 +316,35 @@ describe(WelcomeScreen.name, () => {
     });
   });
 });
+
+// Parent prop functions:
+
+// WelcomeScreenWithProps.tsx
+const WelcomeScreenWithProps = ({ message, handleClick }: { message: string, handleClick: () => void }) => {
+  return (
+      <div>
+        <div data-testid={'message'}>{message}</div>
+        <button onClick={handleClick}>Click me!</button>
+      </div>
+  );
+};
+
+// WelcomeScreenWithProps.test.tsx
+import React from 'react';
+import { shallow } from 'enzyme';
+
+describe(WelcomeScreenWithProps.name, () => {
+  describe('when button is clicked', () => {
+    it("calls the parent's handleClick", () => {
+      const handleClick = jest.fn() // mock the prop
+      const wrapper = shallow(<WelcomeScreenWithProps message={"some message"} handleClick={handleClick} />)
+
+      wrapper.find('button').simulate('click') 
+      
+      expect(handleClick).toHaveBeenCalledWith()
+    });
+  });
+})
 ```
 
 4. External data
