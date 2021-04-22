@@ -181,12 +181,47 @@ describe(WelcomeScreen.name, () => {
 });
 ```
 
+2- "Props/State" tests
+
 - Important: although Enzyme allows you to test things such as state and props, you should not focus implementation details. 
 - Instead, test what the end goal should be (what the user sees or interacts with)
 
 For example
 
 ```typescript jsx
+// WelcomeScreenWithProps.ts
+const WelcomeScreenWithProps = ({ message }: { message: string }) => {
+  return (
+    <div>
+      <div data-testid={'message'}>{message}</div>
+    </div>
+  );
+};
+
+// WelcomeScreenWithProps.test.ts
+import React from 'react';
+import { shallow } from 'enzyme';
+
+describe(WelcomeScreenWithProps.name, () => {
+  // BAD EXAMPLE WHEN USING CLASS COMPONENTS
+  it('has the correct initial props', () => {
+    const message = "I am a super cool message!"
+    const wrapper = shallow(<WelcomeScreenWithProps message={message} />);
+
+    expect(wrapper.props).toEqual({ message });
+  });
+  
+  // GOOD EXAMPLE
+  it('displays the proper initial message', () => {
+    const message = "I am a super cool message!"
+    const wrapper = shallow(<WelcomeScreenWithProps message={message} />);
+
+    expect(wrapper.find({ 'data-testid': 'message' }).text()).toEqual(message);
+  });
+});
+
+
+
 // WelcomeScreen.ts
 const WelcomeScreen = () => {
   const [message, setMessage] = React.useState('Some message here...');
@@ -202,7 +237,7 @@ const WelcomeScreen = () => {
 import React from 'react';
 import { shallow } from 'enzyme';
 
-describe('WelcomeScreen', () => {
+describe(WelcomeScreen.name, () => {
   // BAD EXAMPLE
   it('sets the initial message in state', () => {
     const useStateSpy = jest.spyOn(React, 'useState');
@@ -230,4 +265,57 @@ describe('WelcomeScreen', () => {
 });
 ```
 
+3- Events test
+
+- A user can click/submit/hover/... components on your UI. Enzyme allows you to simulate those events, so you can test the final result
+
+
+```typescript jsx
+// WelcomeScreen.ts
+const WelcomeScreen = () => {
+  const [message, setMessage] = useState('Some message here...');
+
+  return (
+    <div>
+      <div data-testid={'message'}>{message}</div>
+      <button onClick={() => setMessage("a different message!")}>Click Me!!!</button>
+    </div>
+  );
+};
+
+// WelcomeScreen.test.ts
+import React from 'react';
+import { shallow } from 'enzyme';
+
+describe('WelcomeScreen', () => {
+  // ... previous tests...
+
+  describe('when button is clicked', () => {
+    // Good example
+    it('shows the new message', () => {
+      const wrapper = shallow(<WelcomeScreen />)
+      
+      const button = wrapper.find('button') // Step 1: find the component
+              
+      button.simulate('click') // Step 2: simulate an event. * Note: events are props that start with `oN...`. 
+      // Examples: 
+      // onClick -> .simulate('click')
+      // onSubmit -> .simulate('submit')
+      // onCancel -> .simulate('cancel')
+      // onCustomThingThatIJustMadeUp -> .simulate('customThingThatIJustMadeUp')
+      
+      expect(wrapper.find({ 'data-testid': 'message'})).toEqual("a different message!") // Step 3: expect
+    });
+
+    // Bad example when using class components
+    it('calls setMessage in state', () => {
+      const wrapper = shallow(<WelcomeScreen />)
+
+      wrapper.find('button').prop('onClick')()
+      
+      expect(wrapper.state.setMessage).toHaveBeenCalled()
+    });
+  });
+});
+```
 
