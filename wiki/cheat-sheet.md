@@ -447,8 +447,54 @@ yarn run eslint --init
 
 Note: You might wanna remove the package-lock.json file that was created
 
-# 3: (optional) Change eslintrc.json to a .eslintrc
+# 2.5 Add additional dependencies for Typescript:
+yarn add eslint-config-airbnb-typescript --dev 
 
+- for reference, these are all the dependencies I ended up having at this point:
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+
+# 3. Fix .eslintrc
+
+- Change eslintrc.json to a .eslintrc
+- Add/change the following fields in it:
+```
+
+```json
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["plugin:react/recommended", "airbnb", "airbnb-typescript"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"project": ["tsconfig.json"]
+	},
+	"plugins": ["react", "@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/indent": ["error", "tab"],
+		"react/jsx-indent": ["error", "tab"],
+		"no-tabs": 0
+	}
+}
+```
+
+```shell script
 # 4. Add VS code plugins
 Eslint
 Prettier - Code Formatter
@@ -461,11 +507,10 @@ Prettier - Code Formatter
 ```
 
 ```json
-// Youtube tutorial: https://www.youtube.com/watch?v=eMgLHOrDkAs 
+// Partial Youtube tutorial I followed: https://www.youtube.com/watch?v=eMgLHOrDkAs 
 // github code: https://gist.github.com/ShaifArfan/1c41978b5b98d8cd95ab3a3f3ffac4fe
 
 {
-	// START: Settings for Eslint and Prettier
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"[javascript]": {
@@ -484,18 +529,22 @@ Prettier - Code Formatter
 		"typescript",
 		"typescriptreact"
 	],
-	// START: Settings for Prettier
 	"prettier.useTabs": true,
 	"prettier.jsxSingleQuote": false,
 	"prettier.tabWidth": 2,
 	"prettier.arrowParens": "avoid",
-	"prettier.singleQuote": true
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all"
 }
+
 
 ```
 
 ```shell script
-# 6. It should be autosaving now
+# 6. DONE!
+
+- errors should be highlighted red with squiglies now
+- saving (CMD + S) should auto format now
 
 ```
 
