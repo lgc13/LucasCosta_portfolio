@@ -489,7 +489,8 @@ yarn add eslint-config-airbnb-typescript --dev
 	"rules": {
 		"@typescript-eslint/indent": ["error", "tab"],
 		"react/jsx-indent": ["error", "tab"],
-		"no-tabs": 0
+		"no-tabs": 0,
+		"object-curly-newline": "off"
 	}
 }
 ```
