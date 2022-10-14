@@ -425,6 +425,82 @@ default:
 ### Eslint + Prettier
 
 ```shell script
+- Updated for 2022
+
+- Adding Eslint to VSCODE:
+
+# 1. Add eslint to project
+yarn add eslint -D
+
+# 2. Set up initial eslint rules
+yarn run eslint --init
+
+- How would you like to use ESLint?: To check syntax, find problems, and enforce code style
+- What type of modules does your project use?: JavaScript modules (import/export)
+- Which framework does your project use?: React
+- Does your project use TypeScript?: Yes
+- Where does your code run? : Browswer
+- How would you like to define a style for your project?: Use a popular style guide
+- Which style guide do you want to follow?: Airbnb: https://github.com/airbnb/javascript
+- What format do you want your config file to be in?: JSON
+- Would you like to install them now with npm?: Yes
+
+Note: You might wanna remove the package-lock.json file that was created
+
+# 3: (optional) Change eslintrc.json to a .eslintrc
+
+# 4. Add VS code plugins
+Eslint
+Prettier - Code Formatter
+
+# 5. Add workspace settings in VSCODE
+- VScode > Code > Preferences > Settings
+- Select `Workspace`
+- Click the top right icon to see the `settings.json`
+- Paste the following
+```
+
+```json
+// Youtube tutorial: https://www.youtube.com/watch?v=eMgLHOrDkAs 
+// github code: https://gist.github.com/ShaifArfan/1c41978b5b98d8cd95ab3a3f3ffac4fe
+
+{
+	// START: Settings for Eslint and Prettier
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.formatOnSave": false
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": false
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"eslint.alwaysShowStatus": true,
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	// START: Settings for Prettier
+	"prettier.useTabs": true,
+	"prettier.jsxSingleQuote": false,
+	"prettier.tabWidth": 2,
+	"prettier.arrowParens": "avoid",
+	"prettier.singleQuote": true
+}
+
+```
+
+```shell script
+# 6. It should be autosaving now
+
+```
+
+
+```shell script
 # 1. Add eslint to project
 cd projDir
 yarn add eslint -D # -D (same as --save-dev) saves as a devDepency
