@@ -180,6 +180,11 @@ GRANT ALL PRIVILEGES ON * . * TO newuser@localhost; -- give all permissions to u
 \conninfo -- shows connection info like db name, username name, and port
 \i fullScriptPath.sql -- runs a scripts from your computer. Useful to add databases, creates users, etc
 
+\! pg_dump existing_db_name > new_dumb_file.sql -- will create a dump backup file of your existing db. This file will be created in the desktop
+-- alternatively, you can create a copy of the existing database into another one:
+CREATE DATABASE backup_database WITH TEMPLATE existing_db_name;
+
+    
 -- DATABASES
 CREATE DATABASE db_name; -- creates a db_name
 DROP DATABASE db_name; -- deletes dbName

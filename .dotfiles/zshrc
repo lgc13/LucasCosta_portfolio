@@ -103,3 +103,11 @@ source $ZSH/oh-my-zsh.sh
 
 #Lucas stuff
 source ~/.bash_profile
+
+alias devlogin='aws sso login --profile AWSAdministratorAccess-930182554240'
+alias devecr='aws ecr get-login-password --region us-east-1 --profile AWSAdministratorAccess-930182554240 | docker login --username AWS --password-stdin 930182554240.dkr.ecr.us-east-1.amazonaws.com'
+alias devdb="aws ssm start-session --target $(aws ssm get-parameters --name bastion-host --profile AWSAdministratorAccess-930182554240 --query 'Parameters[*].Value' --output text) --document-name AWS-StartPortForwardingSessionToRemoteHost --parameters host=$(aws ssm get-parameters --name cyberstrong-db-host --profile AWSAdministratorAccess-930182554240 --query 'Parameters[*].Value' --output text),portNumber='5432',localPortNumber='9999' --profile AWSAdministratorAccess-930182554240"
+
+# TEST DB
+alias testlogin='aws sso login --profile AWSAdministratorAccess-597313045933'
+alias testdb='aws ssm start-session --target i-0e4707129dc2ad3d7 --document-name AWS-StartPortForwardingSessionToRemoteHost --parameters host="cyberstrong.cluster-cnboomge8b3w.us-east-1.rds.amazonaws.com",portNumber="5432",localPortNumber="9999" --profile AWSAdministratorAccess-597313045933'
