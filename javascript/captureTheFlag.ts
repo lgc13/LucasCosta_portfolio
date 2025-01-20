@@ -33,3 +33,8 @@ document.querySelectorAll("code[data-class^='23']").forEach(codeDataClasses23 =>
 
 console.log({mysteryUrl})
 
+/*
+    code sandbox for part 2:
+    https://codesandbox.io/p/sandbox/bold-rain-fk639r?file=%2Fsrc%2FApp.tsx%3A6%2C125
+ */
+
