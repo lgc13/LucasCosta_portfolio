@@ -44,7 +44,7 @@ const CodeExampleForInterview = () => {
                     />
                     <SelectControlMappingsStep
                         selectedFramework={selectedFramework}
-                        acceptedMappings={acceptedMappings}
+                        acceptedMappings={acceptedMappings}la
                         setAcceptedMappings={setAcceptedMappings}
                     />
                     <CreateCrosswalkAssessment
