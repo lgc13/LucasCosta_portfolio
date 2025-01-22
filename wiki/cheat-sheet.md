@@ -280,7 +280,13 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
   aws s3 ls s3://prd-bucket-name/ --profile prd # List prd S3
   ```
 
-### Pipenv
+### Python
+
+#### [UV - package manager](https://github.com/astral-sh/uv)
+
+-
+
+#### Pipenv
 
 Links to useful guides:
 https://realpython.com/pipenv-guide/
@@ -424,7 +430,12 @@ default:
         
            - Add the following to `~/.bash_profile` once exa has been installed:
            `alias ls='exa --long --header --git -TL 1'`
-
+        - Install zsh plugins:
+          - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+            - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+          - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+            - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+          - `source ~/.zshrc`
 - Install an IDE/Text editor (Atom,VSCode)
 
 ### Eslint + Prettier
