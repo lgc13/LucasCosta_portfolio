@@ -284,7 +284,14 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 
 #### [UV - package manager](https://github.com/astral-sh/uv)
 
--
+```shell
+# after UV has been installed
+uv python install
+
+# steps for venv: https://docs.astral.sh/uv/pip/environments/
+uv venv my-env-name-here
+source my-env-name-here/bin/activate # 'activating' env making its pakages available
+```
 
 #### Pipenv
 
