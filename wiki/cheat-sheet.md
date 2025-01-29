@@ -282,15 +282,10 @@ aws s3 rm s3://path-to-directory/ —-recursive # deletes entire folder
 
 ### Python
 
-#### [UV - package manager](https://github.com/astral-sh/uv)
+#### [UV](https://docs.astral.sh/uv/getting-started/features/#next-steps)
 
-```shell
-# after UV has been installed
-uv python install
-
-# steps for venv: https://docs.astral.sh/uv/pip/environments/
-uv venv my-env-name-here
-source my-env-name-here/bin/activate # 'activating' env making its pakages available
+```shell script
+uv python dir: # Show the uv installed Python versions path.
 ```
 
 #### Pipenv
@@ -314,6 +309,11 @@ exit          # gets out of environment
 ```shell script
 docker ps # Checks instances running
 docker container ls -a # Find all container instances (running and not running)
+docker rm container_name # deletes container
+docker rmi image_name # deletes image if there's no container
+
+docker images # shows all images
+docker compose up --build # build again
 
 docker start instance_name # start instance
 docker container start container_id # start a Docker container
