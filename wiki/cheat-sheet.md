@@ -319,6 +319,7 @@ docker start instance_name # start instance
 docker container start container_id # start a Docker container
 docker stop container_id # Stop instance running
 
+docker exec -t -i my_container_name /bin/bash # opens up a bash terminal for that container
 docker pull microsoft/mssql-server-linux # Installing SQL Server
 docker run -d --name sql_server_demo -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=reallyStrongPwd123' -p 1433:1433 microsoft/mssql-server-linux # Install the Docker instance
 ```
