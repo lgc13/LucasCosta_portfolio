@@ -441,6 +441,7 @@ default:
   - `source ~/.zshrc`
   
 - Install an IDE/Text editor (Atom,VSCode)
+  - PyCharm plugins: Material Theme UI Lite, Atom Material Icons
 
 - Run [create_links.sh](../.dotfiles/scripts/create_links.sh)
 
