@@ -425,26 +425,23 @@ default:
   
    this should already have the `zsh` shell installed
 
-- Run [create_links.sh](../.dotfiles/scripts/create_links.sh)
-    
-    - this should add: `oh-my-zsh`, `cobalt2`, `eza`
-    - in case it doesn't, follow the following: 
+- Install [oh-my-zsh](https://ohmyz.sh/)
 
-        - Install [oh-my-zsh](https://ohmyz.sh/)
-        
-        - Get [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
-        
-        - Install [eza](https://github.com/eza-community/eza)
-        
-           - Add the following to `~/.bash_profile` once exa has been installed:
-           `alias ls='eza --long --header --git -TL 1'`
-        - Install zsh plugins:
-          - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-            - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-          - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
-            - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-          - `source ~/.zshrc`
+- (Optional) Get [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
+
+- Install [eza](https://github.com/eza-community/eza)
+
+   - Add the following to `~/.bash_profile` once exa has been installed:
+   `alias ls='eza --long --header --git -TL 1'`
+- Install zsh plugins:
+  - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+    - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  - `source ~/.zshrc`
 - Install an IDE/Text editor (Atom,VSCode)
+
+- Run [create_links.sh](../.dotfiles/scripts/create_links.sh)
 
 ### Eslint + Prettier
 
