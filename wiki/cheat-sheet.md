@@ -439,6 +439,7 @@ default:
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
     - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
   - `source ~/.zshrc`
+  
 - Install an IDE/Text editor (Atom,VSCode)
 
 - Run [create_links.sh](../.dotfiles/scripts/create_links.sh)
