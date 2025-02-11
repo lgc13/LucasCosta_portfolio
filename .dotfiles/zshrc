@@ -113,3 +113,7 @@ alias testlogin='aws sso login --profile AWSAdministratorAccess-597313045933'
 alias testdb='aws ssm start-session --target i-0e4707129dc2ad3d7 --document-name AWS-StartPortForwardingSessionToRemoteHost --parameters host="cyberstrong.cluster-cnboomge8b3w.us-east-1.rds.amazonaws.com",portNumber="5432",localPortNumber="9999" --profile AWSAdministratorAccess-597313045933'
 
 . "$HOME/.local/bin/env"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

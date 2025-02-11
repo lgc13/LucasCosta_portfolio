@@ -8,3 +8,6 @@ set number
 
 "Highlight search"
 set hlsearch
+
+"Mouse scroll?"
+set mouse=nicr
