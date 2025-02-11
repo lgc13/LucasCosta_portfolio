@@ -421,6 +421,8 @@ default:
 
 ### Setting up new Mac terminal environment
 
+- Adding [multiple ssh keys](https://www.youtube.com/watch?v=jGwD3e1BZ5Y)
+
 - Install iTerm2
   
    this should already have the `zsh` shell installed
