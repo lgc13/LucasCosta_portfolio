@@ -368,7 +368,12 @@ prompt -p type  # try this one
 prompt -s type  # activate this one
 ````
 
-### IntelliJ Shortcuts
+### IntelliJ
+
+- To get the `git commit window` back:
+    1. Add `Commit` on the toolbar
+       - Right click toolbar > Add to Main Toolbar > Commit
+    2. Revert the `Use non-modal commit interface` [setting](https://www.jetbrains.com/help/idea/commit-changes-dialog.html)
 
 ```shell script
 CMD + O # find class
