@@ -37,4 +37,6 @@ export NVM_DIR="$HOME/.nvm"
 
 #. "$HOME/.local/bin/env"
 
-source ~/.bash_profile_work
+if [ -f ~/.bash_profile_work ]; then
+  source ~/.bash_profile_work
+fi
