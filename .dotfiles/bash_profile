@@ -25,6 +25,11 @@ alias atomGetPackages="$LC_PORTFOLIO_DIR/.dotfiles/scripts/get-atom-packages.sh"
 alias gcall="$LC_PORTFOLIO_DIR/.dotfiles/scripts/git-checkout-master-all.sh"
 alias display-placer="$LC_PORTFOLIO_DIR/.dotfiles/scripts/display-placer.sh"
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+# Pyenv
+eval "$(pyenv init --path)"
+
 # Exports:
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

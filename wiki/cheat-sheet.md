@@ -428,6 +428,19 @@ default:
 
 - Adding [multiple ssh keys](https://www.youtube.com/watch?v=jGwD3e1BZ5Y)
 
+  ```zsh
+  ssh-keygen -t ed25519
+  # Enter file: /Users/lucaslacosta/.ssh/id_personal
+  # No passphrase
+
+  # add ssh to keygen
+  ssh-add ~/.ssh/id_personal 
+  # copy contents of public ssh key
+  cat ~/.ssh/id_personal.pub | pbcopy 
+
+  # Paste it in github
+  ```
+
 - Install iTerm2
   
    this should already have the `zsh` shell installed
@@ -440,7 +453,20 @@ default:
 
    - Add the following to `~/.bash_profile` once exa has been installed:
    `alias ls='eza --long --header --git -TL 1'`
+
 - Install zsh plugins:
+
+  - .zshrch plugins:
+
+  ```bash
+  # .zshrc
+  plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+  )
+  ```
+
   - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
     - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
