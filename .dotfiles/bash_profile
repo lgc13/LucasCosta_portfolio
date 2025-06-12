@@ -14,10 +14,12 @@ alias gs='git status'
 alias gcm='git commit -m'
 alias gp='git push'
 alias gc='git checkout'
-# This checks all branches not merged with origin, other than master, develop and staging, then deletes them from local
-alias gclean='echo "Doing a git pull, git fetch --all --prune and a gclean" && git pull && git fetch --all --prune && git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging|dev)" | xargs -n 1 git branch -d'
-# Possible new gclean? git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
 alias gcb='git checkout -b' # add branchName to be created/checked out after
+
+# This checks all branches not merged with origin, other than master, develop and staging, then deletes them from local
+#alias gclean='echo "Doing a git pull, git fetch --all --prune and a gclean" && git pull && git fetch --all --prune && git branch --merged | grep -v "\*" | grep -Ev "(\*|master|develop|staging|dev)" | xargs -n 1 git branch -d'
+alias gclean='git pull && git fetch --all --prune && (git branch -vv | grep ": gone]" | grep -Ev "(master|develop|staging|dev|main)" | awk "{print \$1}" | xargs git branch -D || echo "No stale branches to clean up")'
+
 
 # Scripts
 alias atomInstall="$LC_PORTFOLIO_DIR/.dotfiles/scripts/install-atom-packages.sh"
@@ -32,8 +34,9 @@ eval "$(pyenv init --path)"
 
 # Exports:
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 #. "$HOME/.local/bin/env"
 
