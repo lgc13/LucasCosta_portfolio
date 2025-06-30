@@ -473,7 +473,7 @@ default:
     zsh-syntax-highlighting
   )
 
-  # source ~/.zshrc
+  source ~/.zshrc
   ```
   
 - Install an IDE/Text editor (Atom,VSCode)

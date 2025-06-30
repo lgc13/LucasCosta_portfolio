@@ -30,15 +30,13 @@ alias display-placer="$LC_PORTFOLIO_DIR/.dotfiles/scripts/display-placer.sh"
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 # Pyenv
-eval "$(pyenv init --path)"
+# eval "$(pyenv init --path)"
 
 # Exports:
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-#. "$HOME/.local/bin/env"
 
 if [ -f ~/.bash_profile_work ]; then
   source ~/.bash_profile_work
