@@ -424,7 +424,7 @@ default:
   dotnet ef database update
 ```
 
-### Setting up new Mac terminal environment
+### Set up new Mac terminal environment
 
 - Adding [multiple ssh keys](https://www.youtube.com/watch?v=jGwD3e1BZ5Y)
 
@@ -447,7 +447,9 @@ default:
 
 - Install [oh-my-zsh](https://ohmyz.sh/)
 
-- (Optional) Get [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
+    - (Optional) Get [Cobalt2](https://github.com/wesbos/Cobalt2-iterm)
+
+- Install [Homebrew](https://brew.sh/)
 
 - Install [eza](https://github.com/eza-community/eza)
 
@@ -456,22 +458,23 @@ default:
 
 - Install zsh plugins:
 
-  - .zshrch plugins:
-
+  - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+    - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+  
   ```bash
-  # .zshrc
+  vi ~/.zshrc
+
+  # Change plugins to the following:
   plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
   )
-  ```
 
-  - [zsh-autosuggestion](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-    - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
-    - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-  - `source ~/.zshrc`
+  # source ~/.zshrc
+  ```
   
 - Install an IDE/Text editor (Atom,VSCode)
   - PyCharm plugins: Material Theme UI Lite, Atom Material Icons
