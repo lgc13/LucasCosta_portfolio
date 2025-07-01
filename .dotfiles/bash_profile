@@ -3,7 +3,7 @@
 export LC_PORTFOLIO_DIR=~/Desktop/LucasProjects/LucasCosta_portfolio
 
 # Aliases:
-alias ls='eza --long --header --git -TL 0' # must download exa first
+alias ls='eza --long --header --git' # must download exa first
 alias la='ls -la'
 alias cpwd="pwd | tr -d '\n' | pbcopy" # copying pwd co clipboard
 alias c="cd $LC_PORTFOLIO_DIR"

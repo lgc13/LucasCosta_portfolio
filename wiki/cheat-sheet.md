@@ -454,7 +454,7 @@ default:
 - Install [eza](https://github.com/eza-community/eza)
 
    - Add the following to `~/.bash_profile` once exa has been installed:
-   `alias ls='eza --long --header --git -TL 1'`
+   `alias ls='eza --long --header --git'`
 
 - Install zsh plugins:
 
